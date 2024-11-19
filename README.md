@@ -47,17 +47,88 @@
 
 ## 🚀 **Projets Récents**  
 
-### **📚 Bibliothèque Réservation | Gestion de Libraries**  
-- Développement d'un système de gestion de bibliothèque avec PHP et MySQL.  
-- **Fonctionnalités :** Authentification des utilisateurs, réservation de livres, gestion des emprunts/retours, gestion des utilisateurs pour les administrateurs.  
-- **Lien :** *(à venir)*  
+---
 
-### **💻 Téléconsultation Médicale**  
-- Création d'une plateforme de téléconsultation pour améliorer l'accès aux services de santé.  
-- **Technologies :** Laravel, MySQL, Bootstrap.  
-- **Lien :** *(à venir)*  
+### **📚 Bibliothèque Réservation | Gestion de Libraries**  
+Un système complet de gestion de bibliothèque développé avec PHP et MySQL.  
+
+**Fonctionnalités principales :**  
+- Authentification utilisateur (multi-rôles : utilisateurs et administrateurs).  
+- Réservation, emprunt et retour de livres.  
+- Gestion des utilisateurs et des livres pour les administrateurs.  
+
+**Objectif :**  
+Simplifier la gestion des ressources pour les bibliothèques.  
+
+**Technologies :** PHP, MySQL, HTML5, CSS3.  
+**Lien :** *(à venir)*  
 
 ---
+
+### **💻 Téléconsultation Médicale**  
+Une plateforme web pour faciliter l'accès aux consultations médicales à distance.  
+
+**Fonctionnalités principales :**  
+- Enregistrement des patients et médecins.  
+- Réservation et gestion des consultations en ligne.  
+- Tableau de bord pour le suivi des consultations.  
+
+**Objectif :**  
+Améliorer l'accès aux soins dans les régions reculées.  
+
+**Technologies :** HTML5, CSS3, Laravel, MySQL, React, Bootstrap, API(postman), WebRTC.  
+**Lien :** *(à venir)*  
+
+---
+
+### **🏫 Gestion d’École (Projet de Fin de Formation)**  
+Un projet de gestion des établissements scolaires, permettant une administration efficace des opérations internes.  
+
+**Fonctionnalités principales :**  
+- Gestion des élèves : inscriptions, mises à jour des dossiers.  
+- Gestion des enseignants et des cours.  
+- Génération d'emplois du temps et gestion des absences.  
+
+**Objectif :**  
+Optimiser les opérations administratives des écoles.  
+
+**Technologies :** HTML5, CSS3, Laravel, MySQL, React, Bootstrap, API(postman).  
+**Lien :** *(à venir)*  
+
+---
+
+### **🛒 E-commerce Website - *Electro***  
+Un site web de commerce électronique pour vendre des produits électroniques en ligne.  
+
+**Fonctionnalités principales :**  
+- Catalogue de produits avec filtres et recherches.  
+- Gestion des utilisateurs (administrateurs et clients).  
+- Commande, paiement en ligne et gestion des livraisons.  
+
+**Objectif :**  
+Créer une expérience d'achat en ligne fluide et intuitive.  
+
+**Technologies :** HTML5, CSS3, Laravel, MySQL, Bootstrap.  
+**Lien :** *(à venir)*  
+
+---
+
+### **👩‍🎓 Gestion des Stagiaires**  
+Un système conçu pour gérer les stagiaires dans les entreprises ou institutions de formation.  
+
+**Fonctionnalités principales :**  
+- Enregistrement des stagiaires et gestion de leurs profils.  
+- Suivi des projets et rapports des stagiaires.  
+- Tableau de bord pour les responsables pour suivre les performances et les statistiques.  
+
+**Objectif :**  
+Faciliter la gestion et le suivi des stagiaires tout au long de leur formation.  
+
+**Technologies :** HTML5, CSS3, Laravel, MySQL, React, Bootstrap, API(postman).  
+**Lien :** *(à venir)*  
+
+---
+
 
 ## 📈 **Statistiques GitHub**  
 
