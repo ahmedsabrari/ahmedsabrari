@@ -1,12 +1,16 @@
-# 🌐 Ahmed Sabrari  
-
-**`Développeur Full Stack | Passionné par le Digital et la Technologie`**
-
-👨‍💻 **Technicien Spécialisé en Développement Digital - Option Web Full Stack**, avec une passion pour la création d'applications web innovantes et performantes. Je construis des solutions sur mesure, en utilisant des technologies modernes pour résoudre des problèmes concrets et offrir une expérience utilisateur fluide. Toujours curieux d'apprendre et de relever de nouveaux défis.  
+Voici une version améliorée de ton `README.md` qui met davantage en avant ta professionnalité et clarifie les sections pour rendre le tout plus attrayant et complet :
 
 ---
 
-## 🛠️ **Compétences Techniques**  
+# 🌐 Ahmed Sabrari  
+
+**`Développeur Full Stack Passionné | Créateur de Solutions Innovantes`**
+
+Je suis un développeur Full Stack spécialisé dans la création d'applications web performantes et intuitives. Avec un solide bagage en **Laravel**, **React** et **MySQL**, je m'efforce de résoudre des problèmes concrets tout en offrant une expérience utilisateur fluide et moderne. Toujours curieux d'apprendre, je suis constamment à la recherche de nouveaux défis pour affiner mes compétences et contribuer à des projets impactants.
+
+---
+
+## 🛠️ **Compétences Techniques**
 
 ### **Langages de Programmation :**  
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)  
@@ -45,95 +49,70 @@
 
 ---
 
-## 🚀 **Projets Récents**  
+## 🚀 **Projets Récents**
 
 ---
 
 ### **📚 Bibliothèque Réservation | Gestion de Libraries**  
-Un système complet de gestion de bibliothèque développé avec PHP et MySQL.  
-
+Un système de gestion de bibliothèque permettant une gestion simplifiée des ressources.  
 **Fonctionnalités principales :**  
-- Authentification utilisateur (multi-rôles : utilisateurs et administrateurs).  
-- Réservation, emprunt et retour de livres.  
-- Gestion des utilisateurs et des livres pour les administrateurs.  
-
-**Objectif :**  
-Simplifier la gestion des ressources pour les bibliothèques.  
-
+- Authentification multi-rôles.  
+- Réservation et gestion des livres.  
+- Interface administrateur pour la gestion des utilisateurs et des livres.  
+**Objectif :** Simplifier la gestion des livres dans les bibliothèques.  
 **Technologies :** PHP, MySQL, HTML5, CSS3.  
 **Lien :** *(à venir)*  
 
 ---
 
 ### **💻 Téléconsultation Médicale**  
-Une plateforme web pour faciliter l'accès aux consultations médicales à distance.  
-
+Une plateforme facilitant l'accès aux consultations médicales à distance.  
 **Fonctionnalités principales :**  
 - Enregistrement des patients et médecins.  
-- Réservation et gestion des consultations en ligne.  
-- Tableau de bord pour le suivi des consultations.  
-
-**Objectif :**  
-Améliorer l'accès aux soins dans les régions reculées.  
-
-**Technologies :** HTML5, CSS3, Laravel, MySQL, React, Bootstrap, API(postman), WebRTC.  
+- Gestion des consultations en ligne.  
+- Tableau de bord pour suivre les consultations et les rendez-vous.  
+**Objectif :** Améliorer l'accès aux soins à distance, notamment dans les régions éloignées.  
+**Technologies :** HTML5, CSS3, Laravel, MySQL, React, WebRTC.  
 **Lien :** *(à venir)*  
 
 ---
 
 ### **🏫 Gestion d’École (Projet de Fin de Formation)**  
-Un projet de gestion des établissements scolaires, permettant une administration efficace des opérations internes.  
-
+Un projet permettant de gérer efficacement les établissements scolaires, incluant l'administration des élèves et des enseignants.  
 **Fonctionnalités principales :**  
-- Gestion des élèves : inscriptions, mises à jour des dossiers.  
-- Gestion des enseignants et des cours.  
+- Gestion des élèves et enseignants.  
 - Génération d'emplois du temps et gestion des absences.  
-
-**Objectif :**  
-Optimiser les opérations administratives des écoles.  
-
-**Technologies :** HTML5, CSS3, Laravel, MySQL, React, Bootstrap, API(postman).  
+**Objectif :** Optimiser la gestion administrative des écoles.  
+**Technologies :** Laravel, MySQL, React, Bootstrap.  
 **Lien :** *(à venir)*  
 
 ---
 
 ### **🛒 E-commerce Website - *Electro***  
-Un site web de commerce électronique pour vendre des produits électroniques en ligne.  
-
+Un site de commerce électronique pour vendre des produits électroniques en ligne.  
 **Fonctionnalités principales :**  
-- Catalogue de produits avec filtres et recherches.  
-- Gestion des utilisateurs (administrateurs et clients).  
-- Commande, paiement en ligne et gestion des livraisons.  
-
-**Objectif :**  
-Créer une expérience d'achat en ligne fluide et intuitive.  
-
-**Technologies :** HTML5, CSS3, Laravel, MySQL, Bootstrap.  
+- Catalogue de produits avec filtres.  
+- Gestion des commandes et paiements en ligne.  
+**Objectif :** Créer une expérience d'achat fluide et intuitive.  
+**Technologies :** Laravel, MySQL, Bootstrap.  
 **Lien :** *(à venir)*  
 
 ---
 
 ### **👩‍🎓 Gestion des Stagiaires**  
-Un système conçu pour gérer les stagiaires dans les entreprises ou institutions de formation.  
-
+Un système permettant de gérer les stagiaires dans les entreprises et institutions.  
 **Fonctionnalités principales :**  
-- Enregistrement des stagiaires et gestion de leurs profils.  
-- Suivi des projets et rapports des stagiaires.  
-- Tableau de bord pour les responsables pour suivre les performances et les statistiques.  
-
-**Objectif :**  
-Faciliter la gestion et le suivi des stagiaires tout au long de leur formation.  
-
-**Technologies :** HTML5, CSS3, Laravel, MySQL, React, Bootstrap, API(postman).  
+- Enregistrement des stagiaires.  
+- Suivi des projets et rapports.  
+**Objectif :** Simplifier la gestion et le suivi des stagiaires.  
+**Technologies :** Laravel, MySQL, React, Bootstrap.  
 **Lien :** *(à venir)*  
 
 ---
 
-
-## 📈 **Statistiques GitHub**  
+## 📈 **Statistiques GitHub**
 
 ![Ahmed's GitHub stats](https://github-readme-stats.vercel.app/api?username=ahmedsabrari&show_icons=true&theme=radical)  
-
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedsabrari&layout=compact&theme=radical)  
 
 ---
@@ -143,8 +122,10 @@ Faciliter la gestion et le suivi des stagiaires tout au long de leur formation.
 📧 **Email :** [sabrari.ahmed0@gmail.com](mailto:sabrari.ahmed0@gmail.com)  
 🌐 **LinkedIn :** [linkedin.com/in/ahmedsabrari](https://www.linkedin.com/in/ahmedsabrari)  
 
+---
 
 ## 🎯 **Objectif de Carrière**
-Je cherche à collaborer sur des projets stimulants en tant que développeur full-stack, où je pourrai contribuer avec mes compétences et continuer à évoluer dans le domaine du développement web.
 
+Je suis à la recherche de projets stimulants où je pourrai utiliser mes compétences en développement Full Stack pour apporter des solutions innovantes et de qualité. Mon objectif est de contribuer à des projets qui ont un impact réel, tout en continuant à développer mes compétences techniques et professionnelles.
 
+---
