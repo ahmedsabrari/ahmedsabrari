@@ -142,3 +142,9 @@ Faciliter la gestion et le suivi des stagiaires tout au long de leur formation.
 
 📧 **Email :** [sabrari.ahmed0@gmail.com](mailto:sabrari.ahmed0@gmail.com)  
 🌐 **LinkedIn :** [linkedin.com/in/ahmedsabrari](https://www.linkedin.com/in/ahmedsabrari)  
+
+
+## 🎯 **Objectif de Carrière**
+Je cherche à collaborer sur des projets stimulants en tant que développeur full-stack, où je pourrai contribuer avec mes compétences et continuer à évoluer dans le domaine du développement web.
+
+
