@@ -12,43 +12,45 @@ Je suis un développeur Full Stack spécialisé dans la création d'applications
 
 ## 🛠️ **Compétences Techniques**
 
-### **Langages de Programmation :**  
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)  
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)  
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)  
-![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)  
-![Python](https://img.shields.io/badge/python-%2314354C.svg?style=for-the-badge&logo=python&logoColor=white)  
+### **💻 Langages de Programmation**
+
+- **HTML5** : Création de pages web modernes et accessibles.
+- **CSS3** : Mise en page réactive et design esthétique.
+- **JavaScript** : Développement d'interactions dynamiques et animations sur le web.
+- **PHP** : Programmation backend robuste pour des applications web performantes.
+- **Python** : Automatisation, analyse de données, et développement de solutions backend.
 
 ---
 
-### **Frameworks et Bibliothèques :**  
-![Laravel](https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white)  
-![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)  
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)  
-![Node.js](https://img.shields.io/badge/node.js-%23339933.svg?style=for-the-badge&logo=nodedotjs&logoColor=white)  
+### **⚙️ Frameworks & Bibliothèques**
+
+- **Laravel** : Framework PHP moderne pour des applications web sécurisées et évolutives.
+- **React** : Bibliothèque JavaScript pour des interfaces utilisateur dynamiques et réactives.
+- **Node.js** : Environnement d'exécution JavaScript pour le développement backend rapide.
+- **Bootstrap** : Framework CSS pour une conception rapide et réactive de pages web.
 
 ---
 
-### **Bases de Données :**  
-**Relationnelles :**  
-![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)  
-![PostgreSQL](https://img.shields.io/badge/postgresql-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)  
+### **🗄️ Bases de Données**
 
-**NoSQL :**  
-![MongoDB](https://img.shields.io/badge/mongodb-%2347A248.svg?style=for-the-badge&logo=mongodb&logoColor=white)  
+#### **Relationnelles :**
+- **MySQL** : Gestion de bases de données relationnelles robustes pour des applications web complexes.
+- **PostgreSQL** : Base de données relationnelle open-source avec des capacités avancées pour des applications de grande envergure.
 
----
-
-### **Outils et Environnements :**  
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)  
-![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)  
-![GitLab](https://img.shields.io/badge/gitlab-%23FC6D26.svg?style=for-the-badge&logo=gitlab&logoColor=white)  
-![Jira](https://img.shields.io/badge/jira-%230052CC.svg?style=for-the-badge&logo=jira&logoColor=white)  
-![Visual Studio Code](https://img.shields.io/badge/Visual_Studio_Code-%23007ACC.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)  
-![Scrum](https://img.shields.io/badge/scrum-%23E34F26.svg?style=for-the-badge&logo=scrumalliance&logoColor=white)  
+#### **NoSQL :**
+- **MongoDB** : Base de données NoSQL flexible, idéale pour des applications nécessitant des données non structurées.
 
 ---
 
+### **⚡ Outils & Environnements**
+
+- **Git** & **GitHub** : Gestion de version et collaboration sur des projets de développement.
+- **Jira** : Suivi des tâches et gestion de projet agile.
+- **Docker** : Conteneurisation d'applications pour un déploiement rapide et cohérent.
+- **Visual Studio Code** : IDE puissant pour une écriture de code fluide et performante.
+- **Scrum** : Gestion de projets agile pour une approche itérative et collaborative.
+
+---
 ## 🚀 **Projets Récents**
 
 ---
