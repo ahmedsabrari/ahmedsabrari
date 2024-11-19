@@ -9,10 +9,9 @@ Voici une version améliorée de ton `README.md` qui met davantage en avant ta p
 Je suis un développeur Full Stack spécialisé dans la création d'applications web performantes et intuitives. Avec un solide bagage en **Laravel**, **React** et **MySQL**, je m'efforce de résoudre des problèmes concrets tout en offrant une expérience utilisateur fluide et moderne. Toujours curieux d'apprendre, je suis constamment à la recherche de nouveaux défis pour affiner mes compétences et contribuer à des projets impactants.
 
 ---
+## 🛠️ **Compétences Techniques**
 
-## 🛠️ **المهارات التقنية**
-
-### **💻 لغات البرمجة:**
+### **💻 Langages de Programmation:**
 <div align="left">
   <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
   <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
@@ -23,7 +22,7 @@ Je suis un développeur Full Stack spécialisé dans la création d'applications
 
 ---
 
-### **🔧 الإطارات والمكتبات:**
+### **🔧 Frameworks & Bibliothèques:**
 <div align="left">
   <img src="https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel" />
   <img src="https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap" />
@@ -33,22 +32,22 @@ Je suis un développeur Full Stack spécialisé dans la création d'applications
 
 ---
 
-### **💾 قواعد البيانات:**
+### **💾 Bases de Données:**
 
-#### **🗄️ قواعد البيانات العلائقية:**
+#### **🗄️ Bases de Données Relationnelles:**
 <div align="left">
   <img src="https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
   <img src="https://img.shields.io/badge/postgresql-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
 </div>
 
-#### **📚 قواعد البيانات غير العلائقية (NoSQL):**
+#### **📚 Bases de Données NoSQL:**
 <div align="left">
   <img src="https://img.shields.io/badge/mongodb-%2347A248.svg?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
 </div>
 
 ---
 
-### **🛠️ الأدوات والبيئات:**
+### **🛠️ Outils & Environnements:**
 <div align="left">
   <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
   <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
@@ -58,7 +57,7 @@ Je suis un développeur Full Stack spécialisé dans la création d'applications
   <img src="https://img.shields.io/badge/scrum-%23E34F26.svg?style=for-the-badge&logo=scrumalliance&logoColor=white" alt="Scrum" />
 </div>
 
----
+------
 ## 🚀 **Projets Récents**
 
 ---
