@@ -119,7 +119,7 @@ Un système permettant de gérer les stagiaires dans les entreprises et institut
 
 ![Ahmed's GitHub stats](https://github-readme-stats.vercel.app/api?username=ahmedsabrari&show_icons=true&theme=radical)  
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedsabrari&layout=compact&theme=radical)  
-<p> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> </p>
+
 
 
 <a>
