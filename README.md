@@ -118,11 +118,7 @@ Un système permettant de gérer les stagiaires dans les entreprises et institut
 ## 📈 **Statistiques GitHub**
 
 ![Ahmed's GitHub stats](https://github-readme-stats.vercel.app/api?username=ahmedsabrari&count_private=true&show_icons=true&theme=tokyonight)  
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedsabrari&layout=compact&theme=radical)  
-
-<a>
-    <img align="center"width="55%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedsabrari&layout=compact&theme=aura&langs_count=9" />
-</a>
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedsabrari&layout=compact&theme=aura&langs_count=9)  
 
 ---
 
