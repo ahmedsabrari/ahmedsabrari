@@ -68,11 +68,11 @@ Marketplace spécialisée en produits électroniques
 
 ## 📊 **Activité GitHub**
 
-<div align="center">
+<div align="center"> 
+
+![Statistiques GitHub](https://github-readme-stats.vercel.app/api?username=ahmedsabrari&show_icons=true&theme=radical&count_private=true)
   
-![Statistiques GitHub](https://github-readme-stats.vercel.app/api?username=ahmedsabrar&show_icons=true&theme=radical&count_private=true)
-  
-![Langages les plus utilisés](https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedsabrar&layout=compact&theme=radical&langs_count=8)
+![Langages les plus utilisés](https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedsabrari&layout=compact&theme=radical&langs_count=8)
 
 </div>
 
