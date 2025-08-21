@@ -84,8 +84,7 @@ Marketplace spécialisée en produits électroniques
 
 [![Email](https://img.shields.io/badge/Email-sabrari.ahmed0@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sabrari.ahmed0@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Ahmed_Sabrari-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ahmedsabrari)
-[![Portfolio](https://img.shields.io/badge/Portfolio-En_construction-FF7139?style=for-the-badge&logo=firefox&logoColor=white)](https://ahmedsabrar.github.io)
-[![GitHub](https://img.shields.io/badge/GitHub-ahmedsabrar-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ahmedsabrar)
+[![GitHub](https://img.shields.io/badge/GitHub-ahmedsabrar-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ahmedsabrari)
 
 </div>
 
