@@ -68,6 +68,20 @@ Marketplace spécialisée en produits électroniques
 
 ## 📊 **Activité GitHub**
 
+<a href="https://github.com/anuraghazra/github-readme-stats">
+  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=ahmedsabrari" />
+</a>
+<a href="https://github.com/anuraghazra/convoychat">
+  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=ahmedsabrari&layout=compact&langs_count=8&card_width=320" />
+</a>
+
+<a href="https://github.com/anuraghazra/github-readme-stats">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=ahmedsabrari&repo=github-readme-stats" />
+</a>
+<a href="https://github.com/anuraghazra/convoychat">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=ahmedsabrari&repo=convoychat" />
+</a>
+
 <div align="center"> 
 
 ![Statistiques GitHub](https://github-readme-stats.vercel.app/api?username=ahmedsabrari&show_icons=true&theme=radical&count_private=true)
