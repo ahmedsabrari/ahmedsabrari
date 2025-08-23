@@ -68,14 +68,22 @@ Marketplace spécialisée en produits électroniques
 
 ## 📊 **Activité GitHub**
 
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ahmedsabrari)](https://github.com/anuraghazra/github-readme-stats)
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ahmedsabrari)]
+
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ahmedsabrari&hide=contribs,prs)
+
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ahmedsabrari&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage)
+
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ahmedsabrari&show_icons=true&theme=radical)
+
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ahmedsabrari&show_icons=true&theme=transparent)
+
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ahmedsabrari&show_icons=true&bg_color=00000000)
+
 [![Anurag's GitHub stats-Dark](https://github-readme-stats.vercel.app/api?username=ahmedsabrari&show_icons=true&theme=dark#gh-dark-mode-only)](https://github.com/anuraghazra/github-readme-stats#gh-dark-mode-only)
+
 [![Anurag's GitHub stats-Light](https://github-readme-stats.vercel.app/api?username=ahmedsabrari&show_icons=true&theme=default#gh-light-mode-only)](https://github.com/anuraghazra/github-readme-stats#gh-light-mode-only)
+
 <picture>
   <source
     srcset="https://github-readme-stats.vercel.app/api?username=ahmedsabrari&show_icons=true&theme=dark"
@@ -87,19 +95,33 @@ Marketplace spécialisée en produits électroniques
   />
   <img src="https://github-readme-stats.vercel.app/api?username=ahmedsabrari&show_icons=true" />
 </picture>
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=ahmedsabrari&repo=github-readme-stats)](https://github.com/anuraghazra/github-readme-stats)
+
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=ahmedsabrari&repo=github-readme-stats)]
+
 [![Gist Card](https://github-readme-stats.vercel.app/api/gist?id=bbfce31e0217a3689c8d961a356cb10d)](https://gist.github.com/Yizack/bbfce31e0217a3689c8d961a356cb10d/)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedsabrari)](https://github.com/anuraghazra/github-readme-stats)
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedsabrari)]
+
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedsabrari&size_weight=0.5&count_weight=0.5)
+
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedsabrari&exclude_repo=github-readme-stats,anuraghazra.github.io)
+
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedsabrari&langs_count=8)
+
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedsabrari&layout=compact)
+
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedsabrari&layout=compact)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedsabrari&layout=donut)](https://github.com/anuraghazra/github-readme-stats)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedsabrari&layout=donut-vertical)](https://github.com/anuraghazra/github-readme-stats)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedsabrari&layout=pie)](https://github.com/anuraghazra/github-readme-stats)
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedsabrari&layout=donut)]
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedsabrari&layout=donut-vertical)]
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedsabrari&layout=pie)]
+
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedsabrari&hide_progress=true)
-[![Harlok's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=ffflabs)](https://github.com/anuraghazra/github-readme-stats)
+
+[![Harlok's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=ffflabs)]
+
 <a href="https://github.com/anuraghazra/github-readme-stats">
   <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=ahmedsabrari" />
 </a>
