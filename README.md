@@ -59,10 +59,14 @@ ERP éducatif complet pour administrer établissements scolaires
 - **Impact:** Centralisation et automatisation des processus administratifs
 
 ### **🛒 Plateforme E-Commerce "Electro"**
-Marketplace spécialisée en produits électroniques
-- **Stack:** Laravel, MySQL, Bootstrap, JavaScript
-- **Fonctionnalités:** Catalogue avancé, panier, système de paiement, interface admin
-- **Impact:** Expérience d'achat optimisée avec temps de chargement réduit
+<div align="center" style="display: flex; flex-direction: column; align-items: center;">
+  
+  <!-- Plateforme E-Commerce "Electro" -->
+  
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=ahmedsabrari&repo=E-commerce)](https://github.com/ahmedsabrari/E-commerce)
+
+</div>
+
 
 ---
 
