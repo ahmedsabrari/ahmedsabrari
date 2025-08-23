@@ -68,15 +68,11 @@ Marketplace spécialisée en produits électroniques
 
 ## 📊 **Activité GitHub**
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ahmedsabrari&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage)
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ahmedsabrari&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage&icons=true&theme=radical)
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ahmedsabrari&show_icons=true&theme=radical)
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ahmedsabrari&show)
 
 <picture>
-  <source
-    srcset="https://github-readme-stats.vercel.app/api?username=ahmedsabrari&show_icons=true&theme=dark"
-    media="(prefers-color-scheme: dark)"
-  />
   <source
     srcset="https://github-readme-stats.vercel.app/api?username=ahmedsabrari&show_icons=true"
     media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
