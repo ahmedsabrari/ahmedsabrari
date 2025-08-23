@@ -68,76 +68,17 @@ Marketplace spécialisée en produits électroniques
 
 ## 📊 **Activité GitHub**
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ahmedsabrari&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage&icons=true&theme=radical)
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ahmedsabrari)]
+<div align="center" style="display: flex; flex-direction: column; align-items: center;">
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ahmedsabrari&hide=contribs,prs)
-
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ahmedsabrari&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage)
-
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ahmedsabrari&show_icons=true&theme=radical)
-
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ahmedsabrari&show_icons=true&theme=transparent)
-
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ahmedsabrari&show_icons=true&bg_color=00000000)
-
-[![Anurag's GitHub stats-Dark](https://github-readme-stats.vercel.app/api?username=ahmedsabrari&show_icons=true&theme=dark#gh-dark-mode-only)](https://github.com/anuraghazra/github-readme-stats#gh-dark-mode-only)
-
-[![Anurag's GitHub stats-Light](https://github-readme-stats.vercel.app/api?username=ahmedsabrari&show_icons=true&theme=default#gh-light-mode-only)](https://github.com/anuraghazra/github-readme-stats#gh-light-mode-only)
-
-<picture>
-  <source
-    srcset="https://github-readme-stats.vercel.app/api?username=ahmedsabrari&show_icons=true"
-    media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-  />
-  <img src="https://github-readme-stats.vercel.app/api?username=ahmedsabrari&show_icons=true" />
-</picture>
-
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=ahmedsabrari&repo=github-readme-stats)]
-
-[![Gist Card](https://github-readme-stats.vercel.app/api/gist?id=bbfce31e0217a3689c8d961a356cb10d)](https://gist.github.com/Yizack/bbfce31e0217a3689c8d961a356cb10d/)
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedsabrari)]
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedsabrari&size_weight=0.5&count_weight=0.5)
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedsabrari&exclude_repo=github-readme-stats,anuraghazra.github.io)
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedsabrari&langs_count=8)
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedsabrari&layout=compact)
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedsabrari&layout=compact)
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedsabrari&layout=donut)]
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedsabrari&layout=donut-vertical)]
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedsabrari&layout=pie)]
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedsabrari&hide_progress=true)
-
-[![Harlok's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=ffflabs)]
-
-<a href="https://github.com/anuraghazra/github-readme-stats">
-  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=ahmedsabrari" />
-</a>
-<a href="https://github.com/anuraghazra/convoychat">
-  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=ahmedsabrari&layout=compact&langs_count=8&card_width=320" />
-</a>
-<a href="https://github.com/anuraghazra/github-readme-stats">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=ahmedsabrari&repo=github-readme-stats" />
-</a>
-<a href="https://github.com/anuraghazra/convoychat">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=ahmedsabrari&repo=convoychat" />
-</a>
-
-<div align="center"> 
-
-![Statistiques GitHub](https://github-readme-stats.vercel.app/api?username=ahmedsabrari&show_icons=true&theme=radical&count_private=true)
+  <!-- GitHub Stats -->
+  <img src="https://github-readme-stats.vercel.app/api?username=ahmedsabrari&theme=default&show_icons=true&hide_border=false&count_private=true" alt="ahmedsabrari's Stats" width="400" height="auto" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom: 20px;">
+  <br>
+  <!-- GitHub Streak -->
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ahmedsabrari&theme=default&hide_border=false" alt="ahmedsabrari's Streak" width="400" height="auto" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom: 20px;">
+  <br>
+  <!-- Top Languages -->
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedsabrari&theme=default&show_icons=true&hide_border=false&layout=compact" alt="ahmedsabrari's Top Languages" width="400" height="auto" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   
-![Langages les plus utilisés](https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedsabrari&layout=compact&theme=radical&langs_count=8)
-
 </div>
 
 ---
