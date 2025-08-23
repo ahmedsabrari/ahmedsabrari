@@ -66,7 +66,14 @@ ERP éducatif complet pour administrer établissements scolaires
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=ahmedsabrari&repo=E-commerce)](https://github.com/ahmedsabrari/E-commerce)
 
 </div>
+### **🌐🐍 Hello World GUI**
+<div align="center" style="display: flex; flex-direction: column; align-items: center;">
+  
+  <!-- Plateforme E-Commerce "Electro" -->
+  
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=ahmedsabrari&repo=hello_world_gui)](https://github.com/ahmedsabrari/hello_world_gui)
 
+</div>
 
 ---
 
