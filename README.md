@@ -44,34 +44,41 @@ Développeur full stack passionné, je transforme des concepts complexes en appl
 
 ---
 
-## 🚀 **Projets Phares**
+# 🚀 Featured Projects
 
-### **🏥 Plateforme de Téléconsultation Médicale**
-Solution complète de consultations à distance connectant patients et médecins
-- **Stack:** Laravel, React, WebRTC, MySQL
-- **Fonctionnalités:** Système de rendez-vous, visioconférence sécurisée, gestion de dossiers médicaux
-- **Impact:** Facilite l'accès aux soins dans les zones éloignées
+## 🏥 Medical Teleconsultation Platform
+A comprehensive remote consultation solution connecting patients and doctors
+- **Tech Stack:** Laravel, React, WebRTC, MySQL
+- **Key Features:** Appointment scheduling, secure video conferencing, medical records management
+- **Impact:** Improves healthcare accessibility in remote areas
 
-### **📊 Système de Gestion Scolaire (Projet de Fin de Formation)**
-ERP éducatif complet pour administrer établissements scolaires
-- **Stack:** Laravel, React, MySQL, Bootstrap
-- **Fonctionnalités:** Gestion des élèves/enseignants, emplois du temps, bulletins notes
-- **Impact:** Centralisation et automatisation des processus administratifs
+## 📊 School Management System (Final Training Project)
+Complete educational ERP for managing academic institutions
+- **Tech Stack:** Laravel, React, MySQL, Bootstrap
+- **Key Features:** Student/teacher management, timetable scheduling, grade reporting
+- **Impact:** Centralizes and automates administrative processes
 
-### **🛒 Plateforme E-Commerce "Electro"**
-<div align="center" style="display: flex; flex-direction: column; align-items: center;">
-  
-  <!-- Plateforme E-Commerce "Electro" -->
-  
+## 🛒 E-Commerce Platform "Electro"
+
+<div align="center">
+
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=ahmedsabrari&repo=E-commerce)](https://github.com/ahmedsabrari/E-commerce)
 
 </div>
-### **🌐🐍 Hello World GUI**
-<div align="center" style="display: flex; flex-direction: column; align-items: center;">
-  
-  <!-- Plateforme E-Commerce "Electro" -->
-  
+
+## 🌐🐍 Hello World GUI
+
+<div align="center">
+
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=ahmedsabrari&repo=hello_world_gui)](https://github.com/ahmedsabrari/hello_world_gui)
+
+</div>
+
+## ❤️ Heart Drawing Animation
+
+<div align="center">
+
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=ahmedsabrari&repo=heart-drawing)](https://github.com/ahmedsabrari/heart-drawing)
 
 </div>
 
@@ -82,18 +89,28 @@ ERP éducatif complet pour administrer établissements scolaires
 <div align="center" style="display: flex; flex-direction: column; align-items: center;">
 
   <!-- GitHub Stats -->
-  <img src="https://github-readme-stats.vercel.app/api?username=ahmedsabrari&theme=default&show_icons=true&hide_border=false&count_private=true" alt="ahmedsabrari's Stats" width="400" height="auto" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom: 20px;">
+  <img src="https://github-readme-stats.vercel.app/api?username=ahmedsabrari&theme=default&show_icons=true&hide_border=false&count_private=false&include_all_commits=false" alt="ahmedsabrari's Stats" width="400" height="auto" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom: 20px;">
   <br>
   <!-- GitHub Streak -->
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ahmedsabrari&theme=default&hide_border=false" alt="ahmedsabrari's Streak" width="400" height="auto" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom: 20px;">
+  <img src="https://nirzak-streak-stats.vercel.app/?user=ahmedsabrari&theme=default&hide_border=false" alt="ahmedsabrari's Streak" width="400" height="auto" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom: 20px;">
   <br>
   <!-- Top Languages -->
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedsabrari&theme=default&show_icons=true&hide_border=false&layout=compact" alt="ahmedsabrari's Top Languages" width="400" height="auto" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedsabrari&theme=default&hide_border=false&include_all_commits=false&count_private=false&layout=compact" alt="ahmedsabrari's Top Languages" width="400" height="auto" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   
 </div>
 
 ---
 
+### 🔝 Top Contributed Repo
+
+<div align="center" style="display: flex; flex-direction: column; align-items: center;">
+
+  <!-- GitHub Stats -->
+  <img src="https://github-contributor-stats.vercel.app/api?username=ahmedsabrari&limit=5&theme=default&combine_all_yearly_contributions=true" alt="ahmedsabrari's Stats" width="400" height="auto" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom: 20px;">
+  
+</div>
+
+---
 ## 📞 **Contact**
 
 <div align="center">
