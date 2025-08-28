@@ -1,5 +1,15 @@
 # 🌐 Ahmed Sabrari  
 
+## 📊 GitHub Statistics
+
+<!-- stats_start -->
+total stars earned: 
+total commits(2025): 
+total prs: 
+total issues: 
+contributed to (last year): 
+<!-- stats_end -->
+
 **`Développeur Full Stack | Architecte de Solutions Digitales Innovantes`**
 
 Développeur full stack passionné, je transforme des concepts complexes en applications web élégantes et performantes. Expert en écosystème **Laravel** et **React**, je maîtrise l'art de créer des expériences utilisateur fluides couplées à des architectures back-end robustes. Mon approche allie excellence technique, innovation et orientation résultats.
