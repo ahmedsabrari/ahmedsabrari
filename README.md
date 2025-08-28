@@ -82,6 +82,14 @@ Complete educational ERP for managing academic institutions
 
 </div>
 
+## 🎨 Image to Pencil Sketch Converter
+
+<div align="center">
+
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=ahmedsabrari&repo=image-to-pencil-sketch)](https://github.com/ahmedsabrari/image-to-pencil-sketch)
+
+</div>
+
 ---
 
 ## 📊 **Activité GitHub**
