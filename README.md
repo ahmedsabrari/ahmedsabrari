@@ -58,65 +58,70 @@ Complete educational ERP for managing academic institutions
 - **Key Features:** Student/teacher management, timetable scheduling, grade reporting
 - **Impact:** Centralizes and automates administrative processes
 
-## 🛒 E-Commerce Platform "Electro"
-
-<div align="center">
-
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=ahmedsabrari&repo=E-commerce)](https://github.com/ahmedsabrari/E-commerce)
-
-</div>
-
-## 🌐🐍 Hello World GUI
-
-<div align="center">
-
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=ahmedsabrari&repo=hello_world_gui)](https://github.com/ahmedsabrari/hello_world_gui)
-
-</div>
-
-## ❤️ Heart Drawing Animation
-
-<div align="center">
-
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=ahmedsabrari&repo=heart-drawing)](https://github.com/ahmedsabrari/heart-drawing)
-
-</div>
-
-## 🎨 Image to Pencil Sketch Converter
-
-<div align="center">
-
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=ahmedsabrari&repo=image-to-pencil-sketch)](https://github.com/ahmedsabrari/image-to-pencil-sketch)
-
-</div>
+   <table>
+     <tr>
+       <td align="center">
+         <strong>🛒 E-Commerce Platform "Electro"</strong><br>
+         <a href="https://github.com/ahmedsabrari/E-commerce">
+           <img src="https://github-readme-stats.vercel.app/api/pin/?username=ahmedsabrari&repo=E-commerce&show_owner=true&theme=radical" alt="E-commerce">
+         </a>
+       </td>
+       <td align="center">
+         <strong>🌐🐍 Hello World GUI</strong><br>
+         <a href="https://github.com/ahmedsabrari/hello_world_gui">
+           <img src="https://github-readme-stats.vercel.app/api/pin/?username=ahmedsabrari&repo=hello_world_gui&show_owner=true&theme=radical" alt="Hello World GUI">
+         </a>
+       </td>
+     </tr>
+     <tr>
+       <td align="center">
+         <strong>❤️ Heart Drawing Animation</strong><br>
+         <a href="https://github.com/ahmedsabrari/heart-drawing">
+           <img src="https://github-readme-stats.vercel.app/api/pin/?username=ahmedsabrari&repo=heart-drawing&show_owner=true&theme=radical" alt="Heart Drawing">
+         </a>
+       </td>
+       <td align="center">
+         <strong>🎨 Image to Pencil Sketch Converter</strong><br>
+         <a href="https://github.com/ahmedsabrari/image-to-pencil-sketch">
+           <img src="https://github-readme-stats.vercel.app/api/pin/?username=ahmedsabrari&repo=image-to-pencil-sketch&show_owner=true&theme=radical" alt="Image to Pencil Sketch">
+         </a>
+       </td>
+     </tr>
+   </table>
 
 ---
 
 ## 📊 **Activité GitHub**
 
-<div align="center" style="display: flex; flex-direction: column; align-items: center;">
-
-  <!-- GitHub Stats -->
-  <img src="https://github-readme-stats.vercel.app/api?username=ahmedsabrari&theme=default&show_icons=true&hide_border=false&count_private=false&include_all_commits=false" alt="ahmedsabrari's Stats" width="400" height="auto" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom: 20px;">
-  <br>
-  <!-- GitHub Streak -->
-  <img src="https://nirzak-streak-stats.vercel.app/?user=ahmedsabrari&theme=default&hide_border=false" alt="ahmedsabrari's Streak" width="400" height="auto" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom: 20px;">
-  <br>
-  <!-- Top Languages -->
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedsabrari&theme=default&hide_border=false&include_all_commits=false&count_private=false&layout=compact" alt="ahmedsabrari's Top Languages" width="400" height="auto" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-  
-</div>
+  <table>
+    <tr>
+      <!-- GitHub Stats -->
+      <td align="center">
+        <img src="https://github-readme-stats.vercel.app/api?username=ahmedsabrari&theme=radical&show_icons=true&hide_border=false&count_private=false&include_all_commits=false" alt="ahmedsabrari's Stats" width="400" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <br>
+        <strong>GitHub Stats</strong>
+      </td>
+      <!-- GitHub Streak -->
+      <td align="center">
+        <img src="https://nirzak-streak-stats.vercel.app/?user=ahmedsabrari&theme=radical&hide_border=false" alt="ahmedsabrari's Streak" width="400" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <br>
+        <strong>Contribution Streak</strong>
+      </td>
+      <!-- Top Languages -->
+      <td align="center">
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedsabrari&theme=radical&hide_border=false&include_all_commits=false&count_private=false&layout=compact" alt="ahmedsabrari's Top Languages" width="400" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <br>
+        <strong>Top Languages</strong>
+      </td>
+    </tr>
+  </table>
 
 ---
 
 ### 🔝 Top Contributed Repo
 
-<div align="center" style="display: flex; flex-direction: column; align-items: center;">
-
   <!-- GitHub Stats -->
-  <img src="https://github-contributor-stats.vercel.app/api?username=ahmedsabrari&limit=5&theme=default&combine_all_yearly_contributions=true" alt="ahmedsabrari's Stats" width="400" height="auto" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom: 20px;">
-  
-</div>
+  <img src="https://github-contributor-stats.vercel.app/api?username=ahmedsabrari&limit=5&theme=radical&combine_all_yearly_contributions=true" alt="ahmedsabrari's Stats" width="400" height="auto" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom: 20px;">
 
 ---
 ## 📞 **Contact**
