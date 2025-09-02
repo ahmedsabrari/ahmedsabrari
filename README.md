@@ -97,33 +97,50 @@ Complete educational ERP for managing academic institutions
     <tr>
       <!-- GitHub Stats -->
       <td align="center">
-        <img src="https://github-readme-stats.vercel.app/api?username=ahmedsabrari&theme=radical&show_icons=true&hide_border=false&count_private=false&include_all_commits=false" alt="ahmedsabrari's Stats" width="400" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <img src="https://github-readme-stats.vercel.app/api?username=ahmedsabrari&theme=radical&show_icons=true&hide_border=false&count_private=false&include_all_commits=false" 
+          alt="ahmedsabrari's Stats" 
+          width="400" 
+          style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
         <br>
         <strong>GitHub Stats</strong>
       </td>
       <!-- GitHub Streak -->
       <td align="center">
-        <img src="https://nirzak-streak-stats.vercel.app/?user=ahmedsabrari&theme=radical&hide_border=false" alt="ahmedsabrari's Streak" width="400" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <img src="https://nirzak-streak-stats.vercel.app/?user=ahmedsabrari&theme=radical&hide_border=false" 
+          alt="ahmedsabrari's Streak" 
+          width="400" 
+          style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
         <br>
         <strong>Contribution Streak</strong>
       </td>
-      <!-- Top Languages -->
+    </tr>
+    <tr>
+            <!-- Top Languages -->
       <td align="center">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedsabrari&theme=radical&hide_border=false&include_all_commits=false&count_private=false&layout=compact" alt="ahmedsabrari's Top Languages" width="400" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <img 
+          src="https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedsabrari&theme=radical&hide_border=false&count_private=true&exclude_repo=profile-summary-for-github,E-commerce&layout=compact" 
+          alt="ahmedsabrari's Top Languages" 
+          width="400" 
+          style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
+        >
         <br>
         <strong>Top Languages</strong>
+      </td>
+      <!-- Top Contributed Repo -->
+      <td align="center">
+        <img src="https://github-contributor-stats.vercel.app/api?username=ahmedsabrari&limit=5&theme=radical&combine_all_yearly_contributions=true" 
+          alt="ahmedsabrari's Stats" 
+          width="400" 
+          height="auto" 
+          style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom: 20px;">
+        <br>
+        <strong>Top Contributed Repo</strong>
       </td>
     </tr>
   </table>
 
 ---
 
-### 🔝 Top Contributed Repo
-
-  <!-- GitHub Stats -->
-  <img src="https://github-contributor-stats.vercel.app/api?username=ahmedsabrari&limit=5&theme=radical&combine_all_yearly_contributions=true" alt="ahmedsabrari's Stats" width="400" height="auto" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom: 20px;">
-
----
 ## 📞 **Contact**
 
 <div align="center">
