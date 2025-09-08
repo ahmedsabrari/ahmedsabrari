@@ -171,6 +171,6 @@ Je cherche à rejoindre une équipe innovante où je pourrai contribuer à des p
 
 ###
 
-<img src="https://raw.githubusercontent.com/ahmedsabrari/ahmedsabrari/output/snake.svg" alt="Snake animation" />
+<img src="https://ahmedsabrari.github.io/ahmedsabrari/snake.svg" alt="Snake animation" />
 
 ###
