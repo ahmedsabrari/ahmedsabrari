@@ -1,3 +1,8 @@
+<div align="center">
+  <img src="./developer.gif" alt="Header Animation" width="100%" style="max-width: 900px;"/>
+  <br/> 
+</div>
+
 # 🌐 Ahmed Sabrari  
 
 **`Développeur Full Stack | Architecte de Solutions Digitales Innovantes`**
