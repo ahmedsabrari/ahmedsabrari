@@ -1,37 +1,36 @@
-name: Generate Snake Animation
+name: Generate snake animation
 
 on:
   schedule:
-    - cron: "0 */12 * * *"  # كل 12 ساعة
+    - cron: "0 */12 * * *"
   workflow_dispatch:
   push:
     branches:
       - main
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  generate:
     permissions:
       contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
 
     steps:
-      - uses: actions/checkout@v4
-      
-      - uses: Platane/snk@v3
-        id: snake-gif
+      - name: Checkout repo
+        uses: actions/checkout@v3
         with:
-          github_user_name: ahmedsabrari
-          svg_out_path: dist/snake.svg
-          gif_out_path: dist/snake.gif
-          # الألوان المخصصة
-          svg_color: "#ff6b6b:#4ecdc4:#45b7d1:#96ceb4:#ffeaa7:#ff9ff3:#feca57:#ff9ff3"
-          gif_color: "dark"
+          ref: output # التحقق من فرع output إذا كان موجوداً
 
-      - name: Deploy to Repository
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Generate snake.svg
+        uses: Platane/snk/svg-only@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          publish_branch: main
-          keep_files: true
-          destination_dir: ./snake
+          github_user_name: ${{ github.repository_owner }}
+          outputs: snake.svg?palette=github-dark
+
+      - name: Commit and push to output branch
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add snake.svg
+          git commit -m "Update snake animation"
+          git push origin output
