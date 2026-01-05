@@ -61,7 +61,7 @@ Complete educational ERP for managing academic institutions
 <table>
   <tr>
     <td align="center">
-      <strong>🛒 E-Commerce Platform "Electro"</strong><br>
+      <strong>🛒 E-Commerce Platform \"Electro\"</strong><br>
       <a href="https://github.com/ahmedsabrari/E-commerce">
         <img src="./images/repos/ecommerce.svg" alt="E-commerce">
       </a>
