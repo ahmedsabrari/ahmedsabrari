@@ -1,37 +1,49 @@
-name: Generate Snake Animation
+name: Generate Snake Animation - Enhanced
 
 on:
   schedule:
-    - cron: "0 */6 * * *"  # كل 6 ساعات
+    - cron: "0 0,12 * * *"  # كل 12 ساعة
   workflow_dispatch:
   push:
-    branches:
-      - main
+    branches: [ main ]
 
 jobs:
-  generate-snake:
+  snake:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          ref: main
           
-      - name: Generate Snake Animation
-        uses: Platane/snk@master
+      - name: Create snake directory
+        run: mkdir -p snake
+        
+      - name: Generate snake.svg
+        uses: Platane/snk@v3
         with:
           github_user_name: ahmedsabrari
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake.gif
-      
-      - name: Deploy Snake
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: dist
-          branch: main
-          clean: true
-          target-folder: snake
+          svg_out_path: snake/snake.svg
+          gif_out_path: snake/snake.gif
+          svg_color: "random"
+          gif_color: "dark"
+          
+      - name: Create README for snake folder
+        run: echo "# Snake Animation Files\n\nGenerated automatically by GitHub Actions" > snake/README.md
+        
+      - name: Push snake animation
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          
+          # Check for changes
+          git status
+          
+          if git diff --quiet; then
+            echo "No changes detected"
+          else
+            git add snake/
+            git commit -m "🐍 Update snake animation - $(date +'%Y-%m-%d %H:%M:%S')"
+            git push origin main
+          fi
