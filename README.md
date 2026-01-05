@@ -2,7 +2,7 @@
 
 **`Développeur Full Stack | Architecte de Solutions Digitales Innovantes`**
 
-Développeur full stack passionné, je transforme des concepts complexes en applications web élégantes et performantes. Expert en écosystème **Laravel** et **React**, je maîtrise l'art de créer des expériences utilisateur fluides couplées à des architectures back-end robustes. Mon approche allie excellence technique, innovation et orientation résultats.
+Développeur full stack passionné, je transforme des concepts complexes en applications web élégantes et performantes. Expert en écosystème **Laravel** et **React**, je maîtrise l'art de créer [...] 
 
 ---
 
@@ -63,13 +63,13 @@ Complete educational ERP for managing academic institutions
     <td align="center">
       <strong>🛒 E-Commerce Platform "Electro"</strong><br>
       <a href="https://github.com/ahmedsabrari/E-commerce">
-        <img src="https://raw.githubusercontent.com/ahmedsabrari/ahmedsabrari/main/images/repos/ecommerce.png" alt="E-commerce">
+        <img src="./images/repos/ecommerce.svg" alt="E-commerce">
       </a>
     </td>
     <td align="center">
       <strong>🌐🐍 Hello World GUI</strong><br>
       <a href="https://github.com/ahmedsabrari/hello_world_gui">
-        <img src="https://raw.githubusercontent.com/ahmedsabrari/ahmedsabrari/main/images/repos/hello_world.png" alt="Hello World GUI">
+        <img src="./images/repos/hello_world.svg" alt="Hello World GUI">
       </a>
     </td>
   </tr>
@@ -77,13 +77,13 @@ Complete educational ERP for managing academic institutions
     <td align="center">
       <strong>❤️ Heart Drawing Animation</strong><br>
       <a href="https://github.com/ahmedsabrari/heart-drawing">
-        <img src="https://raw.githubusercontent.com/ahmedsabrari/ahmedsabrari/main/images/repos/heart.png" alt="Heart Drawing">
+        <img src="./images/repos/heart.svg" alt="Heart Drawing">
       </a>
     </td>
     <td align="center">
       <strong>🎨 Image to Pencil Sketch Converter</strong><br>
       <a href="https://github.com/ahmedsabrari/image-to-pencil-sketch">
-        <img src="https://raw.githubusercontent.com/ahmedsabrari/ahmedsabrari/main/images/repos/pencil_sketch.png" alt="Image to Pencil Sketch">
+        <img src="./images/repos/pencil_sketch.svg" alt="Image to Pencil Sketch">
       </a>
     </td>
   </tr>
@@ -96,14 +96,14 @@ Complete educational ERP for managing academic institutions
 <table>
   <tr>
     <td align="center">
-      <img src="https://raw.githubusercontent.com/ahmedsabrari/ahmedsabrari/main/images/stats/overview.png" 
+      <img src="./images/stats/overview.svg" 
         alt="GitHub Stats" 
         width="400">
       <br>
       <strong>GitHub Stats</strong>
     </td>
     <td align="center">
-      <img src="https://raw.githubusercontent.com/ahmedsabrari/ahmedsabrari/main/images/stats/streak.png" 
+      <img src="./images/stats/streak.svg" 
         alt="Contribution Streak" 
         width="400">
       <br>
@@ -112,14 +112,14 @@ Complete educational ERP for managing academic institutions
   </tr>
   <tr>
     <td align="center">
-      <img src="https://raw.githubusercontent.com/ahmedsabrari/ahmedsabrari/main/images/stats/languages.png" 
+      <img src="./images/stats/languages.svg" 
         alt="Top Languages" 
         width="400">
       <br>
       <strong>Top Languages</strong>
     </td>
     <td align="center">
-      <img src="https://raw.githubusercontent.com/ahmedsabrari/ahmedsabrari/main/images/stats/activity.png" 
+      <img src="./images/stats/activity.svg" 
         alt="Activity Graph" 
         width="400">
       <br>
@@ -133,7 +133,7 @@ Complete educational ERP for managing academic institutions
 ## 🐍 **Mes contributions sur GitHub**
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/ahmedsabrari/ahmedsabrari/main/snake/snake.svg" 
+  <img src="./snake/snake.svg" 
        alt="Snake animation" 
        width="100%">
 </div>
@@ -154,7 +154,7 @@ Complete educational ERP for managing academic institutions
 
 ## 🎯 **Vision Professionnelle**
 
-Je cherche à rejoindre une équipe innovante où je pourrai contribuer à des projets ambitieux tout en développant mon expertise en architecture logicielle. Mon objectif est de concevoir des solutions techniques qui résolvent des problèmes réels tout en offrant une expérience utilisateur exceptionnelle.
+Je cherche à rejoindre une équipe innovante où je pourrai contribuer à des projets ambitieux tout en développant mon expertise en architecture logicielle. Mon objectif est de concevoir des soluti[...] 
 
 *Disponible pour des opportunités en développement full stack, architecture d'applications et conseil technique.*
 
