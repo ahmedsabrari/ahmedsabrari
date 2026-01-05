@@ -63,13 +63,13 @@ Complete educational ERP for managing academic institutions
     <td align="center">
       <strong>🛒 E-Commerce Platform "Electro"</strong><br>
       <a href="https://github.com/ahmedsabrari/E-commerce">
-        <img src="https://ahmedsabrari.github.io/ahmedsabrari/images/repos/ecommerce.png" alt="E-commerce">
+        <img src="https://raw.githubusercontent.com/ahmedsabrari/ahmedsabrari/main/images/repos/ecommerce.png" alt="E-commerce">
       </a>
     </td>
     <td align="center">
       <strong>🌐🐍 Hello World GUI</strong><br>
       <a href="https://github.com/ahmedsabrari/hello_world_gui">
-        <img src="https://ahmedsabrari.github.io/ahmedsabrari/images/repos/hello_world.png" alt="Hello World GUI">
+        <img src="https://raw.githubusercontent.com/ahmedsabrari/ahmedsabrari/main/images/repos/hello_world.png" alt="Hello World GUI">
       </a>
     </td>
   </tr>
@@ -77,13 +77,13 @@ Complete educational ERP for managing academic institutions
     <td align="center">
       <strong>❤️ Heart Drawing Animation</strong><br>
       <a href="https://github.com/ahmedsabrari/heart-drawing">
-        <img src="https://ahmedsabrari.github.io/ahmedsabrari/images/repos/heart.png" alt="Heart Drawing">
+        <img src="https://raw.githubusercontent.com/ahmedsabrari/ahmedsabrari/main/images/repos/heart.png" alt="Heart Drawing">
       </a>
     </td>
     <td align="center">
       <strong>🎨 Image to Pencil Sketch Converter</strong><br>
       <a href="https://github.com/ahmedsabrari/image-to-pencil-sketch">
-        <img src="https://ahmedsabrari.github.io/ahmedsabrari/images/repos/pencil_sketch.png" alt="Image to Pencil Sketch">
+        <img src="https://raw.githubusercontent.com/ahmedsabrari/ahmedsabrari/main/images/repos/pencil_sketch.png" alt="Image to Pencil Sketch">
       </a>
     </td>
   </tr>
@@ -93,17 +93,17 @@ Complete educational ERP for managing academic institutions
 
 ## 📊 **Activité GitHub**
 
-  <table>
+<table>
   <tr>
     <td align="center">
-      <img src="https://ahmedsabrari.github.io/ahmedsabrari/images/images/stats/overview.png" 
+      <img src="https://raw.githubusercontent.com/ahmedsabrari/ahmedsabrari/main/images/stats/overview.png" 
         alt="GitHub Stats" 
         width="400">
       <br>
       <strong>GitHub Stats</strong>
     </td>
     <td align="center">
-      <img src="https://ahmedsabrari.github.io/ahmedsabrari/images/images/stats/streak.png" 
+      <img src="https://raw.githubusercontent.com/ahmedsabrari/ahmedsabrari/main/images/stats/streak.png" 
         alt="Contribution Streak" 
         width="400">
       <br>
@@ -112,14 +112,14 @@ Complete educational ERP for managing academic institutions
   </tr>
   <tr>
     <td align="center">
-      <img src="https://ahmedsabrari.github.io/ahmedsabrari/images/images/stats/languages.png" 
+      <img src="https://raw.githubusercontent.com/ahmedsabrari/ahmedsabrari/main/images/stats/languages.png" 
         alt="Top Languages" 
         width="400">
       <br>
       <strong>Top Languages</strong>
     </td>
     <td align="center">
-      <img src="https://ahmedsabrari.github.io/ahmedsabrari/images/images/stats/activity.png" 
+      <img src="https://raw.githubusercontent.com/ahmedsabrari/ahmedsabrari/main/images/stats/activity.png" 
         alt="Activity Graph" 
         width="400">
       <br>
@@ -127,7 +127,6 @@ Complete educational ERP for managing academic institutions
     </td>
   </tr>
 </table>
-
 ---
 
 ## 📞 **Contact**
