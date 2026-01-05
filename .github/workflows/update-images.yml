@@ -1,0 +1,56 @@
+name: Update GitHub Stats Images
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+
+jobs:
+  generate-images:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Generate Stats Images
+      run: |
+        # إنشاء مجلدات الصور
+        mkdir -p images/stats
+        mkdir -p images/repos
+        
+        # 1. إحصائيات GitHub الرئيسية
+        curl -s "https://github-readme-stats.vercel.app/api?username=ahmedsabrari&theme=radical&show_icons=true&hide_border=false&count_private=true&include_all_commits=true&line_height=20" -o images/stats/overview.png
+        
+        # 2. سلسلة المساهمات
+        curl -s "https://streak-stats.demolab.com/?user=ahmedsabrari&theme=radical&hide_border=false" -o images/stats/streak.png
+        
+        # 3. اللغات الأكثر استخداماً
+        curl -s "https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedsabrari&theme=radical&layout=compact&langs_count=8&hide_border=false" -o images/stats/languages.png
+        
+        # 4. مشروع E-commerce
+        curl -s "https://github-readme-stats.vercel.app/api/pin/?username=ahmedsabrari&repo=E-commerce&theme=radical&show_owner=true" -o images/repos/ecommerce.png
+        
+        # 5. مشروع Hello World GUI
+        curl -s "https://github-readme-stats.vercel.app/api/pin/?username=ahmedsabrari&repo=hello_world_gui&theme=radical&show_owner=true" -o images/repos/hello_world.png
+        
+        # 6. مشروع Heart Drawing
+        curl -s "https://github-readme-stats.vercel.app/api/pin/?username=ahmedsabrari&repo=heart-drawing&theme=radical&show_owner=true" -o images/repos/heart.png
+        
+        # 7. مشروع Pencil Sketch
+        curl -s "https://github-readme-stats.vercel.app/api/pin/?username=ahmedsabrari&repo=image-to-pencil-sketch&theme=radical&show_owner=true" -o images/repos/pencil_sketch.png
+        
+        # 8. مخطط النشاط
+        curl -s "https://github-readme-activity-graph.vercel.app/graph?username=ahmedsabrari&theme=radical&hide_border=false" -o images/stats/activity.png
+    
+    - name: Commit and Push Images
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git add images/
+        git commit -m "📊 Update GitHub stats images $(date +'%Y-%m-%d %H:%M')" || echo "No changes to commit"
+        git push
