@@ -7,6 +7,9 @@ on:
   push:
     branches: [ main ]
 
+permissions:
+  contents: write
+
 jobs:
   generate-images:
     runs-on: ubuntu-latest
@@ -19,38 +22,52 @@ jobs:
     
     - name: Generate Stats Images
       run: |
-        # إنشاء مجلدات الصور
+        # إنشاء مجلدات الصور (إذا لم تكن موجودة)
         mkdir -p images/stats
         mkdir -p images/repos
         
-        # 1. إحصائيات GitHub الرئيسية
-        curl -s "https://github-readme-stats.vercel.app/api?username=ahmedsabrari&theme=radical&show_icons=true&hide_border=false&count_private=true&include_all_commits=true&line_height=20" -o images/stats/overview.png
+        # حذف الملفات القديمة
+        rm -f images/stats/*.png
+        rm -f images/repos/*.png
         
-        # 2. سلسلة المساهمات
-        curl -s "https://streak-stats.demolab.com/?user=ahmedsabrari&theme=radical&hide_border=false" -o images/stats/streak.png
+        # تحميل الصور مباشرة إلى المجلدات
+        # إحصائيات GitHub
+        curl -L "https://github-readme-stats.vercel.app/api?username=ahmedsabrari&theme=radical&show_icons=true&count_private=true" -o "images/stats/overview.png"
         
-        # 3. اللغات الأكثر استخداماً
-        curl -s "https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedsabrari&theme=radical&layout=compact&langs_count=8&hide_border=false" -o images/stats/languages.png
+        # Streak Stats
+        curl -L "https://streak-stats.demolab.com/?user=ahmedsabrari&theme=radical" -o "images/stats/streak.png"
         
-        # 4. مشروع E-commerce
-        curl -s "https://github-readme-stats.vercel.app/api/pin/?username=ahmedsabrari&repo=E-commerce&theme=radical&show_owner=true" -o images/repos/ecommerce.png
+        # Top Languages
+        curl -L "https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedsabrari&theme=radical&layout=compact" -o "images/stats/languages.png"
         
-        # 5. مشروع Hello World GUI
-        curl -s "https://github-readme-stats.vercel.app/api/pin/?username=ahmedsabrari&repo=hello_world_gui&theme=radical&show_owner=true" -o images/repos/hello_world.png
+        # Activity Graph
+        curl -L "https://github-readme-activity-graph.vercel.app/graph?username=ahmedsabrari&theme=radical" -o "images/stats/activity.png"
         
-        # 6. مشروع Heart Drawing
-        curl -s "https://github-readme-stats.vercel.app/api/pin/?username=ahmedsabrari&repo=heart-drawing&theme=radical&show_owner=true" -o images/repos/heart.png
+        # Project Repos
+        curl -L "https://github-readme-stats.vercel.app/api/pin/?username=ahmedsabrari&repo=E-commerce&theme=radical" -o "images/repos/ecommerce.png"
         
-        # 7. مشروع Pencil Sketch
-        curl -s "https://github-readme-stats.vercel.app/api/pin/?username=ahmedsabrari&repo=image-to-pencil-sketch&theme=radical&show_owner=true" -o images/repos/pencil_sketch.png
+        curl -L "https://github-readme-stats.vercel.app/api/pin/?username=ahmedsabrari&repo=hello_world_gui&theme=radical" -o "images/repos/hello_world.png"
         
-        # 8. مخطط النشاط
-        curl -s "https://github-readme-activity-graph.vercel.app/graph?username=ahmedsabrari&theme=radical&hide_border=false" -o images/stats/activity.png
+        curl -L "https://github-readme-stats.vercel.app/api/pin/?username=ahmedsabrari&repo=heart-drawing&theme=radical" -o "images/repos/heart.png"
+        
+        curl -L "https://github-readme-stats.vercel.app/api/pin/?username=ahmedsabrari&repo=image-to-pencil-sketch&theme=radical" -o "images/repos/pencil_sketch.png"
+        
+        # التحقق من الملفات
+        echo "=== Files in images/stats/ ==="
+        ls -la images/stats/
+        
+        echo "=== Files in images/repos/ ==="
+        ls -la images/repos/
     
     - name: Commit and Push Images
       run: |
-        git config --local user.email "github-actions[bot]@users.noreply.github.com"
-        git config --local user.name "github-actions[bot]"
-        git add images/
-        git commit -m "📊 Update GitHub stats images $(date +'%Y-%m-%d %H:%M')" || echo "No changes to commit"
-        git push
+        # تأكد من أن الملفات موجودة
+        if [ -z "$(git status --porcelain images/)" ]; then
+          echo "No changes to commit"
+        else
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add images/
+          git commit -m "📊 Update GitHub stats images $(date +'%Y-%m-%d %H:%M:%S')"
+          git push
+        fi
