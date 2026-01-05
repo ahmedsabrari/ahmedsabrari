@@ -127,6 +127,17 @@ Complete educational ERP for managing academic institutions
     </td>
   </tr>
 </table>
+
+---
+
+## 🐍 **Mes contributions sur GitHub**
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/ahmedsabrari/ahmedsabrari/main/snake/snake.svg" 
+       alt="Snake animation" 
+       width="100%">
+</div>
+
 ---
 
 ## 📞 **Contact**
@@ -154,14 +165,3 @@ Je cherche à rejoindre une équipe innovante où je pourrai contribuer à des p
 **✨ Innovation through code • Excellence through practice ✨**
 
 </div>
-
----
-
-## 🐍 My contributions on GitHub
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/ahmedsabrari/ahmedsabrari/main/snake/snake.svg" 
-       alt="Snake animation" 
-       width="100%">
-</p>
-
