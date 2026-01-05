@@ -157,47 +157,18 @@ Je cherche à rejoindre une équipe innovante où je pourrai contribuer à des p
 
 ---
 
-## 🐍 My contributions on GitHub
-
-<div align="center">
+<!-- 🐍 ثعبان GitHub -->
+<p align="center">
   <img src="https://raw.githubusercontent.com/ahmedsabrari/ahmedsabrari/main/snake/snake.svg" 
        alt="Snake animation" 
        width="100%">
-  
-  ![Snake GIF](https://raw.githubusercontent.com/ahmedsabrari/ahmedsabrari/main/snake/snake.gif)
-</div>
+</p>
 
----
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  // قائمة بجميع الصور مع روابط احتياطية
-  const images = document.querySelectorAll('img');
-  
-  images.forEach(img => {
-    // إذا فشلت الصورة، استخدم رابط احتياطي
-    img.onerror = function() {
-      const src = this.src;
-      
-      // إذا كانت صورة إحصائيات
-      if (src.includes('stats/overview.png')) {
-        this.src = 'https://github-readme-stats.vercel.app/api?username=ahmedsabrari&theme=radical&show_icons=true';
-      }
-      else if (src.includes('stats/streak.png')) {
-        this.src = 'https://streak-stats.demolab.com/?user=ahmedsabrari&theme=radical';
-      }
-      else if (src.includes('stats/languages.png')) {
-        this.src = 'https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedsabrari&theme=radical&layout=compact';
-      }
-      else if (src.includes('stats/activity.png')) {
-        this.src = 'https://github-readme-activity-graph.vercel.app/graph?username=ahmedsabrari&theme=radical';
-      }
-      // إذا كانت صورة مشروع
-      else if (src.includes('repos/')) {
-        const repoName = src.split('/').pop().replace('.png', '');
-        this.src = `https://github-readme-stats.vercel.app/api/pin/?username=ahmedsabrari&repo=${repoName}&theme=radical`;
-      }
-    };
-  });
-});
-</script>
+<!-- أو مع رابط احتياطي -->
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ahmedsabrari/ahmedsabrari/main/snake/snake.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ahmedsabrari/ahmedsabrari/main/snake/snake.svg">
+    <img alt="GitHub contributions snake" src="https://raw.githubusercontent.com/ahmedsabrari/ahmedsabrari/main/snake/snake.svg">
+  </picture>
+</p>
