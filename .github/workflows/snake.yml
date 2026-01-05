@@ -1,49 +1,44 @@
-name: Generate Snake Animation - Enhanced
+name: GitHub Contribution Snake
 
 on:
   schedule:
-    - cron: "0 0,12 * * *"  # كل 12 ساعة
+    # تحديث 4 مرات يومياً
+    - cron: "0 */6 * * *"
   workflow_dispatch:
   push:
-    branches: [ main ]
+    branches:
+      - main
+
+permissions:
+  contents: write
 
 jobs:
-  snake:
+  build:
     runs-on: ubuntu-latest
     
     steps:
-      - uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          ref: main
-          
-      - name: Create snake directory
-        run: mkdir -p snake
+      - name: Checkout Repository
+        uses: actions/checkout@v4
         
-      - name: Generate snake.svg
-        uses: Platane/snk@v3
+      - name: Generate GitHub Contribution Grid
+        uses: Platane/snk@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           github_user_name: ahmedsabrari
-          svg_out_path: snake/snake.svg
-          gif_out_path: snake/snake.gif
-          svg_color: "random"
-          gif_color: "dark"
+          outputs: |
+            snake/snake-dark.svg?color=dark
+            snake/snake-dark-2.svg?color=dark&palette=github-dark
+            snake/snake.svg?color=random
+            snake/snake.gif?color=random-dark&palette=github-dark
+          # خيارات إضافية
+          period: "last_1_year"
+          show_other_days: "true"
           
-      - name: Create README for snake folder
-        run: echo "# Snake Animation Files\n\nGenerated automatically by GitHub Actions" > snake/README.md
-        
-      - name: Push snake animation
-        run: |
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
-          
-          # Check for changes
-          git status
-          
-          if git diff --quiet; then
-            echo "No changes detected"
-          else
-            git add snake/
-            git commit -m "🐍 Update snake animation - $(date +'%Y-%m-%d %H:%M:%S')"
-            git push origin main
-          fi
+      - name: Deploy to Repository
+        uses: JamesIves/github-pages-deploy-action@v4
+        if: success()
+        with:
+          branch: main
+          folder: snake
+          clean: false
