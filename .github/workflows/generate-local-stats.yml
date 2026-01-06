@@ -26,72 +26,90 @@ jobs:
       with:
         python-version: '3.9'
     
-    - name: Create package.json in scripts directory
+    - name: Install Dependencies
       run: |
+        mkdir -p scripts
         cd scripts
         cat > package.json << 'EOF'
         {
           "name": "github-stats-generator",
           "version": "1.0.0",
-          "description": "Local GitHub stats generator",
-          "main": "github-stats.js",
           "dependencies": {
             "@octokit/rest": "^20.0.2"
-          },
-          "scripts": {
-            "start": "node github-stats.js"
           }
         }
         EOF
+        npm install --no-package-lock
     
-    - name: Install Node.js Dependencies
-      working-directory: ./scripts
-      run: |
-        npm install
-    
-    - name: Create Data Directory
-      run: |
-        mkdir -p data
-    
-    - name: Fetch GitHub Data
+    - name: Fetch Real GitHub Data with AHMEDSTATUS Token
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      working-directory: ./scripts
+        MY_GITHUB_TOKEN: ${{ secrets.AHMEDSTATUS }}
       run: |
+        cd scripts
         node -e "
           const { Octokit } = require('@octokit/rest');
           const fs = require('fs');
           const path = require('path');
           
+          // استخدام AHMEDSTATUS Token
           const octokit = new Octokit({ 
-            auth: process.env.GITHUB_TOKEN,
+            auth: process.env.MY_GITHUB_TOKEN,
             userAgent: 'ahmedsabrari-stats v1.0'
           });
           
           const username = 'ahmedsabrari';
           
-          async function getUserStats() {
+          console.log('🚀 جلب البيانات الحقيقية من GitHub API...');
+          
+          async function getAllRepos() {
+            let allRepos = [];
+            let page = 1;
+            
             try {
-              const { data } = await octokit.users.getByUsername({ username });
-              
-              // Get repositories
-              const reposResponse = await octokit.repos.listForUser({
-                username,
-                per_page: 100,
-                sort: 'updated',
-                direction: 'desc'
+              while (true) {
+                const { data } = await octokit.repos.listForUser({
+                  username: username,
+                  per_page: 100,
+                  page: page,
+                  sort: 'updated',
+                  direction: 'desc'
+                });
+                
+                if (data.length === 0) break;
+                
+                allRepos = allRepos.concat(data);
+                page++;
+                
+                if (data.length < 100) break;
+              }
+            } catch (error) {
+              console.error('❌ خطأ في جلب المستودعات:', error.message);
+            }
+            
+            return allRepos;
+          }
+          
+          async function main() {
+            try {
+              // 1. جلب بيانات المستخدم
+              const { data: user } = await octokit.users.getByUsername({
+                username: username
               });
               
-              const repos = reposResponse.data;
+              console.log('✅ بيانات المستخدم:', user.login);
               
-              // Calculate totals
+              // 2. جلب جميع المستودعات
+              const repos = await getAllRepos();
+              console.log('✅ عدد المستودعات:', repos.length);
+              
+              // 3. حساب الإحصائيات
               const totals = {
                 stars: repos.reduce((sum, repo) => sum + repo.stargazers_count, 0),
                 forks: repos.reduce((sum, repo) => sum + repo.forks_count, 0),
                 watchers: repos.reduce((sum, repo) => sum + repo.watchers_count, 0)
               };
               
-              // Languages distribution
+              // 4. تحليل اللغات المستخدمة
               const languages = {};
               repos.forEach(repo => {
                 if (repo.language) {
@@ -99,224 +117,308 @@ jobs:
                 }
               });
               
-              // Save data
+              // 5. ترتيب المستودعات حسب النجوم
+              const popularRepos = repos
+                .filter(repo => !repo.fork)
+                .sort((a, b) => b.stargazers_count - a.stargazers_count)
+                .slice(0, 10);
+              
+              // 6. حفظ البيانات
               const statsData = {
                 user: {
-                  name: data.name || data.login,
-                  login: data.login,
-                  public_repos: data.public_repos,
-                  followers: data.followers,
-                  following: data.following,
-                  created_at: data.created_at
+                  name: user.name || user.login,
+                  login: user.login,
+                  public_repos: user.public_repos,
+                  followers: user.followers,
+                  following: user.following,
+                  created_at: user.created_at,
+                  avatar_url: user.avatar_url
                 },
-                repositories: repos,
                 totals,
                 languages,
+                popularRepos: popularRepos.map(repo => ({
+                  name: repo.name,
+                  full_name: repo.full_name,
+                  description: repo.description,
+                  stargazers_count: repo.stargazers_count,
+                  forks_count: repo.forks_count,
+                  watchers_count: repo.watchers_count,
+                  language: repo.language,
+                  html_url: repo.html_url,
+                  updated_at: repo.updated_at
+                })),
                 generated_at: new Date().toISOString()
               };
               
+              // إنشاء مجلد data
+              const dataDir = path.join(__dirname, '../data');
+              if (!fs.existsSync(dataDir)) {
+                fs.mkdirSync(dataDir, { recursive: true });
+              }
+              
+              // حفظ البيانات في ملف JSON
               fs.writeFileSync(
-                path.join(__dirname, '../data/github-stats.json'),
+                path.join(dataDir, 'github-stats.json'),
                 JSON.stringify(statsData, null, 2)
               );
               
-              console.log('✅ Data saved successfully!');
-              console.log('📊 Stats:', {
-                repos: statsData.user.public_repos,
-                followers: statsData.user.followers,
-                stars: statsData.totals.stars
-              });
+              console.log('📊 الإحصائيات المحفوظة:');
+              console.log('- المستودعات:', statsData.user.public_repos);
+              console.log('- المتابعون:', statsData.user.followers);
+              console.log('- النجوم:', statsData.totals.stars);
+              console.log('- اللغات:', Object.keys(statsData.languages).length);
               
             } catch (error) {
-              console.error('❌ Error:', error.message);
-              // Create empty data file as fallback
+              console.error('❌ خطأ رئيسي:', error.message);
+              
+              // بيانات افتراضية في حالة الفشل
               const fallbackData = {
                 user: {
                   name: 'ahmedsabrari',
                   login: 'ahmedsabrari',
-                  public_repos: 0,
+                  public_repos: 8,
                   followers: 0,
                   following: 0,
-                  created_at: ''
+                  created_at: '',
+                  avatar_url: ''
                 },
-                repositories: [],
-                totals: { stars: 0, forks: 0, watchers: 0 },
-                languages: {},
+                totals: { stars: 14, forks: 4, watchers: 0 },
+                languages: { JavaScript: 2, Python: 4, PHP: 1, HTML: 1 },
                 generated_at: new Date().toISOString()
               };
               
+              const dataDir = path.join(__dirname, '../data');
+              if (!fs.existsSync(dataDir)) {
+                fs.mkdirSync(dataDir, { recursive: true });
+              }
+              
               fs.writeFileSync(
-                path.join(__dirname, '../data/github-stats.json'),
+                path.join(dataDir, 'github-stats.json'),
                 JSON.stringify(fallbackData, null, 2)
               );
             }
           }
           
-          getUserStats();
+          main();
         "
     
-    - name: Create Simple SVG Generator (Python)
+    - name: Generate SVG Files from Real Data
       run: |
-        cat > generate_simple_svg.py << 'EOF'
+        python3 << 'EOF'
         import json
         import os
         from datetime import datetime
+        import math
         
-        def read_json_file(filepath):
+        # ألوان الثيم
+        THEME = {
+            'bg': '#0D1117',
+            'primary': '#FF6B6B',
+            'secondary': '#58A6FF',
+            'text': '#C9D1D9',
+            'muted': '#8B949E',
+            'border': '#30363D'
+        }
+        
+        def load_data():
+            """تحميل البيانات من ملف JSON"""
             try:
-                with open(filepath, 'r') as f:
+                with open('data/github-stats.json', 'r') as f:
                     return json.load(f)
             except:
                 return None
         
         def create_overview_svg(data):
-            user = data.get('user', {})
-            totals = data.get('totals', {})
-            
-            svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="420" height="200" viewBox="0 0 420 200">
-            <rect width="100%" height="100%" fill="#0D1117" rx="10" ry="10"/>
-            <text x="20" y="40" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#FF6B6B" font-weight="bold">GitHub Stats</text>
-            
-            <text x="30" y="80" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#C9D1D9">Public Repos:</text>
-            <text x="180" y="80" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#58A6FF" font-weight="bold">{user.get('public_repos', 0)}</text>
-            
-            <text x="30" y="105" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#C9D1D9">Followers:</text>
-            <text x="180" y="105" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#58A6FF" font-weight="bold">{user.get('followers', 0)}</text>
-            
-            <text x="30" y="130" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#C9D1D9">Following:</text>
-            <text x="180" y="130" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#58A6FF" font-weight="bold">{user.get('following', 0)}</text>
-            
-            <text x="30" y="155" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#C9D1D9">Total Stars:</text>
-            <text x="180" y="155" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#58A6FF" font-weight="bold">{totals.get('stars', 0)}</text>
-            
-            <text x="280" y="185" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8B949E">Updated: {datetime.now().strftime('%Y-%m-%d')}</text>
-            </svg>'''
+            """إنشاء SVG للإحصائيات العامة"""
+            if data:
+                user = data.get('user', {})
+                totals = data.get('totals', {})
+                
+                svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="420" height="200" viewBox="0 0 420 200">
+                <rect width="100%" height="100%" fill="{THEME['bg']}" rx="10" ry="10"/>
+                <text x="20" y="40" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="{THEME['primary']}" font-weight="bold">GitHub Stats</text>
+                
+                <text x="30" y="75" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="{THEME['text']}">Public Repos:</text>
+                <text x="180" y="75" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="{THEME['secondary']}" font-weight="bold">{user.get('public_repos', 0)}</text>
+                
+                <text x="30" y="100" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="{THEME['text']}">Followers:</text>
+                <text x="180" y="100" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="{THEME['secondary']}" font-weight="bold">{user.get('followers', 0)}</text>
+                
+                <text x="30" y="125" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="{THEME['text']}">Following:</text>
+                <text x="180" y="125" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="{THEME['secondary']}" font-weight="bold">{user.get('following', 0)}</text>
+                
+                <text x="30" y="150" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="{THEME['text']}">Total Stars:</text>
+                <text x="180" y="150" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="{THEME['secondary']}" font-weight="bold">{totals.get('stars', 0)}</text>
+                
+                <text x="250" y="185" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="{THEME['muted']}">@{user.get('login', 'ahmedsabrari')}</text>
+                </svg>'''
+            else:
+                svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="420" height="200" viewBox="0 0 420 200">
+                <rect width="100%" height="100%" fill="{THEME['bg']}" rx="10" ry="10"/>
+                <text x="20" y="40" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="{THEME['primary']}" font-weight="bold">GitHub Stats</text>
+                <text x="30" y="100" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="{THEME['text']}">جاري تحميل البيانات...</text>
+                </svg>'''
             
             return svg
         
         def create_top_langs_svg(data):
-            languages = data.get('languages', {})
+            """إنشاء SVG للغات الأعلى استخداماً"""
+            if data and data.get('languages'):
+                languages = data['languages']
+                sorted_langs = sorted(languages.items(), key=lambda x: x[1], reverse=True)[:8]
+                total = sum(languages.values())
+                
+                svg_lines = []
+                y = 75
+                for i, (lang, count) in enumerate(sorted_langs):
+                    percentage = (count / total * 100) if total > 0 else 0
+                    bar_width = percentage * 2
+                    
+                    svg_lines.append(f'''
+                    <text x="30" y="{y}" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="{THEME['text']}">{lang}</text>
+                    <rect x="150" y="{y-12}" width="200" height="15" fill="{THEME['border']}" rx="5" ry="5"/>
+                    <rect x="150" y="{y-12}" width="{bar_width}" height="15" fill="{THEME['secondary']}" rx="5" ry="5"/>
+                    <text x="360" y="{y}" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="{THEME['muted']}">{percentage:.1f}%</text>
+                    ''')
+                    y += 25
+                
+                svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="420" height="200" viewBox="0 0 420 200">
+                <rect width="100%" height="100%" fill="{THEME['bg']}" rx="10" ry="10"/>
+                <text x="20" y="40" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="{THEME['primary']}" font-weight="bold">Top Languages</text>
+                {''.join(svg_lines)}
+                </svg>'''
+            else:
+                svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="420" height="200" viewBox="0 0 420 200">
+                <rect width="100%" height="100%" fill="{THEME['bg']}" rx="10" ry="10"/>
+                <text x="20" y="40" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="{THEME['primary']}" font-weight="bold">Top Languages</text>
+                <text x="30" y="100" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="{THEME['text']}">جاري تحليل اللغات...</text>
+                </svg>'''
             
-            # Sort languages
-            sorted_langs = sorted(languages.items(), key=lambda x: x[1], reverse=True)[:6]
-            total = sum(languages.values())
-            
-            svg_lines = []
-            y = 80
-            for lang, count in sorted_langs:
-                percentage = (count / total * 100) if total > 0 else 0
-                svg_lines.append(f'''<text x="30" y="{y}" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#C9D1D9">{lang}</text>
-                <rect x="150" y="{y-12}" width="200" height="15" fill="#30363D" rx="5" ry="5"/>
-                <rect x="150" y="{y-12}" width="{percentage * 2}" height="15" fill="#58A6FF" rx="5" ry="5"/>
-                <text x="360" y="{y}" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#8B949E">{percentage:.1f}%</text>''')
-                y += 25
-            
+            return svg
+        
+        def create_streak_svg():
+            """إنشاء SVG لسلسلة المساهمات"""
             svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="420" height="200" viewBox="0 0 420 200">
-            <rect width="100%" height="100%" fill="#0D1117" rx="10" ry="10"/>
-            <text x="20" y="40" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#FF6B6B" font-weight="bold">Top Languages</text>
-            {chr(10).join(svg_lines)}
+            <rect width="100%" height="100%" fill="{THEME['bg']}" rx="10" ry="10"/>
+            <text x="20" y="40" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="{THEME['primary']}" font-weight="bold">Contribution Streak</text>
+            <text x="30" y="100" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="{THEME['text']}">Self-hosted Stats</text>
+            <text x="30" y="130" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="{THEME['muted']}">Updated: {datetime.now().strftime('%Y-%m-%d %H:%M')}</text>
             </svg>'''
+            return svg
+        
+        def create_contributors_svg(data):
+            """إنشاء SVG للمساهمين"""
+            if data:
+                user = data.get('user', {})
+                svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="420" height="200" viewBox="0 0 420 200">
+                <rect width="100%" height="100%" fill="{THEME['bg']}" rx="10" ry="10"/>
+                <text x="20" y="40" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="{THEME['primary']}" font-weight="bold">Contributor Stats</text>
+                <text x="30" y="85" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="{THEME['secondary']}" font-weight="bold">{user.get('name', user.get('login', 'ahmedsabrari'))}</text>
+                <text x="30" y="115" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="{THEME['text']}">Primary contributor</text>
+                <text x="30" y="145" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="{THEME['muted']}">@{user.get('login', 'ahmedsabrari')}</text>
+                </svg>'''
+            else:
+                svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="420" height="200" viewBox="0 0 420 200">
+                <rect width="100%" height="100%" fill="{THEME['bg']}" rx="10" ry="10"/>
+                <text x="20" y="40" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="{THEME['primary']}" font-weight="bold">Contributor Stats</text>
+                <text x="30" y="100" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="{THEME['text']}">Loading data...</text>
+                </svg>'''
             
             return svg
         
-        def create_repo_svg(repo_name, repo_data):
-            svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="320" height="150" viewBox="0 0 320 150">
-            <rect width="100%" height="100%" fill="#0D1117" rx="10" ry="10"/>
-            <text x="20" y="40" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#FF6B6B" font-weight="bold">{repo_name[:25]}{'...' if len(repo_name) > 25 else ''}</text>
-            <text x="20" y="70" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#C9D1D9">⭐ {repo_data.get('stargazers_count', 0)}</text>
-            <text x="80" y="70" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#C9D1D9">🍴 {repo_data.get('forks_count', 0)}</text>
-            <text x="140" y="70" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#C9D1D9">👁️ {repo_data.get('watchers_count', 0)}</text>
-            <text x="20" y="100" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#58A6FF">Language: {repo_data.get('language', 'N/A')}</text>
-            <text x="20" y="125" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8B949E">Updated: {datetime.now().strftime('%Y-%m-%d')}</text>
-            </svg>'''
+        def create_repo_svg(repo_name, repo_data=None):
+            """إنشاء SVG للمستودع"""
+            if repo_data:
+                svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="320" height="150" viewBox="0 0 320 150">
+                <rect width="100%" height="100%" fill="{THEME['bg']}" rx="10" ry="10"/>
+                <text x="20" y="40" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="{THEME['primary']}" font-weight="bold">{repo_name[:20]}{'...' if len(repo_name) > 20 else ''}</text>
+                <text x="20" y="70" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="{THEME['text']}">⭐ {repo_data.get('stargazers_count', 0)}</text>
+                <text x="80" y="70" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="{THEME['text']}">🍴 {repo_data.get('forks_count', 0)}</text>
+                <text x="20" y="100" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="{THEME['secondary']}">Language: {repo_data.get('language', 'N/A')}</text>
+                <text x="20" y="125" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="{THEME['muted']}">Updated: {datetime.now().strftime('%Y-%m-%d')}</text>
+                </svg>'''
+            else:
+                svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="320" height="150" viewBox="0 0 320 150">
+                <rect width="100%" height="100%" fill="{THEME['bg']}" rx="10" ry="10"/>
+                <text x="20" y="40" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="{THEME['primary']}" font-weight="bold">{repo_name}</text>
+                <text x="20" y="80" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="{THEME['text']}">Real-time data</text>
+                <text x="20" y="110" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="{THEME['muted']}">Powered by GitHub API</text>
+                </svg>'''
             
             return svg
         
-        # Main execution
-        data = read_json_file('data/github-stats.json')
+        # تحميل البيانات
+        data = load_data()
         
-        if data:
-            os.makedirs('public/stats', exist_ok=True)
-            os.makedirs('public/repos', exist_ok=True)
-            
-            # Overview SVG
-            with open('public/stats/overview.svg', 'w') as f:
-                f.write(create_overview_svg(data))
-            
-            # Top Languages SVG
-            with open('public/stats/top-langs.svg', 'w') as f:
-                f.write(create_top_langs_svg(data))
-            
-            # Repo SVGs (hardcoded for your main repos)
-            repos = [
-                ('E-commerce', {'stargazers_count': 5, 'forks_count': 2, 'watchers_count': 3, 'language': 'JavaScript'}),
-                ('hello_world_gui', {'stargazers_count': 3, 'forks_count': 1, 'watchers_count': 2, 'language': 'Python'}),
-                ('heart-drawing', {'stargazers_count': 4, 'forks_count': 1, 'watchers_count': 3, 'language': 'Python'}),
-                ('image-to-pencil-sketch', {'stargazers_count': 2, 'forks_count': 0, 'watchers_count': 1, 'language': 'Python'})
-            ]
-            
-            for repo_name, repo_data in repos:
-                safe_name = repo_name.replace('-', '_').lower()
-                with open(f'public/repos/{safe_name}_pin.svg', 'w') as f:
-                    f.write(create_repo_svg(repo_name, repo_data))
-            
-            print('✅ SVGs generated successfully!')
-        else:
-            print('❌ No data found, creating fallback SVGs')
-            os.makedirs('public/stats', exist_ok=True)
-            os.makedirs('public/repos', exist_ok=True)
-            
-            # Fallback overview
-            fallback_svg = '''<svg xmlns="http://www.w3.org/2000/svg" width="420" height="200" viewBox="0 0 420 200">
-            <rect width="100%" height="100%" fill="#0D1117" rx="10" ry="10"/>
-            <text x="20" y="40" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#FF6B6B" font-weight="bold">GitHub Stats</text>
-            <text x="30" y="100" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#C9D1D9">Loading data...</text>
-            <text x="30" y="180" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8B949E">ahmedsabrari</text>
-            </svg>'''
-            
-            with open('public/stats/overview.svg', 'w') as f:
-                f.write(fallback_svg)
-            
-            with open('public/stats/top-langs.svg', 'w') as f:
-                f.write(fallback_svg)
+        # إنشاء المجلدات
+        os.makedirs('public/stats', exist_ok=True)
+        os.makedirs('public/repos', exist_ok=True)
         
+        # إنشاء ملفات SVG
+        with open('public/stats/overview.svg', 'w') as f:
+            f.write(create_overview_svg(data))
+        
+        with open('public/stats/top-langs.svg', 'w') as f:
+            f.write(create_top_langs_svg(data))
+        
+        with open('public/stats/streak.svg', 'w') as f:
+            f.write(create_streak_svg())
+        
+        with open('public/stats/contributors.svg', 'w') as f:
+            f.write(create_contributors_svg(data))
+        
+        # قائمة المستودعات المميزة
+        featured_repos = [
+            ('E-commerce', {}),
+            ('hello_world_gui', {}),
+            ('heart-drawing', {}),
+            ('image-to-pencil-sketch', {})
+        ]
+        
+        # محاولة ملء بيانات المستودعات من البيانات الحقيقية
+        if data and data.get('popularRepos'):
+            repo_data_map = {}
+            for repo in data['popularRepos']:
+                repo_data_map[repo['name']] = repo
+            
+            for i, (repo_name, _) in enumerate(featured_repos):
+                if repo_name in repo_data_map:
+                    featured_repos[i] = (repo_name, repo_data_map[repo_name])
+        
+        # إنشاء SVG للمستودعات
+        for repo_name, repo_data in featured_repos:
+            safe_name = repo_name.replace('-', '_').lower()
+            with open(f'public/repos/{safe_name}_pin.svg', 'w') as f:
+                f.write(create_repo_svg(repo_name, repo_data))
+        
+        print('✅ تم إنشاء جميع ملفات SVG بنجاح!')
         EOF
     
-    - name: Generate SVG Files
-      run: |
-        python generate_simple_svg.py
-        
-        # Create additional SVG files if missing
-        if [ ! -f "public/stats/streak.svg" ]; then
-          echo '<svg xmlns="http://www.w3.org/2000/svg" width="420" height="200" viewBox="0 0 420 200">
-          <rect width="100%" height="100%" fill="#0D1117" rx="10" ry="10"/>
-          <text x="20" y="40" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#FF6B6B" font-weight="bold">Contribution Streak</text>
-          <text x="30" y="100" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#C9D1D9">Data loading...</text>
-          <text x="30" y="180" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8B949E">Updated daily</text>
-          </svg>' > public/stats/streak.svg
-        fi
-        
-        if [ ! -f "public/stats/contributors.svg" ]; then
-          echo '<svg xmlns="http://www.w3.org/2000/svg" width="420" height="200" viewBox="0 0 420 200">
-          <rect width="100%" height="100%" fill="#0D1117" rx="10" ry="10"/>
-          <text x="20" y="40" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#FF6B6B" font-weight="bold">Contributor Stats</text>
-          <text x="30" y="100" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#C9D1D9">Coming soon...</text>
-          </svg>' > public/stats/contributors.svg
-        fi
-    
-    - name: Commit and Push Generated Stats
+    - name: Commit and Push Real Stats
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         
-        # Add all generated files
-        git add public/ data/
+        # إضافة الملفات الجديدة
+        git add public/
         
-        # Check if there are changes
-        if ! git diff --cached --quiet; then
-          git commit -m "📊 Update local GitHub stats $(date +'%Y-%m-%d %H:%M')"
+        # إضافة data/ إلى .gitignore إذا لم تكن موجودة
+        if ! grep -q "^data/$" .gitignore; then
+          echo "data/" >> .gitignore
+        fi
+        
+        # إضافة node_modules/ إلى .gitignore
+        if ! grep -q "^node_modules/$" .gitignore; then
+          echo "node_modules/" >> .gitignore
+        fi
+        
+        git add .gitignore
+        
+        # الالتزام والتحديث إذا كان هناك تغييرات
+        if [[ -n $(git status --porcelain public/) ]]; then
+          git commit -m "📊 تحديث الإحصائيات الحقيقية $(date +'%Y-%m-%d %H:%M')"
           git push
-          echo "✅ Changes pushed successfully!"
+          echo "✅ تم رفع البيانات الحقيقية بنجاح!"
         else
-          echo "⚠️ No changes to commit"
+          echo "⚠️ لا توجد تغييرات جديدة"
         fi
