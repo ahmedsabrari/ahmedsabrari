@@ -1,0 +1,83 @@
+name: Generate Local GitHub Stats
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # كل 6 ساعات
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-stats:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+    
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+    
+    - name: Install Node.js Dependencies
+      run: |
+        cd scripts
+        npm init -y
+        npm install @octokit/rest
+    
+    - name: Fetch GitHub Data
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        cd scripts
+        node -e "
+          const GitHubStatsGenerator = require('./github-stats.js');
+          const generator = new GitHubStatsGenerator(process.env.GITHUB_TOKEN);
+          generator.generateAllStats();
+        "
+    
+    - name: Generate SVG Files
+      run: |
+        cd scripts
+        python generate-svg.py
+    
+    - name: Create Directories
+      run: |
+        mkdir -p public/{stats,repos}
+    
+    - name: Copy Generated SVGs
+      run: |
+        cp -r scripts/public/* public/ || echo "No SVGs generated yet"
+        
+        # Create fallback SVGs if generation failed
+        if [ ! -f "public/stats/overview.svg" ]; then
+          echo '<svg xmlns="http://www.w3.org/2000/svg" width="420" height="200">
+            <rect width="100%" height="100%" fill="#0D1117" rx="10" ry="10"/>
+            <text x="20" y="40" font-family="Arial" font-size="24" fill="#FF6B6B">GitHub Stats</text>
+            <text x="20" y="80" font-family="Arial" font-size="16" fill="#C9D1D9">Fetching data...</text>
+            <text x="20" y="160" font-family="Arial" font-size="10" fill="#8B949E">Last update: Failed</text>
+          </svg>' > public/stats/overview.svg
+        fi
+    
+    - name: Commit and Push Generated Stats
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git add public/ data/
+        
+        if [[ -n $(git status --porcelain public/ data/) ]]; then
+          git commit -m "📊 Update local GitHub stats $(date +'%Y-%m-%d %H:%M')"
+          git push
+        else
+          echo "No changes to commit"
+        fi

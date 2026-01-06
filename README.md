@@ -63,17 +63,15 @@ Complete educational ERP for managing academic institutions
     <td align="center">
       <strong>🛒 E-Commerce Platform "Electro"</strong><br>
       <a href="https://github.com/ahmedsabrari/E-commerce">
-        <img src="https://raw.githubusercontent.com/ahmedsabrari/ahmedsabrari/main/public/repos/ecommerce_pin.svg" 
-             alt="E-commerce"
-             style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <img src="https://raw.githubusercontent.com/ahmedsabrari/ahmedsabrari/main/public/repos/e-commerce_pin.svg" 
+             alt="E-commerce">
       </a>
     </td>
     <td align="center">
       <strong>🌐🐍 Hello World GUI</strong><br>
       <a href="https://github.com/ahmedsabrari/hello_world_gui">
-        <img src="https://raw.githubusercontent.com/ahmedsabrari/ahmedsabrari/main/public/repos/hello_world_pin.svg" 
-             alt="Hello World GUI"
-             style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <img src="https://raw.githubusercontent.com/ahmedsabrari/ahmedsabrari/main/public/repos/hello_world_gui_pin.svg" 
+             alt="Hello World GUI">
       </a>
     </td>
   </tr>
@@ -81,17 +79,15 @@ Complete educational ERP for managing academic institutions
     <td align="center">
       <strong>❤️ Heart Drawing Animation</strong><br>
       <a href="https://github.com/ahmedsabrari/heart-drawing">
-        <img src="https://raw.githubusercontent.com/ahmedsabrari/ahmedsabrari/main/public/repos/heart_pin.svg" 
-             alt="Heart Drawing"
-             style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <img src="https://raw.githubusercontent.com/ahmedsabrari/ahmedsabrari/main/public/repos/heart_drawing_pin.svg" 
+             alt="Heart Drawing">
       </a>
     </td>
     <td align="center">
       <strong>🎨 Image to Pencil Sketch Converter</strong><br>
       <a href="https://github.com/ahmedsabrari/image-to-pencil-sketch">
-        <img src="https://raw.githubusercontent.com/ahmedsabrari/ahmedsabrari/main/public/repos/pencil_sketch_pin.svg" 
-             alt="Image to Pencil Sketch"
-             style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <img src="https://raw.githubusercontent.com/ahmedsabrari/ahmedsabrari/main/public/repos/image_to_pencil_sketch_pin.svg" 
+             alt="Image to Pencil Sketch">
       </a>
     </td>
   </tr>
@@ -103,46 +99,39 @@ Complete educational ERP for managing academic institutions
 
 <table>
   <tr>
-    <!-- GitHub Stats -->
     <td align="center">
       <img src="https://raw.githubusercontent.com/ahmedsabrari/ahmedsabrari/main/public/stats/overview.svg" 
-        alt="ahmedsabrari's Stats" 
-        width="400" 
-        style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        alt="GitHub Stats" 
+        width="400">
       <br>
       <strong>GitHub Stats</strong>
     </td>
-    <!-- GitHub Streak -->
     <td align="center">
       <img src="https://raw.githubusercontent.com/ahmedsabrari/ahmedsabrari/main/public/stats/streak.svg" 
-        alt="ahmedsabrari's Streak" 
-        width="400" 
-        style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        alt="Contribution Streak" 
+        width="400">
       <br>
       <strong>Contribution Streak</strong>
     </td>
   </tr>
   <tr>
-    <!-- Top Languages -->
     <td align="center">
       <img src="https://raw.githubusercontent.com/ahmedsabrari/ahmedsabrari/main/public/stats/top-langs.svg" 
-        alt="ahmedsabrari's Top Languages" 
-        width="400" 
-        style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        alt="Top Languages" 
+        width="400">
       <br>
       <strong>Top Languages</strong>
     </td>
-    <!-- Contributor Stats -->
     <td align="center">
       <img src="https://raw.githubusercontent.com/ahmedsabrari/ahmedsabrari/main/public/stats/contributors.svg" 
-        alt="ahmedsabrari's Contributor Stats" 
-        width="400" 
-        style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        alt="Contributor Stats" 
+        width="400">
       <br>
       <strong>Contributor Stats</strong>
     </td>
   </tr>
 </table>
+
 ---
 
 ## 🐍 **Mes contributions sur GitHub**
