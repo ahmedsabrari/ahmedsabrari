@@ -1,0 +1,78 @@
+name: Generate GitHub Stats SVG
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # كل 6 ساعات
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+
+jobs:
+  generate-svg:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+    
+    - name: Create Directories
+      run: |
+        mkdir -p public/{stats,repos}
+        mkdir -p scripts
+    
+    - name: Generate SVG Files
+      run: |
+        # 1. GitHub Stats Overview
+        curl -s "https://github-readme-stats.vercel.app/api?username=ahmedsabrari&theme=radical&show_icons=true&hide_border=false&count_private=false&include_all_commits=false" \
+          -o public/stats/overview.svg
+        
+        # 2. Streak Stats
+        curl -s "https://streak-stats.demolab.com/?user=ahmedsabrari&theme=radical&hide_border=false" \
+          -o public/stats/streak.svg
+        
+        # 3. Top Languages
+        curl -s "https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedsabrari&theme=radical&hide_border=false&count_private=true&exclude_repo=profile-summary-for-github,E-commerce&layout=compact" \
+          -o public/stats/top-langs.svg
+        
+        # 4. Contributors Stats
+        curl -s "https://github-contributor-stats.vercel.app/api?username=ahmedsabrari&limit=5&theme=radical&combine_all_yearly_contributions=true" \
+          -o public/stats/contributors.svg
+        
+        # 5. Repository Pins
+        curl -s "https://github-readme-stats.vercel.app/api/pin/?username=ahmedsabrari&repo=E-commerce&show_owner=true&theme=radical" \
+          -o public/repos/ecommerce_pin.svg
+        
+        curl -s "https://github-readme-stats.vercel.app/api/pin/?username=ahmedsabrari&repo=hello_world_gui&show_owner=true&theme=radical" \
+          -o public/repos/hello_world_pin.svg
+        
+        curl -s "https://github-readme-stats.vercel.app/api/pin/?username=ahmedsabrari&repo=heart-drawing&show_owner=true&theme=radical" \
+          -o public/repos/heart_pin.svg
+        
+        curl -s "https://github-readme-stats.vercel.app/api/pin/?username=ahmedsabrari&repo=image-to-pencil-sketch&show_owner=true&theme=radical" \
+          -o public/repos/pencil_sketch_pin.svg
+        
+        # التحقق من الملفات
+        echo "=== Generated SVG Files ==="
+        ls -la public/stats/
+        ls -la public/repos/
+    
+    - name: Commit and Push SVG Files
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git add public/
+        
+        if [[ -n $(git status --porcelain public/) ]]; then
+          git commit -m "📊 Update GitHub stats SVG files $(date +'%Y-%m-%d %H:%M')"
+          git push
+        else
+          echo "No changes to commit"
+        fi
