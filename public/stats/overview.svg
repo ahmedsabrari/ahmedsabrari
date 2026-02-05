@@ -3,16 +3,16 @@
         <text x="20" y="40" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#FF6B6B" font-weight="bold">GitHub Stats</text>
         
         <text x="30" y="75" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#C9D1D9">Public Repos:</text>
-        <text x="180" y="75" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#58A6FF" font-weight="bold">10</text>
+        <text x="180" y="75" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#58A6FF" font-weight="bold">8</text>
         
         <text x="30" y="100" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#C9D1D9">Followers:</text>
-        <text x="180" y="100" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#58A6FF" font-weight="bold">5</text>
+        <text x="180" y="100" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#58A6FF" font-weight="bold">0</text>
         
         <text x="30" y="125" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#C9D1D9">Following:</text>
-        <text x="180" y="125" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#58A6FF" font-weight="bold">12</text>
+        <text x="180" y="125" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#58A6FF" font-weight="bold">0</text>
         
         <text x="30" y="150" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#C9D1D9">Total Stars:</text>
-        <text x="180" y="150" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#58A6FF" font-weight="bold">8</text>
+        <text x="180" y="150" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#58A6FF" font-weight="bold">14</text>
         
         <text x="250" y="185" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8B949E">@ahmedsabrari</text>
         </svg>
