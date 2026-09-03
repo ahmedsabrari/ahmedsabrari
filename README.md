@@ -2,7 +2,7 @@
 
 **`Développeur Full Stack | Architecte de Solutions Digitales Innovantes`**
 
-Développeur full stack passionné, je transforme des concepts complexes en applications web élégantes et performantes. Expert en écosystème **Laravel** et **React**, je maîtrise l'art de créer [...] 
+Développeur full stack passionné, je transforme des concepts complexes en applications web élégantes et performantes. Expert en écosystème **Laravel** et **React**, je maîtrise l'art de créer
 
 ---
 
@@ -158,7 +158,7 @@ Complete educational ERP for managing academic institutions
 
 ## 🎯 **Vision Professionnelle**
 
-Je cherche à rejoindre une équipe innovante où je pourrai contribuer à des projets ambitieux tout en développant mon expertise en architecture logicielle. Mon objectif est de concevoir des soluti[...] 
+Je cherche à rejoindre une équipe innovante où je pourrai contribuer à des projets ambitieux tout en développant mon expertise en architecture logicielle. Mon objectif est de concevoir des soluti
 
 *Disponible pour des opportunités en développement full stack, architecture d'applications et conseil technique.*
 
