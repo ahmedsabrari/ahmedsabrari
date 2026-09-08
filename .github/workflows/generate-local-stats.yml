@@ -376,14 +376,18 @@ jobs:
         ]
         
         # محاولة ملء بيانات المستودعات من البيانات الحقيقية
+        def normalize_repo_name(name):
+            return name.lower().replace('-', '').replace('_', '').replace(' ', '')
+        
         if data and data.get('popularRepos'):
             repo_data_map = {}
             for repo in data['popularRepos']:
-                repo_data_map[repo['name']] = repo
+                repo_data_map[normalize_repo_name(repo['name'])] = repo
             
             for i, (repo_name, _) in enumerate(featured_repos):
-                if repo_name in repo_data_map:
-                    featured_repos[i] = (repo_name, repo_data_map[repo_name])
+                key = normalize_repo_name(repo_name)
+                if key in repo_data_map:
+                    featured_repos[i] = (repo_name, repo_data_map[key])
         
         # إنشاء SVG للمستودعات
         for repo_name, repo_data in featured_repos:
