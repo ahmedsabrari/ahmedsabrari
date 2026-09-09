@@ -1,53 +1,53 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="860" height="452" viewBox="0 0 860 452" role="img">
   <defs>
     <linearGradient id="gs-projects-ahmedsabrari-aurora-dark-bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#042f2e"/>
-      <stop offset="54%" stop-color="#134e4a"/>
-      <stop offset="100%" stop-color="#042f2e"/>
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="54%" stop-color="#161b22"/>
+      <stop offset="100%" stop-color="#0d1117"/>
     </linearGradient>
     
     <radialGradient id="gs-projects-ahmedsabrari-aurora-dark-orb-0" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#2dd4bf" stop-opacity="0.72"/>
-      <stop offset="58%" stop-color="#2dd4bf" stop-opacity="0.18"/>
-      <stop offset="100%" stop-color="#2dd4bf" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="gs-projects-ahmedsabrari-aurora-dark-orb-1" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.5"/>
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.72"/>
       <stop offset="58%" stop-color="#22d3ee" stop-opacity="0.18"/>
       <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
     </radialGradient>
+    <radialGradient id="gs-projects-ahmedsabrari-aurora-dark-orb-1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.5"/>
+      <stop offset="58%" stop-color="#58a6ff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
+    </radialGradient>
     <radialGradient id="gs-projects-ahmedsabrari-aurora-dark-orb-2" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#4f8cff" stop-opacity="0.72"/>
-      <stop offset="58%" stop-color="#4f8cff" stop-opacity="0.18"/>
-      <stop offset="100%" stop-color="#4f8cff" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.72"/>
+      <stop offset="58%" stop-color="#3b82f6" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="gs-projects-ahmedsabrari-aurora-dark-orb-3" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.5"/>
-      <stop offset="58%" stop-color="#a78bfa" stop-opacity="0.18"/>
-      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#a371f7" stop-opacity="0.5"/>
+      <stop offset="58%" stop-color="#a371f7" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#a371f7" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="gs-projects-ahmedsabrari-aurora-dark-orb-4" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#f472b6" stop-opacity="0.72"/>
-      <stop offset="58%" stop-color="#f472b6" stop-opacity="0.18"/>
-      <stop offset="100%" stop-color="#f472b6" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.72"/>
+      <stop offset="58%" stop-color="#58a6ff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="gs-projects-ahmedsabrari-aurora-dark-orb-5" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#4ade80" stop-opacity="0.5"/>
-      <stop offset="58%" stop-color="#4ade80" stop-opacity="0.18"/>
-      <stop offset="100%" stop-color="#4ade80" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#39d353" stop-opacity="0.5"/>
+      <stop offset="58%" stop-color="#39d353" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#39d353" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="gs-projects-ahmedsabrari-aurora-dark-shine" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#ccfbf1" stop-opacity="0.2"/>
-      <stop offset="44%" stop-color="#2dd4bf" stop-opacity="0.82"/>
-      <stop offset="100%" stop-color="#5eead4" stop-opacity="0.22"/>
+      <stop offset="0%" stop-color="#e6edf3" stop-opacity="0.2"/>
+      <stop offset="44%" stop-color="#22d3ee" stop-opacity="0.82"/>
+      <stop offset="100%" stop-color="#7ee787" stop-opacity="0.22"/>
     </linearGradient>
     <linearGradient id="gs-projects-ahmedsabrari-aurora-dark-holo" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#ccfbf1"/>
-      <stop offset="18%" stop-color="#042f2e"/>
-      <stop offset="38%" stop-color="#2dd4bf"/>
-      <stop offset="58%" stop-color="#5eead4"/>
-      <stop offset="78%" stop-color="#042f2e"/>
-      <stop offset="100%" stop-color="#ccfbf1"/>
+      <stop offset="0%" stop-color="#e6edf3"/>
+      <stop offset="18%" stop-color="#0d1117"/>
+      <stop offset="38%" stop-color="#22d3ee"/>
+      <stop offset="58%" stop-color="#7ee787"/>
+      <stop offset="78%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#e6edf3"/>
       <animateTransform attributeName="gradientTransform" type="rotate" from="0 0.5 0.5" to="360 0.5 0.5" dur="8s" repeatCount="indefinite"/>
     </linearGradient>
   </defs>
@@ -77,79 +77,79 @@
     <ellipse class="aura-orb-b" cx="654" cy="99" rx="241" ry="190" fill="url(#gs-projects-ahmedsabrari-aurora-dark-orb-1)"/>
     <ellipse class="aura-orb-c" cx="499" cy="398" rx="310" ry="154" fill="url(#gs-projects-ahmedsabrari-aurora-dark-orb-2)"/>
     <ellipse class="aura-orb-b" cx="826" cy="353" rx="172" ry="190" fill="url(#gs-projects-ahmedsabrari-aurora-dark-orb-3)"/>
-    <text x="30" y="40" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="12" letter-spacing="2" fill="#2dd4bf">PROJECTS.LIST</text>
-    <text x="180" y="40" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#5eead4" fill-opacity="0.8">./projects.sh --all</text>
-    <text x="830" y="40" text-anchor="end" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#5eead4" fill-opacity="0.7">4 pinned</text>
-    <line x1="28" y1="52" x2="832" y2="52" stroke="#2dd4bf" stroke-opacity="0.5" stroke-width="1.5"/>
+    <text x="30" y="40" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="12" letter-spacing="2" fill="#22d3ee">PROJECTS.LIST</text>
+    <text x="180" y="40" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#7ee787" fill-opacity="0.8">./projects.sh --all</text>
+    <text x="830" y="40" text-anchor="end" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#7ee787" fill-opacity="0.7">4 pinned</text>
+    <line x1="28" y1="52" x2="832" y2="52" stroke="#22d3ee" stroke-opacity="0.5" stroke-width="1.5"/>
     <a href="https://github.com/E-commerce" target="_blank">
     <g opacity="0" transform="translate(28,88)">
     <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0.25s" fill="freeze"/>
-    <rect width="394" height="162" rx="13" fill="rgba(8,8,12,0.5)" stroke="#2dd4bf">
+    <rect width="394" height="162" rx="13" fill="rgba(8,8,12,0.5)" stroke="#22d3ee">
       <animate attributeName="stroke-opacity" values="0.45;0.85;0.45" dur="4.5s" begin="0.25s" repeatCount="indefinite"/>
     </rect>
-    <path d="M0 13 a13 13 0 0 1 13 -13 h368 a13 13 0 0 1 13 13 v17 h-394 z" fill="#2dd4bf" fill-opacity="0.06"/>
-    <line x1="0" y1="30" x2="394" y2="30" stroke="#2dd4bf" stroke-opacity="0.5"/>
-    <text x="16" y="19.5" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="10.5" fill="#5eead4"><tspan fill="#2dd4bf">•</tspan> E-commerce</text>
-    <circle cx="378" cy="15" r="4" fill="#5eead4" fill-opacity="0.5"/>
-    <text x="18" y="58" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="16.5" font-weight="700" fill="#ccfbf1">E-commerce<tspan fill="#2dd4bf"> _<animate attributeName="opacity" values="1;0;1" dur="1.2s" begin="0.65s" repeatCount="indefinite"/></tspan></text>
-    <text x="18" y="79" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" fill="#5eead4">Site web e-commerce</text>
+    <path d="M0 13 a13 13 0 0 1 13 -13 h368 a13 13 0 0 1 13 13 v17 h-394 z" fill="#22d3ee" fill-opacity="0.06"/>
+    <line x1="0" y1="30" x2="394" y2="30" stroke="#22d3ee" stroke-opacity="0.5"/>
+    <text x="16" y="19.5" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="10.5" fill="#7ee787"><tspan fill="#22d3ee">•</tspan> E-commerce</text>
+    <circle cx="378" cy="15" r="4" fill="#7ee787" fill-opacity="0.5"/>
+    <text x="18" y="58" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="16.5" font-weight="700" fill="#e6edf3">E-commerce<tspan fill="#22d3ee"> _<animate attributeName="opacity" values="1;0;1" dur="1.2s" begin="0.65s" repeatCount="indefinite"/></tspan></text>
+    <text x="18" y="79" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" fill="#7ee787">Site web e-commerce</text>
     
-    <rect x="18" y="112" width="35" height="18" rx="9" fill="#2dd4bf" fill-opacity="0.14" stroke="#2dd4bf" stroke-opacity="0.4"/><text x="36" y="124.5" text-anchor="middle" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="9.5" fill="#2dd4bf">CSS</text>
-    <text x="18" y="150" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#5eead4"><tspan fill="#8f57c7">★</tspan> 2<tspan fill="#5eead4" fill-opacity="0.7" dx="12">updated 1y ago</tspan></text>
-    <circle cx="348" cy="92" r="25" fill="none" stroke="#5eead4" stroke-opacity="0.18" stroke-width="8"/><circle cx="348" cy="92" r="25" fill="none" stroke="#663399" stroke-width="8" stroke-dasharray="85.27 71.81" stroke-dashoffset="0.00" transform="rotate(-90 348 92)" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.55s" fill="freeze"/><animate attributeName="stroke-dasharray" from="0 157.08" to="85.27 71.81" dur="0.6s" begin="0.55s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.3 0 0.2 1"/></circle><circle cx="348" cy="92" r="25" fill="none" stroke="#4F5D95" stroke-width="8" stroke-dasharray="43.01 114.07" stroke-dashoffset="-85.27" transform="rotate(-90 348 92)" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.73s" fill="freeze"/><animate attributeName="stroke-dasharray" from="0 157.08" to="43.01 114.07" dur="0.6s" begin="0.73s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.3 0 0.2 1"/></circle><circle cx="348" cy="92" r="25" fill="none" stroke="#f7523f" stroke-width="8" stroke-dasharray="27.30 129.78" stroke-dashoffset="-128.28" transform="rotate(-90 348 92)" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.91s" fill="freeze"/><animate attributeName="stroke-dasharray" from="0 157.08" to="27.30 129.78" dur="0.6s" begin="0.91s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.3 0 0.2 1"/></circle><circle cx="348" cy="92" r="25" fill="none" stroke="#f1e05a" stroke-width="8" stroke-dasharray="1.40 155.68" stroke-dashoffset="-155.58" transform="rotate(-90 348 92)" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="1.09s" fill="freeze"/><animate attributeName="stroke-dasharray" from="0 157.08" to="1.40 155.68" dur="0.6s" begin="1.09s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.3 0 0.2 1"/></circle><circle cx="348" cy="92" r="25" fill="none" stroke="#f472b6" stroke-width="8" stroke-dasharray="0.10 156.98" stroke-dashoffset="-156.98" transform="rotate(-90 348 92)" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="1.27s" fill="freeze"/><animate attributeName="stroke-dasharray" from="0 157.08" to="0.10 156.98" dur="0.6s" begin="1.27s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.3 0 0.2 1"/></circle><text x="348" y="96" text-anchor="middle" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="11" font-weight="700" fill="#ccfbf1">54%</text>
+    <rect x="18" y="112" width="35" height="18" rx="9" fill="#22d3ee" fill-opacity="0.14" stroke="#22d3ee" stroke-opacity="0.4"/><text x="36" y="124.5" text-anchor="middle" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="9.5" fill="#22d3ee">CSS</text>
+    <text x="18" y="150" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#7ee787"><tspan fill="#a371f7">★</tspan> 2<tspan fill="#8b949e" dx="12">updated 1y ago</tspan></text>
+    <circle cx="348" cy="92" r="25" fill="none" stroke="#7ee787" stroke-opacity="0.18" stroke-width="8"/><circle cx="348" cy="92" r="25" fill="none" stroke="#a371f7" stroke-width="8" stroke-dasharray="85.27 71.81" stroke-dashoffset="0.00" transform="rotate(-90 348 92)" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.55s" fill="freeze"/><animate attributeName="stroke-dasharray" from="0 157.08" to="85.27 71.81" dur="0.6s" begin="0.55s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.3 0 0.2 1"/></circle><circle cx="348" cy="92" r="25" fill="none" stroke="#8b949e" stroke-width="8" stroke-dasharray="43.01 114.07" stroke-dashoffset="-85.27" transform="rotate(-90 348 92)" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.73s" fill="freeze"/><animate attributeName="stroke-dasharray" from="0 157.08" to="43.01 114.07" dur="0.6s" begin="0.73s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.3 0 0.2 1"/></circle><circle cx="348" cy="92" r="25" fill="none" stroke="#3b82f6" stroke-width="8" stroke-dasharray="27.30 129.78" stroke-dashoffset="-128.28" transform="rotate(-90 348 92)" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.91s" fill="freeze"/><animate attributeName="stroke-dasharray" from="0 157.08" to="27.30 129.78" dur="0.6s" begin="0.91s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.3 0 0.2 1"/></circle><circle cx="348" cy="92" r="25" fill="none" stroke="#39d353" stroke-width="8" stroke-dasharray="1.40 155.68" stroke-dashoffset="-155.58" transform="rotate(-90 348 92)" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="1.09s" fill="freeze"/><animate attributeName="stroke-dasharray" from="0 157.08" to="1.40 155.68" dur="0.6s" begin="1.09s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.3 0 0.2 1"/></circle><circle cx="348" cy="92" r="25" fill="none" stroke="#58a6ff" stroke-width="8" stroke-dasharray="0.10 156.98" stroke-dashoffset="-156.98" transform="rotate(-90 348 92)" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="1.27s" fill="freeze"/><animate attributeName="stroke-dasharray" from="0 157.08" to="0.10 156.98" dur="0.6s" begin="1.27s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.3 0 0.2 1"/></circle><text x="348" y="96" text-anchor="middle" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="11" font-weight="700" fill="#e6edf3">54%</text>
     </g>
   </a><a href="https://github.com/ahmedsabrari" target="_blank">
     <g opacity="0" transform="translate(438,88)">
     <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0.40s" fill="freeze"/>
-    <rect width="394" height="162" rx="13" fill="rgba(8,8,12,0.5)" stroke="#2dd4bf">
+    <rect width="394" height="162" rx="13" fill="rgba(8,8,12,0.5)" stroke="#22d3ee">
       <animate attributeName="stroke-opacity" values="0.45;0.85;0.45" dur="4.5s" begin="1.10s" repeatCount="indefinite"/>
     </rect>
-    <path d="M0 13 a13 13 0 0 1 13 -13 h368 a13 13 0 0 1 13 13 v17 h-394 z" fill="#2dd4bf" fill-opacity="0.06"/>
-    <line x1="0" y1="30" x2="394" y2="30" stroke="#2dd4bf" stroke-opacity="0.5"/>
-    <text x="16" y="19.5" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="10.5" fill="#5eead4"><tspan fill="#2dd4bf">•</tspan> ahmedsabrari</text>
-    <circle cx="378" cy="15" r="4" fill="#3fb950"><animate attributeName="opacity" values="1;0.25;1" dur="1.8s" repeatCount="indefinite"/></circle>
-    <text x="18" y="58" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="16.5" font-weight="700" fill="#ccfbf1">ahmedsabrari<tspan fill="#2dd4bf"> _<animate attributeName="opacity" values="1;0;1" dur="1.2s" begin="0.80s" repeatCount="indefinite"/></tspan></text>
-    <text x="18" y="79" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" fill="#5eead4">No description provided.</text>
+    <path d="M0 13 a13 13 0 0 1 13 -13 h368 a13 13 0 0 1 13 13 v17 h-394 z" fill="#22d3ee" fill-opacity="0.06"/>
+    <line x1="0" y1="30" x2="394" y2="30" stroke="#22d3ee" stroke-opacity="0.5"/>
+    <text x="16" y="19.5" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="10.5" fill="#7ee787"><tspan fill="#22d3ee">•</tspan> ahmedsabrari</text>
+    <circle cx="378" cy="15" r="4" fill="#39d353"><animate attributeName="opacity" values="1;0.25;1" dur="1.8s" repeatCount="indefinite"/></circle>
+    <text x="18" y="58" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="16.5" font-weight="700" fill="#e6edf3">ahmedsabrari<tspan fill="#22d3ee"> _<animate attributeName="opacity" values="1;0;1" dur="1.2s" begin="0.80s" repeatCount="indefinite"/></tspan></text>
+    <text x="18" y="79" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" fill="#7ee787">No description provided.</text>
     
-    <rect x="18" y="112" width="54" height="18" rx="9" fill="#2dd4bf" fill-opacity="0.14" stroke="#2dd4bf" stroke-opacity="0.4"/><text x="45" y="124.5" text-anchor="middle" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="9.5" fill="#2dd4bf">Python</text>
-    <text x="18" y="150" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#5eead4"><tspan fill="#5594c8">★</tspan> 2<tspan fill="#5eead4" fill-opacity="0.7" dx="12">updated just now</tspan></text>
-    <circle cx="348" cy="92" r="25" fill="none" stroke="#5eead4" stroke-opacity="0.18" stroke-width="8"/><circle cx="348" cy="92" r="25" fill="none" stroke="#3572A5" stroke-width="8" stroke-dasharray="103.28 53.80" stroke-dashoffset="0.00" transform="rotate(-90 348 92)" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.70s" fill="freeze"/><animate attributeName="stroke-dasharray" from="0 157.08" to="103.28 53.80" dur="0.6s" begin="0.70s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.3 0 0.2 1"/></circle><circle cx="348" cy="92" r="25" fill="none" stroke="#f1e05a" stroke-width="8" stroke-dasharray="53.80 103.28" stroke-dashoffset="-103.28" transform="rotate(-90 348 92)" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.88s" fill="freeze"/><animate attributeName="stroke-dasharray" from="0 157.08" to="53.80 103.28" dur="0.6s" begin="0.88s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.3 0 0.2 1"/></circle><text x="348" y="96" text-anchor="middle" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="11" font-weight="700" fill="#ccfbf1">66%</text>
+    <rect x="18" y="112" width="54" height="18" rx="9" fill="#22d3ee" fill-opacity="0.14" stroke="#22d3ee" stroke-opacity="0.4"/><text x="45" y="124.5" text-anchor="middle" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="9.5" fill="#22d3ee">Python</text>
+    <text x="18" y="150" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#7ee787"><tspan fill="#58a6ff">★</tspan> 2<tspan fill="#8b949e" dx="12">updated just now</tspan></text>
+    <circle cx="348" cy="92" r="25" fill="none" stroke="#7ee787" stroke-opacity="0.18" stroke-width="8"/><circle cx="348" cy="92" r="25" fill="none" stroke="#3b82f6" stroke-width="8" stroke-dasharray="103.28 53.80" stroke-dashoffset="0.00" transform="rotate(-90 348 92)" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.70s" fill="freeze"/><animate attributeName="stroke-dasharray" from="0 157.08" to="103.28 53.80" dur="0.6s" begin="0.70s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.3 0 0.2 1"/></circle><circle cx="348" cy="92" r="25" fill="none" stroke="#39d353" stroke-width="8" stroke-dasharray="53.80 103.28" stroke-dashoffset="-103.28" transform="rotate(-90 348 92)" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.88s" fill="freeze"/><animate attributeName="stroke-dasharray" from="0 157.08" to="53.80 103.28" dur="0.6s" begin="0.88s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.3 0 0.2 1"/></circle><text x="348" y="96" text-anchor="middle" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="11" font-weight="700" fill="#e6edf3">66%</text>
     </g>
   </a><a href="https://github.com/image-to-pencil-sketch" target="_blank">
     <g opacity="0" transform="translate(28,266)">
     <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0.55s" fill="freeze"/>
-    <rect width="394" height="162" rx="13" fill="rgba(8,8,12,0.5)" stroke="#2dd4bf">
+    <rect width="394" height="162" rx="13" fill="rgba(8,8,12,0.5)" stroke="#22d3ee">
       <animate attributeName="stroke-opacity" values="0.45;0.85;0.45" dur="4.5s" begin="1.95s" repeatCount="indefinite"/>
     </rect>
-    <path d="M0 13 a13 13 0 0 1 13 -13 h368 a13 13 0 0 1 13 13 v17 h-394 z" fill="#2dd4bf" fill-opacity="0.06"/>
-    <line x1="0" y1="30" x2="394" y2="30" stroke="#2dd4bf" stroke-opacity="0.5"/>
-    <text x="16" y="19.5" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="10.5" fill="#5eead4"><tspan fill="#2dd4bf">•</tspan> image-to-pencil-sketch</text>
-    <circle cx="378" cy="15" r="4" fill="#5eead4" fill-opacity="0.5"/>
-    <text x="18" y="58" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="16.5" font-weight="700" fill="#ccfbf1">image-to-pencil-sketch<tspan fill="#2dd4bf"> _<animate attributeName="opacity" values="1;0;1" dur="1.2s" begin="0.95s" repeatCount="indefinite"/></tspan></text>
-    <text x="18" y="79" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" fill="#5eead4">No description provided.</text>
+    <path d="M0 13 a13 13 0 0 1 13 -13 h368 a13 13 0 0 1 13 13 v17 h-394 z" fill="#22d3ee" fill-opacity="0.06"/>
+    <line x1="0" y1="30" x2="394" y2="30" stroke="#22d3ee" stroke-opacity="0.5"/>
+    <text x="16" y="19.5" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="10.5" fill="#7ee787"><tspan fill="#22d3ee">•</tspan> image-to-pencil-sketch</text>
+    <circle cx="378" cy="15" r="4" fill="#7ee787" fill-opacity="0.5"/>
+    <text x="18" y="58" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="16.5" font-weight="700" fill="#e6edf3">image-to-pencil-sketch<tspan fill="#22d3ee"> _<animate attributeName="opacity" values="1;0;1" dur="1.2s" begin="0.95s" repeatCount="indefinite"/></tspan></text>
+    <text x="18" y="79" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" fill="#7ee787">No description provided.</text>
     
-    <rect x="18" y="112" width="54" height="18" rx="9" fill="#2dd4bf" fill-opacity="0.14" stroke="#2dd4bf" stroke-opacity="0.4"/><text x="45" y="124.5" text-anchor="middle" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="9.5" fill="#2dd4bf">Python</text>
-    <text x="18" y="150" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#5eead4"><tspan fill="#5594c8">★</tspan> 2<tspan fill="#5eead4" fill-opacity="0.7" dx="12">updated 1y ago</tspan></text>
-    <circle cx="348" cy="92" r="25" fill="none" stroke="#5eead4" stroke-opacity="0.18" stroke-width="8"/><circle cx="348" cy="92" r="25" fill="none" stroke="#3572A5" stroke-width="8" stroke-dasharray="157.08 0.00" stroke-dashoffset="0.00" transform="rotate(-90 348 92)" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.85s" fill="freeze"/><animate attributeName="stroke-dasharray" from="0 157.08" to="157.08 0.00" dur="0.6s" begin="0.85s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.3 0 0.2 1"/></circle><text x="348" y="96" text-anchor="middle" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="11" font-weight="700" fill="#ccfbf1">100%</text>
+    <rect x="18" y="112" width="54" height="18" rx="9" fill="#22d3ee" fill-opacity="0.14" stroke="#22d3ee" stroke-opacity="0.4"/><text x="45" y="124.5" text-anchor="middle" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="9.5" fill="#22d3ee">Python</text>
+    <text x="18" y="150" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#7ee787"><tspan fill="#58a6ff">★</tspan> 2<tspan fill="#8b949e" dx="12">updated 1y ago</tspan></text>
+    <circle cx="348" cy="92" r="25" fill="none" stroke="#7ee787" stroke-opacity="0.18" stroke-width="8"/><circle cx="348" cy="92" r="25" fill="none" stroke="#3b82f6" stroke-width="8" stroke-dasharray="157.08 0.00" stroke-dashoffset="0.00" transform="rotate(-90 348 92)" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.85s" fill="freeze"/><animate attributeName="stroke-dasharray" from="0 157.08" to="157.08 0.00" dur="0.6s" begin="0.85s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.3 0 0.2 1"/></circle><text x="348" y="96" text-anchor="middle" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="11" font-weight="700" fill="#e6edf3">100%</text>
     </g>
   </a><a href="https://github.com/heart-drawing" target="_blank">
     <g opacity="0" transform="translate(438,266)">
     <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0.70s" fill="freeze"/>
-    <rect width="394" height="162" rx="13" fill="rgba(8,8,12,0.5)" stroke="#2dd4bf">
+    <rect width="394" height="162" rx="13" fill="rgba(8,8,12,0.5)" stroke="#22d3ee">
       <animate attributeName="stroke-opacity" values="0.45;0.85;0.45" dur="4.5s" begin="2.80s" repeatCount="indefinite"/>
     </rect>
-    <path d="M0 13 a13 13 0 0 1 13 -13 h368 a13 13 0 0 1 13 13 v17 h-394 z" fill="#2dd4bf" fill-opacity="0.06"/>
-    <line x1="0" y1="30" x2="394" y2="30" stroke="#2dd4bf" stroke-opacity="0.5"/>
-    <text x="16" y="19.5" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="10.5" fill="#5eead4"><tspan fill="#2dd4bf">•</tspan> heart-drawing</text>
-    <circle cx="378" cy="15" r="4" fill="#5eead4" fill-opacity="0.5"/>
-    <text x="18" y="58" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="16.5" font-weight="700" fill="#ccfbf1">heart-drawing<tspan fill="#2dd4bf"> _<animate attributeName="opacity" values="1;0;1" dur="1.2s" begin="1.10s" repeatCount="indefinite"/></tspan></text>
-    <text x="18" y="79" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" fill="#5eead4">No description provided.</text>
+    <path d="M0 13 a13 13 0 0 1 13 -13 h368 a13 13 0 0 1 13 13 v17 h-394 z" fill="#22d3ee" fill-opacity="0.06"/>
+    <line x1="0" y1="30" x2="394" y2="30" stroke="#22d3ee" stroke-opacity="0.5"/>
+    <text x="16" y="19.5" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="10.5" fill="#7ee787"><tspan fill="#22d3ee">•</tspan> heart-drawing</text>
+    <circle cx="378" cy="15" r="4" fill="#7ee787" fill-opacity="0.5"/>
+    <text x="18" y="58" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="16.5" font-weight="700" fill="#e6edf3">heart-drawing<tspan fill="#22d3ee"> _<animate attributeName="opacity" values="1;0;1" dur="1.2s" begin="1.10s" repeatCount="indefinite"/></tspan></text>
+    <text x="18" y="79" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" fill="#7ee787">No description provided.</text>
     
-    <rect x="18" y="112" width="54" height="18" rx="9" fill="#2dd4bf" fill-opacity="0.14" stroke="#2dd4bf" stroke-opacity="0.4"/><text x="45" y="124.5" text-anchor="middle" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="9.5" fill="#2dd4bf">Python</text>
-    <text x="18" y="150" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#5eead4"><tspan fill="#5594c8">★</tspan> 1<tspan fill="#5eead4" fill-opacity="0.7" dx="12">updated 1y ago</tspan></text>
-    <circle cx="348" cy="92" r="25" fill="none" stroke="#5eead4" stroke-opacity="0.18" stroke-width="8"/><circle cx="348" cy="92" r="25" fill="none" stroke="#3572A5" stroke-width="8" stroke-dasharray="157.08 0.00" stroke-dashoffset="0.00" transform="rotate(-90 348 92)" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="1.00s" fill="freeze"/><animate attributeName="stroke-dasharray" from="0 157.08" to="157.08 0.00" dur="0.6s" begin="1.00s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.3 0 0.2 1"/></circle><text x="348" y="96" text-anchor="middle" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="11" font-weight="700" fill="#ccfbf1">100%</text>
+    <rect x="18" y="112" width="54" height="18" rx="9" fill="#22d3ee" fill-opacity="0.14" stroke="#22d3ee" stroke-opacity="0.4"/><text x="45" y="124.5" text-anchor="middle" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="9.5" fill="#22d3ee">Python</text>
+    <text x="18" y="150" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#7ee787"><tspan fill="#58a6ff">★</tspan> 1<tspan fill="#8b949e" dx="12">updated 1y ago</tspan></text>
+    <circle cx="348" cy="92" r="25" fill="none" stroke="#7ee787" stroke-opacity="0.18" stroke-width="8"/><circle cx="348" cy="92" r="25" fill="none" stroke="#3b82f6" stroke-width="8" stroke-dasharray="157.08 0.00" stroke-dashoffset="0.00" transform="rotate(-90 348 92)" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="1.00s" fill="freeze"/><animate attributeName="stroke-dasharray" from="0 157.08" to="157.08 0.00" dur="0.6s" begin="1.00s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.3 0 0.2 1"/></circle><text x="348" y="96" text-anchor="middle" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="11" font-weight="700" fill="#e6edf3">100%</text>
     </g>
   </a>
-    <rect x="0.5" y="0.5" width="859" height="451" rx="19.5" fill="none" stroke="#2dd4bf" stroke-opacity="0.62"/>
+    <rect x="0.5" y="0.5" width="859" height="451" rx="19.5" fill="none" stroke="#22d3ee" stroke-opacity="0.62"/>
   </g>
 </svg>

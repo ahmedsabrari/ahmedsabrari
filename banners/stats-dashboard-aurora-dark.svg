@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="860" height="260" viewBox="0 0 860 260" role="img">
   <defs>
     <linearGradient id="gs-stats-ahmedsabrari-aurora-dark-bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#042f2e"/>
-      <stop offset="54%" stop-color="#134e4a"/>
-      <stop offset="100%" stop-color="#042f2e"/>
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="54%" stop-color="#161b22"/>
+      <stop offset="100%" stop-color="#0d1117"/>
     </linearGradient>
     
     <radialGradient id="gs-stats-ahmedsabrari-aurora-dark-orb-0" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#2dd4bf" stop-opacity="0.72"/>
-      <stop offset="58%" stop-color="#2dd4bf" stop-opacity="0.18"/>
-      <stop offset="100%" stop-color="#2dd4bf" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.72"/>
+      <stop offset="58%" stop-color="#58a6ff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="gs-stats-ahmedsabrari-aurora-dark-orb-1" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.5"/>
@@ -17,37 +17,37 @@
       <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="gs-stats-ahmedsabrari-aurora-dark-orb-2" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#4f8cff" stop-opacity="0.72"/>
-      <stop offset="58%" stop-color="#4f8cff" stop-opacity="0.18"/>
-      <stop offset="100%" stop-color="#4f8cff" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#a371f7" stop-opacity="0.72"/>
+      <stop offset="58%" stop-color="#a371f7" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#a371f7" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="gs-stats-ahmedsabrari-aurora-dark-orb-3" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.5"/>
-      <stop offset="58%" stop-color="#a78bfa" stop-opacity="0.18"/>
-      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#39d353" stop-opacity="0.5"/>
+      <stop offset="58%" stop-color="#39d353" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#39d353" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="gs-stats-ahmedsabrari-aurora-dark-orb-4" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#f472b6" stop-opacity="0.72"/>
-      <stop offset="58%" stop-color="#f472b6" stop-opacity="0.18"/>
-      <stop offset="100%" stop-color="#f472b6" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#7ee787" stop-opacity="0.72"/>
+      <stop offset="58%" stop-color="#7ee787" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#7ee787" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="gs-stats-ahmedsabrari-aurora-dark-orb-5" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#4ade80" stop-opacity="0.5"/>
-      <stop offset="58%" stop-color="#4ade80" stop-opacity="0.18"/>
-      <stop offset="100%" stop-color="#4ade80" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.5"/>
+      <stop offset="58%" stop-color="#3b82f6" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="gs-stats-ahmedsabrari-aurora-dark-shine" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#ccfbf1" stop-opacity="0.2"/>
-      <stop offset="44%" stop-color="#2dd4bf" stop-opacity="0.82"/>
-      <stop offset="100%" stop-color="#5eead4" stop-opacity="0.22"/>
+      <stop offset="0%" stop-color="#e6edf3" stop-opacity="0.2"/>
+      <stop offset="44%" stop-color="#58a6ff" stop-opacity="0.82"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0.22"/>
     </linearGradient>
     <linearGradient id="gs-stats-ahmedsabrari-aurora-dark-holo" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#ccfbf1"/>
-      <stop offset="18%" stop-color="#042f2e"/>
-      <stop offset="38%" stop-color="#2dd4bf"/>
-      <stop offset="58%" stop-color="#5eead4"/>
-      <stop offset="78%" stop-color="#042f2e"/>
-      <stop offset="100%" stop-color="#ccfbf1"/>
+      <stop offset="0%" stop-color="#e6edf3"/>
+      <stop offset="18%" stop-color="#0d1117"/>
+      <stop offset="38%" stop-color="#58a6ff"/>
+      <stop offset="58%" stop-color="#22d3ee"/>
+      <stop offset="78%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#e6edf3"/>
       <animateTransform attributeName="gradientTransform" type="rotate" from="0 0.5 0.5" to="360 0.5 0.5" dur="8s" repeatCount="indefinite"/>
     </linearGradient>
   </defs>
@@ -78,41 +78,41 @@
     <ellipse class="aura-orb-c" cx="499" cy="229" rx="310" ry="88" fill="url(#gs-stats-ahmedsabrari-aurora-dark-orb-2)"/>
     <ellipse class="aura-orb-b" cx="826" cy="203" rx="172" ry="109" fill="url(#gs-stats-ahmedsabrari-aurora-dark-orb-3)"/>
     
-    <circle class="aura-ring" cx="735" cy="82" r="20.88" fill="none" stroke="#ccfbf1" stroke-opacity="0.36"/>
-    <circle class="aura-ring-b" cx="735" cy="82" r="35.96" fill="none" stroke="#ccfbf1" stroke-opacity="0.22"/>
-    <circle class="aura-ring" cx="735" cy="82" r="58" fill="none" stroke="#ccfbf1" stroke-opacity="0.14"/>
+    <circle class="aura-ring" cx="735" cy="82" r="20.88" fill="none" stroke="#e6edf3" stroke-opacity="0.36"/>
+    <circle class="aura-ring-b" cx="735" cy="82" r="35.96" fill="none" stroke="#e6edf3" stroke-opacity="0.22"/>
+    <circle class="aura-ring" cx="735" cy="82" r="58" fill="none" stroke="#e6edf3" stroke-opacity="0.14"/>
     <g transform="rotate(-32 735 82)">
-      <circle cx="770.96" cy="82" r="4" fill="#2dd4bf">
+      <circle cx="770.96" cy="82" r="4" fill="#58a6ff">
         <animateTransform attributeName="transform" type="scale" values="0.85;1.2;0.85" dur="1.6s" repeatCount="indefinite"/>
       </circle>
     </g>
-    <rect x="28" y="26" width="804" height="206" rx="20" fill="rgba(8,8,12,0.5)" stroke="#2dd4bf" stroke-opacity="0.48"/>
-    <text x="46" y="61" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="28" font-weight="850" letter-spacing="-0.5" fill="#ccfbf1">Profile Signal</text>
+    <rect x="28" y="26" width="804" height="206" rx="20" fill="rgba(8,8,12,0.5)" stroke="#58a6ff" stroke-opacity="0.48"/>
+    <text x="46" y="61" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="28" font-weight="850" letter-spacing="-0.5" fill="#e6edf3">Profile Signal</text>
     <g class="aura-chip" style="animation-delay:0ms">
-      <rect x="34" y="92" width="180" height="122" rx="18" fill="rgba(8,8,12,0.5)" stroke="#2dd4bf" stroke-opacity="0.72"/>
-      <text x="56" y="126" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" font-weight="800" letter-spacing="1.4" fill="#5eead4">Stars</text>
-      <text x="56" y="166" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="35" font-weight="900" letter-spacing="-0.8" fill="#41d8c5">7</text>
-      <rect x="56" y="186" width="136" height="7" rx="3.5" fill="rgba(255,255,255,0.1)"/>
-      <rect class="aura-bar" x="56" y="186" width="22" height="7" rx="3.5" fill="#41d8c5" opacity="0.9"/>
+      <rect x="34" y="92" width="180" height="122" rx="18" fill="rgba(8,8,12,0.5)" stroke="rgba(255,255,255,0.06)"/>
+      <text x="56" y="126" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" font-weight="800" letter-spacing="1.4" fill="#8b949e">Stars</text>
+      <text x="56" y="166" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="35" font-weight="900" letter-spacing="-0.8" fill="#39d353">7</text>
+      <rect x="56" y="186" width="136" height="7" rx="3.5" fill="rgba(255,255,255,0.06)"/>
+      <rect class="aura-bar" x="56" y="186" width="22" height="7" rx="3.5" fill="#39d353" opacity="0.9"/>
     </g><g class="aura-chip" style="animation-delay:100ms">
-      <rect x="238" y="92" width="180" height="122" rx="18" fill="rgba(8,8,12,0.5)" stroke="#2dd4bf" stroke-opacity="0.72"/>
-      <text x="260" y="126" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" font-weight="800" letter-spacing="1.4" fill="#5eead4">Contributions</text>
-      <text x="260" y="166" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="35" font-weight="900" letter-spacing="-0.8" fill="#9776f9">44</text>
-      <rect x="260" y="186" width="136" height="7" rx="3.5" fill="rgba(255,255,255,0.1)"/>
-      <rect class="aura-bar" x="260" y="186" width="136" height="7" rx="3.5" fill="#9776f9" opacity="0.9"/>
+      <rect x="238" y="92" width="180" height="122" rx="18" fill="rgba(8,8,12,0.5)" stroke="rgba(255,255,255,0.06)"/>
+      <text x="260" y="126" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" font-weight="800" letter-spacing="1.4" fill="#8b949e">Contributions</text>
+      <text x="260" y="166" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="35" font-weight="900" letter-spacing="-0.8" fill="#a371f7">44</text>
+      <rect x="260" y="186" width="136" height="7" rx="3.5" fill="rgba(255,255,255,0.06)"/>
+      <rect class="aura-bar" x="260" y="186" width="136" height="7" rx="3.5" fill="#a371f7" opacity="0.9"/>
     </g><g class="aura-chip" style="animation-delay:200ms">
-      <rect x="442" y="92" width="180" height="122" rx="18" fill="rgba(8,8,12,0.5)" stroke="#2dd4bf" stroke-opacity="0.72"/>
-      <text x="464" y="126" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" font-weight="800" letter-spacing="1.4" fill="#5eead4">Repos</text>
-      <text x="464" y="166" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="35" font-weight="900" letter-spacing="-0.8" fill="#4f8cff">6</text>
-      <rect x="464" y="186" width="136" height="7" rx="3.5" fill="rgba(255,255,255,0.1)"/>
-      <rect class="aura-bar" x="464" y="186" width="19" height="7" rx="3.5" fill="#4f8cff" opacity="0.9"/>
+      <rect x="442" y="92" width="180" height="122" rx="18" fill="rgba(8,8,12,0.5)" stroke="rgba(255,255,255,0.06)"/>
+      <text x="464" y="126" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" font-weight="800" letter-spacing="1.4" fill="#8b949e">Repos</text>
+      <text x="464" y="166" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="35" font-weight="900" letter-spacing="-0.8" fill="#3b82f6">6</text>
+      <rect x="464" y="186" width="136" height="7" rx="3.5" fill="rgba(255,255,255,0.06)"/>
+      <rect class="aura-bar" x="464" y="186" width="19" height="7" rx="3.5" fill="#3b82f6" opacity="0.9"/>
     </g><g class="aura-chip" style="animation-delay:300ms">
-      <rect x="646" y="92" width="180" height="122" rx="18" fill="rgba(8,8,12,0.5)" stroke="#2dd4bf" stroke-opacity="0.72"/>
-      <text x="668" y="126" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" font-weight="800" letter-spacing="1.4" fill="#5eead4">Followers</text>
-      <text x="668" y="166" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="35" font-weight="900" letter-spacing="-0.8" fill="#2ad5ef">5</text>
-      <rect x="668" y="186" width="136" height="7" rx="3.5" fill="rgba(255,255,255,0.1)"/>
-      <rect class="aura-bar" x="668" y="186" width="15" height="7" rx="3.5" fill="#2ad5ef" opacity="0.9"/>
+      <rect x="646" y="92" width="180" height="122" rx="18" fill="rgba(8,8,12,0.5)" stroke="rgba(255,255,255,0.06)"/>
+      <text x="668" y="126" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" font-weight="800" letter-spacing="1.4" fill="#8b949e">Followers</text>
+      <text x="668" y="166" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="35" font-weight="900" letter-spacing="-0.8" fill="#22d3ee">5</text>
+      <rect x="668" y="186" width="136" height="7" rx="3.5" fill="rgba(255,255,255,0.06)"/>
+      <rect class="aura-bar" x="668" y="186" width="15" height="7" rx="3.5" fill="#22d3ee" opacity="0.9"/>
     </g>
-    <rect x="0.5" y="0.5" width="859" height="259" rx="19.5" fill="none" stroke="#2dd4bf" stroke-opacity="0.62"/>
+    <rect x="0.5" y="0.5" width="859" height="259" rx="19.5" fill="none" stroke="#58a6ff" stroke-opacity="0.8"/>
   </g>
 </svg>

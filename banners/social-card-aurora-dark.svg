@@ -1,53 +1,53 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="860" height="126" viewBox="0 0 860 126" role="img">
   <defs>
     <linearGradient id="gs-social-ahmedsabrari-aurora-dark-bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#042f2e"/>
-      <stop offset="54%" stop-color="#134e4a"/>
-      <stop offset="100%" stop-color="#042f2e"/>
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="54%" stop-color="#161b22"/>
+      <stop offset="100%" stop-color="#0d1117"/>
     </linearGradient>
     
     <radialGradient id="gs-social-ahmedsabrari-aurora-dark-orb-0" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#2dd4bf" stop-opacity="0.72"/>
-      <stop offset="58%" stop-color="#2dd4bf" stop-opacity="0.18"/>
-      <stop offset="100%" stop-color="#2dd4bf" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.72"/>
+      <stop offset="58%" stop-color="#58a6ff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="gs-social-ahmedsabrari-aurora-dark-orb-1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#39d353" stop-opacity="0.5"/>
+      <stop offset="58%" stop-color="#39d353" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#39d353" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="gs-social-ahmedsabrari-aurora-dark-orb-2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a371f7" stop-opacity="0.72"/>
+      <stop offset="58%" stop-color="#a371f7" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#a371f7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="gs-social-ahmedsabrari-aurora-dark-orb-3" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.5"/>
       <stop offset="58%" stop-color="#22d3ee" stop-opacity="0.18"/>
       <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="gs-social-ahmedsabrari-aurora-dark-orb-2" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#4f8cff" stop-opacity="0.72"/>
-      <stop offset="58%" stop-color="#4f8cff" stop-opacity="0.18"/>
-      <stop offset="100%" stop-color="#4f8cff" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="gs-social-ahmedsabrari-aurora-dark-orb-3" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.5"/>
-      <stop offset="58%" stop-color="#a78bfa" stop-opacity="0.18"/>
-      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
-    </radialGradient>
     <radialGradient id="gs-social-ahmedsabrari-aurora-dark-orb-4" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#f472b6" stop-opacity="0.72"/>
-      <stop offset="58%" stop-color="#f472b6" stop-opacity="0.18"/>
-      <stop offset="100%" stop-color="#f472b6" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.72"/>
+      <stop offset="58%" stop-color="#3b82f6" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="gs-social-ahmedsabrari-aurora-dark-orb-5" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#4ade80" stop-opacity="0.5"/>
-      <stop offset="58%" stop-color="#4ade80" stop-opacity="0.18"/>
-      <stop offset="100%" stop-color="#4ade80" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#7ee787" stop-opacity="0.5"/>
+      <stop offset="58%" stop-color="#7ee787" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#7ee787" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="gs-social-ahmedsabrari-aurora-dark-shine" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#ccfbf1" stop-opacity="0.2"/>
-      <stop offset="44%" stop-color="#2dd4bf" stop-opacity="0.82"/>
-      <stop offset="100%" stop-color="#5eead4" stop-opacity="0.22"/>
+      <stop offset="0%" stop-color="#e6edf3" stop-opacity="0.2"/>
+      <stop offset="44%" stop-color="#58a6ff" stop-opacity="0.82"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0.22"/>
     </linearGradient>
     <linearGradient id="gs-social-ahmedsabrari-aurora-dark-holo" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#ccfbf1"/>
-      <stop offset="18%" stop-color="#042f2e"/>
-      <stop offset="38%" stop-color="#2dd4bf"/>
-      <stop offset="58%" stop-color="#5eead4"/>
-      <stop offset="78%" stop-color="#042f2e"/>
-      <stop offset="100%" stop-color="#ccfbf1"/>
+      <stop offset="0%" stop-color="#e6edf3"/>
+      <stop offset="18%" stop-color="#0d1117"/>
+      <stop offset="38%" stop-color="#58a6ff"/>
+      <stop offset="58%" stop-color="#22d3ee"/>
+      <stop offset="78%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#e6edf3"/>
       <animateTransform attributeName="gradientTransform" type="rotate" from="0 0.5 0.5" to="360 0.5 0.5" dur="8s" repeatCount="indefinite"/>
     </linearGradient>
   </defs>
@@ -77,15 +77,15 @@
     <ellipse class="aura-orb-b" cx="654" cy="28" rx="241" ry="53" fill="url(#gs-social-ahmedsabrari-aurora-dark-orb-1)"/>
     <ellipse class="aura-orb-c" cx="499" cy="111" rx="310" ry="43" fill="url(#gs-social-ahmedsabrari-aurora-dark-orb-2)"/>
     <ellipse class="aura-orb-b" cx="826" cy="98" rx="172" ry="53" fill="url(#gs-social-ahmedsabrari-aurora-dark-orb-3)"/>
-    <rect x="26" y="22" width="808" height="82" rx="22" fill="rgba(8,8,12,0.5)" stroke="#2dd4bf" stroke-opacity="0.48"/>
+    <rect x="26" y="22" width="808" height="82" rx="22" fill="rgba(8,8,12,0.5)" stroke="#58a6ff" stroke-opacity="0.48"/>
     <g class="aura-chip" style="animation-delay:0ms">
       <rect x="341" y="40" width="178" height="46" rx="23" fill="rgba(8,8,12,0.5)" stroke="url(#gs-social-ahmedsabrari-aurora-dark-holo)" stroke-width="2"/>
-      <rect x="342" y="41" width="176" height="44" rx="22" fill="none" stroke="#ffffff" stroke-opacity="0.22"/>
-      <circle cx="368" cy="63" r="12" fill="#ffffff" fill-opacity="0.16"/>
-      <text x="368" y="68" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="13" font-weight="900" fill="#ffffff" text-anchor="middle">G</text>
-      <text x="389" y="59" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10" font-weight="850" letter-spacing="1.2" fill="#5eead4">GitHub</text>
-      <text x="389" y="75" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="13" font-weight="800" fill="#ccfbf1">@ahmedsabrari</text>
+      <rect x="342" y="41" width="176" height="44" rx="22" fill="none" stroke="rgba(255,255,255,0.06)"/>
+      <circle cx="368" cy="63" r="12" fill="rgba(255,255,255,0.06)"/>
+      <text x="368" y="68" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="13" font-weight="900" fill="#e6edf3" text-anchor="middle">G</text>
+      <text x="389" y="59" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10" font-weight="850" letter-spacing="1.2" fill="#7ee787">GitHub</text>
+      <text x="389" y="75" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="13" font-weight="800" fill="#e6edf3">@ahmedsabrari</text>
     </g>
-    <rect x="0.5" y="0.5" width="859" height="125" rx="19.5" fill="none" stroke="#2dd4bf" stroke-opacity="0.62"/>
+    <rect x="0.5" y="0.5" width="859" height="125" rx="19.5" fill="none" stroke="#58a6ff" stroke-opacity="0.62"/>
   </g>
 </svg>

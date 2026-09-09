@@ -7,7 +7,6 @@
       <stop offset="42%" stop-color="#0c0820"/>
       <stop offset="100%" stop-color="#06040d"/>
     </radialGradient>
-
     <!-- animated gradient for the name (seamless, period = 500) -->
     <linearGradient id="nameGrad" gradientUnits="userSpaceOnUse" x1="350" y1="0" x2="850" y2="0" spreadMethod="repeat">
       <stop offset="0" stop-color="#7df9ff"/>
@@ -17,7 +16,6 @@
       <stop offset="1" stop-color="#7df9ff"/>
       <animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="500 0" dur="6s" repeatCount="indefinite"/>
     </linearGradient>
-
     <!-- flowing gradient for the electric border -->
     <linearGradient id="borderGrad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="600" y2="0" spreadMethod="repeat">
       <stop offset="0" stop-color="#7df9ff"/>
@@ -25,7 +23,6 @@
       <stop offset="1" stop-color="#7df9ff"/>
       <animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="600 0" dur="5s" repeatCount="indefinite"/>
     </linearGradient>
-
     <!-- ElectricBorder recreation: turbulence + displacement -->
     <filter id="electric" x="-30%" y="-30%" width="160%" height="160%">
       <feTurbulence type="fractalNoise" baseFrequency="0.013" numOctaves="2" seed="2" result="noise">
@@ -34,7 +31,6 @@
       </feTurbulence>
       <feDisplacementMap in="SourceGraphic" in2="noise" scale="16" xChannelSelector="R" yChannelSelector="G"/>
     </filter>
-
     <!-- glow -->
     <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
       <feGaussianBlur stdDeviation="5" result="b"/>
@@ -44,7 +40,6 @@
       <feGaussianBlur stdDeviation="6" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-
     <style>
       .tw  { animation: tw 3s   ease-in-out infinite; }
       .tw2 { animation: tw 2.2s ease-in-out infinite .6s; }
@@ -61,10 +56,8 @@
       @keyframes dh { to { stroke-dashoffset: -48 } }
     </style>
   </defs>
-
   <!-- backdrop -->
   <rect width="1200" height="400" rx="30" fill="url(#bg)"/>
-
   <!-- starfield -->
   <g fill="#cfe9ff">
     <circle class="tw" cx="90" cy="70" r="1.6"/>
@@ -84,18 +77,15 @@
     <circle class="tw3" cx="760" cy="56" r="1.2"/>
     <circle class="tw" cx="1040" cy="176" r="1.4"/>
   </g>
-
   <!-- lightning bolts (Lightning component vibe) -->
   <g stroke="#7df9ff" stroke-width="2" fill="none" filter="url(#glow)" stroke-linecap="round" stroke-linejoin="round">
     <path class="flick" d="M120 40 L150 120 L122 132 L168 230 L138 244 L182 340"/>
     <path class="flick2" d="M1080 44 L1052 118 L1082 130 L1040 224 L1070 238 L1028 336" stroke="#7b5cff"/>
   </g>
-
   <!-- electric border (ElectricBorder recreation): glow layer + crackle stroke -->
   <g filter="url(#glow)">
     <rect x="26" y="26" width="1148" height="348" rx="26" fill="none" stroke="url(#borderGrad)" stroke-width="2.4" filter="url(#electric)"/>
   </g>
-
   <!-- HUD corner brackets -->
   <g stroke="#00ffa3" stroke-width="2.4" fill="none" class="pulse" stroke-linecap="round">
     <path d="M54 86 L54 54 L86 54"/>
@@ -103,15 +93,11 @@
     <path d="M54 314 L54 346 L86 346"/>
     <path d="M1146 314 L1146 346 L1114 346"/>
   </g>
-
   <!-- content -->
   <g class="float">
     <text x="600" y="150" text-anchor="middle" font-family="'Trebuchet MS', 'Segoe UI', Verdana, sans-serif" font-size="15" letter-spacing="7" fill="#00ffa3" opacity="0.9">‹ AHMEDSABRARI ›</text>
-
     <text x="600" y="244" text-anchor="middle" font-family="'Trebuchet MS', 'Segoe UI', Verdana, sans-serif" font-size="96" font-weight="800" letter-spacing="6" fill="url(#nameGrad)" filter="url(#textGlow)">AHMED SABRARI</text>
-
     <line class="dash" x1="372" y1="270" x2="828" y2="270" stroke="url(#borderGrad)" stroke-width="2.2" stroke-linecap="round"/>
-
     <text x="600" y="312" text-anchor="middle" font-family="'Trebuchet MS', 'Segoe UI', Verdana, sans-serif" font-size="18" letter-spacing="5" fill="#bfe9ff" opacity="0.92">Frontend or full-stack engineer</text>
   </g>
 </svg>
