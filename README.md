@@ -106,54 +106,28 @@
   <img src="banners/social-card-aurora-dark.svg" alt="AHMED Wordmark" width="882">
 </p>
 
-
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-
+<!-- 
 <p align="center">
   <img src="banners/hero-aurora-dark.svg" alt="AHMED Wordmark" width="882">
 </p>
-
 <p align="center">
   <img src="banners/hero-neon-dark-personal.svg" alt="AHMED Wordmark" width="882">
 </p>
-
 <p align="center">
   <img src="banners/hero-zen-light.svg" alt="AHMED Wordmark" width="882">
 </p>
-
 <p align="center">
   <img src="banners/contribution-snake-aurora.svg" alt="AHMED Wordmark" width="882">
 </p>
-
 <p align="center">
   <img src="banners/wordmark-ahmed-aurora.svg" alt="AHMED Wordmark" width="882">
 </p>
-
 <p align="center">
   <img src="banners/language-stack-aurora-dark.svg" alt="AHMED Wordmark" width="882">
 </p>
-
 <p align="center">
   <img src="banners/dot-matrix-portrait-ahmed.svg" alt="AHMED Wordmark" width="882">
 </p>
-
 <p align="center">
   <img src="banners/and/card-dossier-dark.svg" alt="AHMED Wordmark" width="882">
 </p>
@@ -214,4 +188,4 @@
 <p align="center">
   <img src="banners/and/radar-light.svg" alt="AHMED Wordmark" width="882">
 </p>
-
+ -->
