@@ -173,5 +173,4 @@
   <rect x="1" y="1" width="1178" height="608" rx="18" fill="none" stroke="#2dd4bf" stroke-opacity="0.42">
     <animate attributeName="stroke-opacity" values="0.25;0.65;0.25" dur="3.8s" repeatCount="indefinite"/>
   </rect>
-  <text x="1167" y="599" text-anchor="end" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10" font-weight="600" letter-spacing="0.3" fill="#5eead4" fill-opacity="0.42">gitskins.com</text>
 </svg>

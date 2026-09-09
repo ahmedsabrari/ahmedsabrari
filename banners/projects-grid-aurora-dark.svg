@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="860" height="452" viewBox="0 0 860 452" role="img" aria-label="GitSkins gs-projects-ahmedsabrari-aurora-dark section">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="860" height="452" viewBox="0 0 860 452" role="img">
   <defs>
     <linearGradient id="gs-projects-ahmedsabrari-aurora-dark-bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#042f2e"/>
@@ -150,7 +150,6 @@
     <circle cx="348" cy="92" r="25" fill="none" stroke="#5eead4" stroke-opacity="0.18" stroke-width="8"/><circle cx="348" cy="92" r="25" fill="none" stroke="#3572A5" stroke-width="8" stroke-dasharray="157.08 0.00" stroke-dashoffset="0.00" transform="rotate(-90 348 92)" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="1.00s" fill="freeze"/><animate attributeName="stroke-dasharray" from="0 157.08" to="157.08 0.00" dur="0.6s" begin="1.00s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.3 0 0.2 1"/></circle><text x="348" y="96" text-anchor="middle" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="11" font-weight="700" fill="#ccfbf1">100%</text>
     </g>
   </a>
-    <text x="847" y="441" text-anchor="end" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10" font-weight="600" letter-spacing="0.3" fill="#5eead4" fill-opacity="0.42">gitskins.com</text>
     <rect x="0.5" y="0.5" width="859" height="451" rx="19.5" fill="none" stroke="#2dd4bf" stroke-opacity="0.62"/>
   </g>
 </svg>
