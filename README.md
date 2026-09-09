@@ -1,171 +1,113 @@
-# 🌐 Ahmed Sabrari  
+<!--
+  ============================================================
+  AHMED SABRARI - GitHub Profile
+  A showcase of 23 animated SVG banners for your GitHub
+  profile. All banners are stored in the /banners folder.
+  ============================================================
+-->
 
-**`Développeur Full Stack | Architecte de Solutions Digitales Innovantes`**
+<p align="center">
+  <img src="banners/hero-github-dark.svg" alt="AHMED Wordmark" width="882">
+</p>
 
-Développeur full stack passionné, je transforme des concepts complexes en applications web élégantes et performantes. Expert en écosystème **Laravel** et **React**, je maîtrise l'art de créer
+<!-- <p align="center">
+  <img src="banners/hero-aurora-dark.svg" alt="AHMED Wordmark" width="882">
+</p> -->
 
----
+<!-- <p align="center">
+  <img src="banners/hero-neon-dark-personal.svg" alt="AHMED Wordmark" width="882">
+</p> -->
 
-## 🛠️ **Expertise Technique**
+<!-- <p align="center">
+  <img src="banners/hero-zen-light.svg" alt="AHMED Wordmark" width="882">
+</p> -->
 
-### **📋 Langages & Technologies**
-<div align="left">
-  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
-</div>
+<p align="center">
+  <img src="banners/text-scroll-cyber.svg" alt="AHMED Wordmark" width="882">
+</p>
 
-### **🚀 Frameworks & Bibliothèques**
-<div align="left">
-  <img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel" />
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
-  <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap" />
-</div>
+<p align="center">
+  <img src="banners/banner-cyber-neon-ahmed.svg" alt="AHMED Wordmark" width="882">
+</p>
 
-### **🗃️ Bases de Données**
-<div align="left">
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
-</div>
+<p align="center">
+  <img src="banners/divider-cyber-aurora.svg" alt="AHMED Wordmark" width="882">
+</p>
 
-### **🔧 Outils & Méthodologies**
-<div align="left">
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-  <img src="https://img.shields.io/badge/GitLab-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white" alt="GitLab" />
-  <img src="https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white" alt="Jira" />
-  <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VS Code" />
-  <img src="https://img.shields.io/badge/Scrum-6DB33F?style=for-the-badge&logo=scrumalliance&logoColor=white" alt="Scrum" />
-</div>
+<p align="center">
+  <img src="banners/profile-dashboard-complete.svg" alt="AHMED Wordmark" width="882">
+</p>
 
----
+<p align="center">
+  <img src="banners/divider-cyber-aurora.svg" alt="AHMED Wordmark" width="882">
+</p>
 
-# 🚀 Featured Projects
+<p align="center">
+  <img src="banners/profile-scan-aurora.svg" alt="AHMED Wordmark" width="882">
+</p>
 
-## 🏥 Medical Teleconsultation Platform
-A comprehensive remote consultation solution connecting patients and doctors
-- **Tech Stack:** Laravel, React, WebRTC, MySQL
-- **Key Features:** Appointment scheduling, secure video conferencing, medical records management
-- **Impact:** Improves healthcare accessibility in remote areas
+<p align="center">
+  <img src="banners/divider-cyber-aurora.svg" alt="AHMED Wordmark" width="882">
+</p>
 
-## 📊 School Management System (Final Training Project)
-Complete educational ERP for managing academic institutions
-- **Tech Stack:** Laravel, React, MySQL, Bootstrap
-- **Key Features:** Student/teacher management, timetable scheduling, grade reporting
-- **Impact:** Centralizes and automates administrative processes
+<p align="center">
+  <img src="banners/projects-grid-aurora-dark.svg" alt="AHMED Wordmark" width="882">
+</p>
 
-<table>
-  <tr>
-    <td align="center">
-      <strong>🛒 E-Commerce Platform "Electro"</strong><br>
-      <a href="https://github.com/ahmedsabrari/E-commerce">
-        <img src="https://raw.githubusercontent.com/ahmedsabrari/ahmedsabrari/main/public/repos/e_commerce_pin.svg" 
-             alt="E-commerce">
-      </a>
-    </td>
-    <td align="center">
-      <strong>🌐🐍 Hello World GUI</strong><br>
-      <a href="https://github.com/ahmedsabrari/hello_world_gui">
-        <img src="https://raw.githubusercontent.com/ahmedsabrari/ahmedsabrari/main/public/repos/hello_world_gui_pin.svg" 
-             alt="Hello World GUI">
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <strong>❤️ Heart Drawing Animation</strong><br>
-      <a href="https://github.com/ahmedsabrari/heart-drawing">
-        <img src="https://raw.githubusercontent.com/ahmedsabrari/ahmedsabrari/main/public/repos/heart_drawing_pin.svg" 
-             alt="Heart Drawing">
-      </a>
-    </td>
-    <td align="center">
-      <strong>🎨 Image to Pencil Sketch Converter</strong><br>
-      <a href="https://github.com/ahmedsabrari/image-to-pencil-sketch">
-        <img src="https://raw.githubusercontent.com/ahmedsabrari/ahmedsabrari/main/public/repos/image_to_pencil_sketch_pin.svg" 
-             alt="Image to Pencil Sketch">
-      </a>
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img src="banners/divider-cyber-aurora.svg" alt="AHMED Wordmark" width="882">
+</p>
 
----
+<p align="center">
+  <img src="banners/competitive-programming-dashboard.svg" alt="AHMED Wordmark" width="882">
+</p>
 
-## 📊 **Activité GitHub**
+<p align="center">
+  <img src="banners/contribution-graph-aurora.svg" alt="AHMED Wordmark" width="882">
+</p>
 
-<table>
-  <tr>
-    <td align="center">
-      <img src="https://raw.githubusercontent.com/ahmedsabrari/ahmedsabrari/main/public/stats/overview.svg" 
-        alt="GitHub Stats" 
-        width="400">
-      <br>
-      <strong>GitHub Stats</strong>
-    </td>
-    <td align="center">
-      <img src="https://raw.githubusercontent.com/ahmedsabrari/ahmedsabrari/main/public/stats/streak.svg" 
-        alt="Contribution Streak" 
-        width="400">
-      <br>
-      <strong>Contribution Streak</strong>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="https://raw.githubusercontent.com/ahmedsabrari/ahmedsabrari/main/public/stats/top-langs.svg" 
-        alt="Top Languages" 
-        width="400">
-      <br>
-      <strong>Top Languages</strong>
-    </td>
-    <td align="center">
-      <img src="https://raw.githubusercontent.com/ahmedsabrari/ahmedsabrari/main/public/stats/contributors.svg" 
-        alt="Contributor Stats" 
-        width="400">
-      <br>
-      <strong>Contributor Stats</strong>
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img src="banners/contribution-heatmap-aurora-dark.svg" alt="AHMED Wordmark" width="882">
+</p>
 
----
+<p align="center">
+  <img src="banners/contribution-snake-aurora.svg" alt="AHMED Wordmark" width="882">
+</p>
 
-## 🐍 **Mes contributions sur GitHub**
+<p align="center">
+  <img src="banners/divider-cyber-aurora.svg" alt="AHMED Wordmark" width="882">
+</p>
 
-<div align="center">
-  <img src="./snake/snake.svg" 
-       alt="Snake animation" 
-       width="100%">
-</div>
+<p align="center">
+  <img src="banners/dot-matrix-portrait-ahmed.svg" alt="AHMED Wordmark" width="882">
+</p>
 
----
+<p align="center">
+  <img src="banners/highlights-aurora-dark.svg" alt="AHMED Wordmark" width="882">
+</p>
 
-## 📞 **Contact**
+<p align="center">
+  <img src="banners/language-stack-aurora-dark.svg" alt="AHMED Wordmark" width="882">
+</p>
 
-<div align="center">
+<p align="center">
+  <img src="banners/stats-dashboard-aurora-dark.svg" alt="AHMED Wordmark" width="882">
+</p>
+<p align="center">
+  <img src="banners/tech-stack-cards.svg" alt="AHMED Wordmark" width="882">
+</p>
+<p align="center">
+  <img src="banners/terminal-neofetch-profile.svg" alt="AHMED Wordmark" width="882">
+</p>
 
-[![Email](https://img.shields.io/badge/Email-sabrari.ahmed0@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sabrari.ahmed0@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ahmed_Sabrari-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ahmedsabrari)
-[![GitHub](https://img.shields.io/badge/GitHub-ahmedsabrar-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ahmedsabrari)
+<p align="center">
+  <img src="banners/wordmark-ahmed-aurora.svg" alt="AHMED Wordmark" width="882">
+</p>
 
-</div>
+<p align="center">
+  <img src="banners/divider-cyber-aurora.svg" alt="AHMED Wordmark" width="882">
+</p>
 
----
-
-## 🎯 **Vision Professionnelle**
-
-Je cherche à rejoindre une équipe innovante où je pourrai contribuer à des projets ambitieux tout en développant mon expertise en architecture logicielle. Mon objectif est de concevoir des soluti
-
-*Disponible pour des opportunités en développement full stack, architecture d'applications et conseil technique.*
-
----
-
-<div align="center">
-
-**✨ Innovation through code • Excellence through practice ✨**
-
-</div>
+<p align="center">
+  <img src="banners/social-card-aurora-dark.svg" alt="AHMED Wordmark" width="882">
+</p>
