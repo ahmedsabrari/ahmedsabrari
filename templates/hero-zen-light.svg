@@ -1,64 +1,101 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="860" height="240" viewBox="0 0 860 240" role="img" aria-label="Hero section for Ahmed Sabrari">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="860" height="240" viewBox="0 0 860 240" role="img" aria-label="gs-hero-ahmedsabrari-zen-light section">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="gs-hero-ahmedsabrari-zen-light-bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#f6f8fc"/>
       <stop offset="54%" stop-color="#ffffff"/>
       <stop offset="100%" stop-color="#f6f8fc"/>
     </linearGradient>
-    <radialGradient id="orb-0">
+
+    <radialGradient id="gs-hero-ahmedsabrari-zen-light-orb-0" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#38a83d" stop-opacity="0.26"/>
+      <stop offset="58%" stop-color="#38a83d" stop-opacity="0.08"/>
       <stop offset="100%" stop-color="#38a83d" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="orb-1">
+    <radialGradient id="gs-hero-ahmedsabrari-zen-light-orb-1" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#101531" stop-opacity="0.2"/>
+      <stop offset="58%" stop-color="#101531" stop-opacity="0.08"/>
       <stop offset="100%" stop-color="#101531" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="avatar-grad" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#38a83d"/>
-      <stop offset="100%" stop-color="#101531"/>
-    </linearGradient>
-    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+    <radialGradient id="gs-hero-ahmedsabrari-zen-light-orb-2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#349d6d" stop-opacity="0.26"/>
+      <stop offset="58%" stop-color="#349d6d" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#349d6d" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="gs-hero-ahmedsabrari-zen-light-orb-3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38a841" stop-opacity="0.2"/>
+      <stop offset="58%" stop-color="#38a841" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#38a841" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="gs-hero-ahmedsabrari-zen-light-shine" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#0f172a" stop-opacity="0.2"/>
       <stop offset="44%" stop-color="#38a83d" stop-opacity="0.82"/>
       <stop offset="100%" stop-color="#475569" stop-opacity="0.22"/>
     </linearGradient>
   </defs>
+
   <style>
-    #hero .aura-orb-a { animation: float-a 9s ease-in-out infinite; }
-    #hero .aura-orb-b { animation: float-b 11s ease-in-out infinite; }
-    #hero .aura-ring { animation: ring 8s ease-in-out infinite; }
-    #hero .aura-chip { animation: chip 650ms ease-out both; }
-    @keyframes float-a { 0%,100% { transform: translate(0,0); } 50% { transform: translate(28px,-20px); } }
-    @keyframes float-b { 0%,100% { transform: translate(0,0); } 50% { transform: translate(-24px,18px); } }
-    @keyframes ring { 0%,100% { opacity: .06; } 50% { opacity: .22; } }
-    @keyframes chip { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+    #gs-hero-ahmedsabrari-zen-light .aura-orb-a { animation: gs-hero-ahmedsabrari-zen-light-float-a 9s ease-in-out infinite; }
+    #gs-hero-ahmedsabrari-zen-light .aura-orb-b { animation: gs-hero-ahmedsabrari-zen-light-float-b 11s ease-in-out infinite 1.1s; }
+    #gs-hero-ahmedsabrari-zen-light .aura-orb-c { animation: gs-hero-ahmedsabrari-zen-light-float-c 13s ease-in-out infinite 0.6s; }
+    #gs-hero-ahmedsabrari-zen-light .aura-ring { animation: gs-hero-ahmedsabrari-zen-light-ring 8s ease-in-out infinite; }
+    #gs-hero-ahmedsabrari-zen-light .aura-ring-b { animation: gs-hero-ahmedsabrari-zen-light-ring 10s ease-in-out infinite 1.6s; }
+    #gs-hero-ahmedsabrari-zen-light .aura-chip { animation: gs-hero-ahmedsabrari-zen-light-chip 650ms ease-out both; }
+    @keyframes gs-hero-ahmedsabrari-zen-light-float-a { 0%,100% { transform: translate(0,0); opacity: .58; } 50% { transform: translate(28px,-20px); opacity: .86; } }
+    @keyframes gs-hero-ahmedsabrari-zen-light-float-b { 0%,100% { transform: translate(0,0); opacity: .42; } 50% { transform: translate(-24px,18px); opacity: .72; } }
+    @keyframes gs-hero-ahmedsabrari-zen-light-float-c { 0%,100% { transform: translate(0,0) scale(1); opacity: .34; } 50% { transform: translate(18px,-12px) scale(1.18); opacity: .62; } }
+    @keyframes gs-hero-ahmedsabrari-zen-light-ring { 0%,100% { opacity: .06; } 50% { opacity: .22; } }
+    @keyframes gs-hero-ahmedsabrari-zen-light-chip { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
   </style>
-  <g id="hero">
-    <rect width="860" height="240" rx="20" fill="url(#bg)"/>
-    <ellipse class="aura-orb-a" cx="138" cy="43" rx="206" ry="110" fill="url(#orb-0)"/>
-    <ellipse class="aura-orb-b" cx="654" cy="53" rx="241" ry="101" fill="url(#orb-1)"/>
+
+  <g id="gs-hero-ahmedsabrari-zen-light">
+    <rect width="860" height="240" rx="20" fill="url(#gs-hero-ahmedsabrari-zen-light-bg)"/>
+
+    <ellipse class="aura-orb-a" cx="138" cy="43" rx="206" ry="110" fill="url(#gs-hero-ahmedsabrari-zen-light-orb-0)"/>
+    <ellipse class="aura-orb-b" cx="654" cy="53" rx="241" ry="101" fill="url(#gs-hero-ahmedsabrari-zen-light-orb-1)"/>
+    <ellipse class="aura-orb-c" cx="499" cy="211" rx="310" ry="82" fill="url(#gs-hero-ahmedsabrari-zen-light-orb-2)"/>
+    <ellipse class="aura-orb-b" cx="826" cy="187" rx="172" ry="101" fill="url(#gs-hero-ahmedsabrari-zen-light-orb-3)"/>
+
+    <circle class="aura-ring" cx="735" cy="118" r="31" fill="none" stroke="#0f172a" stroke-opacity="0.36"/>
+    <circle class="aura-ring-b" cx="735" cy="118" r="53.32" fill="none" stroke="#0f172a" stroke-opacity="0.22"/>
+    <circle class="aura-ring" cx="735" cy="118" r="86" fill="none" stroke="#0f172a" stroke-opacity="0.14"/>
+    <g transform="rotate(-32 735 118)">
+      <circle cx="788.32" cy="118" r="4" fill="#38a83d">
+        <animateTransform attributeName="transform" type="scale" values="0.85;1.2;0.85" dur="1.6s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
     <rect x="26" y="26" width="808" height="188" rx="20" fill="#ffffff" stroke="#d7dee8" stroke-opacity="0.55"/>
 
-    <circle class="aura-ring" cx="735" cy="118" r="30.96" fill="none" stroke="#0f172a" stroke-opacity="0.36"/>
-    <circle class="aura-ring" cx="735" cy="118" r="53.32" fill="none" stroke="#0f172a" stroke-opacity="0.22"/>
-    <circle class="aura-ring" cx="735" cy="118" r="86" fill="none" stroke="#0f172a" stroke-opacity="0.14"/>
-    <text x="735" y="112" text-anchor="middle" font-family="Arial,sans-serif" font-size="34" font-weight="900" fill="#53c658">{{totalStars}}</text>
-    <text x="735" y="134" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="800" letter-spacing="2.6" fill="#475569">TOTAL STARS</text>
+    <text x="735" y="112" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="34" font-weight="900" letter-spacing="-1" fill="#53c658">{{totalStars}}</text>
+    <text x="735" y="134" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10" font-weight="800" letter-spacing="2.6" fill="#475569">TOTAL STARS</text>
 
-    <!-- Avatar b SVG pure: cercle + initials -->
-    <circle cx="96" cy="94" r="48" fill="url(#avatar-grad)" stroke="#38a83d" stroke-opacity="0.85" stroke-width="2"/>
-    <text x="96" y="108" text-anchor="middle" font-family="Arial,sans-serif" font-size="36" font-weight="900" fill="#ffffff">AS</text>
+    <clipPath id="gs-hero-ahmedsabrari-zen-light-av"><circle cx="96" cy="94" r="45"/></clipPath>
+    <circle cx="96" cy="94" r="48" fill="rgba(255,255,255,0.06)" stroke="#38a83d" stroke-opacity="0.85" stroke-width="2"/>
+    <image xlink:href="{{avatar}}" x="51" y="49" width="90" height="90" clip-path="url(#gs-hero-ahmedsabrari-zen-light-av)" preserveAspectRatio="xMidYMid slice"/>
 
-    <text x="166" y="69" font-family="Arial,sans-serif" font-size="13" font-weight="800" letter-spacing="2.6" fill="#475569">@{{username}}</text>
-    <text x="166" y="122" font-family="Arial,sans-serif" font-size="46" font-weight="850" fill="#0f172a">{{name}}</text>
-    <text x="168" y="150" font-family="Arial,sans-serif" font-size="15" fill="#475569">{{bio}}</text>
+    <text x="166" y="69" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="13" font-weight="800" letter-spacing="2.6" fill="#475569">@{{username}}</text>
+    <text x="166" y="122" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="46" font-weight="850" letter-spacing="-1.5" fill="#0f172a">{{name}}</text>
+    <text x="168" y="150" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="15" fill="#475569">{{bio}}</text>
 
-    <g class="aura-chip"><rect x="46" y="166" width="110" height="28" rx="14" fill="rgba(255,255,255,0.055)" stroke="#d7dee8"/><text x="61" y="185" font-family="Arial,sans-serif" font-size="12" font-weight="750" fill="#0f172a">PHP</text></g>
-    <g class="aura-chip" style="animation-delay:90ms"><rect x="172" y="166" width="110" height="28" rx="14" fill="rgba(255,255,255,0.055)" stroke="#d7dee8"/><text x="187" y="185" font-family="Arial,sans-serif" font-size="12" font-weight="750" fill="#0f172a">Blade</text></g>
-    <g class="aura-chip" style="animation-delay:180ms"><rect x="298" y="166" width="110" height="28" rx="14" fill="rgba(255,255,255,0.055)" stroke="#d7dee8"/><text x="313" y="185" font-family="Arial,sans-serif" font-size="12" font-weight="750" fill="#0f172a">JavaScript</text></g>
-    <g class="aura-chip" style="animation-delay:270ms"><rect x="424" y="166" width="110" height="28" rx="14" fill="rgba(255,255,255,0.055)" stroke="#d7dee8"/><text x="439" y="185" font-family="Arial,sans-serif" font-size="12" font-weight="750" fill="#0f172a">Python</text></g>
+    <g class="aura-chip" style="animation-delay:0ms">
+      <rect x="46" y="166" width="110" height="28" rx="14" fill="rgba(255,255,255,0.055)" stroke="#d7dee8" stroke-opacity="0.68"/>
+      <text x="61" y="185" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" font-weight="750" fill="#0f172a">PHP</text>
+    </g>
+    <g class="aura-chip" style="animation-delay:90ms">
+      <rect x="172" y="166" width="110" height="28" rx="14" fill="rgba(255,255,255,0.055)" stroke="#d7dee8" stroke-opacity="0.68"/>
+      <text x="187" y="185" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" font-weight="750" fill="#0f172a">Blade</text>
+    </g>
+    <g class="aura-chip" style="animation-delay:180ms">
+      <rect x="298" y="166" width="110" height="28" rx="14" fill="rgba(255,255,255,0.055)" stroke="#d7dee8" stroke-opacity="0.68"/>
+      <text x="313" y="185" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" font-weight="750" fill="#0f172a">JavaScript</text>
+    </g>
+    <g class="aura-chip" style="animation-delay:270ms">
+      <rect x="424" y="166" width="110" height="28" rx="14" fill="rgba(255,255,255,0.055)" stroke="#d7dee8" stroke-opacity="0.68"/>
+      <text x="439" y="185" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" font-weight="750" fill="#0f172a">Python</text>
+    </g>
 
-    <path d="M166 76 C246 50 330 50 410 77" fill="none" stroke="url(#shine)" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+    <path d="M166 76 C246 50 330 50 410 77" fill="none" stroke="url(#gs-hero-ahmedsabrari-zen-light-shine)" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
     <rect x="0.5" y="0.5" width="859" height="239" rx="19.5" fill="none" stroke="#d7dee8" stroke-opacity="0.62"/>
   </g>
 </svg>
