@@ -57,6 +57,20 @@ async function gql() {
   return j.data.user;
 }
 
+// ============ Jdid: Téléchargi avatar → base64 ============
+async function fetchAvatarBase64(url) {
+  console.log('  Downloading avatar...');
+  const res = await fetch(url, {
+    headers: { 'User-Agent': 'profile-cards' },
+  });
+  if (!res.ok) throw new Error(`Avatar fetch failed: ${res.status}`);
+  const buffer = await res.buffer();
+  const contentType = res.headers.get('content-type') || 'image/png';
+  const base64 = buffer.toString('base64');
+  console.log(`  ✅ Avatar: ${(buffer.length / 1024).toFixed(1)} KB`);
+  return `data:${contentType};base64,${base64}`;
+}
+
 function computeLanguages(repos) {
   const map = new Map();
   for (const r of repos) {
@@ -81,6 +95,9 @@ async function main() {
     .flatMap(w => w.contributionDays)
     .slice(-371);
 
+  // Jib avatar base64
+  const avatarBase64 = await fetchAvatarBase64(u.avatarUrl);
+
   const stats = {
     name: u.name || u.login,
     username: u.login,
@@ -88,7 +105,7 @@ async function main() {
     location: u.location || '',
     company: u.company || '',
     joined: u.createdAt,
-    avatar: u.avatarUrl,
+    avatar: avatarBase64,           // ← base64 daba
     followers: u.followers.totalCount,
     following: u.following.totalCount,
     totalRepos: u.repositories.totalCount,
@@ -127,6 +144,7 @@ async function main() {
   console.log('   stars:', stats.totalStars);
   console.log('   contributions:', stats.contributions);
   console.log('   repos:', stats.totalRepos);
+  console.log('   avatar size:', (avatarBase64.length / 1024).toFixed(1), 'KB');
 }
 
 main().catch(e => { console.error('❌', e.message); process.exit(1); });
