@@ -76,7 +76,10 @@
 
     <text x="166" y="69" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="13" font-weight="800" letter-spacing="2.6" fill="#475569">@ahmedsabrari</text>
     <text x="166" y="122" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="46" font-weight="850" letter-spacing="-1.5" fill="#0f172a">AHMED SABRARI</text>
-    <text x="168" y="150" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="15" fill="#475569">🚀 I'm Ahmed Sabrari, a full-stack web developer with a 2024 diploma in digital development. I excel in PHP, JavaScript, and Python. Let’s connect!</text>
+    <text x="168" y="150" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="15" fill="#475569">
+      <tspan x="168" dy="0">🚀 I'm Ahmed Sabrari, a full-stack web developer with a</tspan>
+      <tspan x="168" dy="20">2024 diploma in digital development. I excel in PHP,…</tspan>
+    </text>
 
     <g class="aura-chip" style="animation-delay:0ms">
       <rect x="46" y="166" width="110" height="28" rx="14" fill="rgba(255,255,255,0.055)" stroke="#d7dee8" stroke-opacity="0.68"/>
