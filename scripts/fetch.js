@@ -70,6 +70,27 @@ async function fetchAvatarBase64(url) {
   console.log(`  ✅ Avatar: ${(buffer.length / 1024).toFixed(1)} KB`);
   return `data:${contentType};base64,${base64}`;
 }
+// ============ Split bio l 2 lines intelligently ============
+function splitBio(bio, maxLen = 55) {
+  const raw = (bio || '').trim();
+  if (!raw) return { line1: '', line2: '' };
+  if (raw.length <= maxLen) return { line1: raw, line2: '' };
+
+  // 9tta3 3la aqrab space qbel maxLen
+  let cut = raw.lastIndexOf(' ', maxLen);
+  if (cut <= 0) cut = maxLen;
+
+  const line1 = raw.slice(0, cut).trim();
+  let rest = raw.slice(cut).trim();
+
+  let line2 = rest;
+  if (rest.length > maxLen) {
+    let cut2 = rest.lastIndexOf(' ', maxLen);
+    if (cut2 <= 0) cut2 = maxLen - 1;
+    line2 = rest.slice(0, cut2).trim() + '…';
+  }
+  return { line1, line2 };
+}
 
 function computeLanguages(repos) {
   const map = new Map();
@@ -97,11 +118,14 @@ async function main() {
 
   // Jib avatar base64
   const avatarBase64 = await fetchAvatarBase64(u.avatarUrl);
+  const { line1: bioLine1, line2: bioLine2 } = splitBio(u.bio || '', 55);
 
   const stats = {
     name: u.name || u.login,
     username: u.login,
     bio: u.bio || '',
+    bioLine1: bioLine1, 
+    bioLine2: bioLine2,
     location: u.location || '',
     company: u.company || '',
     joined: u.createdAt,
