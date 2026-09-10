@@ -1,48 +1,165 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="320" viewBox="0 0 1000 320">
-  <rect width="100%" height="100%" rx="16" fill="#0d1117"/>
-  
-  <text x="500" y="31" fill="#e6edf3" font-family="Arial,sans-serif" font-size="18" font-weight="700" text-anchor="middle">AHMED SABRARI's Contribution Graph</text>
-  <text x="500" y="50" fill="#58a6ff" font-family="Arial,sans-serif" font-size="10" text-anchor="middle">Last 91 days · 44 contributions in the last year</text>
-  
-  <line x1="64" y1="262" x2="976" y2="262" stroke="rgba(255,255,255,0.06)" stroke-dasharray="3 5"/>
-  <text x="52" y="266" fill="#8b949e" font-family="Arial,sans-serif" font-size="11" text-anchor="end">0</text>
-  
-  <line x1="64" y1="262" x2="976" y2="262" stroke="rgba(255,255,255,0.06)" stroke-dasharray="3 5"/>
-  <text x="52" y="266" fill="#8b949e" font-family="Arial,sans-serif" font-size="11" text-anchor="end">0</text>
-  
-  <line x1="64" y1="68" x2="976" y2="68" stroke="rgba(255,255,255,0.06)" stroke-dasharray="3 5"/>
-  <text x="52" y="72" fill="#8b949e" font-family="Arial,sans-serif" font-size="11" text-anchor="end">1</text>
-  
-  <line x1="64" y1="68" x2="976" y2="68" stroke="rgba(255,255,255,0.06)" stroke-dasharray="3 5"/>
-  <text x="52" y="72" fill="#8b949e" font-family="Arial,sans-serif" font-size="11" text-anchor="end">1</text>
-  
-  <line x1="64" y1="68" x2="976" y2="68" stroke="rgba(255,255,255,0.06)" stroke-dasharray="3 5"/>
-  <text x="52" y="72" fill="#8b949e" font-family="Arial,sans-serif" font-size="11" text-anchor="end">1</text>
-  
-  <polyline points="64,262 74.13333333333333,262 84.26666666666667,262 94.4,262 104.53333333333333,262 114.66666666666666,262 124.8,262 134.93333333333334,262 145.06666666666666,262 155.2,262 165.33333333333331,262 175.46666666666667,262 185.6,262 195.73333333333332,262 205.86666666666667,262 216,262 226.13333333333333,262 236.26666666666665,262 246.4,262 256.5333333333333,262 266.66666666666663,262 276.8,262 286.93333333333334,262 297.06666666666666,262 307.2,262 317.33333333333337,262 327.46666666666664,262 337.59999999999997,262 347.73333333333335,262 357.8666666666667,262 368,262 378.1333333333333,262 388.26666666666665,262 398.4,262 408.5333333333333,262 418.6666666666667,262 428.8,262 438.93333333333334,262 449.06666666666666,262 459.2,262 469.3333333333333,262 479.46666666666664,262 489.6,262 499.73333333333335,262 509.8666666666667,262 520,262 530.1333333333333,262 540.2666666666667,262 550.4,262 560.5333333333333,262 570.6666666666667,262 580.8,262 590.9333333333333,262 601.0666666666667,262 611.1999999999999,262 621.3333333333334,262 631.4666666666667,262 641.6,262 651.7333333333333,262 661.8666666666667,262 672,262 682.1333333333333,262 692.2666666666667,262 702.4,262 712.5333333333333,262 722.6666666666666,262 732.8,262 742.9333333333334,262 753.0666666666666,262 763.2,262 773.3333333333334,262 783.4666666666667,262 793.6,262 803.7333333333333,262 813.8666666666667,262 824,262 834.1333333333333,262 844.2666666666667,262 854.4,262 864.5333333333333,262 874.6666666666666,262 884.8000000000001,262 894.9333333333333,262 905.0666666666667,262 915.2,262 925.3333333333333,68 935.4666666666667,262 945.6,262 955.7333333333333,262 965.8666666666667,262 976,68" fill="none" stroke="#a371f7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-  
-  <circle cx="64" cy="262" r="4" fill="#39d353" stroke="#161b22" stroke-width="2"/>
-  <circle cx="134.93333333333334" cy="262" r="4" fill="#39d353" stroke="#161b22" stroke-width="2"/>
-  <circle cx="205.86666666666667" cy="262" r="4" fill="#39d353" stroke="#161b22" stroke-width="2"/>
-  <circle cx="276.8" cy="262" r="4" fill="#39d353" stroke="#161b22" stroke-width="2"/>
-  <circle cx="347.73333333333335" cy="262" r="4" fill="#39d353" stroke="#161b22" stroke-width="2"/>
-  <circle cx="418.6666666666667" cy="262" r="4" fill="#39d353" stroke="#161b22" stroke-width="2"/>
-  <circle cx="489.6" cy="262" r="4" fill="#39d353" stroke="#161b22" stroke-width="2"/>
-  <circle cx="560.5333333333333" cy="262" r="4" fill="#39d353" stroke="#161b22" stroke-width="2"/>
-  <circle cx="631.4666666666667" cy="262" r="4" fill="#39d353" stroke="#161b22" stroke-width="2"/>
-  <circle cx="702.4" cy="262" r="4" fill="#39d353" stroke="#161b22" stroke-width="2"/>
-  <circle cx="773.3333333333334" cy="262" r="4" fill="#39d353" stroke="#161b22" stroke-width="2"/>
-  <circle cx="844.2666666666667" cy="262" r="4" fill="#39d353" stroke="#161b22" stroke-width="2"/>
-  <circle cx="915.2" cy="262" r="4" fill="#39d353" stroke="#161b22" stroke-width="2"/>
-  <circle cx="976" cy="68" r="4" fill="#39d353" stroke="#161b22" stroke-width="2"/>
-  
-  <text x="64" y="300" fill="#8b949e" font-family="Arial,sans-serif" font-size="10" text-anchor="middle">06-10</text>
-  <text x="205.86666666666667" y="300" fill="#8b949e" font-family="Arial,sans-serif" font-size="10" text-anchor="middle">06-24</text>
-  <text x="347.73333333333335" y="300" fill="#8b949e" font-family="Arial,sans-serif" font-size="10" text-anchor="middle">07-08</text>
-  <text x="489.6" y="300" fill="#8b949e" font-family="Arial,sans-serif" font-size="10" text-anchor="middle">07-22</text>
-  <text x="631.4666666666667" y="300" fill="#8b949e" font-family="Arial,sans-serif" font-size="10" text-anchor="middle">08-05</text>
-  <text x="773.3333333333334" y="300" fill="#8b949e" font-family="Arial,sans-serif" font-size="10" text-anchor="middle">08-19</text>
-  <text x="915.2" y="300" fill="#8b949e" font-family="Arial,sans-serif" font-size="10" text-anchor="middle">09-02</text>
-  
-  <text x="18" y="165" fill="#58a6ff" font-family="Arial,sans-serif" font-size="11" text-anchor="middle" transform="rotate(-90 18 165)">Contributions</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="240" viewBox="0 0 860 240" role="img" aria-labelledby="cgTitle cgDesc">
+  <title id="cgTitle">AHMED SABRARI's Contribution Graph</title>
+  <desc id="cgDesc">Contribution graph for the last 91 days, showing 44 contributions in the last year. Two activity spikes appear near 09-02.</desc>
+
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#F4F1EA"/>
+      <stop offset="50%"  stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F4F1EA"/>
+    </linearGradient>
+
+    <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#14B8A6"/>
+      <stop offset="60%"  stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#4F46E5"/>
+    </linearGradient>
+
+    <linearGradient id="shineGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#4F46E5" stop-opacity="0.85"/>
+      <stop offset="55%"  stop-color="#8B93A7" stop-opacity="0.40"/>
+      <stop offset="100%" stop-color="#4F46E5" stop-opacity="0"/>
+    </linearGradient>
+
+    <radialGradient id="glowIndigo">
+      <stop offset="0%"   stop-color="#4F46E5" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#4F46E5" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glowTeal">
+      <stop offset="0%"   stop-color="#14B8A6" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#14B8A6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <style>
+    .t { font-family: Arial, Helvetica, sans-serif; }
+
+    .title    { font-size: 17px;   font-weight: 700; letter-spacing: 0.3px; fill: #1F2933; }
+    .subtitle { font-size: 10.5px; font-weight: 600; letter-spacing: 0.8px; fill: #4F46E5; }
+    .tick     { font-size: 10px;   font-weight: 600;                        fill: #6B7280; }
+    .axis-lbl { font-size: 10px;   font-weight: 700; letter-spacing: 1.6px; fill: #6B7280; }
+
+    .grid  { animation: fadeIn .9s ease-out both; }
+    .grid:nth-of-type(1) { animation-delay: .05s; }
+    .grid:nth-of-type(2) { animation-delay: .15s; }
+
+    .line  {
+      stroke-dasharray: 1;
+      stroke-dashoffset: 1;
+      animation: drawLine 1.8s cubic-bezier(.4,0,.2,1) .15s both;
+    }
+
+    .dot { animation: dotIn .45s cubic-bezier(.34,1.56,.64,1) both; }
+    .dot:nth-of-type(1)  { animation-delay: .20s; }
+    .dot:nth-of-type(2)  { animation-delay: .26s; }
+    .dot:nth-of-type(3)  { animation-delay: .32s; }
+    .dot:nth-of-type(4)  { animation-delay: .38s; }
+    .dot:nth-of-type(5)  { animation-delay: .44s; }
+    .dot:nth-of-type(6)  { animation-delay: .50s; }
+    .dot:nth-of-type(7)  { animation-delay: .56s; }
+    .dot:nth-of-type(8)  { animation-delay: .62s; }
+    .dot:nth-of-type(9)  { animation-delay: .68s; }
+    .dot:nth-of-type(10) { animation-delay: .74s; }
+    .dot:nth-of-type(11) { animation-delay: .80s; }
+    .dot:nth-of-type(12) { animation-delay: .86s; }
+    .dot:nth-of-type(13) { animation-delay: .92s; }
+    .dot:nth-of-type(14) { animation-delay: .98s; }
+
+    .peak      { transform-box: fill-box; transform-origin: center; animation: pulseDot 2.8s ease-in-out 1.2s infinite; }
+    .peak-halo { transform-box: fill-box; transform-origin: center; animation: pulseRing 3.6s ease-in-out infinite; }
+
+    .orb-a { transform-box: fill-box; transform-origin: center; animation: drift1 11s ease-in-out infinite; }
+    .orb-b { transform-box: fill-box; transform-origin: center; animation: drift2 13s ease-in-out infinite; }
+
+    @keyframes drawLine  { to { stroke-dashoffset: 0; } }
+    @keyframes fadeIn    { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes dotIn     { from { opacity: 0; transform: scale(.2); } to { opacity: 1; transform: scale(1); } }
+    @keyframes pulseDot  { 0%,100% { transform: scale(1); } 50% { transform: scale(1.35); } }
+    @keyframes pulseRing { 0%,100% { transform: scale(1); opacity: .8; } 50% { transform: scale(1.5); opacity: 0; } }
+    @keyframes drift1    { 0%,100% { transform: translate(0,0); } 50% { transform: translate(22px,-12px); } }
+    @keyframes drift2    { 0%,100% { transform: translate(0,0); } 50% { transform: translate(-18px,10px); } }
+
+    @media (prefers-reduced-motion: reduce) {
+      .grid, .line, .dot, .peak, .peak-halo, .orb-a, .orb-b {
+        animation: none !important;
+      }
+      .line { stroke-dashoffset: 0; }
+    }
+  </style>
+
+  <!-- ===== Canvas ===== -->
+  <rect width="860" height="240" rx="20" fill="url(#bgGrad)"/>
+  <rect x="26" y="26" width="808" height="188" rx="14"
+        fill="#FFFFFF" fill-opacity="0.55" stroke="#D9D2C7" stroke-width="1.2"/>
+
+  <!-- ===== Decorative glow orbs ===== -->
+  <g aria-hidden="true">
+    <circle class="orb-a" cx="176" cy="62"  r="50" fill="url(#glowIndigo)"/>
+    <circle class="orb-b" cx="712" cy="198" r="60" fill="url(#glowTeal)"/>
+  </g>
+
+  <!-- ===== Decorative shine ===== -->
+  <path aria-hidden="true"
+        d="M300 66 C 360 58, 500 58, 560 66"
+        fill="none" stroke="url(#shineGrad)" stroke-width="1.4" stroke-linecap="round"/>
+
+  <!-- ===== Header ===== -->
+  <text class="t title"    x="430" y="54" text-anchor="middle">AHMED SABRARI's Contribution Graph</text>
+  <text class="t subtitle" x="430" y="72" text-anchor="middle">LAST 91 DAYS · 44 CONTRIBUTIONS IN THE LAST YEAR</text>
+
+  <!-- ===== Gridlines ===== -->
+  <g aria-hidden="true">
+    <line class="grid" x1="68" y1="94"  x2="830" y2="94"
+          stroke="#D9D2C7" stroke-width="1" stroke-dasharray="3 5"/>
+    <line class="grid" x1="68" y1="178" x2="830" y2="178"
+          stroke="#D9D2C7" stroke-width="1" stroke-dasharray="3 5"/>
+  </g>
+
+  <!-- ===== Y-axis ticks ===== -->
+  <text class="t tick" x="60" y="98"  text-anchor="end">1</text>
+  <text class="t tick" x="60" y="182" text-anchor="end">0</text>
+
+  <!-- ===== Y-axis title ===== -->
+  <text class="t axis-lbl" x="40" y="136" text-anchor="middle"
+        transform="rotate(-90 40 136)">CONTRIBUTIONS</text>
+
+  <!-- ===== Contribution line ===== -->
+  <polyline class="line" pathLength="1"
+    points="68,178 76.5,178 84.9,178 93.4,178 101.9,178 110.3,178 118.8,178 127.3,178 135.7,178 144.2,178 152.7,178 161.1,178 169.6,178 178.1,178 186.5,178 195,178 203.5,178 211.9,178 220.4,178 228.9,178 237.3,178 245.8,178 254.3,178 262.7,178 271.2,178 279.7,178 288.1,178 296.6,178 305.1,178 313.5,178 322,178 330.5,178 338.9,178 347.4,178 355.9,178 364.3,178 372.8,178 381.3,178 389.7,178 398.2,178 406.7,178 415.1,178 423.6,178 432.1,178 440.5,178 449,178 457.5,178 465.9,178 474.4,178 482.9,178 491.3,178 499.8,178 508.3,178 516.7,178 525.2,178 533.7,178 542.1,178 550.6,178 559.1,178 567.5,178 576,178 584.5,178 592.9,178 601.4,178 609.9,178 618.3,178 626.8,178 635.3,178 643.7,178 652.2,178 660.7,178 669.1,178 677.6,178 686.1,178 694.5,178 703,178 711.5,178 719.9,178 728.4,178 736.9,178 745.3,178 753.8,178 762.3,178 770.7,178 779.2,178 787.7,94 796.1,178 804.6,178 813.1,178 821.5,178 830,94"
+    fill="none" stroke="url(#lineGrad)" stroke-width="3"
+    stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- ===== Data point markers ===== -->
+  <g>
+    <circle class="dot" cx="68"    cy="178" r="4" fill="#14B8A6" stroke="#FFFFFF" stroke-width="2"/>
+    <circle class="dot" cx="127.3" cy="178" r="4" fill="#14B8A6" stroke="#FFFFFF" stroke-width="2"/>
+    <circle class="dot" cx="186.5" cy="178" r="4" fill="#14B8A6" stroke="#FFFFFF" stroke-width="2"/>
+    <circle class="dot" cx="245.8" cy="178" r="4" fill="#14B8A6" stroke="#FFFFFF" stroke-width="2"/>
+    <circle class="dot" cx="305.1" cy="178" r="4" fill="#14B8A6" stroke="#FFFFFF" stroke-width="2"/>
+    <circle class="dot" cx="364.3" cy="178" r="4" fill="#14B8A6" stroke="#FFFFFF" stroke-width="2"/>
+    <circle class="dot" cx="423.6" cy="178" r="4" fill="#14B8A6" stroke="#FFFFFF" stroke-width="2"/>
+    <circle class="dot" cx="482.9" cy="178" r="4" fill="#14B8A6" stroke="#FFFFFF" stroke-width="2"/>
+    <circle class="dot" cx="542.1" cy="178" r="4" fill="#14B8A6" stroke="#FFFFFF" stroke-width="2"/>
+    <circle class="dot" cx="601.4" cy="178" r="4" fill="#14B8A6" stroke="#FFFFFF" stroke-width="2"/>
+    <circle class="dot" cx="660.7" cy="178" r="4" fill="#14B8A6" stroke="#FFFFFF" stroke-width="2"/>
+    <circle class="dot" cx="719.9" cy="178" r="4" fill="#14B8A6" stroke="#FFFFFF" stroke-width="2"/>
+    <circle class="dot" cx="779.2" cy="178" r="4" fill="#14B8A6" stroke="#FFFFFF" stroke-width="2"/>
+    <circle class="dot" cx="830"   cy="94"  r="4" fill="#4F46E5" stroke="#FFFFFF" stroke-width="2"/>
+  </g>
+
+  <!-- ===== Peak accent ===== -->
+  <g aria-hidden="true">
+    <circle class="peak-halo" cx="787.7" cy="94" r="12" fill="url(#glowIndigo)"/>
+    <circle class="peak" cx="787.7" cy="94" r="5.5" fill="#4F46E5" stroke="#FFFFFF" stroke-width="2"/>
+  </g>
+
+  <!-- ===== X-axis labels ===== -->
+  <text class="t tick" x="68"    y="196" text-anchor="middle">06-10</text>
+  <text class="t tick" x="186.5" y="196" text-anchor="middle">06-24</text>
+  <text class="t tick" x="305.1" y="196" text-anchor="middle">07-08</text>
+  <text class="t tick" x="423.6" y="196" text-anchor="middle">07-22</text>
+  <text class="t tick" x="542.1" y="196" text-anchor="middle">08-05</text>
+  <text class="t tick" x="660.7" y="196" text-anchor="middle">08-19</text>
+  <text class="t tick" x="779.2" y="196" text-anchor="middle">09-02</text>
 </svg>

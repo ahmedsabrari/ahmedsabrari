@@ -1,0 +1,219 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="240" viewBox="0 0 860 240"
+     role="img" aria-labelledby="cpTitle cpDesc">
+  <title id="cpTitle">Competitive Programming — GitHub engineering signal for AHMED SABRARI</title>
+  <desc id="cpDesc">Signal score 7. Activity 2 percent, Projects 18 percent, Community 5 percent.
+  Connect Codeforces or LeetCode to replace this proxy panel with verified contest data.</desc>
+
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#F4F1EA"/>
+      <stop offset="50%"  stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F4F1EA"/>
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#FCFAF6"/>
+    </linearGradient>
+
+    <linearGradient id="shineGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#4F46E5" stop-opacity="0"/>
+      <stop offset="42%"  stop-color="#4F46E5" stop-opacity="0.75"/>
+      <stop offset="76%"  stop-color="#6B7280" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#14B8A6" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="avatarGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#14B8A6"/>
+    </linearGradient>
+
+    <radialGradient id="orbIndigo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#4F46E5" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#4F46E5" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="orbTeal" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#14B8A6" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#14B8A6" stop-opacity="0"/>
+    </radialGradient>
+
+    <clipPath id="cardClip">
+      <rect x="26" y="26" width="808" height="188" rx="14"/>
+    </clipPath>
+  </defs>
+
+  <style>
+    text { font-family: Inter, 'Segoe UI', system-ui, -apple-system, Arial, sans-serif; }
+
+    /* ---------- motion ---------- */
+    @keyframes floatA {
+      0%, 100% { transform: translate(0, 0); }
+      50%      { transform: translate(12px, -14px); }
+    }
+    @keyframes floatB {
+      0%, 100% { transform: translate(0, 0); }
+      50%      { transform: translate(-16px, 10px); }
+    }
+    @keyframes shine {
+      0%, 100% { opacity: 0.30; }
+      50%      { opacity: 0.90; }
+    }
+    @keyframes pulseRing {
+      0%   { transform: scale(0.92); opacity: 0.40; }
+      70%  { transform: scale(1.16); opacity: 0; }
+      100% { transform: scale(1.16); opacity: 0; }
+    }
+    @keyframes orbit {
+      to { transform: rotate(360deg); }
+    }
+    @keyframes dotScale {
+      0%, 100% { transform: scale(1); }
+      50%      { transform: scale(1.4); }
+    }
+    @keyframes chipIn {
+      from { opacity: 0; transform: translateY(9px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .orb      { transform-box: fill-box; transform-origin: center; }
+    .orb-a    { animation: floatA 11s ease-in-out infinite; }
+    .orb-b    { animation: floatB 14s ease-in-out infinite; }
+    .orb-c    { animation: floatA 9s  ease-in-out infinite reverse; }
+
+    .shine    { animation: shine 7s ease-in-out infinite; }
+
+    .ring-pulse {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: pulseRing 4.5s ease-out infinite;
+    }
+
+    .orbit {
+      transform-box: view-box;
+      transform-origin: 735px 118px;
+      animation: orbit 16s linear infinite;
+    }
+    .orbit-dot {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: dotScale 2.6s ease-in-out infinite;
+    }
+
+    .chip   { animation: chipIn .8s cubic-bezier(.22, 1, .36, 1) both; }
+    .chip-1 { animation-delay: .12s; }
+    .chip-2 { animation-delay: .24s; }
+    .chip-3 { animation-delay: .36s; }
+
+    /* ---------- accessibility ---------- */
+    @media (prefers-reduced-motion: reduce) {
+      .orb-a, .orb-b, .orb-c, .shine, .ring-pulse,
+      .orbit, .orbit-dot, .chip {
+        animation: none !important;
+      }
+      .chip { opacity: 1 !important; transform: none !important; }
+    }
+  </style>
+
+  <!-- ============ canvas ============ -->
+  <rect width="860" height="240" rx="20" fill="url(#bgGrad)"/>
+
+  <!-- ============ inner card ============ -->
+  <rect x="26" y="26" width="808" height="188" rx="14"
+        fill="url(#cardGrad)" stroke="#D9D2C7" stroke-width="1"/>
+
+  <!-- ============ decorative layer ============ -->
+  <g clip-path="url(#cardClip)" aria-hidden="true">
+    <circle class="orb orb-a" cx="150" cy="62"  r="92"  fill="url(#orbIndigo)"/>
+    <circle class="orb orb-b" cx="690" cy="196" r="104" fill="url(#orbTeal)"/>
+    <circle class="orb orb-c" cx="470" cy="34"  r="72"  fill="url(#orbIndigo)"/>
+
+    <path class="shine" d="M166 70 C246 34, 336 34, 410 70"
+          fill="none" stroke="url(#shineGrad)" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- ============ left identity block ============ -->
+  <g aria-hidden="true">
+    <circle cx="96" cy="94" r="34" fill="none" stroke="#D9D2C7" stroke-width="1"/>
+    <circle cx="96" cy="94" r="30" fill="url(#avatarGrad)"/>
+    <text x="96" y="101" text-anchor="middle" font-size="17" font-weight="700"
+          fill="#FFFFFF" letter-spacing="0.5">AS</text>
+  </g>
+
+  <text x="146" y="86" font-size="11.5" font-weight="600" letter-spacing="1.4"
+        fill="#6B7280">@AHMEDSABRARI</text>
+  <text x="146" y="112" font-size="20" font-weight="700" letter-spacing="0.2"
+        fill="#1F2933">AHMED SABRARI</text>
+  <text x="146" y="131" font-size="11.5" fill="#6B7280">Competitive Programming · GitHub engineering signal</text>
+
+  <!-- ============ skill / metric chips ============ -->
+  <g class="chip chip-1">
+    <rect x="66" y="164" width="110" height="26" rx="13"
+          fill="#FFFFFF" stroke="#D9D2C7" stroke-width="1"/>
+    <circle cx="82" cy="177" r="3.5" fill="#4F46E5"/>
+    <text x="94" y="181" font-size="11" fill="#1F2933">Activity</text>
+    <text x="164" y="181" font-size="11" font-weight="600" text-anchor="end" fill="#6B7280">2%</text>
+  </g>
+
+  <g class="chip chip-2">
+    <rect x="184" y="164" width="110" height="26" rx="13"
+          fill="#FFFFFF" stroke="#D9D2C7" stroke-width="1"/>
+    <circle cx="200" cy="177" r="3.5" fill="#14B8A6"/>
+    <text x="212" y="181" font-size="11" fill="#1F2933">Projects</text>
+    <text x="282" y="181" font-size="11" font-weight="600" text-anchor="end" fill="#6B7280">18%</text>
+  </g>
+
+  <g class="chip chip-3">
+    <rect x="302" y="164" width="110" height="26" rx="13"
+          fill="#FFFFFF" stroke="#D9D2C7" stroke-width="1"/>
+    <circle cx="318" cy="177" r="3.5" fill="#6B7280"/>
+    <text x="330" y="181" font-size="11" fill="#1F2933">Community</text>
+    <text x="400" y="181" font-size="11" font-weight="600" text-anchor="end" fill="#6B7280">5%</text>
+  </g>
+
+  <!-- ============ footnote ============ -->
+  <text x="66" y="206" font-size="10" fill="#6B7280">Connect Codeforces or LeetCode to replace this proxy panel with verified contest data.</text>
+
+  <!-- ============ right stat cluster ============ -->
+  <g>
+    <!-- pulsing halo -->
+    <circle class="ring-pulse" cx="735" cy="118" r="58"
+            fill="none" stroke="#4F46E5" stroke-width="1.5" aria-hidden="true"/>
+
+    <!-- decorative outer hairline -->
+    <circle cx="735" cy="118" r="64" fill="none"
+            stroke="#D9D2C7" stroke-width="1" aria-hidden="true"/>
+
+    <!-- three concentric progress rings -->
+    <g transform="rotate(-90 735 118)" fill="none" stroke-linecap="round">
+      <!-- Projects 18% — indigo -->
+      <circle cx="735" cy="118" r="52" stroke="#EDE8DF" stroke-width="6"/>
+      <circle cx="735" cy="118" r="52" stroke="#4F46E5" stroke-width="6"
+              stroke-dasharray="58.81 326.73"/>
+
+      <!-- Community 5% — teal -->
+      <circle cx="735" cy="118" r="41" stroke="#EDE8DF" stroke-width="6"/>
+      <circle cx="735" cy="118" r="41" stroke="#14B8A6" stroke-width="6"
+              stroke-dasharray="12.88 257.61"/>
+
+      <!-- Activity 2% — slate -->
+      <circle cx="735" cy="118" r="30" stroke="#EDE8DF" stroke-width="6"/>
+      <circle cx="735" cy="118" r="30" stroke="#6B7280" stroke-width="6"
+              stroke-dasharray="3.77 188.50"/>
+    </g>
+
+    <!-- numeral + label -->
+    <text x="735" y="122" text-anchor="middle" font-size="30" font-weight="700"
+          fill="#1F2933">7</text>
+    <text x="735" y="138" text-anchor="middle" font-size="7.5" font-weight="600"
+          letter-spacing="1.2" fill="#6B7280">SIGNAL</text>
+
+    <!-- orbit dot -->
+    <g class="orbit" aria-hidden="true">
+      <g class="orbit-dot">
+        <circle cx="735" cy="54" r="9" fill="#4F46E5" opacity="0.15"/>
+        <circle cx="735" cy="54" r="4" fill="#4F46E5"/>
+      </g>
+    </g>
+  </g>
+</svg>

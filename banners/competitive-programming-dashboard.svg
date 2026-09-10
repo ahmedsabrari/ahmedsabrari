@@ -1,22 +1,138 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="620" height="250" viewBox="0 0 620 250">
-  <rect width="100%" height="100%" rx="16" fill="#0d1117"/>
-  <text x="310" y="30" fill="#e6edf3" font-family="Arial,sans-serif" font-size="17" font-weight="700" text-anchor="middle">Competitive Programming</text>
-  <text x="310" y="53" fill="#39d353" font-family="Arial,sans-serif" font-size="11" text-anchor="middle">GitHub engineering signal · AHMED SABRARI</text>
-  <circle cx="106" cy="145" r="54" fill="none" stroke="#161b22" stroke-width="16"/>
-  <circle cx="106" cy="145" r="54" fill="none" stroke="#a371f7" stroke-width="16" stroke-linecap="round" stroke-dasharray="23.73 340" transform="rotate(-90 106 145)"/>
-  <text x="106" y="141" fill="#e6edf3" font-family="Arial,sans-serif" font-size="22" font-weight="700" text-anchor="middle">7</text>
-  <text x="106" y="160" fill="#8b949e" font-family="Arial,sans-serif" font-size="10" text-anchor="middle">signal</text>
-  <text x="190" y="112" fill="#e6edf3" font-family="Arial,sans-serif" font-size="12">Activity</text>
-  <rect x="270" y="99" width="240" height="14" rx="7" fill="#161b22"/>
-  <rect x="270" y="99" width="6" height="14" rx="7" fill="#58a6ff"/>
-  <text x="530" y="112" fill="#8b949e" font-family="Arial,sans-serif" font-size="11">2%</text>
-  <text x="190" y="148" fill="#e6edf3" font-family="Arial,sans-serif" font-size="12">Projects</text>
-  <rect x="270" y="135" width="240" height="14" rx="7" fill="#161b22"/>
-  <rect x="270" y="135" width="43.199999999999996" height="14" rx="7" fill="#a371f7"/>
-  <text x="530" y="148" fill="#8b949e" font-family="Arial,sans-serif" font-size="11">18%</text>
-  <text x="190" y="184" fill="#e6edf3" font-family="Arial,sans-serif" font-size="12">Community</text>
-  <rect x="270" y="171" width="240" height="14" rx="7" fill="#161b22"/>
-  <rect x="270" y="171" width="12" height="14" rx="7" fill="#39d353"/>
-  <text x="530" y="184" fill="#8b949e" font-family="Arial,sans-serif" font-size="11">5%</text>
-  <text x="310" y="226" fill="#8b949e" font-family="Arial,sans-serif" font-size="10" text-anchor="middle">Connect Codeforces or LeetCode to replace this proxy panel with verified contest data.</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="240" viewBox="0 0 860 240" role="img" aria-labelledby="cpTitle cpDesc">
+  <title id="cpTitle">Competitive Programming — GitHub engineering signal</title>
+  <desc id="cpDesc">Competitive programming panel for AHMED SABRARI. Signal strength 7. Activity 2 percent, Projects 18 percent, Community 5 percent.</desc>
+
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#F4F1EA"/>
+      <stop offset="50%"  stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F4F1EA"/>
+    </linearGradient>
+
+    <linearGradient id="shineGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#4F46E5" stop-opacity="0.85"/>
+      <stop offset="55%"  stop-color="#8B93A7" stop-opacity="0.40"/>
+      <stop offset="100%" stop-color="#4F46E5" stop-opacity="0"/>
+    </linearGradient>
+
+    <radialGradient id="glowIndigo">
+      <stop offset="0%"   stop-color="#4F46E5" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#4F46E5" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glowTeal">
+      <stop offset="0%"   stop-color="#14B8A6" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#14B8A6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <style>
+    .t { font-family: Arial, Helvetica, sans-serif; }
+
+    .title     { font-size: 18px;   font-weight: 700; letter-spacing: 0.3px; fill: #1F2933; }
+    .subtitle  { font-size: 11px;   font-weight: 600; letter-spacing: 1.2px; fill: #4F46E5; }
+    .bar-label { font-size: 12px;   font-weight: 600;                        fill: #1F2933; }
+    .bar-pct   { font-size: 11px;   font-weight: 600;                        fill: #6B7280; }
+    .ring-num  { font-size: 26px;   font-weight: 700;                        fill: #1F2933; }
+    .ring-lbl  { font-size: 9.5px;  font-weight: 700; letter-spacing: 1.8px; fill: #6B7280; }
+    .footer    { font-size: 9.5px;  font-weight: 400;                        fill: #6B7280; }
+
+    .orbit      { transform-box: view-box; transform-origin: 122px 148px; animation: orbit 10s linear infinite; }
+    .orbit-dot  { transform-box: fill-box; transform-origin: center; animation: orbitDot 2.8s ease-in-out infinite; }
+    .ring-spin  { transform-box: fill-box; transform-origin: center; animation: spinSlow 30s linear infinite; }
+    .ring-pulse { transform-box: fill-box; transform-origin: center; animation: pulseRing 3.6s ease-in-out infinite; }
+    .halo       { transform-box: fill-box; transform-origin: center; animation: pulseRing 4.6s ease-in-out infinite; }
+    .orb-a      { transform-box: fill-box; transform-origin: center; animation: drift1 11s ease-in-out infinite; }
+    .orb-b      { transform-box: fill-box; transform-origin: center; animation: drift2 13s ease-in-out infinite; }
+
+    .bar { animation: barIn .6s cubic-bezier(.22,.7,.3,1) both; }
+    .bar:nth-of-type(1) { animation-delay: .12s; }
+    .bar:nth-of-type(2) { animation-delay: .26s; }
+    .bar:nth-of-type(3) { animation-delay: .40s; }
+
+    @keyframes orbit     { to { transform: rotate(360deg); } }
+    @keyframes spinSlow  { to { transform: rotate(360deg); } }
+    @keyframes orbitDot  { 0%,100% { transform: scale(1); } 50% { transform: scale(1.6); } }
+    @keyframes pulseRing { 0%,100% { transform: scale(1); opacity: .85; } 50% { transform: scale(1.045); opacity: 1; } }
+    @keyframes drift1    { 0%,100% { transform: translate(0,0); } 50% { transform: translate(22px,-12px); } }
+    @keyframes drift2    { 0%,100% { transform: translate(0,0); } 50% { transform: translate(-18px,10px); } }
+    @keyframes barIn     { from { opacity: 0; transform: translateX(-8px); } to { opacity: 1; transform: translateX(0); } }
+
+    @media (prefers-reduced-motion: reduce) {
+      .orbit, .orbit-dot, .ring-spin, .ring-pulse, .halo,
+      .orb-a, .orb-b, .bar { animation: none !important; }
+    }
+  </style>
+
+  <!-- ===== Canvas ===== -->
+  <rect width="860" height="240" rx="20" fill="url(#bgGrad)"/>
+  <rect x="26" y="26" width="808" height="188" rx="14"
+        fill="#FFFFFF" fill-opacity="0.55" stroke="#D9D2C7" stroke-width="1.2"/>
+
+  <!-- ===== Decorative glow orbs ===== -->
+  <g aria-hidden="true">
+    <circle class="orb-a" cx="210" cy="70"  r="52" fill="url(#glowIndigo)"/>
+    <circle class="orb-b" cx="690" cy="196" r="62" fill="url(#glowTeal)"/>
+  </g>
+
+  <!-- ===== Decorative shine ===== -->
+  <path aria-hidden="true"
+        d="M190 96 C 245 87, 315 87, 370 96"
+        fill="none" stroke="url(#shineGrad)" stroke-width="1.4" stroke-linecap="round"/>
+
+  <!-- ===== Header ===== -->
+  <text class="t title"    x="430" y="60" text-anchor="middle">Competitive Programming</text>
+  <text class="t subtitle" x="430" y="80" text-anchor="middle">GitHub engineering signal · AHMED SABRARI</text>
+
+  <!-- ===== Left: signal ring ===== -->
+  <g>
+    <circle class="halo" cx="122" cy="148" r="48" fill="#4F46E5" fill-opacity="0.07"/>
+
+    <circle class="ring-spin" cx="122" cy="148" r="52" fill="none"
+            stroke="#D9D2C7" stroke-width="1.2" stroke-dasharray="3 7" stroke-linecap="round"/>
+
+    <circle cx="122" cy="148" r="42" fill="none" stroke="#EDE9E2" stroke-width="12"/>
+
+    <g transform="rotate(-90 122 148)">
+      <circle class="ring-pulse" cx="122" cy="148" r="42" fill="none"
+              stroke="#4F46E5" stroke-width="12" stroke-linecap="round"
+              stroke-dasharray="18.5 264"/>
+    </g>
+
+    <text class="t ring-num" x="122" y="156" text-anchor="middle">7</text>
+    <text class="t ring-lbl" x="122" y="174" text-anchor="middle">signal</text>
+  </g>
+
+  <!-- ===== Orbiting dot ===== -->
+  <g class="orbit" aria-hidden="true">
+    <circle cx="122" cy="96" r="12" fill="url(#glowIndigo)"/>
+    <circle class="orbit-dot" cx="122" cy="96" r="4" fill="#4F46E5"/>
+  </g>
+
+  <!-- ===== Right: stat bars ===== -->
+  <g>
+    <g class="bar">
+      <text class="t bar-label" x="364" y="115" text-anchor="end">Activity</text>
+      <rect x="386" y="104" width="360" height="14" rx="7" fill="#EDE9E2"/>
+      <rect x="386" y="104" width="7.2" height="14" rx="7" fill="#4F46E5"/>
+      <text class="t bar-pct" x="762" y="115">2%</text>
+    </g>
+
+    <g class="bar">
+      <text class="t bar-label" x="364" y="147" text-anchor="end">Projects</text>
+      <rect x="386" y="136" width="360" height="14" rx="7" fill="#EDE9E2"/>
+      <rect x="386" y="136" width="64.8" height="14" rx="7" fill="#14B8A6"/>
+      <text class="t bar-pct" x="762" y="147">18%</text>
+    </g>
+
+    <g class="bar">
+      <text class="t bar-label" x="364" y="179" text-anchor="end">Community</text>
+      <rect x="386" y="168" width="360" height="14" rx="7" fill="#EDE9E2"/>
+      <rect x="386" y="168" width="18" height="14" rx="7" fill="#4F46E5"/>
+      <text class="t bar-pct" x="762" y="179">5%</text>
+    </g>
+  </g>
+
+  <!-- ===== Footer ===== -->
+  <text class="t footer" x="430" y="203" text-anchor="middle">Connect Codeforces or LeetCode to replace this proxy panel with verified contest data.</text>
 </svg>

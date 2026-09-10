@@ -1,53 +1,53 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="860" height="180" viewBox="0 0 860 180" role="img">
   <defs>
     <linearGradient id="gs-highlights-ahmedsabrari-aurora-dark-bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0d1117"/>
-      <stop offset="54%" stop-color="#161b22"/>
-      <stop offset="100%" stop-color="#0d1117"/>
+      <stop offset="0%" stop-color="#F4F1EA"/>
+      <stop offset="54%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F4F1EA"/>
     </linearGradient>
-    
+
     <radialGradient id="gs-highlights-ahmedsabrari-aurora-dark-orb-0" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.72"/>
-      <stop offset="58%" stop-color="#58a6ff" stop-opacity="0.18"/>
-      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#4F46E5" stop-opacity="0.32"/>
+      <stop offset="58%" stop-color="#4F46E5" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#4F46E5" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="gs-highlights-ahmedsabrari-aurora-dark-orb-1" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.5"/>
-      <stop offset="58%" stop-color="#22d3ee" stop-opacity="0.18"/>
-      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#14B8A6" stop-opacity="0.26"/>
+      <stop offset="58%" stop-color="#14B8A6" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#14B8A6" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="gs-highlights-ahmedsabrari-aurora-dark-orb-2" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.72"/>
-      <stop offset="58%" stop-color="#3b82f6" stop-opacity="0.18"/>
-      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#4F46E5" stop-opacity="0.22"/>
+      <stop offset="58%" stop-color="#4F46E5" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#4F46E5" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="gs-highlights-ahmedsabrari-aurora-dark-orb-3" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#a371f7" stop-opacity="0.5"/>
-      <stop offset="58%" stop-color="#a371f7" stop-opacity="0.18"/>
-      <stop offset="100%" stop-color="#a371f7" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#14B8A6" stop-opacity="0.22"/>
+      <stop offset="58%" stop-color="#14B8A6" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#14B8A6" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="gs-highlights-ahmedsabrari-aurora-dark-orb-4" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#a371f7" stop-opacity="0.72"/>
-      <stop offset="58%" stop-color="#a371f7" stop-opacity="0.18"/>
-      <stop offset="100%" stop-color="#a371f7" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#4F46E5" stop-opacity="0.26"/>
+      <stop offset="58%" stop-color="#4F46E5" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#4F46E5" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="gs-highlights-ahmedsabrari-aurora-dark-orb-5" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#7ee787" stop-opacity="0.5"/>
-      <stop offset="58%" stop-color="#7ee787" stop-opacity="0.18"/>
-      <stop offset="100%" stop-color="#7ee787" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#14B8A6" stop-opacity="0.20"/>
+      <stop offset="58%" stop-color="#14B8A6" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#14B8A6" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="gs-highlights-ahmedsabrari-aurora-dark-shine" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#e6edf3" stop-opacity="0.2"/>
-      <stop offset="44%" stop-color="#58a6ff" stop-opacity="0.82"/>
-      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.22"/>
+      <stop offset="0%" stop-color="#8B93A7" stop-opacity="0.18"/>
+      <stop offset="44%" stop-color="#4F46E5" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#14B8A6" stop-opacity="0.16"/>
     </linearGradient>
     <linearGradient id="gs-highlights-ahmedsabrari-aurora-dark-holo" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#e6edf3"/>
-      <stop offset="18%" stop-color="#0d1117"/>
-      <stop offset="38%" stop-color="#58a6ff"/>
-      <stop offset="58%" stop-color="#3b82f6"/>
-      <stop offset="78%" stop-color="#0d1117"/>
-      <stop offset="100%" stop-color="#e6edf3"/>
+      <stop offset="0%" stop-color="#1F2933"/>
+      <stop offset="18%" stop-color="#F4F1EA"/>
+      <stop offset="38%" stop-color="#4F46E5"/>
+      <stop offset="58%" stop-color="#14B8A6"/>
+      <stop offset="78%" stop-color="#F4F1EA"/>
+      <stop offset="100%" stop-color="#1F2933"/>
       <animateTransform attributeName="gradientTransform" type="rotate" from="0 0.5 0.5" to="360 0.5 0.5" dur="8s" repeatCount="indefinite"/>
     </linearGradient>
   </defs>
@@ -62,41 +62,55 @@
     #gs-highlights-ahmedsabrari-aurora-dark .aura-bar { animation: gs-highlights-ahmedsabrari-aurora-dark-bar 1.15s ease-out both; transform-box: fill-box; transform-origin: left; }
     #gs-highlights-ahmedsabrari-aurora-dark .aura-cell { animation: gs-highlights-ahmedsabrari-aurora-dark-cell 520ms ease-out both; }
     @keyframes gs-highlights-ahmedsabrari-aurora-dark-cell { from { opacity: 0; transform: translateY(-3px); } to { opacity: 1; transform: translateY(0); } }
-    @keyframes gs-highlights-ahmedsabrari-aurora-dark-float-a { 0%,100% { transform: translate(0,0); opacity: .58; } 50% { transform: translate(28px,-20px); opacity: .86; } }
-    @keyframes gs-highlights-ahmedsabrari-aurora-dark-float-b { 0%,100% { transform: translate(0,0); opacity: .42; } 50% { transform: translate(-24px,18px); opacity: .72; } }
-    @keyframes gs-highlights-ahmedsabrari-aurora-dark-float-c { 0%,100% { transform: translate(0,0) scale(1); opacity: .34; } 50% { transform: translate(18px,-12px) scale(1.18); opacity: .62; } }
-    @keyframes gs-highlights-ahmedsabrari-aurora-dark-ring { 0%,100% { opacity: .06; } 50% { opacity: .22; } }
+    @keyframes gs-highlights-ahmedsabrari-aurora-dark-float-a { 0%,100% { transform: translate(0,0); opacity: .42; } 50% { transform: translate(28px,-20px); opacity: .66; } }
+    @keyframes gs-highlights-ahmedsabrari-aurora-dark-float-b { 0%,100% { transform: translate(0,0); opacity: .32; } 50% { transform: translate(-24px,18px); opacity: .56; } }
+    @keyframes gs-highlights-ahmedsabrari-aurora-dark-float-c { 0%,100% { transform: translate(0,0) scale(1); opacity: .24; } 50% { transform: translate(18px,-12px) scale(1.18); opacity: .48; } }
+    @keyframes gs-highlights-ahmedsabrari-aurora-dark-ring { 0%,100% { opacity: .05; } 50% { opacity: .18; } }
     @keyframes gs-highlights-ahmedsabrari-aurora-dark-chip { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
     @keyframes gs-highlights-ahmedsabrari-aurora-dark-cursor { 0%,49% { opacity: 1; } 50%,100% { opacity: 0; } }
     @keyframes gs-highlights-ahmedsabrari-aurora-dark-bar { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+
+    @media (prefers-reduced-motion: reduce) {
+      #gs-highlights-ahmedsabrari-aurora-dark .aura-orb-a,
+      #gs-highlights-ahmedsabrari-aurora-dark .aura-orb-b,
+      #gs-highlights-ahmedsabrari-aurora-dark .aura-orb-c,
+      #gs-highlights-ahmedsabrari-aurora-dark .aura-ring,
+      #gs-highlights-ahmedsabrari-aurora-dark .aura-ring-b,
+      #gs-highlights-ahmedsabrari-aurora-dark .aura-chip,
+      #gs-highlights-ahmedsabrari-aurora-dark .aura-cursor,
+      #gs-highlights-ahmedsabrari-aurora-dark .aura-bar,
+      #gs-highlights-ahmedsabrari-aurora-dark .aura-cell { animation: none !important; }
+    }
   </style>
   <g id="gs-highlights-ahmedsabrari-aurora-dark">
     <rect width="860" height="180" rx="20" fill="url(#gs-highlights-ahmedsabrari-aurora-dark-bg)"/>
-    
+
     <ellipse class="aura-orb-a" cx="138" cy="32" rx="206" ry="83" fill="url(#gs-highlights-ahmedsabrari-aurora-dark-orb-0)"/>
     <ellipse class="aura-orb-b" cx="654" cy="40" rx="241" ry="76" fill="url(#gs-highlights-ahmedsabrari-aurora-dark-orb-1)"/>
     <ellipse class="aura-orb-c" cx="499" cy="158" rx="310" ry="61" fill="url(#gs-highlights-ahmedsabrari-aurora-dark-orb-2)"/>
     <ellipse class="aura-orb-b" cx="826" cy="140" rx="172" ry="76" fill="url(#gs-highlights-ahmedsabrari-aurora-dark-orb-3)"/>
-    <text x="30" y="44" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11" font-weight="800" letter-spacing="4" fill="#22d3ee">HIGHLIGHTS</text>
+
+    <text x="30" y="44" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="800" letter-spacing="4" fill="#4F46E5">HIGHLIGHTS</text>
+
     <g class="aura-chip" style="animation-delay:0ms">
-      <rect x="28" y="60" width="257" height="96" rx="16" fill="rgba(8,8,12,0.5)" stroke="#22d3ee" stroke-opacity="0.7"/>
-      <rect x="28" y="82" width="4" height="52" rx="2" fill="#22d3ee"/>
-      <text x="52" y="98" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="16" font-weight="850" fill="#e6edf3">PHP</text>
-      <text x="52" y="122" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12.5" fill="#8b949e">6 public repositories</text>
-      
-    </g><g class="aura-chip" style="animation-delay:90ms">
-      <rect x="301" y="60" width="257" height="96" rx="16" fill="rgba(8,8,12,0.5)" stroke="#22d3ee" stroke-opacity="0.7"/>
-      <rect x="301" y="82" width="4" height="52" rx="2" fill="#22d3ee"/>
-      <text x="325" y="98" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="16" font-weight="850" fill="#e6edf3">E-commerce</text>
-      <text x="325" y="122" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12.5" fill="#8b949e">Site web e-commerce</text>
-      
-    </g><g class="aura-chip" style="animation-delay:180ms">
-      <rect x="574" y="60" width="257" height="96" rx="16" fill="rgba(8,8,12,0.5)" stroke="#22d3ee" stroke-opacity="0.7"/>
-      <rect x="574" y="82" width="4" height="52" rx="2" fill="#3b82f6"/>
-      <text x="598" y="98" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="16" font-weight="850" fill="#e6edf3">Impact</text>
-      <text x="598" y="122" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12.5" fill="#8b949e">7 stars · 11 active days</text>
-      
+      <rect x="28" y="60" width="257" height="96" rx="16" fill="#FFFFFF" fill-opacity="0.7" stroke="#14B8A6" stroke-opacity="0.45"/>
+      <rect x="28" y="82" width="4" height="52" rx="2" fill="#14B8A6"/>
+      <text x="52" y="98" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="850" fill="#1F2933">PHP</text>
+      <text x="52" y="122" font-family="Arial,Helvetica,sans-serif" font-size="12.5" fill="#6B7280">6 public repositories</text>
     </g>
-    <rect x="0.5" y="0.5" width="859" height="179" rx="19.5" fill="none" stroke="#22d3ee" stroke-opacity="0.62"/>
+    <g class="aura-chip" style="animation-delay:90ms">
+      <rect x="301" y="60" width="257" height="96" rx="16" fill="#FFFFFF" fill-opacity="0.7" stroke="#14B8A6" stroke-opacity="0.45"/>
+      <rect x="301" y="82" width="4" height="52" rx="2" fill="#14B8A6"/>
+      <text x="325" y="98" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="850" fill="#1F2933">E-commerce</text>
+      <text x="325" y="122" font-family="Arial,Helvetica,sans-serif" font-size="12.5" fill="#6B7280">Site web e-commerce</text>
+    </g>
+    <g class="aura-chip" style="animation-delay:180ms">
+      <rect x="574" y="60" width="257" height="96" rx="16" fill="#FFFFFF" fill-opacity="0.7" stroke="#4F46E5" stroke-opacity="0.45"/>
+      <rect x="574" y="82" width="4" height="52" rx="2" fill="#4F46E5"/>
+      <text x="598" y="98" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="850" fill="#1F2933">Impact</text>
+      <text x="598" y="122" font-family="Arial,Helvetica,sans-serif" font-size="12.5" fill="#6B7280">7 stars · 11 active days</text>
+    </g>
+
+    <rect x="0.5" y="0.5" width="859" height="179" rx="19.5" fill="none" stroke="#14B8A6" stroke-opacity="0.5"/>
   </g>
 </svg>
