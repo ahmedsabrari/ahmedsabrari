@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="860" height="240" viewBox="0 0 860 240" role="img" aria-label="Hero section for Ahmed Sabrari">
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="240" viewBox="0 0 860 240" role="img" aria-label="Hero section for Ahmed Sabrari">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#f6f8fc"/>
@@ -13,9 +13,15 @@
       <stop offset="0%" stop-color="#101531" stop-opacity="0.2"/>
       <stop offset="100%" stop-color="#101531" stop-opacity="0"/>
     </radialGradient>
-    <clipPath id="avatar-clip">
-      <circle cx="96" cy="94" r="45"/>
-    </clipPath>
+    <linearGradient id="avatar-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38a83d"/>
+      <stop offset="100%" stop-color="#101531"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0f172a" stop-opacity="0.2"/>
+      <stop offset="44%" stop-color="#38a83d" stop-opacity="0.82"/>
+      <stop offset="100%" stop-color="#475569" stop-opacity="0.22"/>
+    </linearGradient>
   </defs>
   <style>
     #hero .aura-orb-a { animation: float-a 9s ease-in-out infinite; }
@@ -39,10 +45,9 @@
     <text x="735" y="112" text-anchor="middle" font-family="Arial,sans-serif" font-size="34" font-weight="900" fill="#53c658">7</text>
     <text x="735" y="134" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="800" letter-spacing="2.6" fill="#475569">TOTAL STARS</text>
 
-    <!-- GitHub avatar -->
-    <circle cx="96" cy="94" r="48" fill="rgba(255,255,255,0.06)" stroke="#38a83d" stroke-opacity="0.85" stroke-width="2"/>
-    <image xlink:href="https://avatars.githubusercontent.com/u/121765378?u=8ff99163216cea963fcdc37c75d81bcd9153b4ae&v=4" x="51" y="49" width="90" height="90"
-           clip-path="url(#avatar-clip)" preserveAspectRatio="xMidYMid slice"/>
+    <!-- Avatar b SVG pure: cercle + initials -->
+    <circle cx="96" cy="94" r="48" fill="url(#avatar-grad)" stroke="#38a83d" stroke-opacity="0.85" stroke-width="2"/>
+    <text x="96" y="108" text-anchor="middle" font-family="Arial,sans-serif" font-size="36" font-weight="900" fill="#ffffff">AS</text>
 
     <text x="166" y="69" font-family="Arial,sans-serif" font-size="13" font-weight="800" letter-spacing="2.6" fill="#475569">@ahmedsabrari</text>
     <text x="166" y="122" font-family="Arial,sans-serif" font-size="46" font-weight="850" fill="#0f172a">AHMED SABRARI</text>
@@ -53,6 +58,7 @@
     <g class="aura-chip" style="animation-delay:180ms"><rect x="298" y="166" width="110" height="28" rx="14" fill="rgba(255,255,255,0.055)" stroke="#d7dee8"/><text x="313" y="185" font-family="Arial,sans-serif" font-size="12" font-weight="750" fill="#0f172a">JavaScript</text></g>
     <g class="aura-chip" style="animation-delay:270ms"><rect x="424" y="166" width="110" height="28" rx="14" fill="rgba(255,255,255,0.055)" stroke="#d7dee8"/><text x="439" y="185" font-family="Arial,sans-serif" font-size="12" font-weight="750" fill="#0f172a">Python</text></g>
 
+    <path d="M166 76 C246 50 330 50 410 77" fill="none" stroke="url(#shine)" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
     <rect x="0.5" y="0.5" width="859" height="239" rx="19.5" fill="none" stroke="#d7dee8" stroke-opacity="0.62"/>
   </g>
 </svg>
