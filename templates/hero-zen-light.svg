@@ -75,27 +75,27 @@
     <image xlink:href="{{avatar}}" x="51" y="49" width="90" height="90" clip-path="url(#gs-hero-ahmedsabrari-zen-light-av)" preserveAspectRatio="xMidYMid slice"/>
 
     <text x="166" y="69" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="13" font-weight="800" letter-spacing="2.6" fill="#475569">@{{username}}</text>
-    <text x="166" y="122" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="46" font-weight="850" letter-spacing="-1.5" fill="#0f172a">{{name}}</text>
-    <text x="168" y="150" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="15" fill="#475569">
+    <text x="166" y="118" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="42" font-weight="850" letter-spacing="-1.5" fill="#0f172a">{{name}}</text>
+    <text x="168" y="142" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="14" fill="#475569">
       <tspan x="168" dy="0">{{bioLine1}}</tspan>
-      {{#if bioLine2}}<tspan x="168" dy="20">{{bioLine2}}</tspan>{{/if}}
+      {{#if bioLine2}}<tspan x="168" dy="18">{{bioLine2}}</tspan>{{/if}}
     </text>
 
     <g class="aura-chip" style="animation-delay:0ms">
-      <rect x="46" y="166" width="110" height="28" rx="14" fill="rgba(255,255,255,0.055)" stroke="#d7dee8" stroke-opacity="0.68"/>
-      <text x="61" y="185" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" font-weight="750" fill="#0f172a">PHP</text>
+      <rect x="46" y="176" width="110" height="28" rx="14" fill="rgba(255,255,255,0.055)" stroke="#d7dee8" stroke-opacity="0.68"/>
+      <text x="61" y="195" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" font-weight="750" fill="#0f172a">PHP</text>
     </g>
     <g class="aura-chip" style="animation-delay:90ms">
-      <rect x="172" y="166" width="110" height="28" rx="14" fill="rgba(255,255,255,0.055)" stroke="#d7dee8" stroke-opacity="0.68"/>
-      <text x="187" y="185" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" font-weight="750" fill="#0f172a">Blade</text>
+      <rect x="172" y="176" width="110" height="28" rx="14" fill="rgba(255,255,255,0.055)" stroke="#d7dee8" stroke-opacity="0.68"/>
+      <text x="187" y="195" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" font-weight="750" fill="#0f172a">Blade</text>
     </g>
     <g class="aura-chip" style="animation-delay:180ms">
-      <rect x="298" y="166" width="110" height="28" rx="14" fill="rgba(255,255,255,0.055)" stroke="#d7dee8" stroke-opacity="0.68"/>
-      <text x="313" y="185" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" font-weight="750" fill="#0f172a">JavaScript</text>
+      <rect x="298" y="176" width="110" height="28" rx="14" fill="rgba(255,255,255,0.055)" stroke="#d7dee8" stroke-opacity="0.68"/>
+      <text x="313" y="195" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" font-weight="750" fill="#0f172a">JavaScript</text>
     </g>
     <g class="aura-chip" style="animation-delay:270ms">
-      <rect x="424" y="166" width="110" height="28" rx="14" fill="rgba(255,255,255,0.055)" stroke="#d7dee8" stroke-opacity="0.68"/>
-      <text x="439" y="185" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" font-weight="750" fill="#0f172a">Python</text>
+      <rect x="424" y="176" width="110" height="28" rx="14" fill="rgba(255,255,255,0.055)" stroke="#d7dee8" stroke-opacity="0.68"/>
+      <text x="439" y="195" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" font-weight="750" fill="#0f172a">Python</text>
     </g>
 
     <path d="M166 76 C246 50 330 50 410 77" fill="none" stroke="url(#gs-hero-ahmedsabrari-zen-light-shine)" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
