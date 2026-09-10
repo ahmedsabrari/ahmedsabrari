@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="860" height="240" viewBox="0 0 860 240" role="img" aria-label="gs-hero-ahmedsabrari-zen-light section">
+  <defs>
+    <linearGradient id="gs-hero-ahmedsabrari-zen-light-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f6f8fc"/>
+      <stop offset="54%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f6f8fc"/>
+    </linearGradient>
+    <radialGradient id="gs-hero-ahmedsabrari-zen-light-orb-0" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38a83d" stop-opacity="0.26"/>
+      <stop offset="58%" stop-color="#38a83d" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#38a83d" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="gs-hero-ahmedsabrari-zen-light-orb-1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#101531" stop-opacity="0.2"/>
+      <stop offset="58%" stop-color="#101531" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#101531" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="gs-hero-ahmedsabrari-zen-light-orb-2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#349d6d" stop-opacity="0.26"/>
+      <stop offset="58%" stop-color="#349d6d" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#349d6d" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="gs-hero-ahmedsabrari-zen-light-orb-3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38a841" stop-opacity="0.2"/>
+      <stop offset="58%" stop-color="#38a841" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#38a841" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="gs-hero-ahmedsabrari-zen-light-orb-4" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38a83d" stop-opacity="0.26"/>
+      <stop offset="58%" stop-color="#38a83d" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#38a83d" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="gs-hero-ahmedsabrari-zen-light-orb-5" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38a83d" stop-opacity="0.2"/>
+      <stop offset="58%" stop-color="#38a83d" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#38a83d" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gs-hero-ahmedsabrari-zen-light-shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0f172a" stop-opacity="0.2"/>
+      <stop offset="44%" stop-color="#38a83d" stop-opacity="0.82"/>
+      <stop offset="100%" stop-color="#475569" stop-opacity="0.22"/>
+    </linearGradient>
+    <linearGradient id="gs-hero-ahmedsabrari-zen-light-holo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="18%" stop-color="#f6f8fc"/>
+      <stop offset="38%" stop-color="#38a83d"/>
+      <stop offset="58%" stop-color="#475569"/>
+      <stop offset="78%" stop-color="#f6f8fc"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+      <animateTransform attributeName="gradientTransform" type="rotate" from="0 0.5 0.5" to="360 0.5 0.5" dur="8s" repeatCount="indefinite"/>
+    </linearGradient>
+  </defs>
+  <style>
+    #gs-hero-ahmedsabrari-zen-light .aura-orb-a { animation: gs-hero-ahmedsabrari-zen-light-float-a 9s ease-in-out infinite; }
+    #gs-hero-ahmedsabrari-zen-light .aura-orb-b { animation: gs-hero-ahmedsabrari-zen-light-float-b 11s ease-in-out infinite 1.1s; }
+    #gs-hero-ahmedsabrari-zen-light .aura-orb-c { animation: gs-hero-ahmedsabrari-zen-light-float-c 13s ease-in-out infinite 0.6s; }
+    #gs-hero-ahmedsabrari-zen-light .aura-ring { animation: gs-hero-ahmedsabrari-zen-light-ring 8s ease-in-out infinite; }
+    #gs-hero-ahmedsabrari-zen-light .aura-ring-b { animation: gs-hero-ahmedsabrari-zen-light-ring 10s ease-in-out infinite 1.6s; }
+    #gs-hero-ahmedsabrari-zen-light .aura-chip { animation: gs-hero-ahmedsabrari-zen-light-chip 650ms ease-out both; }
+    #gs-hero-ahmedsabrari-zen-light .aura-cursor { animation: gs-hero-ahmedsabrari-zen-light-cursor 1.1s step-end infinite; }
+    #gs-hero-ahmedsabrari-zen-light .aura-bar { animation: gs-hero-ahmedsabrari-zen-light-bar 1.15s ease-out both; transform-box: fill-box; transform-origin: left; }
+    #gs-hero-ahmedsabrari-zen-light .aura-cell { animation: gs-hero-ahmedsabrari-zen-light-cell 520ms ease-out both; }
+    @keyframes gs-hero-ahmedsabrari-zen-light-cell { from { opacity: 0; transform: translateY(-3px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes gs-hero-ahmedsabrari-zen-light-float-a { 0%,100% { transform: translate(0,0); opacity: .58; } 50% { transform: translate(28px,-20px); opacity: .86; } }
+    @keyframes gs-hero-ahmedsabrari-zen-light-float-b { 0%,100% { transform: translate(0,0); opacity: .42; } 50% { transform: translate(-24px,18px); opacity: .72; } }
+    @keyframes gs-hero-ahmedsabrari-zen-light-float-c { 0%,100% { transform: translate(0,0) scale(1); opacity: .34; } 50% { transform: translate(18px,-12px) scale(1.18); opacity: .62; } }
+    @keyframes gs-hero-ahmedsabrari-zen-light-ring { 0%,100% { opacity: .06; } 50% { opacity: .22; } }
+    @keyframes gs-hero-ahmedsabrari-zen-light-chip { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes gs-hero-ahmedsabrari-zen-light-cursor { 0%,49% { opacity: 1; } 50%,100% { opacity: 0; } }
+    @keyframes gs-hero-ahmedsabrari-zen-light-bar { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+  </style>
+  <g id="gs-hero-ahmedsabrari-zen-light">
+    <rect width="860" height="240" rx="20" fill="url(#gs-hero-ahmedsabrari-zen-light-bg)"/>
+
+    <ellipse class="aura-orb-a" cx="138" cy="43" rx="206" ry="110" fill="url(#gs-hero-ahmedsabrari-zen-light-orb-0)"/>
+    <ellipse class="aura-orb-b" cx="654" cy="53" rx="241" ry="101" fill="url(#gs-hero-ahmedsabrari-zen-light-orb-1)"/>
+    <ellipse class="aura-orb-c" cx="499" cy="211" rx="310" ry="82" fill="url(#gs-hero-ahmedsabrari-zen-light-orb-2)"/>
+    <ellipse class="aura-orb-b" cx="826" cy="187" rx="172" ry="101" fill="url(#gs-hero-ahmedsabrari-zen-light-orb-3)"/>
+
+    <circle class="aura-ring" cx="735" cy="118" r="30.959999999999997" fill="none" stroke="#0f172a" stroke-opacity="0.36"/>
+    <circle class="aura-ring-b" cx="735" cy="118" r="53.32" fill="none" stroke="#0f172a" stroke-opacity="0.22"/>
+    <circle class="aura-ring" cx="735" cy="118" r="86" fill="none" stroke="#0f172a" stroke-opacity="0.14"/>
+    <g transform="rotate(-32 735 118)">
+      <circle cx="788.32" cy="118" r="4" fill="#38a83d">
+        <animateTransform attributeName="transform" type="scale" values="0.85;1.2;0.85" dur="1.6s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <rect x="26" y="26" width="808" height="188" rx="20" fill="#ffffff" stroke="#d7dee8" stroke-opacity="0.55"/>
+    <text x="735" y="112" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="34" font-weight="900" letter-spacing="-1" fill="#53c658">{{totalStars}}</text>
+    <text x="735" y="134" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10" font-weight="800" letter-spacing="2.6" fill="#475569">TOTAL STARS</text>
+    <clipPath id="gs-hero-ahmedsabrari-zen-light-av"><circle cx="96" cy="94" r="45"/></clipPath>
+    <circle cx="96" cy="94" r="48" fill="rgba(255,255,255,0.06)" stroke="#38a83d" stroke-opacity="0.85" stroke-width="2"/>
+    <image xlink:href="{{avatar}}" x="51" y="49" width="90" height="90" clip-path="url(#gs-hero-ahmedsabrari-zen-light-av)" preserveAspectRatio="xMidYMid slice"/>
+    <text x="166" y="69" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="13" font-weight="800" letter-spacing="2.6" fill="#475569" text-transform="uppercase">@{{username}}</text>
+    <text x="166" y="122" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="46" font-weight="850" letter-spacing="-1.5" fill="#0f172a">{{name}}</text>
+    <text x="168" y="150" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="15" fill="#475569">{{bio}}</text>
+    {{#each languages}}
+    <g class="aura-chip" style="animation-delay:{{@index}}00ms">
+      <rect x="{{46 + @index * 126}}" y="166" width="110" height="28" rx="14" fill="rgba(255,255,255,0.055)" stroke="#d7dee8" stroke-opacity="0.68"/>
+      <text x="{{61 + @index * 126}}" y="185" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" font-weight="750" fill="#0f172a">{{name}}</text>
+    </g>
+    {{/each}}
+    <path d="M166 76 C246 50 330 50 410 77" fill="none" stroke="url(#gs-hero-ahmedsabrari-zen-light-shine)" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+    <rect x="0.5" y="0.5" width="859" height="239" rx="19.5" fill="none" stroke="#d7dee8" stroke-opacity="0.62"/>
+  </g>
+</svg>
