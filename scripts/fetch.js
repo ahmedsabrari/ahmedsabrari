@@ -70,6 +70,20 @@ async function fetchAvatarBase64(url) {
   console.log(`  ✅ Avatar: ${(buffer.length / 1024).toFixed(1)} KB`);
   return `data:${contentType};base64,${base64}`;
 }
+
+// ============ 9ra custom avatars man JSON ============
+function loadCustomAvatars() {
+  try {
+    const raw = fs.readFileSync('data/custom-avatars.json', 'utf8');
+    const data = JSON.parse(raw);
+    console.log('  ✅ custom-avatars.json loaded:', Object.keys(data).join(', '));
+    return data;
+  } catch (e) {
+    console.log('  ⚠️  custom-avatars.json ma kaynch wla fih erreur:', e.message);
+    return {};
+  }
+}
+
 // ============ Split bio l 2 lines intelligently ============
 function splitBio(bio, maxLen = 55) {
   const raw = (bio || '').trim();
@@ -158,13 +172,15 @@ async function main() {
     location: u.location || '',
     company: u.company || '',
     joined: u.createdAt,
-    avatar: avatarBase64,           // ← base64 daba
-    avatar1: avatarBase64,
-    avatar2: avatarBase64,
-    avatar3: avatarBase64,
-    avatar4: avatarBase64,
-    avatar5: avatarBase64,
-    avatar6: avatarBase64,
+
+    avatar: avatarBase64,
+    avatar1: custom.avatar1,
+    avatar2: custom.avatar2,
+    avatar3: custom.avatar3,
+    avatar4: custom.avatar4,
+    avatar5: custom.avatar5,
+    avatar6: custom.avatar6,
+
     followers: u.followers.totalCount,
     following: u.following.totalCount,
     totalRepos: u.repositories.totalCount,
