@@ -76,17 +76,36 @@ function splitBio(bio, maxLen = 55) {
   if (!raw) return { line1: '', line2: '' };
   if (raw.length <= maxLen) return { line1: raw, line2: '' };
 
-  // 9tta3 3la aqrab space qbel maxLen
-  let cut = raw.lastIndexOf(' ', maxLen);
-  if (cut <= 0) cut = maxLen;
+  // Words 9sar li ma bghinach line1 tkml bihom
+  const shortWords = new Set([
+    'a', 'an', 'the', 'or', 'and', 'with', 'in', 'on', 'at',
+    'to', 'of', 'for', 'by', 'is', 'as', 'my', 'me'
+  ]);
+
+  // 9elleb 3la space mzyan qrib man maxLen
+  let cut = -1;
+  for (let i = Math.min(maxLen, raw.length - 1); i >= 20; i--) {
+    if (raw[i] === ' ') {
+      const wordStart = raw.lastIndexOf(' ', i - 1) + 1;
+      const word = raw.slice(wordStart, i).toLowerCase().replace(/[^a-z]/g, '');
+      if (!shortWords.has(word) && word.length > 1) {
+        cut = i;
+        break;
+      }
+    }
+  }
+  if (cut < 0) cut = raw.lastIndexOf(' ', maxLen);
+  if (cut < 0) cut = maxLen;
 
   const line1 = raw.slice(0, cut).trim();
-  let rest = raw.slice(cut).trim();
+  const rest = raw.slice(cut).trim();
 
+  // Line2 momkin tkoun chwiya twil (maxLen + 15)
+  const maxLine2 = maxLen + 15;
   let line2 = rest;
-  if (rest.length > maxLen) {
-    let cut2 = rest.lastIndexOf(' ', maxLen);
-    if (cut2 <= 0) cut2 = maxLen - 1;
+  if (rest.length > maxLine2) {
+    let cut2 = rest.lastIndexOf(' ', maxLine2);
+    if (cut2 < 20) cut2 = maxLine2 - 1;
     line2 = rest.slice(0, cut2).trim() + '…';
   }
   return { line1, line2 };
