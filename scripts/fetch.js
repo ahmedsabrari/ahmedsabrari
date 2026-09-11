@@ -151,6 +151,12 @@ async function main() {
     company: u.company || '',
     joined: u.createdAt,
     avatar: avatarBase64,           // ← base64 daba
+    avatar1: avatarBase64,
+    avatar2: avatarBase64,
+    avatar3: avatarBase64,
+    avatar4: avatarBase64,
+    avatar5: avatarBase64,
+    avatar6: avatarBase64,
     followers: u.followers.totalCount,
     following: u.following.totalCount,
     totalRepos: u.repositories.totalCount,
