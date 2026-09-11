@@ -123,7 +123,15 @@ function computeLanguages(repos) {
   }
   const total = [...map.values()].reduce((s, v) => s + v.size, 0) || 1;
   return [...map.entries()]
-    .map(([name, v]) => ({ name, color: v.color || '#888', percent: +(v.size / total * 100).toFixed(1) }))
+    .map(([name, v]) => {
+      const percent = +(v.size / total * 100).toFixed(1);
+      return {
+        name,
+        color: v.color || '#888',
+        percent,
+        barWidth: Math.round((percent / 100) * 195),  // ← Jdid
+      };
+    })
     .sort((a, b) => b.percent - a.percent);
 }
 
