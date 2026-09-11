@@ -70,20 +70,6 @@ async function fetchAvatarBase64(url) {
   console.log(`  ✅ Avatar: ${(buffer.length / 1024).toFixed(1)} KB`);
   return `data:${contentType};base64,${base64}`;
 }
-
-// ============ 9ra custom avatars man JSON ============
-function loadCustomAvatars() {
-  try {
-    const raw = fs.readFileSync('data/custom-avatars.json', 'utf8');
-    const data = JSON.parse(raw);
-    console.log('  ✅ custom-avatars.json loaded:', Object.keys(data).join(', '));
-    return data;
-  } catch (e) {
-    console.log('  ⚠️  custom-avatars.json ma kaynch wla fih erreur:', e.message);
-    return {};
-  }
-}
-
 // ============ Split bio l 2 lines intelligently ============
 function splitBio(bio, maxLen = 55) {
   const raw = (bio || '').trim();
@@ -162,6 +148,15 @@ async function main() {
   const { line1: bioLine1, line2: bioLine2 } = splitBio(u.bio || '', 55);
   const activeDays = days.filter(d => d.contributionCount > 0).length;
 
+    // 9ra custom avatars (ila kaynin)
+  let customAvatars = {};
+  try {
+    customAvatars = JSON.parse(fs.readFileSync('data/custom-avatars.json', 'utf8'));
+    console.log('  ✅ custom-avatars.json loaded');
+  } catch {
+    console.log('  ⚠️  custom-avatars.json ma kaynch, kansta3mel avatar GitHub');
+  }
+
   const stats = {
     activeDays,
     name: u.name || u.login,
@@ -172,15 +167,13 @@ async function main() {
     location: u.location || '',
     company: u.company || '',
     joined: u.createdAt,
-
     avatar: avatarBase64,
-    avatar1: custom.avatar1,
-    avatar2: custom.avatar2,
-    avatar3: custom.avatar3,
-    avatar4: custom.avatar4,
-    avatar5: custom.avatar5,
-    avatar6: custom.avatar6,
-
+    avatar1: customAvatars.squad1,
+    avatar2: customAvatars.squad2,
+    avatar3: customAvatars.squad3,
+    avatar4: customAvatars.squad4,
+    avatar5: customAvatars.squad5,
+    avatar6: customAvatars.hero,
     followers: u.followers.totalCount,
     following: u.following.totalCount,
     totalRepos: u.repositories.totalCount,
