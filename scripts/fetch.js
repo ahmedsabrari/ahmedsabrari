@@ -138,8 +138,10 @@ async function main() {
   // Jib avatar base64
   const avatarBase64 = await fetchAvatarBase64(u.avatarUrl);
   const { line1: bioLine1, line2: bioLine2 } = splitBio(u.bio || '', 55);
+  const activeDays = days.filter(d => d.contributionCount > 0).length;
 
   const stats = {
+    activeDays,
     name: u.name || u.login,
     username: u.login,
     bio: u.bio || '',

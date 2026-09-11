@@ -1,0 +1,197 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="760" viewBox="0 0 900 760" role="img" aria-label="GitHub stats card">
+  <defs>
+    <linearGradient id="as-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F4F1EA"/>
+      <stop offset="54%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F4F1EA"/>
+    </linearGradient>
+
+    <radialGradient id="as-orb-a" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4F46E5" stop-opacity="0.26"/>
+      <stop offset="58%" stop-color="#4F46E5" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#4F46E5" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="as-orb-b" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#334155" stop-opacity="0.20"/>
+      <stop offset="58%" stop-color="#334155" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#334155" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="as-orb-c" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#14B8A6" stop-opacity="0.26"/>
+      <stop offset="58%" stop-color="#14B8A6" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#14B8A6" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="as-shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1F2933" stop-opacity="0.20"/>
+      <stop offset="44%" stop-color="#4F46E5" stop-opacity="0.82"/>
+      <stop offset="100%" stop-color="#6B7280" stop-opacity="0.22"/>
+    </linearGradient>
+
+    <clipPath id="as-frame">
+      <rect width="900" height="760" rx="14"/>
+    </clipPath>
+  </defs>
+
+  <style>
+    #as-card .as-orb-a { animation: as-float-a 9s ease-in-out infinite; }
+    #as-card .as-orb-b { animation: as-float-b 11s ease-in-out infinite 1.1s; }
+    #as-card .as-orb-c { animation: as-float-c 13s ease-in-out infinite 0.6s; }
+    #as-card .as-ring  { animation: as-ring 8s ease-in-out infinite; }
+    #as-card .as-ring-b{ animation: as-ring 10s ease-in-out infinite 1.6s; }
+    #as-card .as-dot   {
+      transform-box: fill-box; transform-origin: center;
+      animation: as-dot 1.6s ease-in-out infinite;
+    }
+    #as-card .as-chip  { animation: as-chip 650ms ease-out both; }
+    #as-card .as-bar   {
+      transform-box: fill-box; transform-origin: left;
+      animation: as-bar 1.15s ease-out both;
+    }
+
+    @keyframes as-float-a { 0%,100% { transform: translate(0,0); opacity:.58; } 50% { transform: translate(28px,-20px); opacity:.86; } }
+    @keyframes as-float-b { 0%,100% { transform: translate(0,0); opacity:.42; } 50% { transform: translate(-24px,18px); opacity:.72; } }
+    @keyframes as-float-c { 0%,100% { transform: translate(0,0) scale(1); opacity:.34; } 50% { transform: translate(18px,-12px) scale(1.18); opacity:.62; } }
+    @keyframes as-ring   { 0%,100% { opacity:.06; } 50% { opacity:.22; } }
+    @keyframes as-dot    { 0%,100% { transform: scale(.85); } 50% { transform: scale(1.2); } }
+    @keyframes as-chip   { from { opacity:0; transform: translateY(8px); } to { opacity:1; transform: translateY(0); } }
+    @keyframes as-bar    { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+
+    @media (prefers-reduced-motion: reduce) {
+      #as-card * { animation: none !important; }
+    }
+  </style>
+
+  <g id="as-card">
+    <g clip-path="url(#as-frame)">
+      <rect width="900" height="760" rx="14" fill="url(#as-bg)"/>
+
+      <image href="{{avatar1}}" x="34" y="62" width="68" height="126" preserveAspectRatio="xMidYMax meet"/>
+      <image href="{{avatar2}}" x="104" y="48" width="68" height="126" preserveAspectRatio="xMidYMax meet"/>
+      <image href="{{avatar3}}" x="174" y="42" width="68" height="126" preserveAspectRatio="xMidYMax meet"/>
+      <image href="{{avatar4}}" x="244" y="48" width="68" height="126" preserveAspectRatio="xMidYMax meet"/>
+      <image href="{{avatar5}}" x="314" y="56" width="68" height="126" preserveAspectRatio="xMidYMax meet"/>
+      <image href="{{avatar6}}" x="580" y="58" width="280" height="300" preserveAspectRatio="xMidYMax meet"/>
+
+      <g aria-hidden="true">
+        <ellipse class="as-orb-a" cx="150" cy="90"  rx="300" ry="160" fill="url(#as-orb-a)"/>
+        <ellipse class="as-orb-b" cx="760" cy="120" rx="280" ry="150" fill="url(#as-orb-b)"/>
+        <ellipse class="as-orb-c" cx="450" cy="700" rx="420" ry="150" fill="url(#as-orb-c)"/>
+        <ellipse class="as-orb-a" cx="840" cy="620" rx="240" ry="140" fill="url(#as-orb-a)"/>
+      </g>
+
+      <!-- Stats panel -->
+      <rect x="28" y="194" width="372" height="142" rx="4" fill="#FFFFFF" stroke="#D9D2C7" stroke-opacity="0.9"/>
+      <text x="46" y="220" fill="#4F46E5" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="13" font-weight="700">{{name}}'s GitHub Stats</text>
+
+      <text x="48" y="244" fill="#1F2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11">Contributions</text>
+      <text x="238" y="244" fill="#1F2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11" font-weight="700">{{contributions}}</text>
+
+      <text x="48" y="262" fill="#1F2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11">Repositories</text>
+      <text x="238" y="262" fill="#1F2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11" font-weight="700">{{totalRepos}}</text>
+
+      <text x="48" y="280" fill="#1F2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11">Stars</text>
+      <text x="238" y="280" fill="#1F2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11" font-weight="700">{{totalStars}}</text>
+
+      <text x="48" y="298" fill="#1F2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11">Followers</text>
+      <text x="238" y="298" fill="#1F2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11" font-weight="700">{{followers}}</text>
+
+      <!-- Ring -->
+      <circle class="as-ring" cx="344" cy="265" r="33" fill="none" stroke="#D9D2C7" stroke-width="8"/>
+      <circle cx="344" cy="265" r="33" fill="none" stroke="#4F46E5" stroke-width="8" stroke-linecap="round"
+              stroke-dasharray="8 207" transform="rotate(-90 344 265)"/>
+      <text x="344" y="270" fill="#1F2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="16" font-weight="700" text-anchor="middle">{{signal}}</text>
+
+      <!-- Streak panel -->
+      <rect x="28" y="346" width="372" height="78" rx="4" fill="#FFFFFF" stroke="#D9D2C7" stroke-opacity="0.9"/>
+      <line x1="152" y1="356" x2="152" y2="414" stroke="#D9D2C7"/>
+      <line x1="276" y1="356" x2="276" y2="414" stroke="#D9D2C7"/>
+
+      <text x="90" y="379" fill="#1F2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="20" font-weight="700" text-anchor="middle">{{contributions}}</text>
+      <text x="90" y="398" fill="#6B7280" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="9" text-anchor="middle">Contributions</text>
+
+      <text x="214" y="379" fill="#1F2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="20" font-weight="700" text-anchor="middle">{{commits}}</text>
+      <text x="214" y="398" fill="#6B7280" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="9" text-anchor="middle">Commits</text>
+
+      <text x="338" y="379" fill="#1F2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="20" font-weight="700" text-anchor="middle">{{activeDays}}</text>
+      <text x="338" y="398" fill="#6B7280" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="9" text-anchor="middle">Active days</text>
+
+      <path d="M28 440H872" stroke="#D9D2C7"/>
+
+      <!-- Left profile column -->
+      <text x="42" y="468" fill="#4F46E5" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="13" font-weight="700">@{{username}}</text>
+      <text x="42" y="490" fill="#6B7280" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11">Developer building useful software</text>
+      <text x="42" y="512" fill="#1F2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11">{{bioLine1}}</text>
+
+      <!-- Featured repositories -->
+      <text x="42" y="544" fill="#4F46E5" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" font-weight="700">Featured repositories</text>
+
+      <text x="42" y="562" fill="#4F46E5" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12">{{topRepos.0.name}}</text>
+      <text x="380" y="562" fill="#6B7280" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11" text-anchor="end">{{topRepos.0.stars}} stars</text>
+
+      <text x="42" y="586" fill="#4F46E5" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12">{{topRepos.1.name}}</text>
+      <text x="380" y="586" fill="#6B7280" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11" text-anchor="end">{{topRepos.1.stars}} stars</text>
+
+      <text x="42" y="610" fill="#4F46E5" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12">{{topRepos.2.name}}</text>
+      <text x="380" y="610" fill="#6B7280" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11" text-anchor="end">{{topRepos.2.stars}} stars</text>
+
+      <!-- Right column -->
+      <text x="500" y="468" fill="#4F46E5" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="13" font-weight="700">Community signal</text>
+
+      <text x="500" y="490" fill="#1F2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11">Followers</text>
+      <text x="840" y="490" fill="#1F2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11" text-anchor="end">{{followers}}</text>
+
+      <text x="500" y="512" fill="#1F2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11">Active days</text>
+      <text x="840" y="512" fill="#1F2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11" text-anchor="end">{{activeDays}}</text>
+
+      <!-- Language bars -->
+      <g class="as-chip" style="animation-delay:0ms">
+        <text x="500" y="550" fill="#1F2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11">{{languages.0.name}}</text>
+        <rect x="610" y="540" width="195" height="9" rx="4.5" fill="#EDE9E1"/>
+        <rect class="as-bar" x="610" y="540" width="{{languages.0.barWidth}}" height="9" rx="4.5" fill="{{languages.0.color}}" style="animation-delay:120ms"/>
+        <text x="840" y="550" fill="#6B7280" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11" text-anchor="end">{{languages.0.percent}}%</text>
+      </g>
+
+      <g class="as-chip" style="animation-delay:90ms">
+        <text x="500" y="572" fill="#1F2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11">{{languages.1.name}}</text>
+        <rect x="610" y="562" width="195" height="9" rx="4.5" fill="#EDE9E1"/>
+        <rect class="as-bar" x="610" y="562" width="{{languages.1.barWidth}}" height="9" rx="4.5" fill="{{languages.1.color}}" style="animation-delay:210ms"/>
+        <text x="840" y="572" fill="#6B7280" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11" text-anchor="end">{{languages.1.percent}}%</text>
+      </g>
+
+      <g class="as-chip" style="animation-delay:180ms">
+        <text x="500" y="594" fill="#1F2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11">{{languages.2.name}}</text>
+        <rect x="610" y="584" width="195" height="9" rx="4.5" fill="#EDE9E1"/>
+        <rect class="as-bar" x="610" y="584" width="{{languages.2.barWidth}}" height="9" rx="4.5" fill="{{languages.2.color}}" style="animation-delay:300ms"/>
+        <text x="840" y="594" fill="#6B7280" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11" text-anchor="end">{{languages.2.percent}}%</text>
+      </g>
+
+      <g class="as-chip" style="animation-delay:270ms">
+        <text x="500" y="616" fill="#1F2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11">{{languages.3.name}}</text>
+        <rect x="610" y="606" width="195" height="9" rx="4.5" fill="#EDE9E1"/>
+        <rect class="as-bar" x="610" y="606" width="{{languages.3.barWidth}}" height="9" rx="4.5" fill="{{languages.3.color}}" style="animation-delay:390ms"/>
+        <text x="840" y="616" fill="#6B7280" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11" text-anchor="end">{{languages.3.percent}}%</text>
+      </g>
+
+      <g class="as-chip" style="animation-delay:360ms">
+        <text x="500" y="638" fill="#1F2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11">{{languages.4.name}}</text>
+        <rect x="610" y="628" width="195" height="9" rx="4.5" fill="#EDE9E1"/>
+        <rect class="as-bar" x="610" y="628" width="{{languages.4.barWidth}}" height="9" rx="4.5" fill="{{languages.4.color}}" style="animation-delay:480ms"/>
+        <text x="840" y="638" fill="#6B7280" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11" text-anchor="end">{{languages.4.percent}}%</text>
+      </g>
+
+      <!-- Decorative shine -->
+      <path d="M42 458 C160 440 320 440 420 456" fill="none" stroke="url(#as-shine)" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+
+      <!-- Orbit accent dot -->
+      <g aria-hidden="true">
+        <circle class="as-ring-b" cx="344" cy="265" r="53" fill="none" stroke="#1F2933" stroke-opacity="0.12"/>
+        <g transform="rotate(-32 344 265)">
+          <circle class="as-dot" cx="397" cy="265" r="4" fill="#14B8A6"/>
+        </g>
+      </g>
+    </g>
+
+    <rect x="0.5" y="0.5" width="899" height="759" rx="13.5" fill="none" stroke="#D9D2C7" stroke-opacity="0.62"/>
+  </g>
+</svg>
