@@ -1,14 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" fill="none" role="img" aria-label="AHMED SABRARI - Full-Stack Developer, AI/ML Engineer, Founder">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" fill="none" role="img" aria-label="AHMED SABRARI - Full-Stack Developer">
   <desc>Animated warm zen-light banner for AHMED SABRARI</desc>
   <defs>
-    <!-- warm ivory backdrop -->
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#F4F1EA"/>
       <stop offset="54%" stop-color="#FFFFFF"/>
       <stop offset="100%" stop-color="#F4F1EA"/>
     </linearGradient>
 
-    <!-- soft glow orbs -->
     <radialGradient id="orbIndigo" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#4F46E5" stop-opacity="0.24"/>
       <stop offset="58%" stop-color="#4F46E5" stop-opacity="0.08"/>
@@ -25,14 +23,12 @@
       <stop offset="100%" stop-color="#14B8A6" stop-opacity="0"/>
     </radialGradient>
 
-    <!-- decorative shine gradient -->
     <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#1F2933" stop-opacity="0.18"/>
       <stop offset="44%" stop-color="#4F46E5" stop-opacity="0.72"/>
       <stop offset="100%" stop-color="#6B7280" stop-opacity="0.20"/>
     </linearGradient>
 
-    <!-- flowing electric border -->
     <linearGradient id="borderGrad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="600" y2="0" spreadMethod="repeat">
       <stop offset="0" stop-color="#D9D2C7"/>
       <stop offset="0.5" stop-color="#4F46E5"/>
@@ -40,14 +36,12 @@
       <animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="600 0" dur="9s" repeatCount="indefinite"/>
     </linearGradient>
 
-    <!-- divider gradient -->
     <linearGradient id="dividerGrad" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#D9D2C7" stop-opacity="0"/>
       <stop offset="50%" stop-color="#4F46E5" stop-opacity="0.65"/>
       <stop offset="100%" stop-color="#D9D2C7" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- softened electric border filter -->
     <filter id="electric" x="-30%" y="-30%" width="160%" height="160%">
       <feTurbulence type="fractalNoise" baseFrequency="0.013" numOctaves="2" seed="2" result="noise">
         <animate attributeName="baseFrequency" dur="11s" values="0.012;0.018;0.012" repeatCount="indefinite"/>
@@ -91,7 +85,6 @@
   </style>
 
   <g id="zen">
-    <!-- backdrop + soft glow orbs, clipped to rounded frame -->
     <g clip-path="url(#frame)" aria-hidden="true">
       <rect width="1200" height="400" rx="30" fill="url(#bg)"/>
       <ellipse class="orb-a" cx="180"  cy="50"  rx="320" ry="170" fill="url(#orbIndigo)"/>
@@ -100,7 +93,6 @@
       <ellipse class="orb-b" cx="1120" cy="350" rx="280" ry="150" fill="url(#orbIndigo)"/>
     </g>
 
-    <!-- soft twinkle field (indigo + teal) -->
     <g aria-hidden="true">
       <circle class="tw"  cx="90"   cy="70"  r="1.6" fill="#4F46E5"/>
       <circle class="tw2" cx="300"  cy="86"  r="1.9" fill="#14B8A6"/>
@@ -120,17 +112,14 @@
       <circle class="tw"  cx="1040" cy="176" r="1.4" fill="#334155"/>
     </g>
 
-    <!-- accent bolts (softened: no glow filter, thinner) -->
     <g stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
       <path class="flick"  d="M120 40 L150 120 L122 132 L168 230 L138 244 L182 340" stroke="#4F46E5" opacity="0.75"/>
       <path class="flick2" d="M1080 44 L1052 118 L1082 130 L1040 224 L1070 238 L1028 336" stroke="#14B8A6" opacity="0.75"/>
     </g>
 
-    <!-- electric border (softened displacement) -->
     <rect x="26" y="26" width="1148" height="348" rx="26"
           fill="none" stroke="url(#borderGrad)" stroke-width="2" filter="url(#electric)"/>
 
-    <!-- HUD corner brackets -->
     <g stroke="#4F46E5" stroke-width="2.2" fill="none" class="pulse" stroke-linecap="round" opacity="0.7" aria-hidden="true">
       <path d="M54 86 L54 54 L86 54"/>
       <path d="M1146 86 L1146 54 L1114 54"/>
@@ -138,11 +127,10 @@
       <path d="M1146 314 L1146 346 L1114 346"/>
     </g>
 
-    <!-- content -->
     <g class="float">
       <text x="600" y="150" text-anchor="middle"
             font-family="'Trebuchet MS', 'Segoe UI', Verdana, sans-serif"
-            font-size="15" letter-spacing="7" fill="#6B7280">@AHMEDSABRARI</text>
+            font-size="15" letter-spacing="7" fill="#6B7280">@ahmedsabrari</text>
 
       <text x="600" y="244" text-anchor="middle"
             font-family="'Trebuchet MS', 'Segoe UI', Verdana, sans-serif"
@@ -153,7 +141,7 @@
 
       <text x="600" y="312" text-anchor="middle"
             font-family="'Trebuchet MS', 'Segoe UI', Verdana, sans-serif"
-            font-size="18" letter-spacing="5" fill="#6B7280">Frontend or full-stack engineer</text>
+            font-size="18" letter-spacing="5" fill="#6B7280">🚀 I'm Ahmed Sabrari, a full-stack web developer with a</text>
     </g>
   </g>
 </svg>
