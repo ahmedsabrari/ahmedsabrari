@@ -22,7 +22,7 @@ jobs:
             snake/snake-raw.svg?color_snake=#14B8A6&color_dots=#EDE9E2,#C3C0F6,#9C97F0,#766FEB,#4F46E5
 
       - name: 💅 Wrap in Aurora Card
-        run: node .github/scripts/wrap-snake.js
+        run: node .github/scripts/wrap-snake.cjs
 
       - name: 📤 Commit & Push
         run: |
