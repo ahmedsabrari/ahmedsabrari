@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="860" height="240" viewBox="0 0 860 240" role="img" aria-labelledby="skTitle skDesc">
   <title id="skTitle">Technical skills — AHMED SABRARI</title>
-  <desc id="skDesc">Six skill cards: PHP, Blade, JavaScript, Python, HTML and CSS.</desc>
+  <desc id="skDesc">Skill cards showing top languages used across repositories.</desc>
 
   <defs>
     <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="0">
@@ -13,16 +13,6 @@
       <stop offset="0%"   stop-color="#4F46E5" stop-opacity="0.70"/>
       <stop offset="55%"  stop-color="#8B93A7" stop-opacity="0.35"/>
       <stop offset="100%" stop-color="#4F46E5" stop-opacity="0"/>
-    </linearGradient>
-
-    <linearGradient id="tileIndigo" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%"   stop-color="#4F46E5" stop-opacity="0.20"/>
-      <stop offset="100%" stop-color="#4F46E5" stop-opacity="0.08"/>
-    </linearGradient>
-
-    <linearGradient id="tileTeal" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%"   stop-color="#14B8A6" stop-opacity="0.22"/>
-      <stop offset="100%" stop-color="#14B8A6" stop-opacity="0.08"/>
     </linearGradient>
 
     <radialGradient id="glowIndigo">
@@ -46,12 +36,6 @@
     .card-edge { stroke-width: 1.6; }
 
     .chip { transform-box: fill-box; transform-origin: center; animation: chipIn .6s cubic-bezier(.22,.7,.3,1) both; }
-    .d1 { animation-delay: .08s; }
-    .d2 { animation-delay: .18s; }
-    .d3 { animation-delay: .28s; }
-    .d4 { animation-delay: .38s; }
-    .d5 { animation-delay: .48s; }
-    .d6 { animation-delay: .58s; }
 
     .orb-a { transform-box: fill-box; transform-origin: center; animation: drift1 11s ease-in-out infinite; }
     .orb-b { transform-box: fill-box; transform-origin: center; animation: drift2 13s ease-in-out infinite; }
@@ -86,63 +70,63 @@
         d="M166 64 C 240 52, 340 52, 410 65"
         fill="none" stroke="url(#shineGrad)" stroke-width="1.4" stroke-linecap="round"/>
 
-  <!-- ===== Skill cards ===== -->
+  <!-- ===== Skill cards (dynamic) ===== -->
   <g class="chips">
-
-    <!-- PHP — indigo -->
-    <g class="chip d1">
+    
+    <g class="chip" style="animation-delay:0.08s">
       <rect class="card card-edge" x="46" y="82" width="114" height="76" rx="12"
-            stroke="#4F46E5"/>
-      <rect x="78" y="89" width="50" height="36" rx="8" fill="url(#tileIndigo)"/>
-      <text class="t code"  x="103" y="114" text-anchor="middle" fill="#4F46E5">PHP</text>
+            stroke="#4F5D95"/>
+      <rect x="78" y="89" width="50" height="36" rx="8"
+            fill="#4F5D95" fill-opacity="0.15"/>
+      <text class="t code"  x="103" y="114" text-anchor="middle" fill="#4F5D95">PHP</text>
       <text class="t label" x="103" y="143" text-anchor="middle">PHP</text>
     </g>
-
-    <!-- Blade — teal -->
-    <g class="chip d2">
+    
+    <g class="chip" style="animation-delay:0.18s">
       <rect class="card card-edge" x="177" y="82" width="114" height="76" rx="12"
-            stroke="#14B8A6"/>
-      <rect x="209" y="89" width="50" height="36" rx="8" fill="url(#tileTeal)"/>
-      <text class="t code"  x="234" y="114" text-anchor="middle" fill="#14B8A6">BLA</text>
-      <text class="t label" x="234" y="143" text-anchor="middle">Blade</text>
+            stroke="#f1e05a"/>
+      <rect x="209" y="89" width="50" height="36" rx="8"
+            fill="#f1e05a" fill-opacity="0.15"/>
+      <text class="t code"  x="234" y="114" text-anchor="middle" fill="#f1e05a">JAV</text>
+      <text class="t label" x="234" y="143" text-anchor="middle">JavaScript</text>
     </g>
-
-    <!-- JavaScript — indigo -->
-    <g class="chip d3">
+    
+    <g class="chip" style="animation-delay:0.28s">
       <rect class="card card-edge" x="308" y="82" width="114" height="76" rx="12"
-            stroke="#4F46E5"/>
-      <rect x="340" y="89" width="50" height="36" rx="8" fill="url(#tileIndigo)"/>
-      <text class="t code"  x="365" y="114" text-anchor="middle" fill="#4F46E5">JS</text>
-      <text class="t label" x="365" y="143" text-anchor="middle">JavaScript</text>
+            stroke="#f7523f"/>
+      <rect x="340" y="89" width="50" height="36" rx="8"
+            fill="#f7523f" fill-opacity="0.15"/>
+      <text class="t code"  x="365" y="114" text-anchor="middle" fill="#f7523f">BLA</text>
+      <text class="t label" x="365" y="143" text-anchor="middle">Blade</text>
     </g>
-
-    <!-- Python — teal -->
-    <g class="chip d4">
+    
+    <g class="chip" style="animation-delay:0.38s">
       <rect class="card card-edge" x="439" y="82" width="114" height="76" rx="12"
-            stroke="#14B8A6"/>
-      <rect x="471" y="89" width="50" height="36" rx="8" fill="url(#tileTeal)"/>
-      <text class="t code"  x="496" y="114" text-anchor="middle" fill="#14B8A6">Py</text>
-      <text class="t label" x="496" y="143" text-anchor="middle">Python</text>
+            stroke="#663399"/>
+      <rect x="471" y="89" width="50" height="36" rx="8"
+            fill="#663399" fill-opacity="0.15"/>
+      <text class="t code"  x="496" y="114" text-anchor="middle" fill="#663399">CSS</text>
+      <text class="t label" x="496" y="143" text-anchor="middle">CSS</text>
     </g>
-
-    <!-- HTML — indigo -->
-    <g class="chip d5">
+    
+    <g class="chip" style="animation-delay:0.48s">
       <rect class="card card-edge" x="570" y="82" width="114" height="76" rx="12"
-            stroke="#4F46E5"/>
-      <rect x="602" y="89" width="50" height="36" rx="8" fill="url(#tileIndigo)"/>
-      <text class="t code"  x="627" y="114" text-anchor="middle" fill="#4F46E5">H5</text>
-      <text class="t label" x="627" y="143" text-anchor="middle">HTML</text>
+            stroke="#3572A5"/>
+      <rect x="602" y="89" width="50" height="36" rx="8"
+            fill="#3572A5" fill-opacity="0.15"/>
+      <text class="t code"  x="627" y="114" text-anchor="middle" fill="#3572A5">PYT</text>
+      <text class="t label" x="627" y="143" text-anchor="middle">Python</text>
     </g>
-
-    <!-- CSS — teal -->
-    <g class="chip d6">
+    
+    <g class="chip" style="animation-delay:0.58s">
       <rect class="card card-edge" x="701" y="82" width="114" height="76" rx="12"
-            stroke="#14B8A6"/>
-      <rect x="733" y="89" width="50" height="36" rx="8" fill="url(#tileTeal)"/>
-      <text class="t code"  x="758" y="114" text-anchor="middle" fill="#14B8A6">CSS</text>
-      <text class="t label" x="758" y="143" text-anchor="middle">CSS</text>
+            stroke="#e34c26"/>
+      <rect x="733" y="89" width="50" height="36" rx="8"
+            fill="#e34c26" fill-opacity="0.15"/>
+      <text class="t code"  x="758" y="114" text-anchor="middle" fill="#e34c26">HTM</text>
+      <text class="t label" x="758" y="143" text-anchor="middle">HTML</text>
     </g>
-
+    
   </g>
 
   <!-- ===== Decorative halo accent ===== -->
