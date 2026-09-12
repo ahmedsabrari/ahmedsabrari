@@ -1,140 +1,75 @@
 <!--
   ════════════════════════════════════════════════════════════════
   AHMED SABRARI · GitHub Profile
-  ────────────────────────────────────────────────────────────────
   23 animated SVG banners · aurora / cyber aesthetic
-  Assets: /banners · /snake
   ════════════════════════════════════════════════════════════════
 -->
 
 <div align="center">
 
 <!-- ═══════════════ HERO ═══════════════ -->
-<img src="banners/hero-zen-light.svg"
-     width="100%" style="max-width: 860px;"
-     alt="Ahmed Sabrari — hero wordmark"/>
-
-<img src="banners/text-scroll-cyber.svg"
-     width="100%" style="max-width: 860px;"
-     loading="lazy" decoding="async"
-     alt="Animated cyber text scroll"/>
-
-<img src="banners/banner-cyber-neon-ahmed.svg"
-     width="100%" style="max-width: 860px;"
-     loading="lazy" decoding="async"
-     alt="Neon cyber banner"/>
+<img src="banners/hero-zen-light.svg" width="100%" style="max-width: 860px; pointer-events: none;" alt="Hero wordmark"/>
+<img src="banners/text-scroll-cyber.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt="Text scroll"/>
+<img src="banners/banner-cyber-neon-ahmed.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt="Neon banner"/>
 
 <br/>
 
 <!-- ═══════════════ DASHBOARD ═══════════════ -->
-<img src="banners/profile-dashboard-complete.svg"
-     width="100%" style="max-width: 860px;"
-     loading="lazy" decoding="async"
-     alt="Profile dashboard — complete overview"/>
-
+<img src="banners/profile-dashboard-complete.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt="Profile dashboard"/>
 <br/>
-<img src="banners/divider-cyber-aurora.svg" width="100%" style="max-width: 860px;" loading="lazy" decoding="async" alt=""/>
+<img src="banners/divider-cyber-aurora.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt=""/>
 <br/>
-
-<img src="banners/profile-scan-aurora.svg"
-     width="100%" style="max-width: 860px;"
-     loading="lazy" decoding="async"
-     alt="Animated profile scan"/>
-
+<img src="banners/profile-scan-aurora.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt="Profile scan"/>
 <br/>
-<img src="banners/divider-cyber-aurora.svg" width="100%" style="max-width: 860px;" loading="lazy" decoding="async" alt=""/>
+<img src="banners/divider-cyber-aurora.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt=""/>
 <br/>
 
 <!-- ═══════════════ WORK ═══════════════ -->
-<img src="banners/projects-grid-aurora-dark.svg"
-     width="100%" style="max-width: 860px;"
-     loading="lazy" decoding="async"
-     alt="Projects grid — aurora dark"/>
-
+<img src="banners/projects-grid-aurora-dark.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt="Projects grid"/>
 <br/>
-<img src="banners/divider-cyber-aurora.svg" width="100%" style="max-width: 860px;" loading="lazy" decoding="async" alt=""/>
+<img src="banners/divider-cyber-aurora.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt=""/>
 <br/>
-
-<img src="banners/competitive-programming-dashboard.svg"
-     width="100%" style="max-width: 860px;"
-     loading="lazy" decoding="async"
-     alt="Competitive programming dashboard"/>
-
+<img src="banners/competitive-programming-dashboard.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt="CP dashboard"/>
 <br/>
-<img src="banners/divider-cyber-aurora.svg" width="100%" style="max-width: 860px;" loading="lazy" decoding="async" alt=""/>
+<img src="banners/divider-cyber-aurora.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt=""/>
 <br/>
 
 <!-- ═══════════════ ACTIVITY ═══════════════ -->
-<img src="banners/contribution-graph-aurora.svg"
-     width="100%" style="max-width: 860px;"
-     loading="lazy" decoding="async"
-     alt="Contribution graph — aurora style"/>
-
+<img src="banners/contribution-graph-aurora.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt="Contribution graph"/>
 <br/>
-<img src="banners/divider-cyber-aurora.svg" width="100%" style="max-width: 860px;" loading="lazy" decoding="async" alt=""/>
+<img src="banners/divider-cyber-aurora.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt=""/>
 <br/>
-
-<img src="banners/highlights-aurora-dark.svg"
-     width="100%" style="max-width: 860px;"
-     loading="lazy" decoding="async"
-     alt="Year highlights — aurora dark"/>
-
+<img src="banners/highlights-aurora-dark.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt="Highlights"/>
 <br/>
-<img src="banners/divider-cyber-aurora.svg" width="100%" style="max-width: 860px;" loading="lazy" decoding="async" alt=""/>
+<img src="banners/divider-cyber-aurora.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt=""/>
 <br/>
-
-<img src="banners/stats-dashboard-aurora-dark.svg"
-     width="100%" style="max-width: 860px;"
-     loading="lazy" decoding="async"
-     alt="Stats dashboard — aurora dark"/>
-
+<img src="banners/stats-dashboard-aurora-dark.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt="Stats dashboard"/>
 <br/>
-<img src="banners/divider-cyber-aurora.svg" width="100%" style="max-width: 860px;" loading="lazy" decoding="async" alt=""/>
+<img src="banners/divider-cyber-aurora.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt=""/>
 <br/>
 
 <!-- ═══════════════ STACK ═══════════════ -->
-<img src="banners/tech-stack-cards.svg"
-     width="100%" style="max-width: 860px;"
-     loading="lazy" decoding="async"
-     alt="Tech stack cards"/>
-
+<img src="banners/tech-stack-cards.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt="Tech stack"/>
 <br/>
-<img src="banners/divider-cyber-aurora.svg" width="100%" style="max-width: 860px;" loading="lazy" decoding="async" alt=""/>
+<img src="banners/divider-cyber-aurora.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt=""/>
 <br/>
-
-<img src="banners/terminal-neofetch-profile.svg"
-     width="100%" style="max-width: 860px;"
-     loading="lazy" decoding="async"
-     alt="Terminal neofetch profile"/>
-
+<img src="banners/terminal-neofetch-profile.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt="Terminal neofetch"/>
 <br/>
-<img src="banners/divider-cyber-aurora.svg" width="100%" style="max-width: 860px;" loading="lazy" decoding="async" alt=""/>
+<img src="banners/divider-cyber-aurora.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt=""/>
 <br/>
 
 <!-- ═══════════════ HEATMAP + SNAKE ═══════════════ -->
-<img src="banners/contribution-heatmap-aurora-dark.svg"
-     width="100%" style="max-width: 860px;"
-     loading="lazy" decoding="async"
-     alt="Contribution heatmap — aurora dark"/>
-
+<img src="banners/contribution-heatmap-aurora-dark.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt="Heatmap"/>
 <br/>
-<img src="banners/divider-cyber-aurora.svg" width="100%" style="max-width: 860px;" loading="lazy" decoding="async" alt=""/>
+<img src="banners/divider-cyber-aurora.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt=""/>
 <br/>
-
-<img src="snake/snake.svg"
-     width="100%" style="max-width: 860px;"
-     loading="lazy" decoding="async"
-     alt="Contribution snake animation"/>
-
+<img src="snake/snake.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt="Snake animation"/>
 <br/>
-<img src="banners/divider-cyber-aurora.svg" width="100%" style="max-width: 860px;" loading="lazy" decoding="async" alt=""/>
+<img src="banners/divider-cyber-aurora.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt=""/>
 <br/>
 
 <!-- ═══════════════ FOOTER ═══════════════ -->
-<img src="banners/social-card-aurora-dark.svg"
-     width="100%" style="max-width: 860px;"
-     loading="lazy" decoding="async"
-     alt="Social links card — aurora dark"/>
+<img src="banners/social-card-aurora-dark.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt="Social card"/>
 
 </div>
 
