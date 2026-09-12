@@ -19,19 +19,19 @@ jobs:
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            snake/snake.svg?color_snake=#14B8A6&color_dots=#F4F1EA,#C3C0F6,#9C97F0,#766FEB,#4F46E5
-            snake/snake.gif?color_snake=#14B8A6&color_dots=#F4F1EA,#C3C0F6,#9C97F0,#766FEB,#4F46E5
+            snake/snake.svg?color_snake=#14B8A6&color_dots=#EDE9E2,#C3C0F6,#9C97F0,#766FEB,#4F46E5&color_background=%23F4F1EA
+            snake/snake.gif?color_snake=#14B8A6&color_dots=#EDE9E2,#C3C0F6,#9C97F0,#766FEB,#4F46E5&color_background=%23F4F1EA
 
       - name: 📤 Commit & Push
         run: |
           git config --local user.name  "github-actions[bot]"
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          
+
           if [ ! -d "snake" ]; then
-            echo "⚠️  Directory snake/ ma kaynch — action fchel"
+            echo "⚠️  Directory snake/ ma kaynch"
             exit 1
           fi
-          
+
           git add snake/
           if ! git diff --staged --quiet; then
             git commit -m "🐍 Snake update $(date -u '+%Y-%m-%d %H:%M UTC') [skip ci]"
