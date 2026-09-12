@@ -21,56 +21,86 @@
   "totalRepos": 6,
   "totalStars": 7,
   "totalForks": 0,
-  "contributions": 86,
-  "commits": 85,
+  "contributions": 87,
+  "commits": 86,
   "prs": 0,
   "issues": 0,
   "reposWithCommits": 3,
   "topRepos": [
     {
       "name": "image-to-pencil-sketch",
-      "description": "",
+      "description": "No description provided.",
       "url": "https://github.com/ahmedsabrari/image-to-pencil-sketch",
       "stars": 2,
       "forks": 0,
       "language": "Python",
-      "color": "#3572A5"
+      "color": "#3572A5",
+      "updated": "updated 29d ago",
+      "x": 28,
+      "y": 88,
+      "chipTextX": 46,
+      "chipWidth": 60,
+      "delay": "0.25"
     },
     {
       "name": "ahmedsabrari",
-      "description": "",
+      "description": "No description provided.",
       "url": "https://github.com/ahmedsabrari/ahmedsabrari",
       "stars": 2,
       "forks": 0,
       "language": "JavaScript",
-      "color": "#f1e05a"
+      "color": "#f1e05a",
+      "updated": "updated today",
+      "x": 298,
+      "y": 88,
+      "chipTextX": 62,
+      "chipWidth": 92,
+      "delay": "0.40"
     },
     {
       "name": "ahmedsabrari-portfolio",
-      "description": "",
+      "description": "No description provided.",
       "url": "https://github.com/ahmedsabrari/ahmedsabrari-portfolio",
       "stars": 1,
       "forks": 0,
       "language": "PHP",
-      "color": "#4F5D95"
+      "color": "#4F5D95",
+      "updated": "updated 11mo ago",
+      "x": 568,
+      "y": 88,
+      "chipTextX": 34,
+      "chipWidth": 36,
+      "delay": "0.55"
     },
     {
       "name": "heart-drawing",
-      "description": "",
+      "description": "No description provided.",
       "url": "https://github.com/ahmedsabrari/heart-drawing",
       "stars": 1,
       "forks": 0,
       "language": "Python",
-      "color": "#3572A5"
+      "color": "#3572A5",
+      "updated": "updated 1y ago",
+      "x": 28,
+      "y": 266,
+      "chipTextX": 46,
+      "chipWidth": 60,
+      "delay": "0.70"
     },
     {
       "name": "hello_world_gui",
-      "description": "",
+      "description": "No description provided.",
       "url": "https://github.com/ahmedsabrari/hello_world_gui",
       "stars": 1,
       "forks": 0,
       "language": "Python",
-      "color": "#3572A5"
+      "color": "#3572A5",
+      "updated": "updated 1y ago",
+      "x": 298,
+      "y": 266,
+      "chipTextX": 46,
+      "chipWidth": 60,
+      "delay": "0.85"
     },
     {
       "name": "my-budget-app",
@@ -79,7 +109,13 @@
       "stars": 0,
       "forks": 0,
       "language": "JavaScript",
-      "color": "#f1e05a"
+      "color": "#f1e05a",
+      "updated": "updated today",
+      "x": 568,
+      "y": 266,
+      "chipTextX": 62,
+      "chipWidth": 92,
+      "delay": "1.00"
     }
   ],
   "pinned": [
@@ -134,7 +170,7 @@
     {
       "name": "JavaScript",
       "color": "#f1e05a",
-      "percent": 28.6,
+      "percent": 28.7,
       "barWidth": 56
     },
     {
@@ -2015,9 +2051,9 @@
     },
     {
       "date": "2026-09-12",
-      "contributionCount": 3,
+      "contributionCount": 4,
       "weekday": 6
     }
   ],
-  "generatedAt": "2026-09-12T18:00:44.445Z"
+  "generatedAt": "2026-09-12T18:30:10.732Z"
 }
