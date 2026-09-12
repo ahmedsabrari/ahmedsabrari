@@ -317,7 +317,6 @@ function buildStatsMetrics(u, repos) {
   const totalRepos = u.repositories.totalCount;
   const followers = u.followers.totalCount;
 
-  // Unified scale: max value → 136px (akbar bar)
   const maxVal = Math.max(stars, contributions, totalRepos, followers, 1);
   const scale = (v) => Math.max(4, Math.round((v / maxVal) * 136));
 
@@ -331,6 +330,27 @@ function buildStatsMetrics(u, repos) {
     sdReposBarWidth: scale(totalRepos),
     sdFollowersBarWidth: scale(followers),
   };
+}
+
+// ============ Tech Stack (top 6 languages) ============
+function buildTechStack(languages, opts = {}) {
+  const { cardX0 = 46, cardStep = 131, maxCards = 6 } = opts;
+  return languages.slice(0, maxCards).map((lang, i) => {
+    const x = cardX0 + i * cardStep;
+    const tileX = x + 32;
+    const centerX = x + 57;
+    const accent = lang.color || '#4F46E5';
+    const shortCode = lang.name.slice(0, 3).toUpperCase();
+    return {
+      name: lang.name,
+      shortCode,
+      accent,
+      x,
+      tileX,
+      centerX,
+      delay: (0.08 + i * 0.10).toFixed(2),
+    };
+  });
 }
 
 // ============ Split bio l 2 lines ============
@@ -431,6 +451,9 @@ async function main() {
   // Stats Dashboard
   const sdMetrics = buildStatsMetrics(u, repos);
 
+  // Tech Stack
+  const techStack = buildTechStack(languages, { cardX0: 46, cardStep: 131, maxCards: 6 });
+
   const stats = {
     activeDays,
     name: u.name || u.login,
@@ -474,6 +497,9 @@ async function main() {
 
     // Stats Dashboard
     ...sdMetrics,
+
+    // Tech Stack
+    techStack,
 
     // Top repos — 2 cols × 3 rows + donut
     topRepos: repos.slice(0, 6).map((r, i) => {
@@ -531,6 +557,7 @@ async function main() {
   console.log('   hlTopLang:', stats.hlTopLangName, `(${stats.hlTopLangRepoCount} repos)`);
   console.log('   hlFeatured:', stats.hlFeaturedName);
   console.log('   sdStars:', stats.sdStars, '|', stats.sdContributions, '|', stats.sdRepos, '|', stats.sdFollowers);
+  console.log('   techStack:', stats.techStack.map(t => t.name).join(', '));
   console.log('   avatar size:', (avatarBase64.length / 1024).toFixed(1), 'KB');
 }
 

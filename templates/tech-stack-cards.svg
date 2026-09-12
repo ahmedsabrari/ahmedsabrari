@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="240" viewBox="0 0 860 240" role="img" aria-labelledby="skTitle skDesc">
+  <title id="skTitle">Technical skills — {{name}}</title>
+  <desc id="skDesc">Skill cards showing top languages used across repositories.</desc>
+
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#F4F1EA"/>
+      <stop offset="50%"  stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F4F1EA"/>
+    </linearGradient>
+
+    <linearGradient id="shineGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#4F46E5" stop-opacity="0.70"/>
+      <stop offset="55%"  stop-color="#8B93A7" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#4F46E5" stop-opacity="0"/>
+    </linearGradient>
+
+    <radialGradient id="glowIndigo">
+      <stop offset="0%"   stop-color="#4F46E5" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#4F46E5" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glowTeal">
+      <stop offset="0%"   stop-color="#14B8A6" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#14B8A6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <style>
+    .t { font-family: Arial, Helvetica, sans-serif; }
+
+    .code  { font-size: 18px;   font-weight: 700; letter-spacing: 0.4px; }
+    .label { font-size: 11px;   font-weight: 600; letter-spacing: 0.5px; fill: #6B7280; }
+
+    .card      { fill: #FFFFFF; fill-opacity: 0.88; }
+    .card-edge { stroke-width: 1.6; }
+
+    .chip { transform-box: fill-box; transform-origin: center; animation: chipIn .6s cubic-bezier(.22,.7,.3,1) both; }
+
+    .orb-a { transform-box: fill-box; transform-origin: center; animation: drift1 11s ease-in-out infinite; }
+    .orb-b { transform-box: fill-box; transform-origin: center; animation: drift2 13s ease-in-out infinite; }
+    .halo  { transform-box: fill-box; transform-origin: center; animation: pulseRing 4.4s ease-in-out infinite; }
+
+    @keyframes chipIn {
+      from { opacity: 0; transform: translateY(10px) scale(.96); }
+      to   { opacity: 1; transform: translateY(0)    scale(1); }
+    }
+    @keyframes drift1    { 0%,100% { transform: translate(0,0); } 50% { transform: translate(20px,-10px); } }
+    @keyframes drift2    { 0%,100% { transform: translate(0,0); } 50% { transform: translate(-18px,10px); } }
+    @keyframes pulseRing { 0%,100% { transform: scale(1); opacity: .7; } 50% { transform: scale(1.06); opacity: 1; } }
+
+    @media (prefers-reduced-motion: reduce) {
+      .chip, .orb-a, .orb-b, .halo { animation: none !important; }
+    }
+  </style>
+
+  <!-- ===== Canvas ===== -->
+  <rect width="860" height="240" rx="20" fill="url(#bgGrad)"/>
+  <rect x="26" y="26" width="808" height="188" rx="14"
+        fill="#FFFFFF" fill-opacity="0.55" stroke="#D9D2C7" stroke-width="1.2"/>
+
+  <!-- ===== Decorative glow orbs ===== -->
+  <g aria-hidden="true">
+    <circle class="orb-a" cx="150" cy="60"  r="54" fill="url(#glowIndigo)"/>
+    <circle class="orb-b" cx="720" cy="196" r="62" fill="url(#glowTeal)"/>
+  </g>
+
+  <!-- ===== Decorative shine ===== -->
+  <path aria-hidden="true"
+        d="M166 64 C 240 52, 340 52, 410 65"
+        fill="none" stroke="url(#shineGrad)" stroke-width="1.4" stroke-linecap="round"/>
+
+  <!-- ===== Skill cards (dynamic) ===== -->
+  <g class="chips">
+    {{#each techStack}}
+    <g class="chip" style="animation-delay:{{delay}}s">
+      <rect class="card card-edge" x="{{x}}" y="82" width="114" height="76" rx="12"
+            stroke="{{accent}}"/>
+      <rect x="{{tileX}}" y="89" width="50" height="36" rx="8"
+            fill="{{accent}}" fill-opacity="0.15"/>
+      <text class="t code"  x="{{centerX}}" y="114" text-anchor="middle" fill="{{accent}}">{{shortCode}}</text>
+      <text class="t label" x="{{centerX}}" y="143" text-anchor="middle">{{name}}</text>
+    </g>
+    {{/each}}
+  </g>
+
+  <!-- ===== Decorative halo accent ===== -->
+  <circle aria-hidden="true" class="halo" cx="430" cy="196" r="26"
+          fill="#4F46E5" fill-opacity="0.06"/>
+</svg>
