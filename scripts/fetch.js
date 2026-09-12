@@ -193,6 +193,55 @@ function buildDonut(repo, baseDelay) {
   return svg;
 }
 
+// ============ Build Heatmap Cells (371 cells) ============
+function buildHeatmapCells(days, opts = {}) {
+  const {
+    startX = 51.5,
+    startY = 105.5,
+    step = 14,
+    totalCells = 371,
+    sweepStart = 0.20,
+    sweepEnd = 2.40,
+  } = opts;
+
+  const recent = days.slice(-totalCells);
+  if (recent.length === 0) return '';
+
+  const maxCount = Math.max(1, ...recent.map(d => d.contributionCount));
+  const stepDelay = (sweepEnd - sweepStart) / Math.max(1, recent.length);
+
+  const cells = recent.map((d, i) => {
+    const week = Math.floor(i / 7);
+    const day = i % 7;
+    const x = startX + week * step;
+    const y = startY + day * step;
+
+    let fill, opacity;
+    if (d.contributionCount === 0) {
+      fill = '#6B7280';
+      opacity = 0.07;
+    } else {
+      fill = '#4F46E5';
+      const ratio = d.contributionCount / maxCount;
+      if (ratio <= 0.25) opacity = 0.34;
+      else if (ratio <= 0.50) opacity = 0.56;
+      else if (ratio <= 0.75) opacity = 0.78;
+      else opacity = 1.00;
+    }
+
+    const begin = (sweepStart + i * stepDelay).toFixed(3);
+    const dur = (sweepEnd - (sweepStart + i * stepDelay)).toFixed(3);
+
+    return `<g transform="translate(${x.toFixed(1)},${y.toFixed(1)})">` +
+      `<rect x="-5.5" y="-5.5" width="11" height="11" rx="2.5" fill="${fill}" fill-opacity="0" transform="scale(0.15)">` +
+      `<animate attributeName="fill-opacity" values="0;${opacity};${opacity}" keyTimes="0;0.55;1" begin="${begin}s" dur="${dur}s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1;0.4 0 0.2 1"/>` +
+      `<animateTransform attributeName="transform" type="scale" values="0.15;1.12;1" keyTimes="0;0.55;1" begin="${begin}s" dur="${dur}s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1;0.4 0 0.2 1"/>` +
+      `</rect></g>`;
+  });
+
+  return cells.join('\n');
+}
+
 // ============ CP Panel metrics ============
 function buildCpMetrics(u, repos) {
   const contributions = u.contributionsCollection.contributionCalendar.totalContributions;
@@ -454,6 +503,9 @@ async function main() {
   // Tech Stack
   const techStack = buildTechStack(languages, { cardX0: 46, cardStep: 131, maxCards: 6 });
 
+  // Heatmap cells (371)
+  const heatmapCells = buildHeatmapCells(days);
+
   const stats = {
     activeDays,
     name: u.name || u.login,
@@ -500,6 +552,9 @@ async function main() {
 
     // Tech Stack
     techStack,
+
+    // Heatmap cells
+    heatmapCells,
 
     // Top repos — 2 cols × 3 rows + donut
     topRepos: repos.slice(0, 6).map((r, i) => {
@@ -558,6 +613,7 @@ async function main() {
   console.log('   hlFeatured:', stats.hlFeaturedName);
   console.log('   sdStars:', stats.sdStars, '|', stats.sdContributions, '|', stats.sdRepos, '|', stats.sdFollowers);
   console.log('   techStack:', stats.techStack.map(t => t.name).join(', '));
+  console.log('   heatmap cells:', (stats.heatmapCells.match(/<g /g) || []).length);
   console.log('   avatar size:', (avatarBase64.length / 1024).toFixed(1), 'KB');
 }
 
