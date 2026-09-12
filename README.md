@@ -1,37 +1,143 @@
 <!--
-  ============================================================
-  AHMED SABRARI - GitHub Profile
-  A showcase of 23 animated SVG banners for your GitHub
-  profile. All banners are stored in the /banners folder.
-  ============================================================
+  ════════════════════════════════════════════════════════════════
+  AHMED SABRARI · GitHub Profile
+  ────────────────────────────────────────────────────────────────
+  23 animated SVG banners · aurora / cyber aesthetic
+  Assets: /banners · /snake
+  ════════════════════════════════════════════════════════════════
 -->
-<img src="banners/hero-zen-light.svg" alt="AHMED Wordmark">
-<img src="banners/text-scroll-cyber.svg" alt="AHMED Wordmark">
-<img src="banners/banner-cyber-neon-ahmed.svg" alt="AHMED Wordmark">
-<img src="banners/divider-cyber-aurora.svg" alt="AHMED Wordmark">
-<img src="banners/profile-dashboard-complete.svg" alt="AHMED Wordmark">
-<img src="banners/divider-cyber-aurora.svg" alt="AHMED Wordmark">
-<img src="banners/profile-scan-aurora.svg" alt="AHMED Wordmark">
-<img src="banners/divider-cyber-aurora.svg" alt="AHMED Wordmark">
-<img src="banners/projects-grid-aurora-dark.svg" alt="AHMED Wordmark">
-<img src="banners/divider-cyber-aurora.svg" alt="AHMED Wordmark">
-<img src="banners/competitive-programming-dashboard.svg" alt="AHMED Wordmark">
-<img src="banners/divider-cyber-aurora.svg" alt="AHMED Wordmark">
-<img src="banners/contribution-graph-aurora.svg" alt="AHMED Wordmark">
-<img src="banners/divider-cyber-aurora.svg" alt="AHMED Wordmark">
-<img src="banners/highlights-aurora-dark.svg" alt="AHMED Wordmark">
-<img src="banners/divider-cyber-aurora.svg" alt="AHMED Wordmark">
-<img src="banners/stats-dashboard-aurora-dark.svg" alt="AHMED Wordmark">
-<img src="banners/divider-cyber-aurora.svg" alt="AHMED Wordmark">
-<img src="banners/tech-stack-cards.svg" alt="AHMED Wordmark">
-<img src="banners/divider-cyber-aurora.svg" alt="AHMED Wordmark">
-<img src="banners/terminal-neofetch-profile.svg" alt="AHMED Wordmark">
-<img src="banners/divider-cyber-aurora.svg" alt="AHMED Wordmark">
-<img src="banners/contribution-heatmap-aurora-dark.svg" alt="AHMED Wordmark">
-<img src="banners/divider-cyber-aurora.svg" alt="AHMED Wordmark">
-<img src="snake/snake.svg" alt="Snake">
-<img src="banners/divider-cyber-aurora.svg" alt="AHMED Wordmark">
-<img src="banners/social-card-aurora-dark.svg" alt="AHMED Wordmark">
+
+<div align="center">
+
+<!-- ═══════════════ HERO ═══════════════ -->
+<img src="banners/hero-zen-light.svg"
+     width="100%" style="max-width: 860px;"
+     alt="Ahmed Sabrari — hero wordmark"/>
+
+<img src="banners/text-scroll-cyber.svg"
+     width="100%" style="max-width: 860px;"
+     loading="lazy" decoding="async"
+     alt="Animated cyber text scroll"/>
+
+<img src="banners/banner-cyber-neon-ahmed.svg"
+     width="100%" style="max-width: 860px;"
+     loading="lazy" decoding="async"
+     alt="Neon cyber banner"/>
+
+<br/>
+
+<!-- ═══════════════ DASHBOARD ═══════════════ -->
+<img src="banners/profile-dashboard-complete.svg"
+     width="100%" style="max-width: 860px;"
+     loading="lazy" decoding="async"
+     alt="Profile dashboard — complete overview"/>
+
+<br/>
+<img src="banners/divider-cyber-aurora.svg" width="100%" style="max-width: 860px;" loading="lazy" decoding="async" alt=""/>
+<br/>
+
+<img src="banners/profile-scan-aurora.svg"
+     width="100%" style="max-width: 860px;"
+     loading="lazy" decoding="async"
+     alt="Animated profile scan"/>
+
+<br/>
+<img src="banners/divider-cyber-aurora.svg" width="100%" style="max-width: 860px;" loading="lazy" decoding="async" alt=""/>
+<br/>
+
+<!-- ═══════════════ WORK ═══════════════ -->
+<img src="banners/projects-grid-aurora-dark.svg"
+     width="100%" style="max-width: 860px;"
+     loading="lazy" decoding="async"
+     alt="Projects grid — aurora dark"/>
+
+<br/>
+<img src="banners/divider-cyber-aurora.svg" width="100%" style="max-width: 860px;" loading="lazy" decoding="async" alt=""/>
+<br/>
+
+<img src="banners/competitive-programming-dashboard.svg"
+     width="100%" style="max-width: 860px;"
+     loading="lazy" decoding="async"
+     alt="Competitive programming dashboard"/>
+
+<br/>
+<img src="banners/divider-cyber-aurora.svg" width="100%" style="max-width: 860px;" loading="lazy" decoding="async" alt=""/>
+<br/>
+
+<!-- ═══════════════ ACTIVITY ═══════════════ -->
+<img src="banners/contribution-graph-aurora.svg"
+     width="100%" style="max-width: 860px;"
+     loading="lazy" decoding="async"
+     alt="Contribution graph — aurora style"/>
+
+<br/>
+<img src="banners/divider-cyber-aurora.svg" width="100%" style="max-width: 860px;" loading="lazy" decoding="async" alt=""/>
+<br/>
+
+<img src="banners/highlights-aurora-dark.svg"
+     width="100%" style="max-width: 860px;"
+     loading="lazy" decoding="async"
+     alt="Year highlights — aurora dark"/>
+
+<br/>
+<img src="banners/divider-cyber-aurora.svg" width="100%" style="max-width: 860px;" loading="lazy" decoding="async" alt=""/>
+<br/>
+
+<img src="banners/stats-dashboard-aurora-dark.svg"
+     width="100%" style="max-width: 860px;"
+     loading="lazy" decoding="async"
+     alt="Stats dashboard — aurora dark"/>
+
+<br/>
+<img src="banners/divider-cyber-aurora.svg" width="100%" style="max-width: 860px;" loading="lazy" decoding="async" alt=""/>
+<br/>
+
+<!-- ═══════════════ STACK ═══════════════ -->
+<img src="banners/tech-stack-cards.svg"
+     width="100%" style="max-width: 860px;"
+     loading="lazy" decoding="async"
+     alt="Tech stack cards"/>
+
+<br/>
+<img src="banners/divider-cyber-aurora.svg" width="100%" style="max-width: 860px;" loading="lazy" decoding="async" alt=""/>
+<br/>
+
+<img src="banners/terminal-neofetch-profile.svg"
+     width="100%" style="max-width: 860px;"
+     loading="lazy" decoding="async"
+     alt="Terminal neofetch profile"/>
+
+<br/>
+<img src="banners/divider-cyber-aurora.svg" width="100%" style="max-width: 860px;" loading="lazy" decoding="async" alt=""/>
+<br/>
+
+<!-- ═══════════════ HEATMAP + SNAKE ═══════════════ -->
+<img src="banners/contribution-heatmap-aurora-dark.svg"
+     width="100%" style="max-width: 860px;"
+     loading="lazy" decoding="async"
+     alt="Contribution heatmap — aurora dark"/>
+
+<br/>
+<img src="banners/divider-cyber-aurora.svg" width="100%" style="max-width: 860px;" loading="lazy" decoding="async" alt=""/>
+<br/>
+
+<img src="snake/snake.svg"
+     width="100%" style="max-width: 860px;"
+     loading="lazy" decoding="async"
+     alt="Contribution snake animation"/>
+
+<br/>
+<img src="banners/divider-cyber-aurora.svg" width="100%" style="max-width: 860px;" loading="lazy" decoding="async" alt=""/>
+<br/>
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+<img src="banners/social-card-aurora-dark.svg"
+     width="100%" style="max-width: 860px;"
+     loading="lazy" decoding="async"
+     alt="Social links card — aurora dark"/>
+
+</div>
+
 <!-- 
 <p align="center">
   <img src="banners/hero-aurora-dark.svg" alt="AHMED Wordmark" width="882">
