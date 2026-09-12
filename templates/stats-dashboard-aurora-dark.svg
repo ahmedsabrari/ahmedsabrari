@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="260" viewBox="0 0 860 260" role="img" aria-labelledby="psTitle psDesc">
+  <title id="psTitle">Profile Signal — {{name}}</title>
+  <desc id="psDesc">GitHub profile signal card: {{sdStars}} stars, {{sdContributions}} contributions, {{sdRepos}} repositories, {{sdFollowers}} followers.</desc>
+
+  <defs>
+    <linearGradient id="psBg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#F4F1EA"/>
+      <stop offset="50%"  stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F4F1EA"/>
+    </linearGradient>
+
+    <linearGradient id="psShine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#4F46E5" stop-opacity="0.55"/>
+      <stop offset="55%"  stop-color="#8B93A7" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#4F46E5" stop-opacity="0"/>
+    </linearGradient>
+
+    <radialGradient id="psOrbIndigo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#4F46E5" stop-opacity="0.28"/>
+      <stop offset="58%"  stop-color="#4F46E5" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#4F46E5" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="psOrbTeal" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#14B8A6" stop-opacity="0.26"/>
+      <stop offset="58%"  stop-color="#14B8A6" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#14B8A6" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="psOrbIndigoSoft" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#4F46E5" stop-opacity="0.18"/>
+      <stop offset="58%"  stop-color="#4F46E5" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#4F46E5" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="psOrbTealSoft" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#14B8A6" stop-opacity="0.16"/>
+      <stop offset="58%"  stop-color="#14B8A6" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#14B8A6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <style>
+    #psCard text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+    }
+
+    /* ---- Motion ---- */
+    #psCard .ps-orb-a { animation: psFloatA 9s ease-in-out infinite; }
+    #psCard .ps-orb-b { animation: psFloatB 11s ease-in-out infinite 1.1s; }
+    #psCard .ps-orb-c { animation: psFloatC 13s ease-in-out infinite 0.6s; }
+
+    #psCard .ps-ring-spin  { transform-box: fill-box; transform-origin: center; animation: psSpin 30s linear infinite; }
+    #psCard .ps-ring-pulse { transform-box: fill-box; transform-origin: center; animation: psPulse 3.6s ease-in-out infinite; }
+    #psCard .ps-ring-soft  { transform-box: fill-box; transform-origin: center; animation: psPulse 4.6s ease-in-out infinite 0.8s; }
+    #psCard .ps-orbit-dot  { transform-box: fill-box; transform-origin: center; animation: psDot 2.6s ease-in-out infinite; }
+
+    #psCard .ps-chip { animation: psChipIn 650ms cubic-bezier(.22,.7,.3,1) both; }
+    #psCard .ps-bar  { transform-box: fill-box; transform-origin: left; animation: psBarIn 1.05s cubic-bezier(.22,.7,.3,1) both; }
+
+    @keyframes psFloatA { 0%,100% { transform: translate(0,0);        opacity: .58; } 50% { transform: translate(28px,-20px);  opacity: .86; } }
+    @keyframes psFloatB { 0%,100% { transform: translate(0,0);        opacity: .46; } 50% { transform: translate(-24px,18px);  opacity: .74; } }
+    @keyframes psFloatC { 0%,100% { transform: translate(0,0) scale(1); opacity: .40; } 50% { transform: translate(18px,-12px) scale(1.16); opacity: .66; } }
+
+    @keyframes psSpin  { to { transform: rotate(360deg); } }
+    @keyframes psPulse { 0%,100% { transform: scale(1);     opacity: .78; } 50% { transform: scale(1.045); opacity: 1; } }
+    @keyframes psDot   { 0%,100% { transform: scale(0.85); } 50% { transform: scale(1.25); } }
+
+    @keyframes psChipIn { from { opacity: 0; transform: translateY(9px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes psBarIn  { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+
+    @media (prefers-reduced-motion: reduce) {
+      #psCard .ps-orb-a, #psCard .ps-orb-b, #psCard .ps-orb-c,
+      #psCard .ps-ring-spin, #psCard .ps-ring-pulse, #psCard .ps-ring-soft,
+      #psCard .ps-orbit-dot, #psCard .ps-chip, #psCard .ps-bar {
+        animation: none !important;
+      }
+    }
+  </style>
+
+  <g id="psCard">
+    <!-- ===== Canvas ===== -->
+    <rect width="860" height="260" rx="20" fill="url(#psBg)"/>
+
+    <!-- ===== Decorative glow orbs ===== -->
+    <g aria-hidden="true">
+      <ellipse class="ps-orb-a" cx="138" cy="47"  rx="206" ry="120" fill="url(#psOrbIndigo)"/>
+      <ellipse class="ps-orb-b" cx="654" cy="57"  rx="241" ry="109" fill="url(#psOrbTeal)"/>
+      <ellipse class="ps-orb-c" cx="499" cy="229" rx="310" ry="88"  fill="url(#psOrbIndigoSoft)"/>
+      <ellipse class="ps-orb-b" cx="826" cy="203" rx="172" ry="109" fill="url(#psOrbTealSoft)"/>
+    </g>
+
+    <!-- ===== Decorative ring cluster ===== -->
+    <g aria-hidden="true">
+      <circle class="ps-ring-spin" cx="735" cy="82" r="58" fill="none"
+              stroke="#D9D2C7" stroke-width="1.2" stroke-dasharray="3 7" stroke-linecap="round"/>
+
+      <circle class="ps-ring-pulse" cx="735" cy="82" r="35.96" fill="none"
+              stroke="#4F46E5" stroke-opacity="0.22" stroke-width="1.6"/>
+
+      <circle class="ps-ring-soft" cx="735" cy="82" r="20.88" fill="none"
+              stroke="#14B8A6" stroke-opacity="0.35" stroke-width="1.6"/>
+
+      <g transform="rotate(-32 735 82)">
+        <circle cx="770.96" cy="82" r="10" fill="url(#psOrbIndigo)"/>
+        <circle class="ps-orbit-dot" cx="770.96" cy="82" r="4" fill="#4F46E5"/>
+      </g>
+    </g>
+
+    <!-- ===== Inner card panel ===== -->
+    <rect x="28" y="26" width="804" height="206" rx="20"
+          fill="#FFFFFF" fill-opacity="0.55" stroke="#D9D2C7" stroke-width="1.2"/>
+
+    <!-- ===== Title ===== -->
+    <text x="46" y="61" font-size="28" font-weight="800" letter-spacing="-0.5" fill="#1F2933">Profile Signal</text>
+
+    <!-- ===== Decorative shine ===== -->
+    <path aria-hidden="true"
+          d="M46 78 C 120 70, 240 70, 320 78"
+          fill="none" stroke="url(#psShine)" stroke-width="1.4" stroke-linecap="round"/>
+
+    <!-- ===== Stat chips ===== -->
+    <g class="ps-chip" style="animation-delay:0ms">
+      <rect x="34" y="92" width="180" height="122" rx="18"
+            fill="#FFFFFF" fill-opacity="0.78" stroke="#D9D2C7" stroke-width="1.2"/>
+      <text x="56" y="126" font-size="11" font-weight="700" letter-spacing="1.6" fill="#6B7280">STARS</text>
+      <text x="56" y="166" font-size="35" font-weight="800" letter-spacing="-0.8" fill="#4F46E5">{{sdStars}}</text>
+      <rect x="56" y="186" width="136" height="7" rx="3.5" fill="#EDE9E2"/>
+      <rect class="ps-bar" style="animation-delay:.15s" x="56" y="186" width="{{sdStarsBarWidth}}" height="7" rx="3.5" fill="#4F46E5"/>
+    </g>
+
+    <g class="ps-chip" style="animation-delay:100ms">
+      <rect x="238" y="92" width="180" height="122" rx="18"
+            fill="#FFFFFF" fill-opacity="0.78" stroke="#D9D2C7" stroke-width="1.2"/>
+      <text x="260" y="126" font-size="11" font-weight="700" letter-spacing="1.6" fill="#6B7280">CONTRIBUTIONS</text>
+      <text x="260" y="166" font-size="35" font-weight="800" letter-spacing="-0.8" fill="#0F766E">{{sdContributions}}</text>
+      <rect x="260" y="186" width="136" height="7" rx="3.5" fill="#EDE9E2"/>
+      <rect class="ps-bar" style="animation-delay:.28s" x="260" y="186" width="{{sdContributionsBarWidth}}" height="7" rx="3.5" fill="#14B8A6"/>
+    </g>
+
+    <g class="ps-chip" style="animation-delay:200ms">
+      <rect x="442" y="92" width="180" height="122" rx="18"
+            fill="#FFFFFF" fill-opacity="0.78" stroke="#D9D2C7" stroke-width="1.2"/>
+      <text x="464" y="126" font-size="11" font-weight="700" letter-spacing="1.6" fill="#6B7280">REPOS</text>
+      <text x="464" y="166" font-size="35" font-weight="800" letter-spacing="-0.8" fill="#4F46E5">{{sdRepos}}</text>
+      <rect x="464" y="186" width="136" height="7" rx="3.5" fill="#EDE9E2"/>
+      <rect class="ps-bar" style="animation-delay:.41s" x="464" y="186" width="{{sdReposBarWidth}}" height="7" rx="3.5" fill="#4F46E5"/>
+    </g>
+
+    <g class="ps-chip" style="animation-delay:300ms">
+      <rect x="646" y="92" width="180" height="122" rx="18"
+            fill="#FFFFFF" fill-opacity="0.78" stroke="#D9D2C7" stroke-width="1.2"/>
+      <text x="668" y="126" font-size="11" font-weight="700" letter-spacing="1.6" fill="#6B7280">FOLLOWERS</text>
+      <text x="668" y="166" font-size="35" font-weight="800" letter-spacing="-0.8" fill="#0F766E">{{sdFollowers}}</text>
+      <rect x="668" y="186" width="136" height="7" rx="3.5" fill="#EDE9E2"/>
+      <rect class="ps-bar" style="animation-delay:.54s" x="668" y="186" width="{{sdFollowersBarWidth}}" height="7" rx="3.5" fill="#14B8A6"/>
+    </g>
+
+    <!-- ===== Outer border ===== -->
+    <rect x="0.5" y="0.5" width="859" height="259" rx="19.5"
+          fill="none" stroke="#D9D2C7" stroke-width="1.2"/>
+  </g>
+</svg>

@@ -290,16 +290,12 @@ function buildContributionGraph(days, opts = {}) {
 
 // ============ Highlights metrics ============
 function buildHighlights(u, repos, languages, activeDays) {
-  // Top language
   const topLang = languages[0] || { name: 'Code' };
   const topLangRepoCount = repos.filter(r =>
     r.primaryLanguage?.name === topLang.name
   ).length;
 
-  // Featured repo: pinned[0] wla top-stars repo
   const featured = u.pinnedItems.nodes[0] || repos[0] || null;
-
-  // Total stars
   const totalStars = repos.reduce((s, r) => s + r.stargazerCount, 0);
 
   return {
@@ -311,6 +307,29 @@ function buildHighlights(u, repos, languages, activeDays) {
       : 'No description',
     hlImpactStars: totalStars,
     hlImpactActiveDays: activeDays,
+  };
+}
+
+// ============ Stats Dashboard metrics ============
+function buildStatsMetrics(u, repos) {
+  const stars = repos.reduce((s, r) => s + r.stargazerCount, 0);
+  const contributions = u.contributionsCollection.contributionCalendar.totalContributions;
+  const totalRepos = u.repositories.totalCount;
+  const followers = u.followers.totalCount;
+
+  // Unified scale: max value → 136px (akbar bar)
+  const maxVal = Math.max(stars, contributions, totalRepos, followers, 1);
+  const scale = (v) => Math.max(4, Math.round((v / maxVal) * 136));
+
+  return {
+    sdStars: stars,
+    sdContributions: contributions,
+    sdRepos: totalRepos,
+    sdFollowers: followers,
+    sdStarsBarWidth: scale(stars),
+    sdContributionsBarWidth: scale(contributions),
+    sdReposBarWidth: scale(totalRepos),
+    sdFollowersBarWidth: scale(followers),
   };
 }
 
@@ -409,6 +428,9 @@ async function main() {
   // Highlights
   const hlMetrics = buildHighlights(u, repos, languages, activeDays);
 
+  // Stats Dashboard
+  const sdMetrics = buildStatsMetrics(u, repos);
+
   const stats = {
     activeDays,
     name: u.name || u.login,
@@ -449,6 +471,9 @@ async function main() {
 
     // Highlights
     ...hlMetrics,
+
+    // Stats Dashboard
+    ...sdMetrics,
 
     // Top repos — 2 cols × 3 rows + donut
     topRepos: repos.slice(0, 6).map((r, i) => {
@@ -505,6 +530,7 @@ async function main() {
   console.log('   cgMaxCount:', stats.cgMaxCount);
   console.log('   hlTopLang:', stats.hlTopLangName, `(${stats.hlTopLangRepoCount} repos)`);
   console.log('   hlFeatured:', stats.hlFeaturedName);
+  console.log('   sdStars:', stats.sdStars, '|', stats.sdContributions, '|', stats.sdRepos, '|', stats.sdFollowers);
   console.log('   avatar size:', (avatarBase64.length / 1024).toFixed(1), 'KB');
 }
 
