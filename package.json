@@ -16,6 +16,7 @@
     "url": "git+https://github.com/ahmedsabrari/ahmedsabrari.git"
   },
   "dependencies": {
-    "node-fetch": "^3.3.2"
+    "node-fetch": "^3.3.2",
+    "jimp": "^0.22.10"
   }
 }

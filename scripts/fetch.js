@@ -1,5 +1,6 @@
 import fetch from 'node-fetch';
 import fs from 'fs';
+import Jimp from 'jimp';
 
 const TOKEN = process.env.GITHUB_TOKEN;
 const USER = process.env.GH_USERNAME || 'ahmedsabrari';
@@ -57,12 +58,10 @@ async function gql() {
   return j.data.user;
 }
 
-// ============ Jdid: Téléchargi avatar → base64 ============
+// ============ Téléchargi avatar → base64 ============
 async function fetchAvatarBase64(url) {
   console.log('  Downloading avatar...');
-  const res = await fetch(url, {
-    headers: { 'User-Agent': 'profile-cards' },
-  });
+  const res = await fetch(url, { headers: { 'User-Agent': 'profile-cards' } });
   if (!res.ok) throw new Error(`Avatar fetch failed: ${res.status}`);
   const buffer = await res.buffer();
   const contentType = res.headers.get('content-type') || 'image/png';
@@ -70,19 +69,85 @@ async function fetchAvatarBase64(url) {
   console.log(`  ✅ Avatar: ${(buffer.length / 1024).toFixed(1)} KB`);
   return `data:${contentType};base64,${base64}`;
 }
-// ============ Split bio l 2 lines intelligently ============
+
+// ============ Avatar → ASCII ============
+async function avatarToAscii(url, cols = 65, rows = 55) {
+  try {
+    console.log(`  Converting avatar → ASCII (${cols}×${rows})...`);
+    const res = await fetch(url, { headers: { 'User-Agent': 'profile-cards' } });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const buffer = await res.buffer();
+
+    const img = await Jimp.read(buffer);
+    img.cover(cols, rows).grayscale();
+
+    const chars = ' .:-=+*#%@';
+    const maxIdx = chars.length - 1;
+
+    const lines = [];
+    for (let y = 0; y < rows; y++) {
+      let line = '';
+      for (let x = 0; x < cols; x++) {
+        const hex = img.getPixelColor(x, y);
+        const { r } = Jimp.intToRGBA(hex);
+        const idx = Math.round((r / 255) * maxIdx);
+        line += chars[idx];
+      }
+      lines.push(line);
+    }
+    console.log(`  ✅ ASCII portrait ready (${lines.length} lines × ${cols} cols)`);
+    return lines;
+  } catch (e) {
+    console.log('  ⚠️  avatarToAscii failed:', e.message);
+    return [];
+  }
+}
+
+// ============ ASCII lines → SVG fragment ============
+function asciiLinesToSvg(lines, options = {}) {
+  const {
+    x = 36,
+    startY = 88,
+    lineHeight = 8,
+    fontSize = 9,
+    textLength = 408,
+    fill = 'url(#scan-ahmedsabrari-aurora-dark-portrait-gradient)',
+  } = options;
+
+  return lines.map((line, i) =>
+    `<text x="${x}" y="${startY + i * lineHeight}" ` +
+    `font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" ` +
+    `font-size="${fontSize}" textLength="${textLength}" lengthAdjust="spacing" ` +
+    `fill="${fill}">` +
+    line.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;') +
+    `</text>`
+  ).join('\n  ');
+}
+
+// ============ 9ra custom avatars man JSON ============
+function loadCustomAvatars() {
+  try {
+    const raw = fs.readFileSync('data/custom-avatars.json', 'utf8');
+    const data = JSON.parse(raw);
+    console.log('  ✅ custom-avatars.json loaded:', Object.keys(data).join(', '));
+    return data;
+  } catch (e) {
+    console.log('  ⚠️  custom-avatars.json ma kaynch wla fih erreur:', e.message);
+    return {};
+  }
+}
+
+// ============ Split bio l 2 lines ============
 function splitBio(bio, maxLen = 55) {
   const raw = (bio || '').trim();
   if (!raw) return { line1: '', line2: '' };
   if (raw.length <= maxLen) return { line1: raw, line2: '' };
 
-  // Words 9sar li ma bghinach line1 tkml bihom
   const shortWords = new Set([
     'a', 'an', 'the', 'or', 'and', 'with', 'in', 'on', 'at',
     'to', 'of', 'for', 'by', 'is', 'as', 'my', 'me'
   ]);
 
-  // 9elleb 3la space mzyan qrib man maxLen
   let cut = -1;
   for (let i = Math.min(maxLen, raw.length - 1); i >= 20; i--) {
     if (raw[i] === ' ') {
@@ -100,7 +165,6 @@ function splitBio(bio, maxLen = 55) {
   const line1 = raw.slice(0, cut).trim();
   const rest = raw.slice(cut).trim();
 
-  // Line2 momkin tkoun chwiya twil (maxLen + 15)
   const maxLine2 = maxLen + 15;
   let line2 = rest;
   if (rest.length > maxLine2) {
@@ -129,7 +193,7 @@ function computeLanguages(repos) {
         name,
         color: v.color || '#888',
         percent,
-        barWidth: Math.round((percent / 100) * 195),  // ← Jdid
+        barWidth: Math.round((percent / 100) * 195),
       };
     })
     .sort((a, b) => b.percent - a.percent);
@@ -143,37 +207,40 @@ async function main() {
     .flatMap(w => w.contributionDays)
     .slice(-371);
 
-  // Jib avatar base64
+  // GitHub avatar (base64)
   const avatarBase64 = await fetchAvatarBase64(u.avatarUrl);
+
+  // ASCII portrait
+  const asciiLines = await avatarToAscii(u.avatarUrl, 65, 55);
+  const avatarAsciiSvg = asciiLinesToSvg(asciiLines);
+
+  // Custom avatars
+  const custom = loadCustomAvatars();
+
   const { line1: bioLine1, line2: bioLine2 } = splitBio(u.bio || '', 55);
   const activeDays = days.filter(d => d.contributionCount > 0).length;
-
-    // 9ra custom avatars (ila kaynin)
-  let customAvatars = {};
-  try {
-    customAvatars = JSON.parse(fs.readFileSync('data/custom-avatars.json', 'utf8'));
-    console.log('  ✅ custom-avatars.json loaded');
-  } catch {
-    console.log('  ⚠️  custom-avatars.json ma kaynch, kansta3mel avatar GitHub');
-  }
 
   const stats = {
     activeDays,
     name: u.name || u.login,
     username: u.login,
     bio: u.bio || '',
-    bioLine1: bioLine1, 
-    bioLine2: bioLine2,
+    bioLine1,
+    bioLine2,
     location: u.location || '',
     company: u.company || '',
     joined: u.createdAt,
-    avatar: avatarBase64,
-    avatar1: customAvatars.squad1,
-    avatar2: customAvatars.squad2,
-    avatar3: customAvatars.squad3,
-    avatar4: customAvatars.squad4,
-    avatar5: customAvatars.squad5,
-    avatar6: customAvatars.hero,
+
+    avatar:  custom.hero    || avatarBase64,
+    avatar6: custom.hero    || avatarBase64,
+    avatar1: custom.squad1  || avatarBase64,
+    avatar2: custom.squad2  || avatarBase64,
+    avatar3: custom.squad3  || avatarBase64,
+    avatar4: custom.squad4  || avatarBase64,
+    avatar5: custom.squad5  || avatarBase64,
+
+    avatarAsciiSvg,                    // ← ASCII portrait (SVG fragment)
+
     followers: u.followers.totalCount,
     following: u.following.totalCount,
     totalRepos: u.repositories.totalCount,
@@ -212,6 +279,8 @@ async function main() {
   console.log('   stars:', stats.totalStars);
   console.log('   contributions:', stats.contributions);
   console.log('   repos:', stats.totalRepos);
+  console.log('   custom avatars:', Object.keys(custom).length, '/ 6');
+  console.log('   ascii lines:', asciiLines.length);
   console.log('   avatar size:', (avatarBase64.length / 1024).toFixed(1), 'KB');
 }
 
