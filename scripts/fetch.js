@@ -193,6 +193,38 @@ function buildDonut(repo, baseDelay) {
   return svg;
 }
 
+// ============ CP Panel metrics ============
+function buildCpMetrics(u, repos) {
+  const contributions = u.contributionsCollection.contributionCalendar.totalContributions;
+  const totalRepos = u.repositories.totalCount;
+  const followers = u.followers.totalCount;
+  const totalStars = repos.reduce((s, r) => s + r.stargazerCount, 0);
+
+  const activityPct = Math.min(100, Math.round((contributions / 500) * 100));
+  const projectsPct = Math.min(100, Math.round((totalRepos / 30) * 100));
+  const communityPct = Math.min(100, Math.round((followers / 100) * 100));
+
+  const signal = Math.min(10, Math.round(
+    Math.log2(contributions + 1) + Math.log2(totalStars + 1) * 1.5
+  ));
+
+  // Ring circumference for r=42 → 2π×42 ≈ 263.89
+  const RING_CIRC = 263.89;
+  const ringVisible = +((signal / 10) * RING_CIRC).toFixed(2);
+  const ringGap = +(RING_CIRC - ringVisible).toFixed(2);
+
+  return {
+    cpActivityPct: activityPct,
+    cpProjectsPct: projectsPct,
+    cpCommunityPct: communityPct,
+    cpActivityWidth: +((activityPct / 100) * 360).toFixed(1),
+    cpProjectsWidth: +((projectsPct / 100) * 360).toFixed(1),
+    cpCommunityWidth: +((communityPct / 100) * 360).toFixed(1),
+    cpSignal: signal,
+    cpRingDash: `${ringVisible} ${ringGap}`,
+  };
+}
+
 // ============ Split bio l 2 lines ============
 function splitBio(bio, maxLen = 55) {
   const raw = (bio || '').trim();
@@ -272,6 +304,9 @@ async function main() {
 
   // Custom avatars
   const custom = loadCustomAvatars();
+  
+  // CP metrics
+  const cpMetrics = buildCpMetrics(u, repos);
 
   const { line1: bioLine1, line2: bioLine2 } = splitBio(u.bio || '', 55);
   const activeDays = days.filter(d => d.contributionCount > 0).length;
@@ -308,12 +343,15 @@ async function main() {
     issues: u.contributionsCollection.totalIssueContributions,
     reposWithCommits: u.contributionsCollection.totalRepositoriesWithContributedCommits,
 
+    // ============ CP Panel metrics ============
+    ...cpMetrics,
+
     // ============ Top repos — 2 cols × 3 rows + donut ============
     topRepos: repos.slice(0, 6).map((r, i) => {
       const col = i % 2;
       const row = Math.floor(i / 2);
-      const x = 28 + col * 410;    // 28 or 438
-      const y = 88 + row * 178;    // 88, 266, 444
+      const x = 28 + col * 410;
+      const y = 88 + row * 178;
       const lang = r.primaryLanguage?.name || 'Code';
       const chipWidth = Math.max(35, lang.length * 8 + 12);
       const baseDelay = 0.25 + i * 0.15;
@@ -358,6 +396,10 @@ async function main() {
   console.log('   custom avatars:', Object.keys(custom).length, '/ 6');
   console.log('   ascii lines:', asciiLines.length);
   console.log('   topRepos:', stats.topRepos.length);
+  console.log('   cpSignal:', stats.cpSignal);
+  console.log('   cpActivityPct:', stats.cpActivityPct, '%');
+  console.log('   cpProjectsPct:', stats.cpProjectsPct, '%');
+  console.log('   cpCommunityPct:', stats.cpCommunityPct, '%');
   console.log('   avatar size:', (avatarBase64.length / 1024).toFixed(1), 'KB');
 }
 
