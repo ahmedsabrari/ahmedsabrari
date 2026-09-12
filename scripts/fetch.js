@@ -231,7 +231,7 @@ async function main() {
     company: u.company || '',
     joined: u.createdAt,
 
-    avatar:  custom.hero    || avatarBase64,
+    avatar: avatarBase64,
     avatar6: custom.hero    || avatarBase64,
     avatar1: custom.squad1  || avatarBase64,
     avatar2: custom.squad2  || avatarBase64,
