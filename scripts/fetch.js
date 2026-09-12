@@ -107,7 +107,7 @@ async function avatarToAscii(url, cols = 65, rows = 55) {
 function asciiLinesToSvg(lines, options = {}) {
   const {
     x = 36,
-    startY = 88,
+    startY = 105,
     lineHeight = 8,
     fontSize = 9,
     textLength = 408,
