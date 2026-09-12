@@ -137,6 +137,18 @@ function loadCustomAvatars() {
   }
 }
 
+// ============ Relative time helper ============
+function getRelativeTime(dateStr) {
+  const ms = Date.now() - new Date(dateStr).getTime();
+  const days = Math.floor(ms / (1000 * 60 * 60 * 24));
+  if (days < 1) return 'updated today';
+  if (days < 30) return `updated ${days}d ago`;
+  const months = Math.floor(days / 30);
+  if (months < 12) return `updated ${months}mo ago`;
+  const years = Math.floor(months / 12);
+  return `updated ${years}y ago`;
+}
+
 // ============ Split bio l 2 lines ============
 function splitBio(bio, maxLen = 55) {
   const raw = (bio || '').trim();
@@ -239,7 +251,7 @@ async function main() {
     avatar4: custom.squad4  || avatarBase64,
     avatar5: custom.squad5  || avatarBase64,
 
-    avatarAsciiSvg,                    // ← ASCII portrait (SVG fragment)
+    avatarAsciiSvg,
 
     followers: u.followers.totalCount,
     following: u.following.totalCount,
@@ -251,15 +263,30 @@ async function main() {
     prs: u.contributionsCollection.totalPullRequestContributions,
     issues: u.contributionsCollection.totalIssueContributions,
     reposWithCommits: u.contributionsCollection.totalRepositoriesWithContributedCommits,
-    topRepos: repos.slice(0, 6).map(r => ({
-      name: r.name,
-      description: r.description || '',
-      url: r.url,
-      stars: r.stargazerCount,
-      forks: r.forkCount,
-      language: r.primaryLanguage?.name || '',
-      color: r.primaryLanguage?.color || '#888',
-    })),
+
+    // ============ Top repos — b dynamic positions l grid ============
+    topRepos: repos.slice(0, 6).map((r, i) => {
+      const col = i % 3;
+      const row = Math.floor(i / 3);
+      const lang = r.primaryLanguage?.name || 'Code';
+      const chipWidth = Math.max(35, lang.length * 8 + 12);
+      return {
+        name: r.name,
+        description: r.description || 'No description provided.',
+        url: r.url,
+        stars: r.stargazerCount,
+        forks: r.forkCount,
+        language: lang,
+        color: r.primaryLanguage?.color || '#888',
+        updated: getRelativeTime(r.updatedAt),
+        x: 28 + col * 270,
+        y: 88 + row * 178,
+        chipTextX: 16 + chipWidth / 2,
+        chipWidth,
+        delay: (0.25 + i * 0.15).toFixed(2),
+      };
+    }),
+
     pinned: u.pinnedItems.nodes.map(r => ({
       name: r.name,
       description: r.description || '',
@@ -281,6 +308,7 @@ async function main() {
   console.log('   repos:', stats.totalRepos);
   console.log('   custom avatars:', Object.keys(custom).length, '/ 6');
   console.log('   ascii lines:', asciiLines.length);
+  console.log('   topRepos:', stats.topRepos.length);
   console.log('   avatar size:', (avatarBase64.length / 1024).toFixed(1), 'KB');
 }
 
