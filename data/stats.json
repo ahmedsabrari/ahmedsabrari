@@ -21,8 +21,8 @@
   "totalRepos": 6,
   "totalStars": 7,
   "totalForks": 0,
-  "contributions": 87,
-  "commits": 86,
+  "contributions": 88,
+  "commits": 87,
   "prs": 0,
   "issues": 0,
   "reposWithCommits": 3,
@@ -38,9 +38,10 @@
       "updated": "updated 29d ago",
       "x": 28,
       "y": 88,
-      "chipTextX": 46,
+      "chipTextX": 48,
       "chipWidth": 60,
-      "delay": "0.25"
+      "delay": "0.25",
+      "donutSvg": "<circle cx=\"348\" cy=\"92\" r=\"25\" fill=\"none\" stroke=\"#D9D2C7\" stroke-opacity=\"0.9\" stroke-width=\"8\"/><circle cx=\"348\" cy=\"92\" r=\"25\" fill=\"none\" stroke=\"#3572A5\" stroke-width=\"8\" stroke-dasharray=\"157.08 0.00\" stroke-dashoffset=\"0.00\" transform=\"rotate(-90 348 92)\" opacity=\"0\"><animate attributeName=\"opacity\" from=\"0\" to=\"1\" dur=\"0.01s\" begin=\"0.55s\" fill=\"freeze\"/><animate attributeName=\"stroke-dasharray\" from=\"0 157.07963267948966\" to=\"157.08 0.00\" dur=\"0.6s\" begin=\"0.55s\" fill=\"freeze\" calcMode=\"spline\" keyTimes=\"0;1\" keySplines=\"0.3 0 0.2 1\"/></circle><text x=\"348\" y=\"96\" text-anchor=\"middle\" font-family=\"ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace\" font-size=\"11\" font-weight=\"700\" fill=\"#1F2933\">100%</text>"
     },
     {
       "name": "ahmedsabrari",
@@ -51,11 +52,12 @@
       "language": "JavaScript",
       "color": "#f1e05a",
       "updated": "updated today",
-      "x": 298,
+      "x": 438,
       "y": 88,
-      "chipTextX": 62,
+      "chipTextX": 64,
       "chipWidth": 92,
-      "delay": "0.40"
+      "delay": "0.40",
+      "donutSvg": "<circle cx=\"348\" cy=\"92\" r=\"25\" fill=\"none\" stroke=\"#D9D2C7\" stroke-opacity=\"0.9\" stroke-width=\"8\"/><circle cx=\"348\" cy=\"92\" r=\"25\" fill=\"none\" stroke=\"#f1e05a\" stroke-width=\"8\" stroke-dasharray=\"157.08 0.00\" stroke-dashoffset=\"0.00\" transform=\"rotate(-90 348 92)\" opacity=\"0\"><animate attributeName=\"opacity\" from=\"0\" to=\"1\" dur=\"0.01s\" begin=\"0.70s\" fill=\"freeze\"/><animate attributeName=\"stroke-dasharray\" from=\"0 157.07963267948966\" to=\"157.08 0.00\" dur=\"0.6s\" begin=\"0.70s\" fill=\"freeze\" calcMode=\"spline\" keyTimes=\"0;1\" keySplines=\"0.3 0 0.2 1\"/></circle><text x=\"348\" y=\"96\" text-anchor=\"middle\" font-family=\"ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace\" font-size=\"11\" font-weight=\"700\" fill=\"#1F2933\">100%</text>"
     },
     {
       "name": "ahmedsabrari-portfolio",
@@ -66,11 +68,12 @@
       "language": "PHP",
       "color": "#4F5D95",
       "updated": "updated 11mo ago",
-      "x": 568,
-      "y": 88,
-      "chipTextX": 34,
+      "x": 28,
+      "y": 266,
+      "chipTextX": 36,
       "chipWidth": 36,
-      "delay": "0.55"
+      "delay": "0.55",
+      "donutSvg": "<circle cx=\"348\" cy=\"92\" r=\"25\" fill=\"none\" stroke=\"#D9D2C7\" stroke-opacity=\"0.9\" stroke-width=\"8\"/><circle cx=\"348\" cy=\"92\" r=\"25\" fill=\"none\" stroke=\"#4F5D95\" stroke-width=\"8\" stroke-dasharray=\"101.14 55.94\" stroke-dashoffset=\"0.00\" transform=\"rotate(-90 348 92)\" opacity=\"0\"><animate attributeName=\"opacity\" from=\"0\" to=\"1\" dur=\"0.01s\" begin=\"0.85s\" fill=\"freeze\"/><animate attributeName=\"stroke-dasharray\" from=\"0 157.07963267948966\" to=\"101.14 55.94\" dur=\"0.6s\" begin=\"0.85s\" fill=\"freeze\" calcMode=\"spline\" keyTimes=\"0;1\" keySplines=\"0.3 0 0.2 1\"/></circle><circle cx=\"348\" cy=\"92\" r=\"25\" fill=\"none\" stroke=\"#f7523f\" stroke-width=\"8\" stroke-dasharray=\"33.29 123.79\" stroke-dashoffset=\"-101.14\" transform=\"rotate(-90 348 92)\" opacity=\"0\"><animate attributeName=\"opacity\" from=\"0\" to=\"1\" dur=\"0.01s\" begin=\"1.03s\" fill=\"freeze\"/><animate attributeName=\"stroke-dasharray\" from=\"0 157.07963267948966\" to=\"33.29 123.79\" dur=\"0.6s\" begin=\"1.03s\" fill=\"freeze\" calcMode=\"spline\" keyTimes=\"0;1\" keySplines=\"0.3 0 0.2 1\"/></circle><circle cx=\"348\" cy=\"92\" r=\"25\" fill=\"none\" stroke=\"#f1e05a\" stroke-width=\"8\" stroke-dasharray=\"22.27 134.80\" stroke-dashoffset=\"-134.44\" transform=\"rotate(-90 348 92)\" opacity=\"0\"><animate attributeName=\"opacity\" from=\"0\" to=\"1\" dur=\"0.01s\" begin=\"1.21s\" fill=\"freeze\"/><animate attributeName=\"stroke-dasharray\" from=\"0 157.07963267948966\" to=\"22.27 134.80\" dur=\"0.6s\" begin=\"1.21s\" fill=\"freeze\" calcMode=\"spline\" keyTimes=\"0;1\" keySplines=\"0.3 0 0.2 1\"/></circle><circle cx=\"348\" cy=\"92\" r=\"25\" fill=\"none\" stroke=\"#e34c26\" stroke-width=\"8\" stroke-dasharray=\"0.21 156.87\" stroke-dashoffset=\"-156.71\" transform=\"rotate(-90 348 92)\" opacity=\"0\"><animate attributeName=\"opacity\" from=\"0\" to=\"1\" dur=\"0.01s\" begin=\"1.39s\" fill=\"freeze\"/><animate attributeName=\"stroke-dasharray\" from=\"0 157.07963267948966\" to=\"0.21 156.87\" dur=\"0.6s\" begin=\"1.39s\" fill=\"freeze\" calcMode=\"spline\" keyTimes=\"0;1\" keySplines=\"0.3 0 0.2 1\"/></circle><circle cx=\"348\" cy=\"92\" r=\"25\" fill=\"none\" stroke=\"#6B7280\" stroke-width=\"8\" stroke-dasharray=\"0.16 156.92\" stroke-dashoffset=\"-156.92\" transform=\"rotate(-90 348 92)\" opacity=\"0\"><animate attributeName=\"opacity\" from=\"0\" to=\"1\" dur=\"0.01s\" begin=\"1.57s\" fill=\"freeze\"/><animate attributeName=\"stroke-dasharray\" from=\"0 157.07963267948966\" to=\"0.16 156.92\" dur=\"0.6s\" begin=\"1.57s\" fill=\"freeze\" calcMode=\"spline\" keyTimes=\"0;1\" keySplines=\"0.3 0 0.2 1\"/></circle><text x=\"348\" y=\"96\" text-anchor=\"middle\" font-family=\"ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace\" font-size=\"11\" font-weight=\"700\" fill=\"#1F2933\">64%</text>"
     },
     {
       "name": "heart-drawing",
@@ -81,11 +84,12 @@
       "language": "Python",
       "color": "#3572A5",
       "updated": "updated 1y ago",
-      "x": 28,
+      "x": 438,
       "y": 266,
-      "chipTextX": 46,
+      "chipTextX": 48,
       "chipWidth": 60,
-      "delay": "0.70"
+      "delay": "0.70",
+      "donutSvg": "<circle cx=\"348\" cy=\"92\" r=\"25\" fill=\"none\" stroke=\"#D9D2C7\" stroke-opacity=\"0.9\" stroke-width=\"8\"/><circle cx=\"348\" cy=\"92\" r=\"25\" fill=\"none\" stroke=\"#3572A5\" stroke-width=\"8\" stroke-dasharray=\"157.08 0.00\" stroke-dashoffset=\"0.00\" transform=\"rotate(-90 348 92)\" opacity=\"0\"><animate attributeName=\"opacity\" from=\"0\" to=\"1\" dur=\"0.01s\" begin=\"1.00s\" fill=\"freeze\"/><animate attributeName=\"stroke-dasharray\" from=\"0 157.07963267948966\" to=\"157.08 0.00\" dur=\"0.6s\" begin=\"1.00s\" fill=\"freeze\" calcMode=\"spline\" keyTimes=\"0;1\" keySplines=\"0.3 0 0.2 1\"/></circle><text x=\"348\" y=\"96\" text-anchor=\"middle\" font-family=\"ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace\" font-size=\"11\" font-weight=\"700\" fill=\"#1F2933\">100%</text>"
     },
     {
       "name": "hello_world_gui",
@@ -96,26 +100,28 @@
       "language": "Python",
       "color": "#3572A5",
       "updated": "updated 1y ago",
-      "x": 298,
-      "y": 266,
-      "chipTextX": 46,
+      "x": 28,
+      "y": 444,
+      "chipTextX": 48,
       "chipWidth": 60,
-      "delay": "0.85"
+      "delay": "0.85",
+      "donutSvg": "<circle cx=\"348\" cy=\"92\" r=\"25\" fill=\"none\" stroke=\"#D9D2C7\" stroke-opacity=\"0.9\" stroke-width=\"8\"/><circle cx=\"348\" cy=\"92\" r=\"25\" fill=\"none\" stroke=\"#3572A5\" stroke-width=\"8\" stroke-dasharray=\"157.08 0.00\" stroke-dashoffset=\"0.00\" transform=\"rotate(-90 348 92)\" opacity=\"0\"><animate attributeName=\"opacity\" from=\"0\" to=\"1\" dur=\"0.01s\" begin=\"1.15s\" fill=\"freeze\"/><animate attributeName=\"stroke-dasharray\" from=\"0 157.07963267948966\" to=\"157.08 0.00\" dur=\"0.6s\" begin=\"1.15s\" fill=\"freeze\" calcMode=\"spline\" keyTimes=\"0;1\" keySplines=\"0.3 0 0.2 1\"/></circle><text x=\"348\" y=\"96\" text-anchor=\"middle\" font-family=\"ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace\" font-size=\"11\" font-weight=\"700\" fill=\"#1F2933\">100%</text>"
     },
     {
       "name": "my-budget-app",
-      "description": "A feature-rich web project built with pure HTML, CSS, and JavaScript — no frameworks or external dependencies.",
+      "description": "A feature-rich web project built with pure",
       "url": "https://github.com/ahmedsabrari/my-budget-app",
       "stars": 0,
       "forks": 0,
       "language": "JavaScript",
       "color": "#f1e05a",
       "updated": "updated today",
-      "x": 568,
-      "y": 266,
-      "chipTextX": 62,
+      "x": 438,
+      "y": 444,
+      "chipTextX": 64,
       "chipWidth": 92,
-      "delay": "1.00"
+      "delay": "1.00",
+      "donutSvg": "<circle cx=\"348\" cy=\"92\" r=\"25\" fill=\"none\" stroke=\"#D9D2C7\" stroke-opacity=\"0.9\" stroke-width=\"8\"/><circle cx=\"348\" cy=\"92\" r=\"25\" fill=\"none\" stroke=\"#f1e05a\" stroke-width=\"8\" stroke-dasharray=\"92.13 64.95\" stroke-dashoffset=\"0.00\" transform=\"rotate(-90 348 92)\" opacity=\"0\"><animate attributeName=\"opacity\" from=\"0\" to=\"1\" dur=\"0.01s\" begin=\"1.30s\" fill=\"freeze\"/><animate attributeName=\"stroke-dasharray\" from=\"0 157.07963267948966\" to=\"92.13 64.95\" dur=\"0.6s\" begin=\"1.30s\" fill=\"freeze\" calcMode=\"spline\" keyTimes=\"0;1\" keySplines=\"0.3 0 0.2 1\"/></circle><circle cx=\"348\" cy=\"92\" r=\"25\" fill=\"none\" stroke=\"#663399\" stroke-width=\"8\" stroke-dasharray=\"39.68 117.40\" stroke-dashoffset=\"-92.13\" transform=\"rotate(-90 348 92)\" opacity=\"0\"><animate attributeName=\"opacity\" from=\"0\" to=\"1\" dur=\"0.01s\" begin=\"1.48s\" fill=\"freeze\"/><animate attributeName=\"stroke-dasharray\" from=\"0 157.07963267948966\" to=\"39.68 117.40\" dur=\"0.6s\" begin=\"1.48s\" fill=\"freeze\" calcMode=\"spline\" keyTimes=\"0;1\" keySplines=\"0.3 0 0.2 1\"/></circle><circle cx=\"348\" cy=\"92\" r=\"25\" fill=\"none\" stroke=\"#e34c26\" stroke-width=\"8\" stroke-dasharray=\"25.27 131.81\" stroke-dashoffset=\"-131.81\" transform=\"rotate(-90 348 92)\" opacity=\"0\"><animate attributeName=\"opacity\" from=\"0\" to=\"1\" dur=\"0.01s\" begin=\"1.66s\" fill=\"freeze\"/><animate attributeName=\"stroke-dasharray\" from=\"0 157.07963267948966\" to=\"25.27 131.81\" dur=\"0.6s\" begin=\"1.66s\" fill=\"freeze\" calcMode=\"spline\" keyTimes=\"0;1\" keySplines=\"0.3 0 0.2 1\"/></circle><text x=\"348\" y=\"96\" text-anchor=\"middle\" font-family=\"ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace\" font-size=\"11\" font-weight=\"700\" fill=\"#1F2933\">59%</text>"
     }
   ],
   "pinned": [
@@ -164,19 +170,19 @@
     {
       "name": "PHP",
       "color": "#4F5D95",
-      "percent": 39.5,
+      "percent": 39.3,
       "barWidth": 77
     },
     {
       "name": "JavaScript",
       "color": "#f1e05a",
-      "percent": 28.7,
-      "barWidth": 56
+      "percent": 29,
+      "barWidth": 57
     },
     {
       "name": "Blade",
       "color": "#f7523f",
-      "percent": 13,
+      "percent": 12.9,
       "barWidth": 25
     },
     {
@@ -188,7 +194,7 @@
     {
       "name": "Python",
       "color": "#3572A5",
-      "percent": 6,
+      "percent": 5.9,
       "barWidth": 12
     },
     {
@@ -2051,9 +2057,9 @@
     },
     {
       "date": "2026-09-12",
-      "contributionCount": 4,
+      "contributionCount": 5,
       "weekday": 6
     }
   ],
-  "generatedAt": "2026-09-12T18:30:10.732Z"
+  "generatedAt": "2026-09-12T19:14:35.109Z"
 }
