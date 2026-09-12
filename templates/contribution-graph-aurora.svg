@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="240" viewBox="0 0 860 240" role="img" aria-labelledby="cgTitle cgDesc">
+  <title id="cgTitle">{{name}}'s Contribution Graph</title>
+  <desc id="cgDesc">Contribution graph for the last 91 days, showing {{contributions}} contributions in the last year. Peak activity reaches {{cgMaxCount}} contributions in a single day.</desc>
+
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#F4F1EA"/>
+      <stop offset="50%"  stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F4F1EA"/>
+    </linearGradient>
+
+    <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#14B8A6"/>
+      <stop offset="60%"  stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#4F46E5"/>
+    </linearGradient>
+
+    <linearGradient id="shineGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#4F46E5" stop-opacity="0.85"/>
+      <stop offset="55%"  stop-color="#8B93A7" stop-opacity="0.40"/>
+      <stop offset="100%" stop-color="#4F46E5" stop-opacity="0"/>
+    </linearGradient>
+
+    <radialGradient id="glowIndigo">
+      <stop offset="0%"   stop-color="#4F46E5" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#4F46E5" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glowTeal">
+      <stop offset="0%"   stop-color="#14B8A6" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#14B8A6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <style>
+    .t { font-family: Arial, Helvetica, sans-serif; }
+
+    .title    { font-size: 17px;   font-weight: 700; letter-spacing: 0.3px; fill: #1F2933; }
+    .subtitle { font-size: 10.5px; font-weight: 600; letter-spacing: 0.8px; fill: #4F46E5; }
+    .tick     { font-size: 10px;   font-weight: 600;                        fill: #6B7280; }
+    .axis-lbl { font-size: 10px;   font-weight: 700; letter-spacing: 1.6px; fill: #6B7280; }
+
+    .grid  { animation: fadeIn .9s ease-out both; }
+    .grid:nth-of-type(1) { animation-delay: .05s; }
+    .grid:nth-of-type(2) { animation-delay: .15s; }
+
+    .line  {
+      stroke-dasharray: 1;
+      stroke-dashoffset: 1;
+      animation: drawLine 1.8s cubic-bezier(.4,0,.2,1) .15s both;
+    }
+
+    .dot { animation: dotIn .45s cubic-bezier(.34,1.56,.64,1) both; }
+
+    .peak      { transform-box: fill-box; transform-origin: center; animation: pulseDot 2.8s ease-in-out 1.2s infinite; }
+    .peak-halo { transform-box: fill-box; transform-origin: center; animation: pulseRing 3.6s ease-in-out infinite; }
+
+    .orb-a { transform-box: fill-box; transform-origin: center; animation: drift1 11s ease-in-out infinite; }
+    .orb-b { transform-box: fill-box; transform-origin: center; animation: drift2 13s ease-in-out infinite; }
+
+    @keyframes drawLine  { to { stroke-dashoffset: 0; } }
+    @keyframes fadeIn    { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes dotIn     { from { opacity: 0; transform: scale(.2); } to { opacity: 1; transform: scale(1); } }
+    @keyframes pulseDot  { 0%,100% { transform: scale(1); } 50% { transform: scale(1.35); } }
+    @keyframes pulseRing { 0%,100% { transform: scale(1); opacity: .8; } 50% { transform: scale(1.5); opacity: 0; } }
+    @keyframes drift1    { 0%,100% { transform: translate(0,0); } 50% { transform: translate(22px,-12px); } }
+    @keyframes drift2    { 0%,100% { transform: translate(0,0); } 50% { transform: translate(-18px,10px); } }
+
+    @media (prefers-reduced-motion: reduce) {
+      .grid, .line, .dot, .peak, .peak-halo, .orb-a, .orb-b {
+        animation: none !important;
+      }
+      .line { stroke-dashoffset: 0; }
+    }
+  </style>
+
+  <!-- ===== Canvas ===== -->
+  <rect width="860" height="240" rx="20" fill="url(#bgGrad)"/>
+  <rect x="26" y="26" width="808" height="188" rx="14"
+        fill="#FFFFFF" fill-opacity="0.55" stroke="#D9D2C7" stroke-width="1.2"/>
+
+  <!-- ===== Decorative glow orbs ===== -->
+  <g aria-hidden="true">
+    <circle class="orb-a" cx="176" cy="62"  r="50" fill="url(#glowIndigo)"/>
+    <circle class="orb-b" cx="712" cy="198" r="60" fill="url(#glowTeal)"/>
+  </g>
+
+  <!-- ===== Decorative shine ===== -->
+  <path aria-hidden="true"
+        d="M300 66 C 360 58, 500 58, 560 66"
+        fill="none" stroke="url(#shineGrad)" stroke-width="1.4" stroke-linecap="round"/>
+
+  <!-- ===== Header ===== -->
+  <text class="t title"    x="430" y="54" text-anchor="middle">{{name}}'s Contribution Graph</text>
+  <text class="t subtitle" x="430" y="72" text-anchor="middle">LAST 91 DAYS · {{contributions}} CONTRIBUTIONS IN THE LAST YEAR</text>
+
+  <!-- ===== Gridlines ===== -->
+  <g aria-hidden="true">
+    <line class="grid" x1="68" y1="94"  x2="830" y2="94"
+          stroke="#D9D2C7" stroke-width="1" stroke-dasharray="3 5"/>
+    <line class="grid" x1="68" y1="178" x2="830" y2="178"
+          stroke="#D9D2C7" stroke-width="1" stroke-dasharray="3 5"/>
+  </g>
+
+  <!-- ===== Y-axis ticks ===== -->
+  <text class="t tick" x="60" y="98"  text-anchor="end">{{cgYScaleMax}}</text>
+  <text class="t tick" x="60" y="182" text-anchor="end">0</text>
+
+  <!-- ===== Y-axis title ===== -->
+  <text class="t axis-lbl" x="40" y="136" text-anchor="middle"
+        transform="rotate(-90 40 136)">CONTRIBUTIONS</text>
+
+  <!-- ===== Contribution line (dynamic) ===== -->
+  <polyline class="line" pathLength="1"
+    points="{{cgPolylinePoints}}"
+    fill="none" stroke="url(#lineGrad)" stroke-width="3"
+    stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- ===== Data point markers (dynamic) ===== -->
+  <g>
+    {{cgDotsSvg}}
+  </g>
+
+  <!-- ===== Peak accent (dynamic) ===== -->
+  <g aria-hidden="true">
+    {{cgPeakSvg}}
+  </g>
+
+  <!-- ===== X-axis labels (dynamic) ===== -->
+  {{cgXLabelsSvg}}
+</svg>
