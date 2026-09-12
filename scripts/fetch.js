@@ -149,6 +149,50 @@ function getRelativeTime(dateStr) {
   return `updated ${years}y ago`;
 }
 
+// ============ Build donut SVG (per repo) ============
+const DONUT_R = 25;
+const DONUT_CIRC = 2 * Math.PI * DONUT_R; // ~157.08
+
+function buildDonut(repo, baseDelay) {
+  const langEdges = repo.languages?.edges || [];
+  const langs = langEdges
+    .map(e => ({ name: e.node.name, color: e.node.color || '#888', size: e.size }))
+    .sort((a, b) => b.size - a.size);
+
+  if (langs.length === 0) {
+    return `<circle cx="348" cy="92" r="${DONUT_R}" fill="none" stroke="#D9D2C7" stroke-opacity="0.9" stroke-width="8"/><text x="348" y="96" text-anchor="middle" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="11" font-weight="700" fill="#1F2933">--</text>`;
+  }
+
+  const total = langs.reduce((s, l) => s + l.size, 0) || 1;
+  const top = langs.slice(0, 4);
+  const otherSize = langs.slice(4).reduce((s, l) => s + l.size, 0);
+
+  const segments = top.map(l => ({ color: l.color, size: l.size }));
+  if (otherSize > 0) segments.push({ color: '#6B7280', size: otherSize });
+
+  let cumulative = 0;
+  let svg = `<circle cx="348" cy="92" r="${DONUT_R}" fill="none" stroke="#D9D2C7" stroke-opacity="0.9" stroke-width="8"/>`;
+
+  segments.forEach((seg, idx) => {
+    const pct = seg.size / total;
+    const dash = pct * DONUT_CIRC;
+    const rest = DONUT_CIRC - dash;
+    const offset = -cumulative;
+    cumulative += dash;
+    const delay = (baseDelay + idx * 0.18).toFixed(2);
+
+    svg += `<circle cx="348" cy="92" r="${DONUT_R}" fill="none" stroke="${seg.color}" stroke-width="8" stroke-dasharray="${dash.toFixed(2)} ${rest.toFixed(2)}" stroke-dashoffset="${offset.toFixed(2)}" transform="rotate(-90 348 92)" opacity="0">`;
+    svg += `<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="${delay}s" fill="freeze"/>`;
+    svg += `<animate attributeName="stroke-dasharray" from="0 ${DONUT_CIRC}" to="${dash.toFixed(2)} ${rest.toFixed(2)}" dur="0.6s" begin="${delay}s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.3 0 0.2 1"/>`;
+    svg += `</circle>`;
+  });
+
+  const topPct = Math.round((segments[0].size / total) * 100);
+  svg += `<text x="348" y="96" text-anchor="middle" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="11" font-weight="700" fill="#1F2933">${topPct}%</text>`;
+
+  return svg;
+}
+
 // ============ Split bio l 2 lines ============
 function splitBio(bio, maxLen = 55) {
   const raw = (bio || '').trim();
@@ -264,26 +308,31 @@ async function main() {
     issues: u.contributionsCollection.totalIssueContributions,
     reposWithCommits: u.contributionsCollection.totalRepositoriesWithContributedCommits,
 
-    // ============ Top repos — b dynamic positions l grid ============
+    // ============ Top repos — 2 cols × 3 rows + donut ============
     topRepos: repos.slice(0, 6).map((r, i) => {
-      const col = i % 3;
-      const row = Math.floor(i / 3);
+      const col = i % 2;
+      const row = Math.floor(i / 2);
+      const x = 28 + col * 410;    // 28 or 438
+      const y = 88 + row * 178;    // 88, 266, 444
       const lang = r.primaryLanguage?.name || 'Code';
       const chipWidth = Math.max(35, lang.length * 8 + 12);
+      const baseDelay = 0.25 + i * 0.15;
+
       return {
         name: r.name,
-        description: r.description || 'No description provided.',
+        description: (r.description || 'No description provided.').slice(0, 42),
         url: r.url,
         stars: r.stargazerCount,
         forks: r.forkCount,
         language: lang,
         color: r.primaryLanguage?.color || '#888',
         updated: getRelativeTime(r.updatedAt),
-        x: 28 + col * 270,
-        y: 88 + row * 178,
-        chipTextX: 16 + chipWidth / 2,
+        x,
+        y,
+        chipTextX: 18 + chipWidth / 2,
         chipWidth,
-        delay: (0.25 + i * 0.15).toFixed(2),
+        delay: baseDelay.toFixed(2),
+        donutSvg: buildDonut(r, baseDelay + 0.30),
       };
     }),
 
