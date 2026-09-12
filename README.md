@@ -29,7 +29,7 @@
 <img src="banners/divider-cyber-aurora.svg" alt="AHMED Wordmark">
 <img src="banners/contribution-heatmap-aurora-dark.svg" alt="AHMED Wordmark">
 <img src="banners/divider-cyber-aurora.svg" alt="AHMED Wordmark">
-<img src="https://raw.githubusercontent.com/ahmedsabrari/ahmedsabrari/output/snake.svg" alt="Snake animation">
+<img src="banners/snake.svg" alt="Snake">
 <img src="banners/divider-cyber-aurora.svg" alt="AHMED Wordmark">
 <img src="banners/social-card-aurora-dark.svg" alt="AHMED Wordmark">
 <!-- 

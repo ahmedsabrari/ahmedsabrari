@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="860" height="240" viewBox="0 0 860 240" role="img" aria-labelledby="snakeTitle snakeDesc">
+  <title id="snakeTitle">Contribution Snake — AHMED SABRARI</title>
+  <desc id="snakeDesc">Animated snake eating contribution cells over the last year.</desc>
+
+  <defs>
+    <linearGradient id="snake-aurora-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F4F1EA"/>
+      <stop offset="54%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F4F1EA"/>
+    </linearGradient>
+
+    <radialGradient id="snake-orb-0" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4F46E5" stop-opacity="0.30"/>
+      <stop offset="58%" stop-color="#4F46E5" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#4F46E5" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="snake-orb-1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#14B8A6" stop-opacity="0.24"/>
+      <stop offset="58%" stop-color="#14B8A6" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#14B8A6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="snake-orb-2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4F46E5" stop-opacity="0.26"/>
+      <stop offset="58%" stop-color="#4F46E5" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#4F46E5" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="snake-orb-3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#14B8A6" stop-opacity="0.22"/>
+      <stop offset="58%" stop-color="#14B8A6" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#14B8A6" stop-opacity="0"/>
+    </radialGradient>
+
+    <pattern id="cell-pattern" x="0" y="0" width="16" height="16" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="12" height="12" rx="2" ry="2" fill="var(--ce)"/>
+    </pattern>
+  </defs>
+
+  <style>
+    :root {
+      --cb: transparent;
+      --cs: #14B8A6;
+      --ce: #F0F0EE;
+      --c0: #F0F0EE;
+      --c1: #C0BCF0;
+      --c2: #9A95EC;
+      --c3: #756DE9;
+      --c4: #4F46E5;
+    }
+
+    /* ---- Aurora orbs ---- */
+    #snake-card .aura-orb-a { animation: snake-float-a 9s ease-in-out infinite; }
+    #snake-card .aura-orb-b { animation: snake-float-b 11s ease-in-out infinite 1.1s; }
+    #snake-card .aura-orb-c { animation: snake-float-c 13s ease-in-out infinite 0.6s; }
+    @keyframes snake-float-a { 0%,100% { transform: translate(0,0); opacity:.58; } 50% { transform: translate(28px,-20px); opacity:.86; } }
+    @keyframes snake-float-b { 0%,100% { transform: translate(0,0); opacity:.42; } 50% { transform: translate(-24px,18px); opacity:.72; } }
+    @keyframes snake-float-c { 0%,100% { transform: translate(0,0) scale(1); opacity:.34; } 50% { transform: translate(18px,-12px) scale(1.18); opacity:.62; } }
+    @media (prefers-reduced-motion: reduce) {
+      #snake-card .aura-orb-a, #snake-card .aura-orb-b, #snake-card .aura-orb-c { animation: none !important; }
+    }
+
+    /* ---- Cells ---- */
+    .c { shape-rendering: geometricPrecision; fill: var(--ce); stroke-width: 1px; stroke: var(--cb); animation: none 16500ms linear infinite; }
+    @keyframes c0 { 72.72% { fill: var(--c2); } 72.74%,100% { fill: var(--ce); } }
+    .c.c0 { fill: var(--c2); animation-name: c0; }
+    @keyframes c1 { 72.11% { fill: var(--c2); } 72.13%,100% { fill: var(--ce); } }
+    .c.c1 { fill: var(--c2); animation-name: c1; }
+    @keyframes c2 { 3.63% { fill: var(--c1); } 3.65%,100% { fill: var(--ce); } }
+    .c.c2 { fill: var(--c1); animation-name: c2; }
+    @keyframes c3 { 4.23% { fill: var(--c1); } 4.25%,100% { fill: var(--ce); } }
+    .c.c3 { fill: var(--c1); animation-name: c3; }
+    @keyframes c4 { 4.84% { fill: var(--c1); } 4.86%,100% { fill: var(--ce); } }
+    .c.c4 { fill: var(--c1); animation-name: c4; }
+    @keyframes c5 { 75.75% { fill: var(--c4); } 75.77%,100% { fill: var(--ce); } }
+    .c.c5 { fill: var(--c4); animation-name: c5; }
+    @keyframes c6 { 69.08% { fill: var(--c2); } 69.1%,100% { fill: var(--ce); } }
+    .c.c6 { fill: var(--c2); animation-name: c6; }
+    @keyframes c7 { 87.87% { fill: var(--c4); } 87.89%,100% { fill: var(--ce); } }
+    .c.c7 { fill: var(--c4); animation-name: c7; }
+    @keyframes c8 { 87.26% { fill: var(--c4); } 87.28%,100% { fill: var(--ce); } }
+    .c.c8 { fill: var(--c4); animation-name: c8; }
+    @keyframes c9 { 37.57% { fill: var(--c1); } 37.59%,100% { fill: var(--ce); } }
+    .c.c9 { fill: var(--c1); animation-name: c9; }
+
+    /* ---- Progress trail ---- */
+    .u { transform-origin: 0 0; transform: scale(0,1); animation: none linear 16500ms infinite; }
+    @keyframes u0 { 3.63% { transform: scale(0.000,1); } 3.65%,4.23% { transform: scale(0.250,1); } 4.25%,4.84% { transform: scale(0.500,1); } 4.86%,37.57% { transform: scale(0.750,1); } 37.59%,100% { transform: scale(1.000,1); } }
+    .u.u0 { fill: var(--c1); animation-name: u0; transform-origin: 0.0px 0; }
+    @keyframes u1 { 69.08% { transform: scale(0.000,1); } 69.1%,72.11% { transform: scale(0.333,1); } 72.13%,72.72% { transform: scale(0.667,1); } 72.74%,100% { transform: scale(1.000,1); } }
+    .u.u1 { fill: var(--c2); animation-name: u1; transform-origin: 339.2px 0; }
+    @keyframes u2 { 75.75% { transform: scale(0.000,1); } 75.77%,87.26% { transform: scale(0.333,1); } 87.28%,87.87% { transform: scale(0.667,1); } 87.89%,100% { transform: scale(1.000,1); } }
+    .u.u2 { fill: var(--c4); animation-name: u2; transform-origin: 593.6px 0; }
+
+    /* ---- Snake body ---- */
+    .s { shape-rendering: geometricPrecision; fill: var(--cs); animation: none linear 16500ms infinite; }
+    @keyframes s0 { 0%,99.39% { transform: translate(0px,-16px); } 0.61% { transform: translate(-16px,-16px); } 3.03% { transform: translate(-16px,48px); } 3.64% { transform: translate(0px,48px); } 4.85% { transform: translate(0px,80px); } 5.45% { transform: translate(-16px,80px); } 6.06% { transform: translate(-16px,64px); } 37.58% { transform: translate(816px,64px); } 38.18% { transform: translate(816px,80px); } 67.88% { transform: translate(32px,80px); } 68.48% { transform: translate(32px,96px); } 69.7% { transform: translate(0px,96px); } 72.73% { transform: translate(0px,16px); } 73.33% { transform: translate(16px,16px); } 75.76% { transform: translate(16px,80px); } 85.45% { transform: translate(272px,80px); } 87.88% { transform: translate(272px,16px); } 95.15% { transform: translate(80px,16px); } 95.76% { transform: translate(80px,0px); } 96.97% { transform: translate(48px,0px); } 97.58% { transform: translate(48px,-16px); } }
+    .s.s0 { transform: translate(0px,-16px); animation-name: s0; }
+    @keyframes s1 { 0%,99.39% { transform: translate(16px,-16px); } 1.21% { transform: translate(-16px,-16px); } 3.64% { transform: translate(-16px,48px); } 4.24% { transform: translate(0px,48px); } 5.45% { transform: translate(0px,80px); } 6.06% { transform: translate(-16px,80px); } 6.67% { transform: translate(-16px,64px); } 38.18% { transform: translate(816px,64px); } 38.79% { transform: translate(816px,80px); } 68.48% { transform: translate(32px,80px); } 69.09% { transform: translate(32px,96px); } 70.3% { transform: translate(0px,96px); } 73.33% { transform: translate(0px,16px); } 73.94% { transform: translate(16px,16px); } 76.36% { transform: translate(16px,80px); } 86.06% { transform: translate(272px,80px); } 88.48% { transform: translate(272px,16px); } 95.76% { transform: translate(80px,16px); } 96.36% { transform: translate(80px,0px); } 97.58% { transform: translate(48px,0px); } 98.18% { transform: translate(48px,-16px); } }
+    .s.s1 { transform: translate(16px,-16px); animation-name: s1; }
+    @keyframes s2 { 0%,99.39% { transform: translate(32px,-16px); } 1.82% { transform: translate(-16px,-16px); } 4.24% { transform: translate(-16px,48px); } 4.85% { transform: translate(0px,48px); } 6.06% { transform: translate(0px,80px); } 6.67% { transform: translate(-16px,80px); } 7.27% { transform: translate(-16px,64px); } 38.79% { transform: translate(816px,64px); } 39.39% { transform: translate(816px,80px); } 69.09% { transform: translate(32px,80px); } 69.7% { transform: translate(32px,96px); } 70.91% { transform: translate(0px,96px); } 73.94% { transform: translate(0px,16px); } 74.55% { transform: translate(16px,16px); } 76.97% { transform: translate(16px,80px); } 86.67% { transform: translate(272px,80px); } 89.09% { transform: translate(272px,16px); } 96.36% { transform: translate(80px,16px); } 96.97% { transform: translate(80px,0px); } 98.18% { transform: translate(48px,0px); } 98.79% { transform: translate(48px,-16px); } }
+    .s.s2 { transform: translate(32px,-16px); animation-name: s2; }
+    @keyframes s3 { 0%,99.39% { transform: translate(48px,-16px); } 2.42% { transform: translate(-16px,-16px); } 4.85% { transform: translate(-16px,48px); } 5.45% { transform: translate(0px,48px); } 6.67% { transform: translate(0px,80px); } 7.27% { transform: translate(-16px,80px); } 7.88% { transform: translate(-16px,64px); } 39.39% { transform: translate(816px,64px); } 40% { transform: translate(816px,80px); } 69.7% { transform: translate(32px,80px); } 70.3% { transform: translate(32px,96px); } 71.52% { transform: translate(0px,96px); } 74.55% { transform: translate(0px,16px); } 75.15% { transform: translate(16px,16px); } 77.58% { transform: translate(16px,80px); } 87.27% { transform: translate(272px,80px); } 89.7% { transform: translate(272px,16px); } 96.97% { transform: translate(80px,16px); } 97.58% { transform: translate(80px,0px); } 98.79% { transform: translate(48px,0px); } }
+    .s.s3 { transform: translate(48px,-16px); animation-name: s3; }
+  </style>
+
+  <g id="snake-card">
+    <!-- Background -->
+    <rect width="860" height="240" rx="20" fill="url(#snake-aurora-bg)"/>
+
+    <!-- Aurora orbs -->
+    <ellipse class="aura-orb-a" cx="138" cy="41"  rx="206" ry="106" fill="url(#snake-orb-0)"/>
+    <ellipse class="aura-orb-b" cx="654" cy="51"  rx="241" ry="97"  fill="url(#snake-orb-1)"/>
+    <ellipse class="aura-orb-c" cx="499" cy="202" rx="310" ry="78"  fill="url(#snake-orb-2)"/>
+    <ellipse class="aura-orb-b" cx="826" cy="179" rx="172" ry="97"  fill="url(#snake-orb-3)"/>
+
+    <!-- Inner card -->
+    <rect x="26" y="26" width="808" height="188" rx="20" fill="#FFFFFF" fill-opacity="0.55" stroke="#D9D2C7" stroke-opacity="1"/>
+
+    <!-- Title + subtitle -->
+    <text x="46" y="60" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="24" font-weight="850" letter-spacing="-0.4" fill="#1F2933">Contribution Snake</text>
+    <text x="48" y="84" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="13" font-weight="650" letter-spacing="0.6" fill="#6B7280">Animated activity — last year</text>
+
+    <!-- Legend -->
+    <text x="648" y="72" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11" fill="#6B7280" text-anchor="end">Less</text>
+    <rect x="656" y="63" width="11" height="11" rx="2.5" fill="#6B7280" fill-opacity="0.07"/>
+    <rect x="671" y="63" width="11" height="11" rx="2.5" fill="#4F46E5" fill-opacity="0.34"/>
+    <rect x="686" y="63" width="11" height="11" rx="2.5" fill="#4F46E5" fill-opacity="0.56"/>
+    <rect x="701" y="63" width="11" height="11" rx="2.5" fill="#4F46E5" fill-opacity="0.78"/>
+    <rect x="716" y="63" width="11" height="11" rx="2.5" fill="#4F46E5" fill-opacity="1"/>
+    <text x="737" y="72" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11" fill="#6B7280">More</text>
+
+    <!-- Snake grid + animation -->
+    <g transform="translate(50,88) scale(0.9)">
+      <!-- Empty grid (pattern) -->
+      <rect x="2" y="2" width="848" height="112" fill="url(#cell-pattern)"/>
+
+      <!-- Animated (eaten) cells -->
+      <rect class="c c0" x="2"   y="18" width="12" height="12" rx="2" ry="2"/>
+      <rect class="c c1" x="2"   y="34" width="12" height="12" rx="2" ry="2"/>
+      <rect class="c c2" x="2"   y="50" width="12" height="12" rx="2" ry="2"/>
+      <rect class="c c3" x="2"   y="66" width="12" height="12" rx="2" ry="2"/>
+      <rect class="c c4" x="2"   y="82" width="12" height="12" rx="2" ry="2"/>
+      <rect class="c c5" x="18"  y="82" width="12" height="12" rx="2" ry="2"/>
+      <rect class="c c6" x="18"  y="98" width="12" height="12" rx="2" ry="2"/>
+      <rect class="c c7" x="274" y="18" width="12" height="12" rx="2" ry="2"/>
+      <rect class="c c8" x="274" y="34" width="12" height="12" rx="2" ry="2"/>
+      <rect class="c c9" x="818" y="66" width="12" height="12" rx="2" ry="2"/>
+
+      <!-- Progress trail -->
+      <rect class="u u0" height="12" width="339.8" x="0.0"   y="115"/>
+      <rect class="u u1" height="12" width="255.0" x="339.2" y="115"/>
+      <rect class="u u2" height="12" width="255.0" x="593.6" y="115"/>
+
+      <!-- Snake body -->
+      <rect class="s s0" x="0.8" y="0.8" width="14.4" height="14.4" rx="4.5" ry="4.5"/>
+      <rect class="s s1" x="1.8" y="1.8" width="12.3" height="12.3" rx="4.1" ry="4.1"/>
+      <rect class="s s2" x="2.6" y="2.6" width="10.8" height="10.8" rx="3.6" ry="3.6"/>
+      <rect class="s s3" x="3.0" y="3.0" width="9.9"  height="9.9"  rx="3.3" ry="3.3"/>
+    </g>
+
+    <!-- Outer border -->
+    <rect x="0.5" y="0.5" width="859" height="239" rx="19.5" fill="none" stroke="#D9D2C7" stroke-opacity="1"/>
+  </g>
+</svg>
