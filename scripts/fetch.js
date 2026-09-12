@@ -249,11 +249,9 @@ function buildContributionGraph(days, opts = {}) {
 
   const polylinePoints = points.map(p => `${p.x.toFixed(1)},${p.y.toFixed(1)}`).join(' ');
 
-  // Peak index (max count)
   const peakIdx = points.reduce((best, p, i) => p.count > points[best].count ? i : best, 0);
   const peak = points[peakIdx];
 
-  // Regular dots at every 7th day (skip peak)
   const dotIndices = [];
   for (let i = 0; i < recent.length; i += 7) {
     if (i !== peakIdx) dotIndices.push(i);
@@ -265,7 +263,6 @@ function buildContributionGraph(days, opts = {}) {
     return `<circle class="dot" cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="4" fill="#14B8A6" stroke="#FFFFFF" stroke-width="2" style="animation-delay:${delay}s"/>`;
   }).join('\n    ');
 
-  // X-axis labels (every ~13th day → 7 labels)
   const labelStep = Math.max(7, Math.floor(recent.length / 7));
   const xLabelsArr = [];
   for (let i = 0; i < recent.length; i += labelStep) {
@@ -276,7 +273,6 @@ function buildContributionGraph(days, opts = {}) {
     xLabelsArr.push(`<text class="t tick" x="${p.x.toFixed(1)}" y="196" text-anchor="middle">${mm}-${dd}</text>`);
   }
 
-  // Peak accent
   const peakSvg = peak.count > 0
     ? `<circle class="peak-halo" cx="${peak.x.toFixed(1)}" cy="${peak.y.toFixed(1)}" r="12" fill="url(#glowIndigo)"/>
     <circle class="peak" cx="${peak.x.toFixed(1)}" cy="${peak.y.toFixed(1)}" r="5.5" fill="#4F46E5" stroke="#FFFFFF" stroke-width="2"/>`
@@ -289,6 +285,32 @@ function buildContributionGraph(days, opts = {}) {
     cgPeakSvg: peakSvg,
     cgYScaleMax: maxCount,
     cgMaxCount: maxCount,
+  };
+}
+
+// ============ Highlights metrics ============
+function buildHighlights(u, repos, languages, activeDays) {
+  // Top language
+  const topLang = languages[0] || { name: 'Code' };
+  const topLangRepoCount = repos.filter(r =>
+    r.primaryLanguage?.name === topLang.name
+  ).length;
+
+  // Featured repo: pinned[0] wla top-stars repo
+  const featured = u.pinnedItems.nodes[0] || repos[0] || null;
+
+  // Total stars
+  const totalStars = repos.reduce((s, r) => s + r.stargazerCount, 0);
+
+  return {
+    hlTopLangName: topLang.name,
+    hlTopLangRepoCount: topLangRepoCount,
+    hlFeaturedName: featured ? featured.name : 'No project',
+    hlFeaturedDesc: featured
+      ? (featured.description || 'No description').slice(0, 28)
+      : 'No description',
+    hlImpactStars: totalStars,
+    hlImpactActiveDays: activeDays,
   };
 }
 
@@ -372,6 +394,9 @@ async function main() {
   // Custom avatars
   const custom = loadCustomAvatars();
 
+  // Languages (computed once)
+  const languages = computeLanguages(repos);
+
   // CP metrics
   const cpMetrics = buildCpMetrics(u, repos);
 
@@ -380,6 +405,9 @@ async function main() {
 
   const { line1: bioLine1, line2: bioLine2 } = splitBio(u.bio || '', 55);
   const activeDays = days.filter(d => d.contributionCount > 0).length;
+
+  // Highlights
+  const hlMetrics = buildHighlights(u, repos, languages, activeDays);
 
   const stats = {
     activeDays,
@@ -419,6 +447,9 @@ async function main() {
     // Contribution Graph
     ...cgMetrics,
 
+    // Highlights
+    ...hlMetrics,
+
     // Top repos — 2 cols × 3 rows + donut
     topRepos: repos.slice(0, 6).map((r, i) => {
       const col = i % 2;
@@ -456,7 +487,7 @@ async function main() {
       color: r.primaryLanguage?.color || '#888',
     })),
 
-    languages: computeLanguages(repos).slice(0, 8),
+    languages: languages.slice(0, 8),
     heatmapDays: days,
     generatedAt: new Date().toISOString(),
   };
@@ -472,6 +503,8 @@ async function main() {
   console.log('   topRepos:', stats.topRepos.length);
   console.log('   cpSignal:', stats.cpSignal);
   console.log('   cgMaxCount:', stats.cgMaxCount);
+  console.log('   hlTopLang:', stats.hlTopLangName, `(${stats.hlTopLangRepoCount} repos)`);
+  console.log('   hlFeatured:', stats.hlFeaturedName);
   console.log('   avatar size:', (avatarBase64.length / 1024).toFixed(1), 'KB');
 }
 
