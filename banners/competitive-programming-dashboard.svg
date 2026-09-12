@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="860" height="240" viewBox="0 0 860 240" role="img" aria-labelledby="cpTitle cpDesc">
   <title id="cpTitle">Competitive Programming — GitHub engineering signal</title>
-  <desc id="cpDesc">Competitive programming panel for AHMED SABRARI. Signal strength 10. Activity 19 percent, Projects 20 percent, Community 5 percent.</desc>
+  <desc id="cpDesc">Competitive programming panel for AHMED SABRARI. Signal strength 10. Activity 20 percent, Projects 20 percent, Community 5 percent.</desc>
 
   <defs>
     <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="0">
@@ -114,8 +114,8 @@
     <g class="bar">
       <text class="t bar-label" x="364" y="115" text-anchor="end">Activity</text>
       <rect x="386" y="104" width="360" height="14" rx="7" fill="#EDE9E2"/>
-      <rect x="386" y="104" width="68.4" height="14" rx="7" fill="#4F46E5"/>
-      <text class="t bar-pct" x="762" y="115">19%</text>
+      <rect x="386" y="104" width="72" height="14" rx="7" fill="#4F46E5"/>
+      <text class="t bar-pct" x="762" y="115">20%</text>
     </g>
 
     <g class="bar">

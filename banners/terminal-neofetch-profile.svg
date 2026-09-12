@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="860" height="300" viewBox="0 0 860 300" role="img" aria-labelledby="termTitle termDesc">
   <title id="termTitle">AHMED SABRARI — terminal profile card</title>
-  <desc id="termDesc">A neofetch-style terminal panel. User ahmedsabrari@github. Name: AHMED SABRARI. Role: 🚀 I'm Ahmed Sabrari, a full-stack web developer. Stars: 7. Repos: 6. Followers: 5. Top language: PHP. Activity: 97 contributions.</desc>
+  <desc id="termDesc">A neofetch-style terminal panel. User ahmedsabrari@github. Name: AHMED SABRARI. Role: 🚀 I'm Ahmed Sabrari, a full-stack web developer. Stars: 7. Repos: 6. Followers: 5. Top language: PHP. Activity: 98 contributions.</desc>
 
   <defs>
     <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="0">
@@ -129,7 +129,7 @@
   </g>
   <g class="tln" style="animation-delay: 0.76s">
     <text class="t label" x="280" y="248">Activity</text>
-    <text class="t value" x="390" y="248">97 contributions</text>
+    <text class="t value" x="390" y="248">98 contributions</text>
   </g>
 
   <!-- ===== Swatches ===== -->
