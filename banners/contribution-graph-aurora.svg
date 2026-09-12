@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="860" height="240" viewBox="0 0 860 240" role="img" aria-labelledby="cgTitle cgDesc">
   <title id="cgTitle">AHMED SABRARI's Contribution Graph</title>
-  <desc id="cgDesc">Contribution graph for the last 91 days, showing 44 contributions in the last year. Two activity spikes appear near 09-02.</desc>
+  <desc id="cgDesc">Contribution graph for the last 91 days, showing 90 contributions in the last year. Peak activity reaches 22 contributions in a single day.</desc>
 
   <defs>
     <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="0">
@@ -51,20 +51,6 @@
     }
 
     .dot { animation: dotIn .45s cubic-bezier(.34,1.56,.64,1) both; }
-    .dot:nth-of-type(1)  { animation-delay: .20s; }
-    .dot:nth-of-type(2)  { animation-delay: .26s; }
-    .dot:nth-of-type(3)  { animation-delay: .32s; }
-    .dot:nth-of-type(4)  { animation-delay: .38s; }
-    .dot:nth-of-type(5)  { animation-delay: .44s; }
-    .dot:nth-of-type(6)  { animation-delay: .50s; }
-    .dot:nth-of-type(7)  { animation-delay: .56s; }
-    .dot:nth-of-type(8)  { animation-delay: .62s; }
-    .dot:nth-of-type(9)  { animation-delay: .68s; }
-    .dot:nth-of-type(10) { animation-delay: .74s; }
-    .dot:nth-of-type(11) { animation-delay: .80s; }
-    .dot:nth-of-type(12) { animation-delay: .86s; }
-    .dot:nth-of-type(13) { animation-delay: .92s; }
-    .dot:nth-of-type(14) { animation-delay: .98s; }
 
     .peak      { transform-box: fill-box; transform-origin: center; animation: pulseDot 2.8s ease-in-out 1.2s infinite; }
     .peak-halo { transform-box: fill-box; transform-origin: center; animation: pulseRing 3.6s ease-in-out infinite; }
@@ -106,7 +92,7 @@
 
   <!-- ===== Header ===== -->
   <text class="t title"    x="430" y="54" text-anchor="middle">AHMED SABRARI's Contribution Graph</text>
-  <text class="t subtitle" x="430" y="72" text-anchor="middle">LAST 91 DAYS · 44 CONTRIBUTIONS IN THE LAST YEAR</text>
+  <text class="t subtitle" x="430" y="72" text-anchor="middle">LAST 91 DAYS · 90 CONTRIBUTIONS IN THE LAST YEAR</text>
 
   <!-- ===== Gridlines ===== -->
   <g aria-hidden="true">
@@ -117,49 +103,48 @@
   </g>
 
   <!-- ===== Y-axis ticks ===== -->
-  <text class="t tick" x="60" y="98"  text-anchor="end">1</text>
+  <text class="t tick" x="60" y="98"  text-anchor="end">22</text>
   <text class="t tick" x="60" y="182" text-anchor="end">0</text>
 
   <!-- ===== Y-axis title ===== -->
   <text class="t axis-lbl" x="40" y="136" text-anchor="middle"
         transform="rotate(-90 40 136)">CONTRIBUTIONS</text>
 
-  <!-- ===== Contribution line ===== -->
+  <!-- ===== Contribution line (dynamic) ===== -->
   <polyline class="line" pathLength="1"
-    points="68,178 76.5,178 84.9,178 93.4,178 101.9,178 110.3,178 118.8,178 127.3,178 135.7,178 144.2,178 152.7,178 161.1,178 169.6,178 178.1,178 186.5,178 195,178 203.5,178 211.9,178 220.4,178 228.9,178 237.3,178 245.8,178 254.3,178 262.7,178 271.2,178 279.7,178 288.1,178 296.6,178 305.1,178 313.5,178 322,178 330.5,178 338.9,178 347.4,178 355.9,178 364.3,178 372.8,178 381.3,178 389.7,178 398.2,178 406.7,178 415.1,178 423.6,178 432.1,178 440.5,178 449,178 457.5,178 465.9,178 474.4,178 482.9,178 491.3,178 499.8,178 508.3,178 516.7,178 525.2,178 533.7,178 542.1,178 550.6,178 559.1,178 567.5,178 576,178 584.5,178 592.9,178 601.4,178 609.9,178 618.3,178 626.8,178 635.3,178 643.7,178 652.2,178 660.7,178 669.1,178 677.6,178 686.1,178 694.5,178 703,178 711.5,178 719.9,178 728.4,178 736.9,178 745.3,178 753.8,178 762.3,178 770.7,178 779.2,178 787.7,94 796.1,178 804.6,178 813.1,178 821.5,178 830,94"
+    points="68.0,178.0 76.5,178.0 84.9,178.0 93.4,178.0 101.9,178.0 110.3,178.0 118.8,178.0 127.3,178.0 135.7,178.0 144.2,178.0 152.7,178.0 161.1,178.0 169.6,178.0 178.1,178.0 186.5,178.0 195.0,178.0 203.5,178.0 211.9,178.0 220.4,178.0 228.9,178.0 237.3,178.0 245.8,178.0 254.3,178.0 262.7,178.0 271.2,178.0 279.7,178.0 288.1,178.0 296.6,178.0 305.1,178.0 313.5,178.0 322.0,178.0 330.5,178.0 338.9,178.0 347.4,178.0 355.9,178.0 364.3,178.0 372.8,178.0 381.3,178.0 389.7,178.0 398.2,178.0 406.7,178.0 415.1,178.0 423.6,178.0 432.1,178.0 440.5,178.0 449.0,178.0 457.5,178.0 465.9,178.0 474.4,178.0 482.9,178.0 491.3,178.0 499.8,178.0 508.3,178.0 516.7,178.0 525.2,178.0 533.7,178.0 542.1,178.0 550.6,178.0 559.1,178.0 567.5,178.0 576.0,178.0 584.5,178.0 592.9,178.0 601.4,178.0 609.9,178.0 618.3,178.0 626.8,178.0 635.3,178.0 643.7,178.0 652.2,178.0 660.7,178.0 669.1,178.0 677.6,178.0 686.1,178.0 694.5,178.0 703.0,178.0 711.5,178.0 719.9,178.0 728.4,178.0 736.9,178.0 745.3,178.0 753.8,174.2 762.3,178.0 770.7,178.0 779.2,178.0 787.7,178.0 796.1,174.2 804.6,151.3 813.1,132.2 821.5,94.0 830.0,151.3"
     fill="none" stroke="url(#lineGrad)" stroke-width="3"
     stroke-linecap="round" stroke-linejoin="round"/>
 
-  <!-- ===== Data point markers ===== -->
+  <!-- ===== Data point markers (dynamic) ===== -->
   <g>
-    <circle class="dot" cx="68"    cy="178" r="4" fill="#14B8A6" stroke="#FFFFFF" stroke-width="2"/>
-    <circle class="dot" cx="127.3" cy="178" r="4" fill="#14B8A6" stroke="#FFFFFF" stroke-width="2"/>
-    <circle class="dot" cx="186.5" cy="178" r="4" fill="#14B8A6" stroke="#FFFFFF" stroke-width="2"/>
-    <circle class="dot" cx="245.8" cy="178" r="4" fill="#14B8A6" stroke="#FFFFFF" stroke-width="2"/>
-    <circle class="dot" cx="305.1" cy="178" r="4" fill="#14B8A6" stroke="#FFFFFF" stroke-width="2"/>
-    <circle class="dot" cx="364.3" cy="178" r="4" fill="#14B8A6" stroke="#FFFFFF" stroke-width="2"/>
-    <circle class="dot" cx="423.6" cy="178" r="4" fill="#14B8A6" stroke="#FFFFFF" stroke-width="2"/>
-    <circle class="dot" cx="482.9" cy="178" r="4" fill="#14B8A6" stroke="#FFFFFF" stroke-width="2"/>
-    <circle class="dot" cx="542.1" cy="178" r="4" fill="#14B8A6" stroke="#FFFFFF" stroke-width="2"/>
-    <circle class="dot" cx="601.4" cy="178" r="4" fill="#14B8A6" stroke="#FFFFFF" stroke-width="2"/>
-    <circle class="dot" cx="660.7" cy="178" r="4" fill="#14B8A6" stroke="#FFFFFF" stroke-width="2"/>
-    <circle class="dot" cx="719.9" cy="178" r="4" fill="#14B8A6" stroke="#FFFFFF" stroke-width="2"/>
-    <circle class="dot" cx="779.2" cy="178" r="4" fill="#14B8A6" stroke="#FFFFFF" stroke-width="2"/>
-    <circle class="dot" cx="830"   cy="94"  r="4" fill="#4F46E5" stroke="#FFFFFF" stroke-width="2"/>
+    <circle class="dot" cx="68.0" cy="178.0" r="4" fill="#14B8A6" stroke="#FFFFFF" stroke-width="2" style="animation-delay:0.20s"/>
+    <circle class="dot" cx="127.3" cy="178.0" r="4" fill="#14B8A6" stroke="#FFFFFF" stroke-width="2" style="animation-delay:0.26s"/>
+    <circle class="dot" cx="186.5" cy="178.0" r="4" fill="#14B8A6" stroke="#FFFFFF" stroke-width="2" style="animation-delay:0.32s"/>
+    <circle class="dot" cx="245.8" cy="178.0" r="4" fill="#14B8A6" stroke="#FFFFFF" stroke-width="2" style="animation-delay:0.38s"/>
+    <circle class="dot" cx="305.1" cy="178.0" r="4" fill="#14B8A6" stroke="#FFFFFF" stroke-width="2" style="animation-delay:0.44s"/>
+    <circle class="dot" cx="364.3" cy="178.0" r="4" fill="#14B8A6" stroke="#FFFFFF" stroke-width="2" style="animation-delay:0.50s"/>
+    <circle class="dot" cx="423.6" cy="178.0" r="4" fill="#14B8A6" stroke="#FFFFFF" stroke-width="2" style="animation-delay:0.56s"/>
+    <circle class="dot" cx="482.9" cy="178.0" r="4" fill="#14B8A6" stroke="#FFFFFF" stroke-width="2" style="animation-delay:0.62s"/>
+    <circle class="dot" cx="542.1" cy="178.0" r="4" fill="#14B8A6" stroke="#FFFFFF" stroke-width="2" style="animation-delay:0.68s"/>
+    <circle class="dot" cx="601.4" cy="178.0" r="4" fill="#14B8A6" stroke="#FFFFFF" stroke-width="2" style="animation-delay:0.74s"/>
+    <circle class="dot" cx="660.7" cy="178.0" r="4" fill="#14B8A6" stroke="#FFFFFF" stroke-width="2" style="animation-delay:0.80s"/>
+    <circle class="dot" cx="719.9" cy="178.0" r="4" fill="#14B8A6" stroke="#FFFFFF" stroke-width="2" style="animation-delay:0.86s"/>
+    <circle class="dot" cx="779.2" cy="178.0" r="4" fill="#14B8A6" stroke="#FFFFFF" stroke-width="2" style="animation-delay:0.92s"/>
   </g>
 
-  <!-- ===== Peak accent ===== -->
+  <!-- ===== Peak accent (dynamic) ===== -->
   <g aria-hidden="true">
-    <circle class="peak-halo" cx="787.7" cy="94" r="12" fill="url(#glowIndigo)"/>
-    <circle class="peak" cx="787.7" cy="94" r="5.5" fill="#4F46E5" stroke="#FFFFFF" stroke-width="2"/>
+    <circle class="peak-halo" cx="821.5" cy="94.0" r="12" fill="url(#glowIndigo)"/>
+    <circle class="peak" cx="821.5" cy="94.0" r="5.5" fill="#4F46E5" stroke="#FFFFFF" stroke-width="2"/>
   </g>
 
-  <!-- ===== X-axis labels ===== -->
-  <text class="t tick" x="68"    y="196" text-anchor="middle">06-10</text>
-  <text class="t tick" x="186.5" y="196" text-anchor="middle">06-24</text>
-  <text class="t tick" x="305.1" y="196" text-anchor="middle">07-08</text>
-  <text class="t tick" x="423.6" y="196" text-anchor="middle">07-22</text>
-  <text class="t tick" x="542.1" y="196" text-anchor="middle">08-05</text>
-  <text class="t tick" x="660.7" y="196" text-anchor="middle">08-19</text>
-  <text class="t tick" x="779.2" y="196" text-anchor="middle">09-02</text>
+  <!-- ===== X-axis labels (dynamic) ===== -->
+  <text class="t tick" x="68.0" y="196" text-anchor="middle">06-14</text>
+  <text class="t tick" x="178.1" y="196" text-anchor="middle">06-27</text>
+  <text class="t tick" x="288.1" y="196" text-anchor="middle">07-10</text>
+  <text class="t tick" x="398.2" y="196" text-anchor="middle">07-23</text>
+  <text class="t tick" x="508.3" y="196" text-anchor="middle">08-05</text>
+  <text class="t tick" x="618.3" y="196" text-anchor="middle">08-18</text>
+  <text class="t tick" x="728.4" y="196" text-anchor="middle">08-31</text>
 </svg>
