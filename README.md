@@ -11,9 +11,9 @@
 <picture><img src="banners/hero-zen-light.svg" width="100%" alt="Hero wordmark"/></picture>
 <picture><img src="banners/text-scroll-cyber.svg" width="100%" loading="lazy" decoding="async" alt="Text scroll"/></picture>
 <picture><img src="banners/banner-cyber-neon-ahmed.svg" width="100%" loading="lazy" decoding="async" alt="Neon banner"/></picture>
-
 <br/>
-
+<picture><img src="banners/divider-cyber-aurora.svg" width="100%" loading="lazy" decoding="async" alt=""/></picture>
+<br/>
 <!-- ═══════════════ DASHBOARD ═══════════════ -->
 <picture><img src="banners/profile-dashboard-complete.svg" width="100%" loading="lazy" decoding="async" alt="Profile dashboard"/></picture>
 <br/>
