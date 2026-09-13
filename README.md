@@ -8,68 +8,68 @@
 <div align="center">
 
 <!-- ═══════════════ HERO ═══════════════ -->
-<img src="banners/hero-zen-light.svg" width="100%" style="max-width: 860px; pointer-events: none;" alt="Hero wordmark"/>
-<img src="banners/text-scroll-cyber.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt="Text scroll"/>
-<img src="banners/banner-cyber-neon-ahmed.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt="Neon banner"/>
+<picture><img src="banners/hero-zen-light.svg" width="100%" alt="Hero wordmark"/></picture>
+<picture><img src="banners/text-scroll-cyber.svg" width="100%" loading="lazy" decoding="async" alt="Text scroll"/></picture>
+<picture><img src="banners/banner-cyber-neon-ahmed.svg" width="100%" loading="lazy" decoding="async" alt="Neon banner"/></picture>
 
 <br/>
 
 <!-- ═══════════════ DASHBOARD ═══════════════ -->
-<img src="banners/profile-dashboard-complete.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt="Profile dashboard"/>
+<picture><img src="banners/profile-dashboard-complete.svg" width="100%" loading="lazy" decoding="async" alt="Profile dashboard"/></picture>
 <br/>
-<img src="banners/divider-cyber-aurora.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt=""/>
+<picture><img src="banners/divider-cyber-aurora.svg" width="100%" loading="lazy" decoding="async" alt=""/></picture>
 <br/>
-<img src="banners/profile-scan-aurora.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt="Profile scan"/>
+<picture><img src="banners/profile-scan-aurora.svg" width="100%" loading="lazy" decoding="async" alt="Profile scan"/></picture>
 <br/>
-<img src="banners/divider-cyber-aurora.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt=""/>
+<picture><img src="banners/divider-cyber-aurora.svg" width="100%" loading="lazy" decoding="async" alt=""/></picture>
 <br/>
 
 <!-- ═══════════════ WORK ═══════════════ -->
-<img src="banners/projects-grid-aurora-dark.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt="Projects grid"/>
+<picture><img src="banners/projects-grid-aurora-dark.svg" width="100%" loading="lazy" decoding="async" alt="Projects grid"/></picture>
 <br/>
-<img src="banners/divider-cyber-aurora.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt=""/>
+<picture><img src="banners/divider-cyber-aurora.svg" width="100%" loading="lazy" decoding="async" alt=""/></picture>
 <br/>
-<img src="banners/competitive-programming-dashboard.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt="CP dashboard"/>
+<picture><img src="banners/competitive-programming-dashboard.svg" width="100%" loading="lazy" decoding="async" alt="CP dashboard"/></picture>
 <br/>
-<img src="banners/divider-cyber-aurora.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt=""/>
+<picture><img src="banners/divider-cyber-aurora.svg" width="100%" loading="lazy" decoding="async" alt=""/></picture>
 <br/>
 
 <!-- ═══════════════ ACTIVITY ═══════════════ -->
-<img src="banners/contribution-graph-aurora.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt="Contribution graph"/>
+<picture><img src="banners/contribution-graph-aurora.svg" width="100%" loading="lazy" decoding="async" alt="Contribution graph"/></picture>
 <br/>
-<img src="banners/divider-cyber-aurora.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt=""/>
+<picture><img src="banners/divider-cyber-aurora.svg" width="100%" loading="lazy" decoding="async" alt=""/></picture>
 <br/>
-<img src="banners/highlights-aurora-dark.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt="Highlights"/>
+<picture><img src="banners/highlights-aurora-dark.svg" width="100%" loading="lazy" decoding="async" alt="Highlights"/></picture>
 <br/>
-<img src="banners/divider-cyber-aurora.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt=""/>
+<picture><img src="banners/divider-cyber-aurora.svg" width="100%" loading="lazy" decoding="async" alt=""/></picture>
 <br/>
-<img src="banners/stats-dashboard-aurora-dark.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt="Stats dashboard"/>
+<picture><img src="banners/stats-dashboard-aurora-dark.svg" width="100%" loading="lazy" decoding="async" alt="Stats dashboard"/></picture>
 <br/>
-<img src="banners/divider-cyber-aurora.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt=""/>
+<picture><img src="banners/divider-cyber-aurora.svg" width="100%" loading="lazy" decoding="async" alt=""/></picture>
 <br/>
 
 <!-- ═══════════════ STACK ═══════════════ -->
-<img src="banners/tech-stack-cards.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt="Tech stack"/>
+<picture><img src="banners/tech-stack-cards.svg" width="100%" loading="lazy" decoding="async" alt="Tech stack"/></picture>
 <br/>
-<img src="banners/divider-cyber-aurora.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt=""/>
+<picture><img src="banners/divider-cyber-aurora.svg" width="100%" loading="lazy" decoding="async" alt=""/></picture>
 <br/>
-<img src="banners/terminal-neofetch-profile.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt="Terminal neofetch"/>
+<picture><img src="banners/terminal-neofetch-profile.svg" width="100%" loading="lazy" decoding="async" alt="Terminal neofetch"/></picture>
 <br/>
-<img src="banners/divider-cyber-aurora.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt=""/>
+<picture><img src="banners/divider-cyber-aurora.svg" width="100%" loading="lazy" decoding="async" alt=""/></picture>
 <br/>
 
 <!-- ═══════════════ HEATMAP + SNAKE ═══════════════ -->
-<img src="banners/contribution-heatmap-aurora-dark.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt="Heatmap"/>
+<picture><img src="banners/contribution-heatmap-aurora-dark.svg" width="100%" loading="lazy" decoding="async" alt="Heatmap"/></picture>
 <br/>
-<img src="banners/divider-cyber-aurora.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt=""/>
+<picture><img src="banners/divider-cyber-aurora.svg" width="100%" loading="lazy" decoding="async" alt=""/></picture>
 <br/>
-<img src="snake/snake.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt="Snake animation"/>
+<picture><img src="snake/snake.svg" width="100%" loading="lazy" decoding="async" alt="Snake animation"/></picture>
 <br/>
-<img src="banners/divider-cyber-aurora.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt=""/>
+<picture><img src="banners/divider-cyber-aurora.svg" width="100%" loading="lazy" decoding="async" alt=""/></picture>
 <br/>
 
 <!-- ═══════════════ FOOTER ═══════════════ -->
-<img src="banners/social-card-aurora-dark.svg" width="100%" style="max-width: 860px; pointer-events: none;" loading="lazy" decoding="async" alt="Social card"/>
+<picture><img src="banners/social-card-aurora-dark.svg" width="100%" loading="lazy" decoding="async" alt="Social card"/></picture>
 
 </div>
 
