@@ -2,9 +2,9 @@
   "activeDays": 11,
   "name": "AHMED SABRARI",
   "username": "ahmedsabrari",
-  "bio": "🚀 I'm Ahmed Sabrari, a full-stack web developer with a 2024 diploma in digital development. I excel in PHP, JavaScript, and Python. Let’s connect!",
-  "bioLine1": "🚀 I'm Ahmed Sabrari, a full-stack web developer",
-  "bioLine2": "with a 2024 diploma in digital development. I excel in PHP,…",
+  "bio": "Full-Stack Web Developer | PHP · JavaScript · Python | 2024 Digital Development Graduate",
+  "bioLine1": "Full-Stack Web Developer | PHP · JavaScript · Python",
+  "bioLine2": "| 2024 Digital Development Graduate",
   "location": "",
   "company": "",
   "joined": "2023-01-01T17:51:52Z",
@@ -2116,5 +2116,5 @@
       "weekday": 0
     }
   ],
-  "generatedAt": "2026-09-13T15:51:55.287Z"
+  "generatedAt": "2026-09-13T20:30:53.393Z"
 }

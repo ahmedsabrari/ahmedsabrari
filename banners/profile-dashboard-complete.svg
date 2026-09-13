@@ -121,7 +121,7 @@
       <!-- Left profile column -->
       <text x="42" y="468" fill="#4F46E5" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="13" font-weight="700">@ahmedsabrari</text>
       <text x="42" y="490" fill="#6B7280" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11">Developer building useful software</text>
-      <text x="42" y="512" fill="#1F2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11">🚀 I'm Ahmed Sabrari, a full-stack web developer</text>
+      <text x="42" y="512" fill="#1F2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11">Full-Stack Web Developer | PHP · JavaScript · Python</text>
 
       <!-- Featured repositories -->
       <text x="42" y="544" fill="#4F46E5" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" font-weight="700">Featured repositories</text>
