@@ -63,7 +63,11 @@ async function fetchAvatarBase64(url) {
   console.log('  Downloading avatar...');
   const res = await fetch(url, { headers: { 'User-Agent': 'profile-cards' } });
   if (!res.ok) throw new Error(`Avatar fetch failed: ${res.status}`);
-  const buffer = await res.buffer();
+
+  // ⚠️ node-fetch v3: arrayBuffer() machi buffer()
+  const arrayBuffer = await res.arrayBuffer();
+  const buffer = Buffer.from(arrayBuffer);
+
   const contentType = res.headers.get('content-type') || 'image/png';
   const base64 = buffer.toString('base64');
   console.log(`  ✅ Avatar: ${(buffer.length / 1024).toFixed(1)} KB`);
@@ -74,31 +78,50 @@ async function fetchAvatarBase64(url) {
 async function avatarToAscii(url, cols = 65, rows = 55) {
   try {
     console.log(`  Converting avatar → ASCII (${cols}×${rows})...`);
+
     const res = await fetch(url, { headers: { 'User-Agent': 'profile-cards' } });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const buffer = await res.buffer();
+
+    // ⚠️ node-fetch v3
+    const arrayBuffer = await res.arrayBuffer();
+    const buffer = Buffer.from(arrayBuffer);
 
     const img = await Jimp.read(buffer);
-    img.cover(cols, rows).grayscale();
 
+    // ⚠️ Jimp v1: cover() kayakhod OBJECT
+    img.cover({ w: cols, h: rows });
+    // ⚠️ Jimp v1: greyscale (british spelling) machi grayscale
+    img.greyscale();
+
+    const { width, height, data } = img.bitmap;
     const chars = ' .:-=+*#%@';
     const maxIdx = chars.length - 1;
 
     const lines = [];
-    for (let y = 0; y < rows; y++) {
+    for (let y = 0; y < height; y++) {
       let line = '';
-      for (let x = 0; x < cols; x++) {
-        const hex = img.getPixelColor(x, y);
-        const { r } = Jimp.intToRGBA(hex);
-        const idx = Math.round((r / 255) * maxIdx);
+      for (let x = 0; x < width; x++) {
+        const i = (y * width + x) * 4;   // RGBA flat
+        const r = data[i];
+        const g = data[i + 1];
+        const b = data[i + 2];
+        const a = data[i + 3] / 255;
+
+        // luminance + alpha
+        const lum = (0.299 * r + 0.587 * g + 0.114 * b) * a;
+
+        // Inversion: dark pixels (wjh) → chars kthaf
+        const idx = Math.round(((255 - lum) / 255) * maxIdx);
         line += chars[idx];
       }
       lines.push(line);
     }
+
     console.log(`  ✅ ASCII portrait ready (${lines.length} lines × ${cols} cols)`);
     return lines;
   } catch (e) {
     console.log('  ⚠️  avatarToAscii failed:', e.message);
+    console.error(e);
     return [];
   }
 }
@@ -113,6 +136,10 @@ function asciiLinesToSvg(lines, options = {}) {
     textLength = 408,
     fill = 'url(#scan-ahmedsabrari-aurora-dark-portrait-gradient)',
   } = options;
+
+  if (!lines || lines.length === 0) {
+    return `<text x="${x}" y="${startY}" font-family="ui-monospace,monospace" font-size="${fontSize}" fill="#6B7280">avatar unavailable</text>`;
+  }
 
   return lines.map((line, i) =>
     `<text x="${x}" y="${startY + i * lineHeight}" ` +
