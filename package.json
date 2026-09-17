@@ -8,7 +8,12 @@
     "render": "node scripts/render.js",
     "build": "npm run fetch && npm run render"
   },
-  "keywords": ["profile", "readme", "svg", "github-actions"],
+  "keywords": [
+    "profile",
+    "readme",
+    "svg",
+    "github-actions"
+  ],
   "author": "AHMED SABRARI",
   "license": "MIT",
   "repository": {
@@ -16,7 +21,7 @@
     "url": "git+https://github.com/ahmedsabrari/ahmedsabrari.git"
   },
   "dependencies": {
-    "node-fetch": "^3.3.2",
-    "jimp": "^0.22.10"
+    "jimp": "^1.6.1",
+    "node-fetch": "^3.3.2"
   }
 }
