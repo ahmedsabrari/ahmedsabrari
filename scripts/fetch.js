@@ -1,6 +1,6 @@
 import fetch from 'node-fetch';
 import fs from 'fs';
-import Jimp from 'jimp';
+import { Jimp } from 'jimp';
 
 const TOKEN = process.env.GITHUB_TOKEN;
 const USER = process.env.GH_USERNAME || 'ahmedsabrari';
