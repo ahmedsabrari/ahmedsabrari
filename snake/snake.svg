@@ -459,6 +459,7 @@
       <rect class="c cb" x="834" y="50" rx="2" ry="2"/>
       <rect class="c cc" x="834" y="66" rx="2" ry="2"/>
       <rect class="c" x="834" y="82" rx="2" ry="2"/>
+      <rect class="c" x="834" y="98" rx="2" ry="2"/>
       <rect class="s s0" x="0.8" y="0.8" width="14.4" height="14.4" rx="4.5" ry="4.5"/>
       <rect class="s s1" x="1.8" y="1.8" width="12.3" height="12.3" rx="4.1" ry="4.1"/>
       <rect class="s s2" x="2.6" y="2.6" width="10.8" height="10.8" rx="3.6" ry="3.6"/>
