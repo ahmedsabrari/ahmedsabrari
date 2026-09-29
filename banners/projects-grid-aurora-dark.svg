@@ -54,11 +54,30 @@
     <line x1="28" y1="52" x2="832" y2="52" stroke="#4F46E5" stroke-opacity="0.35" stroke-width="1.5"/>
 
     
-    <a href="https://github.com/ahmedsabrari/image-to-pencil-sketch" target="_blank">
+    <a href="https://github.com/ahmedsabrari/ahmedsabrari" target="_blank">
       <g opacity="0" transform="translate(28,88)">
         <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0.25s" fill="freeze"/>
         <rect width="394" height="162" rx="13" fill="#FFFFFF" fill-opacity="0.9" stroke="#4F46E5">
           <animate attributeName="stroke-opacity" values="0.35;0.75;0.35" dur="4.5s" begin="0.25s" repeatCount="indefinite"/>
+        </rect>
+        <path d="M0 13 a13 13 0 0 1 13 -13 h368 a13 13 0 0 1 13 13 v17 h-394 z" fill="#4F46E5" fill-opacity="0.06"/>
+        <line x1="0" y1="30" x2="394" y2="30" stroke="#4F46E5" stroke-opacity="0.35"/>
+        <text x="16" y="19.5" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="10.5" fill="#6B7280"><tspan fill="#4F46E5">•</tspan> ahmedsabrari</text>
+        <circle cx="378" cy="15" r="4" fill="#14B8A6" fill-opacity="0.7"/>
+        <text x="18" y="58" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="16.5" font-weight="700" fill="#1F2933">ahmedsabrari<tspan fill="#4F46E5"> _<animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite"/></tspan></text>
+        <text x="18" y="79" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" fill="#6B7280">Personal GitHub profile· animated SVG bann</text>
+        <rect x="18" y="112" width="92" height="18" rx="9" fill="#f1e05a" fill-opacity="0.12" stroke="#f1e05a" stroke-opacity="0.4"/>
+        <text x="64" y="124.5" text-anchor="middle" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="9.5" fill="#f1e05a">JavaScript</text>
+        <text x="18" y="150" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#6B7280"><tspan fill="#14B8A6">★</tspan> 3<tspan fill="#6B7280" dx="12">updated today</tspan></text>
+        <circle cx="348" cy="92" r="25" fill="none" stroke="#D9D2C7" stroke-opacity="0.9" stroke-width="8"/><circle cx="348" cy="92" r="25" fill="none" stroke="#f1e05a" stroke-width="8" stroke-dasharray="157.08 0.00" stroke-dashoffset="0.00" transform="rotate(-90 348 92)" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.55s" fill="freeze"/><animate attributeName="stroke-dasharray" from="0 157.07963267948966" to="157.08 0.00" dur="0.6s" begin="0.55s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.3 0 0.2 1"/></circle><text x="348" y="96" text-anchor="middle" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="11" font-weight="700" fill="#1F2933">100%</text>
+      </g>
+    </a>
+    
+    <a href="https://github.com/ahmedsabrari/image-to-pencil-sketch" target="_blank">
+      <g opacity="0" transform="translate(438,88)">
+        <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0.40s" fill="freeze"/>
+        <rect width="394" height="162" rx="13" fill="#FFFFFF" fill-opacity="0.9" stroke="#4F46E5">
+          <animate attributeName="stroke-opacity" values="0.35;0.75;0.35" dur="4.5s" begin="0.40s" repeatCount="indefinite"/>
         </rect>
         <path d="M0 13 a13 13 0 0 1 13 -13 h368 a13 13 0 0 1 13 13 v17 h-394 z" fill="#4F46E5" fill-opacity="0.06"/>
         <line x1="0" y1="30" x2="394" y2="30" stroke="#4F46E5" stroke-opacity="0.35"/>
@@ -69,26 +88,7 @@
         <rect x="18" y="112" width="60" height="18" rx="9" fill="#3572A5" fill-opacity="0.12" stroke="#3572A5" stroke-opacity="0.4"/>
         <text x="48" y="124.5" text-anchor="middle" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="9.5" fill="#3572A5">Python</text>
         <text x="18" y="150" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#6B7280"><tspan fill="#14B8A6">★</tspan> 2<tspan fill="#6B7280" dx="12">updated 1mo ago</tspan></text>
-        <circle cx="348" cy="92" r="25" fill="none" stroke="#D9D2C7" stroke-opacity="0.9" stroke-width="8"/><circle cx="348" cy="92" r="25" fill="none" stroke="#3572A5" stroke-width="8" stroke-dasharray="157.08 0.00" stroke-dashoffset="0.00" transform="rotate(-90 348 92)" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.55s" fill="freeze"/><animate attributeName="stroke-dasharray" from="0 157.07963267948966" to="157.08 0.00" dur="0.6s" begin="0.55s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.3 0 0.2 1"/></circle><text x="348" y="96" text-anchor="middle" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="11" font-weight="700" fill="#1F2933">100%</text>
-      </g>
-    </a>
-    
-    <a href="https://github.com/ahmedsabrari/ahmedsabrari" target="_blank">
-      <g opacity="0" transform="translate(438,88)">
-        <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0.40s" fill="freeze"/>
-        <rect width="394" height="162" rx="13" fill="#FFFFFF" fill-opacity="0.9" stroke="#4F46E5">
-          <animate attributeName="stroke-opacity" values="0.35;0.75;0.35" dur="4.5s" begin="0.40s" repeatCount="indefinite"/>
-        </rect>
-        <path d="M0 13 a13 13 0 0 1 13 -13 h368 a13 13 0 0 1 13 13 v17 h-394 z" fill="#4F46E5" fill-opacity="0.06"/>
-        <line x1="0" y1="30" x2="394" y2="30" stroke="#4F46E5" stroke-opacity="0.35"/>
-        <text x="16" y="19.5" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="10.5" fill="#6B7280"><tspan fill="#4F46E5">•</tspan> ahmedsabrari</text>
-        <circle cx="378" cy="15" r="4" fill="#14B8A6" fill-opacity="0.7"/>
-        <text x="18" y="58" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="16.5" font-weight="700" fill="#1F2933">ahmedsabrari<tspan fill="#4F46E5"> _<animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite"/></tspan></text>
-        <text x="18" y="79" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" fill="#6B7280">Personal GitHub profile· animated SVG bann</text>
-        <rect x="18" y="112" width="92" height="18" rx="9" fill="#f1e05a" fill-opacity="0.12" stroke="#f1e05a" stroke-opacity="0.4"/>
-        <text x="64" y="124.5" text-anchor="middle" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="9.5" fill="#f1e05a">JavaScript</text>
-        <text x="18" y="150" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#6B7280"><tspan fill="#14B8A6">★</tspan> 2<tspan fill="#6B7280" dx="12">updated today</tspan></text>
-        <circle cx="348" cy="92" r="25" fill="none" stroke="#D9D2C7" stroke-opacity="0.9" stroke-width="8"/><circle cx="348" cy="92" r="25" fill="none" stroke="#f1e05a" stroke-width="8" stroke-dasharray="157.08 0.00" stroke-dashoffset="0.00" transform="rotate(-90 348 92)" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.70s" fill="freeze"/><animate attributeName="stroke-dasharray" from="0 157.07963267948966" to="157.08 0.00" dur="0.6s" begin="0.70s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.3 0 0.2 1"/></circle><text x="348" y="96" text-anchor="middle" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="11" font-weight="700" fill="#1F2933">100%</text>
+        <circle cx="348" cy="92" r="25" fill="none" stroke="#D9D2C7" stroke-opacity="0.9" stroke-width="8"/><circle cx="348" cy="92" r="25" fill="none" stroke="#3572A5" stroke-width="8" stroke-dasharray="157.08 0.00" stroke-dashoffset="0.00" transform="rotate(-90 348 92)" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.70s" fill="freeze"/><animate attributeName="stroke-dasharray" from="0 157.07963267948966" to="157.08 0.00" dur="0.6s" begin="0.70s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.3 0 0.2 1"/></circle><text x="348" y="96" text-anchor="middle" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="11" font-weight="700" fill="#1F2933">100%</text>
       </g>
     </a>
     
@@ -106,7 +106,7 @@
         <text x="18" y="79" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" fill="#6B7280">ميزانيتي — Arabic personal budget PWA. Tra</text>
         <rect x="18" y="112" width="92" height="18" rx="9" fill="#f1e05a" fill-opacity="0.12" stroke="#f1e05a" stroke-opacity="0.4"/>
         <text x="64" y="124.5" text-anchor="middle" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="9.5" fill="#f1e05a">JavaScript</text>
-        <text x="18" y="150" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#6B7280"><tspan fill="#14B8A6">★</tspan> 1<tspan fill="#6B7280" dx="12">updated 11d ago</tspan></text>
+        <text x="18" y="150" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#6B7280"><tspan fill="#14B8A6">★</tspan> 1<tspan fill="#6B7280" dx="12">updated 12d ago</tspan></text>
         <circle cx="348" cy="92" r="25" fill="none" stroke="#D9D2C7" stroke-opacity="0.9" stroke-width="8"/><circle cx="348" cy="92" r="25" fill="none" stroke="#f1e05a" stroke-width="8" stroke-dasharray="90.87 66.20" stroke-dashoffset="0.00" transform="rotate(-90 348 92)" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.85s" fill="freeze"/><animate attributeName="stroke-dasharray" from="0 157.07963267948966" to="90.87 66.20" dur="0.6s" begin="0.85s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.3 0 0.2 1"/></circle><circle cx="348" cy="92" r="25" fill="none" stroke="#663399" stroke-width="8" stroke-dasharray="42.36 114.72" stroke-dashoffset="-90.87" transform="rotate(-90 348 92)" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="1.03s" fill="freeze"/><animate attributeName="stroke-dasharray" from="0 157.07963267948966" to="42.36 114.72" dur="0.6s" begin="1.03s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.3 0 0.2 1"/></circle><circle cx="348" cy="92" r="25" fill="none" stroke="#e34c26" stroke-width="8" stroke-dasharray="23.85 133.23" stroke-dashoffset="-133.23" transform="rotate(-90 348 92)" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="1.21s" fill="freeze"/><animate attributeName="stroke-dasharray" from="0 157.07963267948966" to="23.85 133.23" dur="0.6s" begin="1.21s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.3 0 0.2 1"/></circle><text x="348" y="96" text-anchor="middle" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace" font-size="11" font-weight="700" fill="#1F2933">58%</text>
       </g>
     </a>

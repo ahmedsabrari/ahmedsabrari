@@ -91,10 +91,10 @@
       <text x="238" y="262" fill="#1F2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11" font-weight="700">6</text>
 
       <text x="48" y="280" fill="#1F2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11">Stars</text>
-      <text x="238" y="280" fill="#1F2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11" font-weight="700">8</text>
+      <text x="238" y="280" fill="#1F2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11" font-weight="700">9</text>
 
       <text x="48" y="298" fill="#1F2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11">Followers</text>
-      <text x="238" y="298" fill="#1F2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11" font-weight="700">5</text>
+      <text x="238" y="298" fill="#1F2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11" font-weight="700">6</text>
 
       <!-- Ring -->
       <circle class="as-ring" cx="344" cy="265" r="33" fill="none" stroke="#D9D2C7" stroke-width="8"/>
@@ -126,10 +126,10 @@
       <!-- Featured repositories -->
       <text x="42" y="544" fill="#4F46E5" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" font-weight="700">Featured repositories</text>
 
-      <text x="42" y="562" fill="#4F46E5" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12">image-to-pencil-sketch</text>
-      <text x="380" y="562" fill="#6B7280" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11" text-anchor="end">2 stars</text>
+      <text x="42" y="562" fill="#4F46E5" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12">ahmedsabrari</text>
+      <text x="380" y="562" fill="#6B7280" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11" text-anchor="end">3 stars</text>
 
-      <text x="42" y="586" fill="#4F46E5" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12">ahmedsabrari</text>
+      <text x="42" y="586" fill="#4F46E5" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12">image-to-pencil-sketch</text>
       <text x="380" y="586" fill="#6B7280" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11" text-anchor="end">2 stars</text>
 
       <text x="42" y="610" fill="#4F46E5" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12">my-budget-app</text>
@@ -139,7 +139,7 @@
       <text x="500" y="468" fill="#4F46E5" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="13" font-weight="700">Community signal</text>
 
       <text x="500" y="490" fill="#1F2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11">Followers</text>
-      <text x="840" y="490" fill="#1F2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11" text-anchor="end">5</text>
+      <text x="840" y="490" fill="#1F2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11" text-anchor="end">6</text>
 
       <text x="500" y="512" fill="#1F2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11">Active days</text>
       <text x="840" y="512" fill="#1F2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11" text-anchor="end">11</text>
